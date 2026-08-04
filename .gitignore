@@ -22,6 +22,4 @@ scratch/
 *.log
 Inputs/
 Archive/
-
-Inputs/
-Archive/
+.git-backup/
