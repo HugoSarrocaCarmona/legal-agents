@@ -1,0 +1,190 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2026:2247",
+    "roj": "STS 2247/2026",
+    "resolution_number": "770/2026",
+    "appeal_number": "9205/2023",
+    "id_cendoj": "28079110012026100764"
+  },
+  "decision_date": "2026-05-20",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Rafael Sarazá Jimena",
+  "parties": [
+    {
+      "name": "Marcos, Carlota, Sabino, Luciano, Hugo, Azucena, Nieves, Julio, Rubén, Africa y demás socios personas físicas relacionados nominalmente en el encabezamiento (nombres anonimizados por el CENDOJ)",
+      "role": "parte recurrente"
+    },
+    {
+      "name": "Bufet Miralbell Guerin, SL",
+      "role": "parte recurrente"
+    },
+    {
+      "name": "Fútbol Club Barcelona",
+      "role": "parte recurrida"
+    },
+    {
+      "name": "Ministerio Fiscal",
+      "role": "ha sido parte"
+    }
+  ],
+  "facts": [
+    "El Departamento de Movilidad y Accesos del Fútbol Club Barcelona sospechó de la utilización recurrente de entradas manipuladas en las que constaba un código QR correspondiente al abono de un socio.",
+    "Los Departamentos de Ticketing, Área Social, Seguridad, Sistemas y Movilidad y Accesos del club planificaron un sistema de detección del fraude basado en la formación del personal y en la configuración de los tornos de acceso.",
+    "Los tornos se configuraron para emitir un color y un sonido distintos según el soporte del título de acceso: verde y sonido estándar para abono de plástico, APP del socio y entrada en formato Liga de Fútbol Profesional; naranja y sonido sostenido para la entrada en papel.",
+    "La alerta de fraude se activaba cuando una entrada en papel presuntamente falsificada generaba en el torno el color verde y el sonido estándar propios del abono de socio.",
+    "Las entradas manipuladas detectadas fueron retiradas en el control de acceso para su análisis posterior.",
+    "Todas las entradas retiradas se analizaron manualmente una por una para descartar falsos positivos e identificar al socio titular del abono cuyo código QR figuraba en ellas.",
+    "Los titulares de los abonos cuyo código QR se había incorporado a entradas en papel no asistieron al campo en los partidos correspondientes.",
+    "No consta que los socios afectados hubieran denunciado ante el club o ante la Policía, con anterioridad a los hechos, la pérdida o el robo de su abono.",
+    "Las entradas falsificadas se comercializaban mediante anuncios en diarios, plataformas digitales, internet o terceras personas, a precios que oscilaban entre 600 y 2.500 euros.",
+    "En las entradas retiradas constaba el precio de venta abonado por el comprador, y los Servicios de Seguridad recolocaron a los compradores detectados en otra localidad del estadio.",
+    "La Comisión de Disciplina del Fútbol Club Barcelona dictó el 17 de julio de 2018 resoluciones sancionadoras contra los socios afectados, entre ellas las de los expedientes NUM000, NUM001 y NUM002.",
+    "Los acuerdos sancionadores calificaron los hechos como infracción muy grave de los Estatutos del club e impusieron a los socios afectados la suspensión de la condición de socio por un periodo de hasta 18 meses o la expulsión del club.",
+    "Los socios sancionados fueron informados de los hechos mediante el pliego de cargos y se les concedió trámite de audiencia previo a la imposición de la sanción.",
+    "A tres socios (Víctor, Concepción y Juan Carlos) no se les entregó copia del expediente sancionador pese a haberla solicitado, mientras que los socios posteriormente recurrentes no llegaron a solicitar dicha copia.",
+    "La existencia de redes organizadas de venta de entradas falsificadas mediante inserción del código QR de abonos fue objeto de las Diligencias de Investigación n.º 623/2018 de la Fiscalía y de instrucción por el Juzgado de Instrucción n.º 1 de Barcelona."
+  ],
+  "procedural_posture": "El procurador D. Jordi Ribó Cladellas, en representación de D. Víctor, D.ª Concepción y D. Juan Carlos, interpuso demanda de juicio ordinario contra el Fútbol Club Barcelona solicitando la revocación de las resoluciones de la Comisión de Disciplina de 17 de julio de 2018 y de las sanciones impuestas; la demanda se presentó el 3 de septiembre de 2018 y se repartió al Juzgado de Primera Instancia núm. 7 de Barcelona con el núm. 644/2018. El procurador D. Ricard Simo Pascual, en representación de D. Gustavo y otros socios, presentó varias demandas de contenido idéntico que dieron lugar a los procedimientos ordinarios 881/2018 (JPI 21), 1001/2018 (JPI 42), 903/2018 (JPI 54), 907/2018 (JPI 55) y 875/2018 (JPI 4) de Barcelona, en las que además se pedía la nulidad de los arts. 10.4, 74.b) y 73.c) de los Estatutos y una indemnización de daños materiales y morales. El 20 de junio de 2019 se acordó la acumulación de todos esos procedimientos al ordinario 644/2018. El Fútbol Club Barcelona, representado por el procurador D. Pedro Larios Roura, contestó a las demandas pidiendo su desestimación con costas. El Juzgado de Primera Instancia núm. 7 de Barcelona dictó la sentencia 196/2020, de 17 de noviembre, que estimó íntegramente la demanda de D. Víctor, D.ª Concepción y D. Juan Carlos, revocó las resoluciones y sanciones dictadas en los expedientes NUM000, NUM001 y NUM002 con costas a la demandada, y desestimó íntegramente las demás demandas acumuladas, absolviendo a la demandada e imponiendo las costas a esos actores. La sentencia fue recurrida en apelación por la representación de D. Braulio y otros, oponiéndose el Fútbol Club Barcelona; la Sección Decimoséptima de la Audiencia Provincial de Barcelona tramitó el rollo 234/2021 y dictó la sentencia 467/2022, de 29 de septiembre, desestimatoria del recurso, con imposición de costas a la parte recurrente y pérdida del depósito. El procurador D. Ricard Simo Pascual, en representación de D. Braulio y otros, interpuso recurso extraordinario por infracción procesal (dos motivos, al amparo de los arts. 469.1.2.º y 469.1.4.º LEC) y recurso de casación (dos motivos, al amparo del art. 477.2.1.º LEC). Remitidas las actuaciones al Tribunal Supremo y personadas las partes, por auto de 17 de diciembre de 2025 se admitieron los recursos y se dio traslado a la parte recurrida para oposición. El Fútbol Club Barcelona se opuso a los recursos y el Ministerio Fiscal interesó su desestimación. Al no solicitarse vista pública, se señaló para votación y fallo el 14 de mayo de 2026, fecha en que tuvo lugar.",
+  "legal_issues": [
+    "Si la sentencia recurrida infringió el art. 217.3 LEC sobre carga de la prueba al fundar su decisión en el principio de «base razonable» aplicable al control de las sanciones asociativas.",
+    "Si la valoración probatoria de la audiencia provincial fue ilógica, irracional o arbitraria hasta el punto de vulnerar el derecho a la tutela judicial efectiva del art. 24 CE.",
+    "Si puede tomarse en consideración lo constatado en una investigación penal iniciada con posterioridad a la imposición de las sanciones para confirmar la existencia de redes organizadas.",
+    "Si la falta de entrega de oficio de copia del expediente sancionador vulnera el art. 21.c) LODA y el art. 22 CE cuando el socio sancionado no llegó a solicitarla.",
+    "Si es relevante, a efectos de infracción del derecho de asociación, la mera predisposición del club a no entregar copia del expediente cuando no se ha materializado en una negativa a una solicitud concreta.",
+    "Si la conducta sancionada estaba tipificada en los arts. 74.c), g) y l) de los Estatutos del club o si, por el contrario, era atípica, con infracción del art. 21.a) LODA y del art. 22 CE.",
+    "Cuál es el alcance del control judicial sobre los acuerdos sancionadores de una asociación y su relación con el derecho de autoorganización asociativa."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Artículo 217.3 de la Ley de Enjuiciamiento Civil",
+      "note": "La Sala recuerda que las reglas de carga de la prueba solo se infringen cuando la sentencia atribuye las consecuencias de la falta de prueba a la parte que no la soportaba; aquí no fue aplicado ni debió serlo, porque la decisión se basó en hechos declarados probados."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 469.1.4.º de la Ley de Enjuiciamiento Civil",
+      "note": "Cauce del segundo motivo de infracción procesal: solo prospera si el error o la arbitrariedad en la valoración de la prueba alcanzan relevancia constitucional."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 24 de la Constitución Española",
+      "note": "Estándar de tutela judicial efectiva exigible para revisar la valoración de la prueba; la Sala aprecia que la valoración conjunta de la audiencia se ajusta a parámetros de racionalidad."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 22 de la Constitución Española",
+      "note": "Derecho de asociación invocado como infringido en ambos motivos de casación; la Sala concluye que no resultó vulnerado."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 21.c) de la Ley Orgánica 1/2002, de 22 de marzo, reguladora del Derecho de Asociación",
+      "note": "Derecho del asociado a ser oído previamente y a ser informado de los hechos, con acuerdo motivado; se cumplió mediante pliego de cargos, trámite de audiencia y resolución motivada, sin que exija remisión de oficio del expediente."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 21.a) de la Ley Orgánica 1/2002, de 22 de marzo, reguladora del Derecho de Asociación",
+      "note": "Derecho de participación del asociado; la Sala cuestiona su encaje con la denuncia de atipicidad y descarta que la conducta sancionada fuera atípica."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 74, apartados c), g) y l), de los Estatutos del Fútbol Club Barcelona",
+      "note": "Tipos de infracción muy grave aplicados: cesión onerosa de título con intermediación de redes organizadas o internet, acción u omisión contraria a los Estatutos que cause perjuicios de consideración, e infracción de las normas sobre sistema de venta de entradas y separación de aficiones."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 10.4, último inciso, de los Estatutos del Fútbol Club Barcelona",
+      "note": "Prohibición expresa de la cesión onerosa por los socios abonados del derecho a asistir a acontecimientos deportivos, salvo cesión a través del propio club o a su favor."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 69.3 de los Estatutos del Fútbol Club Barcelona",
+      "note": "Responsabilidad del socio cedente, como colaborador necesario, por las infracciones cometidas por el cesionario; sustenta la irrelevancia del precio concreto de la cesión."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 77, apartados a) y d), de los Estatutos del Fútbol Club Barcelona",
+      "note": "Presunción de veracidad del informe de seguridad y trámite de audiencia previo a la sanción."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STC 55/2001, de 26 de febrero",
+      "note": "Requisitos del error patente con relevancia constitucional: inmediatamente verificable de forma incontrovertible a partir de las actuaciones, por conclusión absurda o contraria a la lógica y la experiencia."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STC 218/1988, de 22 de diciembre",
+      "note": "Los estatutos pueden establecer como causa de expulsión una conducta que la propia asociación valore como lesiva a los intereses sociales, dada la solidaridad moral del vínculo asociativo."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 358/2020, de 24 de junio",
+      "note": "En procesos sobre derechos fundamentales no cabe desvirtuar la naturaleza del recurso obviando los hechos probados ni pretendiendo una nueva valoración conjunta de la prueba."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "Jurisprudencia de la Sala Primera del Tribunal Supremo sobre control de los acuerdos de las asociaciones, citada en la sentencia recurrida",
+      "note": "Admite normas estatutarias sancionadoras más abiertas que las penales o administrativas y limita el control judicial a la existencia de una «base razonable», respetadas las reglas de competencia y forma."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 398.1 y 394.1 de la Ley de Enjuiciamiento Civil",
+      "note": "Fundamento de la imposición de las costas de ambos recursos a los recurrentes."
+    },
+    {
+      "type": "norma",
+      "ref": "Disposición adicional 15.ª, apartado 9, de la Ley Orgánica del Poder Judicial",
+      "note": "Fundamento de la pérdida de los depósitos constituidos para recurrir."
+    }
+  ],
+  "cited_by_parties": [
+    "Artículo 469.1.2.º de la Ley de Enjuiciamiento Civil, como cauce del primer motivo de infracción procesal",
+    "Artículo 477.2.1.º de la Ley de Enjuiciamiento Civil, como cauce de ambos motivos de casación",
+    "Acuerdo del Pleno no jurisdiccional de la Sala Primera del Tribunal Supremo de 27 de enero de 2017 sobre criterios de admisión de los recursos de casación y extraordinario por infracción procesal",
+    "Artículo 73.h) de los Estatutos del Fútbol Club Barcelona, invocado por los recurrentes para definir el carácter oneroso de la cesión",
+    "Artículo 74.b) de los Estatutos del Fútbol Club Barcelona, cuya nulidad se pidió en las demandas acumuladas",
+    "Artículo 73.c) de los Estatutos del Fútbol Club Barcelona, cuya nulidad se pidió en las demandas acumuladas",
+    "Normativa de Condiciones Generales de la Contratación y de Consumidores, invocada en las demandas acumuladas",
+    "Código Civil, invocado genéricamente en las demandas acumuladas",
+    "Artículo 576 de la Ley de Enjuiciamiento Civil, invocado en las demandas para los intereses de las cantidades reclamadas",
+    "Artículo 11, apartados 1 y 2, de los Estatutos del Fútbol Club Barcelona, considerado infringido en los acuerdos sancionadores del club"
+  ],
+  "holding": "La Sala desestima el recurso extraordinario por infracción procesal y el recurso de casación interpuestos por D. Braulio y otros contra la sentencia 467/2022, de 29 de septiembre, de la Sección Decimoséptima de la Audiencia Provincial de Barcelona, dictada en el recurso de apelación núm. 234/2021, que queda confirmada. Condena a los recurrentes al pago de las costas de ambos recursos y acuerda la pérdida de los depósitos constituidos.",
+  "ratio_summary": [
+    "El art. 217 LEC solo se infringe cuando la sentencia resuelve por falta de prueba de un hecho relevante y atribuye sus consecuencias a la parte que no soportaba la carga; si la decisión se apoya en hechos declarados probados, la norma no ha sido aplicada ni debía serlo.",
+    "Afirmar que el socio debió probar que el informe de seguridad estaba errado no equivale a resolver por falta de prueba, sino a constatar la existencia de prueba de los hechos relevantes no desvirtuada por la parte contraria.",
+    "La revisión de la valoración probatoria en el recurso extraordinario por infracción procesal exige un error patente, inmediatamente verificable y de relevancia constitucional, o una arbitrariedad que convierta la decisión en simple expresión de voluntad; la discrepancia con la valoración conjunta no basta.",
+    "No cabe una tercera instancia: el recurso extraordinario parte del respeto a los hechos probados en la instancia y no permite una nueva valoración conjunta de la prueba documental y testifical.",
+    "El art. 21.c) LODA se satisface informando al socio de los hechos mediante el pliego de cargos, concediéndole audiencia previa y motivando el acuerdo sancionador; no impone al club remitir de oficio copia del expediente disciplinario.",
+    "Solo la negativa efectiva a una solicitud de copia del expediente puede lesionar el derecho de asociación; la mera predisposición del club a no entregarla es irrelevante si el socio no llegó a pedirla.",
+    "El derecho de autoorganización justifica que los tipos sancionadores estatutarios sean más abiertos que los penales o administrativos, dejando margen de apreciación a los órganos asociativos, sin que ello permita espacios de arbitrariedad.",
+    "El control judicial de las sanciones asociativas se limita a verificar la competencia, la forma del expediente y la existencia de una base razonable; ceder el abono para falsificar entradas vendidas por redes organizadas constituye base razonable para sancionar conforme al art. 74 c), g) y l) de los Estatutos."
+  ],
+  "uncertainties": [
+    "En el fundamento de derecho cuarto la Sala concluye analizando el art. 21.c) LODA pero, al razonar sobre la copia del expediente, se refiere a la infracción del «art. 21.d) LODA»; el documento no aclara si se trata de una remisión distinta o de un lapsus, lo que deja abierta la identificación exacta del precepto examinado.",
+    "Los acuerdos sancionadores se describen primero como tipificados en el art. 74 apartado c) «en relación con los apartados g) y h)» y a continuación como constitutivos de infracción muy grave de los apartados c), g) y l) del art. 74, sin que el documento aclare cuál fue el marco típico definitivo.",
+    "No consta el número exacto de socios recurrentes ni qué sanción concreta (suspensión de hasta 18 meses o expulsión) recayó sobre cada uno de ellos.",
+    "El documento no expone el resultado de las Diligencias de Investigación n.º 623/2018 de la Fiscalía ni de la instrucción del Juzgado de Instrucción n.º 1 de Barcelona, invocadas como corroboración de la existencia de redes organizadas.",
+    "La sentencia no razona de forma autónoma sobre las pretensiones de nulidad de los arts. 10.4, 74.b) y 73.c) de los Estatutos y de indemnización de daños formuladas en las demandas acumuladas, más allá de la desestimación global de los recursos.",
+    "No se precisa si la parte recurrente Bufet Miralbell Guerin, SL intervenía como socio sancionado o en otra condición, ni el alcance de su interés en el litigio."
+  ],
+  "document_quality_notes": [
+    "El texto incorpora numeración de página y la marca de agua «JURISPRUDENCIA» intercaladas en el cuerpo de la resolución, fragmentando párrafos.",
+    "Anonimización inconsistente: la parte recurrente figura mediante centenares de nombres de pila anonimizados y los expedientes disciplinarios como NUM000, NUM001 y NUM002, mientras se identifican con nombre completo el club demandado, los procuradores, los letrados y los magistrados.",
+    "Inconsistencia interna en la identificación de los tres demandantes cuya pretensión fue estimada: el antecedente y el fundamento primero los designan como Víctor, Concepción y Juan Carlos, pero un pasaje del mismo fundamento se refiere a «los Sres. Víctor Juan Carlos y la Sra. Candida».",
+    "Discrepancia entre la cita de los apartados del art. 74 de los Estatutos («c), g) y h)» frente a «c), g) y l)») dentro del propio fundamento de derecho primero.",
+    "Erratas y palabras unidas atribuibles a la transcripción: «ad quemde la sentencia», «es art. 24.CE», «resulta de la prueba que totalmente lo contrario», «al principios de legalidad y tipicidad».",
+    "Referencia inconsistente a la parte recurrente, enumerada nominalmente en el encabezamiento pero designada como «D. Braulio y otros» en la tramitación de la segunda instancia y en el fallo, y como «D. Gustavo y otros socios» en el antecedente de hecho primero.",
+    "El fundamento de derecho primero afirma que la prueba de los hechos relevantes «no ha sido desvirtuada por los demandados», cuando la posición procesal de quienes debían desvirtuarla corresponde a los demandantes."
+  ],
+  "next_review_questions": [
+    "¿Debe entenderse que la referencia al art. 21.d) LODA en el fundamento cuarto es un error material por art. 21.c) LODA, o alude a un derecho distinto del asociado?",
+    "¿Cuáles fueron finalmente los apartados del art. 74 de los Estatutos aplicados en cada acuerdo sancionador: c), g) y h) o c), g) y l)?",
+    "¿Cuántos socios integran la parte recurrente y qué sanción concreta se impuso a cada uno de ellos?",
+    "¿En qué condición interviene Bufet Miralbell Guerin, SL como parte recurrente y cuál es su relación con los socios sancionados?",
+    "¿Qué contenido y resultado tuvieron las Diligencias de Investigación n.º 623/2018 de la Fiscalía y la instrucción del Juzgado de Instrucción n.º 1 de Barcelona?",
+    "¿Qué suerte corrieron en las instancias las pretensiones de nulidad de los arts. 10.4, 74.b) y 73.c) de los Estatutos y las de indemnización de daños materiales y morales?",
+    "¿Cuáles son las sentencias concretas de la Sala Primera sobre control de acuerdos asociativos reproducidas por la sentencia recurrida y asumidas por la Sala?",
+    "¿Coincide el texto íntegro de la sentencia 467/2022 de la Audiencia Provincial de Barcelona con los pasajes parcialmente transcritos en esta resolución?"
+  ]
+}

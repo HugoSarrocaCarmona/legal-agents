@@ -1,0 +1,188 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2026:438",
+    "roj": "STS 438/2026",
+    "resolution_number": "263/2026",
+    "appeal_number": "1457/2024",
+    "id_cendoj": "28079110012026100178"
+  },
+  "decision_date": "2026-02-18",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Pedro José Vela Torres",
+  "parties": [
+    {
+      "name": "Agencia Estatal de la Administración Tributaria",
+      "role": "Parte recurrente en casación, representada y defendida por el Abogado del Estado; personada en el concurso en calidad de interesado y opositora a la exoneración"
+    },
+    {
+      "name": "D. Eulogio",
+      "role": "Parte recurrida; deudor concursado solicitante de la exoneración del pasivo insatisfecho"
+    },
+    {
+      "name": "Tesorería General de la Seguridad Social",
+      "role": "Parte recurrida, representada y defendida por la Letrada de la Administración de la Seguridad Social; acreedora personada en el concurso"
+    }
+  ],
+  "facts": [
+    "D. Eulogio, persona natural con DNI NUM000, se encontraba en estado de insolvencia acreditado.",
+    "El deudor mantenía deudas pendientes con la Agencia Estatal de la Administración Tributaria (AEAT) y con la Tesorería General de la Seguridad Social (TGSS).",
+    "La TGSS cifró la parte exonerable de su crédito en 8.456,25 € y consideró no exonerable un importe de 3.456,24 €, correspondiente a crédito privilegiado general.",
+    "Según certificación de la Agencia Tributaria, se había dictado un acuerdo de derivación de responsabilidad frente al deudor conforme al art. 43.1.a) de la Ley General Tributaria.",
+    "La derivación de responsabilidad tributaria se fundó en la condición del deudor de administrador de una entidad deudora.",
+    "No consta que el deudor hubiera sido sancionado por resolución administrativa firme por una infracción tributaria muy grave.",
+    "No consta acreditado que el acuerdo de derivación de responsabilidad trajera causa de una conducta fraudulenta del deudor equiparable a las merecedoras de sanción por infracción muy grave.",
+    "Conforme a la manifestación del propio deudor y a la averiguación patrimonial practicada de oficio, su situación patrimonial permitió calificar la insolvencia como concurso sin masa por insuficiencia de masa activa.",
+    "El deudor conservó las facultades de administración y disposición sobre la masa activa, si la hubiera, por el carácter voluntario del concurso.",
+    "Contra el deudor se seguía un procedimiento de ejecución de títulos no judiciales núm. 79/2015 ante el Juzgado de Primera Instancia e Instrucción n.º 2 de Soria."
+  ],
+  "procedural_posture": "La procuradora D.ª Elena Margarita Lavilla Campo, en nombre de D. Eulogio, presentó el 2 de febrero de 2023 solicitud de concurso voluntario de acreedores con petición de conclusión simultánea por insuficiencia de masa activa y de exoneración del pasivo insatisfecho; la solicitud se repartió al Juzgado de Primera Instancia e Instrucción n.º 2 de Soria y se registró como Concurso Abreviado núm. 60/2023. Admitida a trámite, por auto de 8 de febrero de 2023 se declaró en concurso voluntario al deudor, se calificó como concurso sin masa con llamamiento edictal a los acreedores que representaran al menos el cinco por ciento del pasivo a efectos del art. 37 ter TRLC, se ordenó la suspensión de la ejecución de títulos no judiciales 79/2015 respecto del concursado y se difirió la exoneración del pasivo insatisfecho a su momento procesal oportuno. El Abogado del Estado se personó en representación de la AEAT en calidad de interesado. El 9 de marzo de 2023 la representación de D. Eulogio solicitó la exoneración del pasivo insatisfecho y se confirió traslado a los acreedores personados; el Abogado del Estado presentó escrito de oposición y el Letrado de la Administración de la Seguridad Social se personó por la TGSS interesando que la exoneración se limitara a 8.456,25 €, con declaración de no exonerable de 3.456,24 € por crédito privilegiado general del art. 280.4 TRLC. Se abrió el incidente concursal núm. 3/2023, se admitió la demanda y se emplazó a D. Eulogio, que contestó reiterando la concesión de la exoneración; la TGSS contestó solicitando que se desestimara el planteamiento de cuestión prejudicial ante el Tribunal de Justicia de la Unión Europea y que no se suspendiera el procedimiento concursal, y subsidiariamente la limitación de la exoneración. La magistrada-juez del Juzgado de Primera Instancia e Instrucción n.º 2 de Soria dictó en el incidente concursal 3/2023 sentencia n.º 10012/2023, de 1 de septiembre, que acordó la conclusión del concurso y concedió provisionalmente al concursado el beneficio de la exoneración del pasivo insatisfecho con los límites del art. 489 TRLC frente a la AEAT y a la TGSS, fijando en 8.456,25 € el alcance de la exoneración respecto de la TGSS y en 3.456,24 € la deuda no exonerable; respecto de las deudas tributarias apreció la existencia de una derivación de responsabilidad y la concurrencia de la excepción del art. 487.1.2 TRLC. La sentencia fue recurrida en apelación por la representación de D. Eulogio, que pidió la exoneración total de la deuda tributaria, y por el Abogado del Estado, que alegó que toda la deuda provenía del supuesto por el que se había apreciado la excepción. La Sección 1.ª de la Audiencia Provincial de Soria tramitó el rollo de apelación núm. 355/2023 y dictó sentencia núm. 8/2024, de 15 de enero, que desestimó ambos recursos y confirmó la resolución de instancia sin especial pronunciamiento sobre las costas de la alzada, al considerar que no constaba que el deudor hubiera sido sancionado por una infracción muy grave y que procedía la exoneración con la extensión del art. 489.1.5.º TRLC. El Abogado del Estado, en representación de la AEAT, interpuso recurso de casación con un único motivo por infracción del art. 487.1.2 TRLC. Remitidas las actuaciones a la Sala Primera del Tribunal Supremo y emplazadas y personadas las partes, por auto de 12 de noviembre de 2025 se admitió el recurso. Se dio traslado a las partes recurridas para oposición, que formalizó la representación de D. Eulogio; la TGSS dejó transcurrir el plazo sin hacerlo. Al no solicitarse la celebración de vista pública, se señaló para votación y fallo el 29 de enero de 2026, en que tuvo lugar.",
+  "legal_issues": [
+    "Si el párrafo primero del art. 487.1.2.º TRLC contiene un único supuesto de exclusión de la exoneración (la sanción firme por infracción muy grave) o dos supuestos autónomos, incluyendo el acuerdo firme de derivación de responsabilidad.",
+    "Si la verificación de la concurrencia de las causas de exclusión de la buena fe del art. 487.1 TRLC corresponde de oficio al juez del concurso y con qué límites puede apreciarla el tribunal de apelación.",
+    "Si la causa de exclusión consistente en un acuerdo firme de derivación de responsabilidad está debidamente justificada conforme al art. 23 de la Directiva (UE) 2019/1023 y al principio de proporcionalidad.",
+    "Si el acuerdo de derivación de responsabilidad tributaria puede equipararse a una sanción por conducta infractora o constituye un mecanismo de garantía de naturaleza distinta.",
+    "Si, apreciada la existencia de un acuerdo de derivación de responsabilidad, procede denegar la exoneración sin necesidad de valorar los límites del art. 489 TRLC.",
+    "Si procede imponer las costas del recurso de casación desestimado cuando concurren dudas de derecho por inexistencia de jurisprudencia sobre la materia."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Art. 486 TRLC",
+      "note": "Presupuesto de la exoneración: el deudor concursado persona natural ha de ser deudor de buena fe."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 487.1 TRLC",
+      "note": "Enumeración taxativa de requisitos negativos o causas de exclusión de la condición de deudor de buena fe; la Sala la considera lista bien definida a efectos de la Directiva."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 487.1.2.º TRLC",
+      "note": "Precepto denunciado como infringido; su párrafo primero prevé dos conductas: sanción administrativa firme por infracción muy grave y acuerdo firme de derivación de responsabilidad. La Sala concluye que el segundo inciso carece de justificación proporcionada cuando no consta conducta fraudulenta."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 498.2 TRLC",
+      "note": "Exoneración con plan de pagos: el juez concede o deniega previa verificación de la concurrencia de los presupuestos y requisitos legales, consten o no en las alegaciones de los acreedores."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 502.1 TRLC",
+      "note": "Exoneración con liquidación de la masa activa: impone al juez un examen de oficio de los presupuestos y requisitos aunque no haya oposición o exista conformidad de los acreedores."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 465.5 LEC",
+      "note": "Limita el ámbito de apreciación del tribunal de apelación: si nadie impugna el extremo en apelación, no puede apreciarlo de oficio."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 23.1 y 23.2 de la Directiva (UE) 2019/1023, sobre marcos de reestructuración preventiva y exoneración de deudas",
+      "note": "Permite a los Estados miembros denegar o restringir el acceso a la exoneración por actuación deshonesta o de mala fe y en excepciones debidamente justificadas; incluye la obligación del art. 20.1 de garantizar acceso a un procedimiento de plena exoneración."
+    },
+    {
+      "type": "norma",
+      "ref": "Ley 16/2022, de 5 de septiembre (preámbulo y trabajos preparatorios)",
+      "note": "Norma de trasposición de la Directiva que dio su redacción actual al art. 487.1.2.º TRLC; la Sala constata que ni el preámbulo ni el proceso legislativo aportan justificación de la causa de exclusión examinada."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 178 bis.3, ordinales 1.º y 2.º, de la Ley Concursal, y art. 487.2 TRLC en su redacción original",
+      "note": "Antecedentes normativos empleados para identificar la justificación común (componente fraudulento) de las causas de exclusión recogidas hoy en los ordinales 1.º y 2.º del art. 487.1 TRLC."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 191.4, 192.4 y 193 de la Ley General Tributaria",
+      "note": "Citados como ejemplos de que la infracción tributaria muy grave entraña por regla general el empleo de medios fraudulentos, lo que justifica la exclusión de la exoneración."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 23 del Real Decreto Legislativo 5/2000, de 4 de agosto, texto refundido de la Ley sobre Infracciones y Sanciones en el Orden Social",
+      "note": "Las infracciones muy graves de Seguridad Social implican fraude o mal uso del sistema, lo que afecta a su financiación y a los derechos de los trabajadores."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 43.1.a) de la Ley General Tributaria",
+      "note": "Precepto conforme al cual, según la certificación de la Agencia Tributaria, se derivó la responsabilidad al deudor; la Sala constata que no acredita por sí solo una conducta fraudulenta."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 398.1 LEC, por remisión al art. 394.1 LEC",
+      "note": "Permite no imponer las costas del recurso desestimado cuando concurren serias dudas de derecho, apreciadas aquí por inexistencia de jurisprudencia previa sobre la materia."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE (Sala 2.ª) de 7 de noviembre de 2024, asuntos acumulados C-289/23 (Corván) y C-305/23 (Bacigán)",
+      "note": "Interpreta el art. 23.2 de la Directiva: la lista de excepciones no es exhaustiva, pero las circunstancias han de estar bien definidas, las excepciones debidamente justificadas por un interés público legítimo deducible del Derecho nacional y respetuosas con el principio de proporcionalidad."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 315/2020 y 316/2020, ambas de 17 de junio, y 1578/2025, de 4 de noviembre",
+      "note": "Doctrina de la propia Sala según la cual los acuerdos de derivación de responsabilidad no son equiparables a una sanción, por lo que el crédito correspondiente no se subordina en el concurso del administrador."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 24 de febrero de 2022, Agenzia delle dogane e dei monopoli y Ministero dell'Economia e delle Finanze, C-452/20",
+      "note": "Citada dentro del pasaje reproducido de la STJUE de 7 de noviembre de 2024 como fundamento del principio de proporcionalidad: la medida nacional no debe exceder lo apropiado y necesario para lograr los objetivos legítimamente perseguidos."
+    }
+  ],
+  "cited_by_parties": [
+    "Art. 280.4 TRLC, invocado por la TGSS para calificar como no exonerable el crédito privilegiado general de 3.456,24 €.",
+    "Art. 490.2 TRLC, invocado por la TGSS sobre las acciones que pueden iniciar los acreedores cuya deuda no ha sido exonerada.",
+    "Art. 489 TRLC y art. 489.1.5.º TRLC, límites de la exoneración aplicados en la instancia y en la apelación; la AEAT sostuvo que no procedía valorarlos y la Sala no funda en ellos su decisión.",
+    "Art. 37 ter TRLC, mencionado en el auto de declaración de concurso para el llamamiento a los acreedores en el concurso sin masa.",
+    "Planteamiento de cuestión prejudicial ante el Tribunal de Justicia de la Unión Europea, propuesto en el incidente concursal y cuya desestimación interesó la TGSS con carácter subsidiario; la Sala no lo aborda."
+  ],
+  "holding": "La Sala desestima el recurso de casación interpuesto por el Abogado del Estado, en representación de la Agencia Estatal de la Administración Tributaria, contra la sentencia núm. 8/2024, de 15 de enero, dictada por la Sección 1.ª de la Audiencia Provincial de Soria en el recurso de apelación núm. 355/2023, que queda por tanto confirmada, manteniéndose la exoneración del pasivo insatisfecho concedida al deudor. No hace expresa imposición de las costas del recurso de casación, al apreciar dudas de derecho por inexistencia de jurisprudencia sobre la materia. Ordena librar certificación al tribunal de procedencia con devolución de los autos y del rollo de Sala. El fallo no contiene pronunciamiento sobre depósito para recurrir.",
+  "ratio_summary": [
+    "La buena fe del art. 486 TRLC es una noción normativa: el art. 487.1 TRLC enumera de forma taxativa los requisitos negativos o causas de exclusión cuya concurrencia deslegitima al deudor para obtener la exoneración del pasivo insatisfecho.",
+    "La carga de aportar la información necesaria para verificar el presupuesto subjetivo corresponde al deudor instante de la exoneración, sin perjuicio de la facultad del juez de requerir explicaciones o ampliación de información y documentación cuando la aprecie insuficiente.",
+    "La verificación de las causas de exclusión del art. 487.1 TRLC no se supedita a la oposición de acreedor alguno: los arts. 498.2 y 502.1 TRLC imponen al juez del concurso un examen de oficio aun mediando conformidad de la administración concursal o de los acreedores.",
+    "El tribunal de apelación queda limitado por el art. 465.5 LEC: si nadie impugna en apelación la concurrencia de una causa de exclusión, no puede apreciarla de oficio.",
+    "Conforme a la STJUE de 7 de noviembre de 2024 (C-289/23 y C-305/23), la lista del art. 23.2 de la Directiva 2019/1023 no es taxativa, pero las excepciones nacionales deben estar bien definidas, debidamente justificadas por un interés público legítimo y respetar el principio de proporcionalidad.",
+    "Ni el preámbulo de la Ley 16/2022 ni los anteproyectos, el proyecto de ley o su tramitación parlamentaria aportan justificación alguna de la causa de exclusión del art. 487.1.2.º TRLC, por lo que la justificación debe buscarse en la naturaleza y finalidad de la institución.",
+    "La justificación común de los ordinales 1.º y 2.º del art. 487.1 TRLC es el componente fraudulento: la infracción tributaria o de Seguridad Social muy grave presupone engaño o negligencia grave que hace desmerecer al deudor del crédito público y de la segunda oportunidad.",
+    "El acuerdo firme de derivación de responsabilidad no es una sanción sino un mecanismo de garantía; mientras no conste que trae causa de una conducta fraudulenta equiparable a la sancionada como muy grave, esa excepción carece de justificación proporcionada y no resulta aplicable."
+  ],
+  "uncertainties": [
+    "El apartado 4 del fundamento segundo afirma que la Agencia Tributaria hizo valer como causa de oposición «la concurrencia de una sanción tributaria por una infracción muy grave», mientras el resto de la resolución y el fallo se construyen sobre la premisa de que la causa invocada fue el acuerdo firme de derivación de responsabilidad; no queda determinado cuál fue realmente la causa de oposición formulada.",
+    "El apartado 9 del fundamento segundo concluye que «carece de efecto útil la infracción legal antes apreciada», sin que la sentencia identifique con claridad qué infracción legal se tiene por apreciada ni respecto de qué resolución, dado que el recurso se desestima.",
+    "No consta el importe total del crédito de la AEAT frente al deudor ni el alcance concreto de la exoneración finalmente reconocida respecto de la deuda tributaria.",
+    "No consta la fecha del acuerdo de derivación de responsabilidad ni la identidad de la entidad deudora de la que el Sr. Eulogio era administrador, datos relevantes para verificar el cómputo del plazo de diez años anteriores a la solicitud.",
+    "La sentencia de primera instancia concede la exoneración «provisionalmente» con los límites del art. 489 TRLC, sin que se aclare si la exoneración se tramitó con plan de pagos (art. 498 TRLC) o con liquidación de la masa activa (art. 502 TRLC), pese a que la Sala invoca ambos regímenes.",
+    "El recurso de apelación del deudor, que pretendía la exoneración total de la deuda tributaria, fue desestimado y no consta que interpusiera recurso de casación, por lo que no se aclara la situación final de la parte de deuda no exonerada.",
+    "No se precisa el efecto de la doctrina sentada sobre el pronunciamiento relativo a la deuda no exonerable de la TGSS (3.456,24 €), que se mantiene confirmado sin análisis específico en casación."
+  ],
+  "document_quality_notes": [
+    "Artefactos de OCR en la cabecera con caracteres espaciados y líneas fusionadas: «T R I B U N A L S U P R E M O Sala de lo Civil» y «F A L L O».",
+    "Campos de cabecera encadenados en una misma línea con contenido vacío: «Número del procedimiento: 1457/2024 Fallo/Acuerdo:» y «Letrada de la Administración de Justicia: Ilma. Sra. Dña. Mª Teresa Rodríguez Valls Transcrito por: MAJ Nota:».",
+    "Pérdida sistemática de espacios tras signos de puntuación por la digitalización: «la exoneración,hubiera sido sancionado», «derivación de responsabilidad,salvo que», «taxativamente (numerus clausus),sin apelación», «De talforma que mientras».",
+    "Caracteres espurios introducidos por el OCR en lugar de comillas o guiones: «El nivel social y profesional del deudor.?» y «lograr ?los objetivos legítimamente perseguidos».",
+    "Referencias bibliográficas deformadas por fusión de palabras: «BOCGCongreso» en lugar de «BOCG-Congreso», que aparece correctamente escrito en otros pasajes del mismo fundamento.",
+    "Errata semántica: «tras la forma introducida por la Ley 16/2022» donde debe leerse «tras la reforma introducida por la Ley 16/2022».",
+    "Inconsistencia interna en el número de rollo de apelación: el auto de admisión de 12 de noviembre de 2025 lo cita como «n.º 335/2023», mientras el antecedente segundo, el fundamento primero y el fallo lo identifican como 355/2023.",
+    "Inconsistencia interna en la identificación del procedimiento de origen: el encabezamiento y el auto de admisión hablan del «incidente concursal núm. 60/2023», cuando 60/2023 es el número del Concurso Abreviado y el incidente concursal es el núm. 3/2023, según los antecedentes de hecho.",
+    "Denominación variable del órgano de instancia: «Juzgado de Primera Instancia n.º 2 de Soria» en el encabezamiento y en el fallo de apelación transcrito, frente a «Juzgado de Primera Instancia e Instrucción n.º 2 de Soria» en los antecedentes.",
+    "Numeración anómala de la sentencia de instancia, identificada como «sentencia n.º 10012/2023, de 1 de septiembre», formato incoherente con la numeración correlativa habitual.",
+    "Duplicación casi literal de contenido: los apartados 9 y 10 del fundamento segundo reproducen el mismo razonamiento («De tal forma que mientras no conste acreditado que el acuerdo de derivación de responsabilidad trae causa de una conducta fraudulenta...»), con variantes menores de redacción y de cita del precepto.",
+    "Cita variable del mismo precepto: «artículo 487.1.2 TRLC» en el antecedente tercero, «art. 487.1.2º TRLC» en el fundamento segundo, «art. 487.1. 2º» y «art. 487.1 TRLC» en los apartados 9 y 10 para referirse al mismo inciso.",
+    "Nombre de la procuradora del deudor consignado de tres formas distintas: «D.ª Elena Lavilla Campo» en el encabezamiento, «D.ª Elena Margarita Lavilla Campo» en los antecedentes y «ELENA LAVILA CAMPO» (con errata) en la transcripción del auto de declaración de concurso.",
+    "Incoherencia aparente en el auto de declaración de concurso, que ordena «Oficiar al Juzgado de Primera Instancia e Instrucción número 2 de Soria» para suspender la ejecución 79/2015, siendo ese mismo el juzgado que dicta la resolución.",
+    "Anonimización inconsistente: se anonimiza al deudor («D. Eulogio») y su documento de identidad («NUM000»), pero se identifican con nombre y apellidos completos los magistrados, la letrada de la Administración de Justicia, la procuradora y el letrado del deudor, y se mantienen sin anonimizar los importes exactos de la deuda con la TGSS.",
+    "Errores de transcripción en los escritos reproducidos: «se sirva dicta auto» y «se sirva dicta resolución» (por «dicte»), y «los tramites legalmente establecidos» sin tilde.",
+    "El campo de cabecera «Resoluciones del caso» cita «SAP SO 25/2024» (identificador Roj) mientras el cuerpo identifica la sentencia recurrida como núm. 8/2024, de 15 de enero: son dos sistemas de numeración distintos referidos a la misma resolución, no una contradicción.",
+    "Numeración de páginas del PDF intercalada en el texto («1», «2», «3»...) junto al encabezado repetido «JURISPRUDENCIA», que fragmenta párrafos y citas normativas.",
+    "Inconsistencia tipográfica en la numeración de ordinales dentro de la cita legal reproducida del art. 487.1 TRLC: «1.º», «2.º» con punto en los dos primeros y «3º», «4º», «5º», «6º» sin él en los restantes."
+  ],
+  "next_review_questions": [
+    "¿Cuál fue exactamente la causa de oposición formulada por la AEAT en el incidente concursal: una sanción firme por infracción tributaria muy grave o el acuerdo firme de derivación de responsabilidad del art. 43.1.a) LGT?",
+    "¿A qué «infracción legal antes apreciada» se refiere el apartado 9 del fundamento segundo y qué consecuencia tiene sobre la ratio decidendi del fallo desestimatorio?",
+    "¿Cuáles son la fecha, el contenido y la firmeza del acuerdo de derivación de responsabilidad certificado por la Agencia Tributaria, y se sitúa dentro de los diez años anteriores a la solicitud de exoneración?",
+    "¿Cuál es el importe total del crédito de la AEAT y qué parte quedó finalmente exonerada tras la confirmación de la sentencia de apelación?",
+    "¿El rollo de apelación es el 355/2023 o el 335/2023, y el procedimiento de origen el incidente concursal 3/2023 o el concurso abreviado 60/2023?",
+    "¿La exoneración se tramitó por la vía del plan de pagos (art. 498 TRLC) o por la de liquidación de la masa activa (art. 502 TRLC), y qué implicación tiene ello sobre el carácter provisional de la concesión?",
+    "¿Consta en las actuaciones la identidad de la sociedad respecto de la que se derivó la responsabilidad al Sr. Eulogio y documentación sobre el origen y la naturaleza de la deuda tributaria derivada?",
+    "¿Se ha dictado alguna resolución de aclaración o rectificación respecto de la duplicación de los apartados 9 y 10 del fundamento de derecho segundo?"
+  ]
+}

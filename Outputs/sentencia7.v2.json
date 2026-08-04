@@ -1,0 +1,223 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2025:5480",
+    "roj": "STS 5480/2025",
+    "resolution_number": "1786/2025",
+    "appeal_number": "9452/2022",
+    "id_cendoj": "28079119912025100036"
+  },
+  "decision_date": "2025-12-04",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 991. Sede: Madrid",
+  "ponente": "Pedro José Vela Torres",
+  "parties": [
+    {
+      "name": "D.ª Paloma",
+      "role": "recurrente en casación"
+    },
+    {
+      "name": "Caja Rural de Almendralejo, S.C.C.",
+      "role": "parte recurrida"
+    }
+  ],
+  "facts": [
+    "El 7 de marzo de 2011 se firmó un préstamo hipotecario entre D.ª Paloma y Caja Rural de Almendralejo, Sociedad Cooperativa de Crédito.",
+    "La cláusula financiera tercera del préstamo incorporaba un límite mínimo al tipo de interés (cláusula suelo) del 1,90 % nominal anual.",
+    "Conforme a esa cláusula, el tipo aplicable a cada periodo no podía ser inferior al 1,90 %, ya resultara de la referencia inicial o de los índices sustitutivos previstos.",
+    "La prestataria intervino en la contratación con la condición de consumidora frente a la entidad financiera predisponente.",
+    "La cláusula suelo fue aplicada por la entidad, que percibió cantidades por su aplicación desde la suscripción del préstamo.",
+    "El 22 de julio de 2015 las partes firmaron un contrato privado de novación referido al mismo préstamo.",
+    "Ese contrato privado de novación incorporaba una estipulación sexta de renuncia de acciones.",
+    "En virtud del contrato privado de 22 de julio de 2015 se produjo la efectiva eliminación de la aplicación de la cláusula suelo.",
+    "Caja Rural de Almendralejo, S.C.C. fue la entidad predisponente de las condiciones generales incorporadas al préstamo y a su novación."
+  ],
+  "procedural_posture": "D.ª Paloma, representada por el procurador D. José María Echeverría Rodríguez, interpuso demanda de juicio ordinario contra Caja Rural de Almendralejo, S.C.C., solicitando la nulidad de la cláusula suelo, su eliminación del contrato, el reintegro de las cantidades indebidamente cobradas con intereses legales desde cada cobro y la condena en costas. La demanda se repartió al Juzgado de Primera Instancia e Instrucción n.º 2 bis de Mérida, con el núm. 2114/2018, y fue admitida a trámite, emplazándose a la demandada, que contestó solicitando su absolución con condena en costas a la actora. El Juzgado dictó sentencia n.º 843/2020, de 25 de noviembre, estimando parcialmente la demanda: declaró la nulidad de pleno derecho, por abusiva, de la estipulación sexta de renuncia de acciones del contrato privado de 22 de julio de 2015, condenó a eliminarla y a reintegrar las cantidades abonadas por aplicación de la cláusula suelo hasta su efectiva eliminación, con intereses ex art. 1303 CC y mora procesal del art. 576.1 LEC, sin expresa condena en costas. La entidad demandada apeló y la demandante se opuso e impugnó la sentencia en cuanto a la no imposición de costas. La Sección 2.ª de la Audiencia Provincial de Badajoz tramitó el rollo 1059/2021 y dictó sentencia n.º 689/2022, de 14 de septiembre, desestimando el recurso de apelación de la entidad y confirmando íntegramente la sentencia de instancia, con imposición de las costas de la alzada a la recurrente y pérdida del depósito, sin pronunciarse sobre la impugnación formulada por la actora. Se dictó auto denegando el complemento o aclaración solicitado por la representación de la Sra. Paloma, por entender precluido el plazo y no existir pronunciamiento omitido. La procuradora D.ª Raquel Moreno González, en representación de D.ª Paloma, interpuso recurso de casación con un único motivo, por el cauce del art. 477.1 LEC. Remitidas las actuaciones y personadas las partes, por auto de 10 de julio de 2024 se admitió el recurso; se dio traslado a la recurrida, que formalizó oposición. No solicitada vista, se señaló para votación y fallo el 2 de julio de 2025, señalamiento suspendido y fijado de nuevo para el 15 de octubre de 2025; por providencia de 26 de septiembre se avocó el conocimiento del asunto al Pleno de la Sala, celebrándose la votación y fallo el 12 de noviembre de 2025.",
+  "legal_issues": [
+    "Si la aplicación de principios procesales nacionales puede privar a la consumidora de un pronunciamiento sobre su impugnación relativa a las costas cuando no cabe apreciar en ella una pasividad total.",
+    "Si, estimada la nulidad por abusiva de una de las cláusulas impugnadas, procede imponer las costas de la primera instancia a la entidad financiera demandada pese a la estimación solo parcial de la demanda.",
+    "Si la aplicación del art. 398.2 LEC, en la redacción anterior al Real Decreto-ley 6/2023, a las costas de la segunda instancia cuando el recurrente o impugnante es el consumidor resulta compatible con los arts. 6.1 y 7.1 de la Directiva 93/13 y con los principios de equivalencia y efectividad.",
+    "Si procede modificar la jurisprudencia de la Sala sobre costas de los recursos a raíz de la STC 121/2025, de 26 de mayo.",
+    "Si el criterio sobre costas de la segunda instancia es extensible a las costas del recurso extraordinario por infracción procesal y del recurso de casación.",
+    "Cuál debe ser el pronunciamiento sobre costas del recurso de casación estimado y sobre la devolución de los depósitos constituidos."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Artículo 6.1 de la Directiva 93/13/CEE, de 5 de abril, sobre cláusulas abusivas en contratos con consumidores",
+      "note": "Principio de no vinculación del consumidor a las cláusulas abusivas; fundamento de la indemnidad económica y del examen de la limitación de efectos restitutorios."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 7.1 de la Directiva 93/13/CEE",
+      "note": "Efecto disuasorio del uso de cláusulas abusivas en contratos no negociados con consumidores."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 394.1 LEC",
+      "note": "Regla del vencimiento objetivo en costas de primera instancia, cuya excepción por serias dudas de hecho o de derecho no cabe aplicar cuando vence el consumidor."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 394.2 LEC",
+      "note": "Regla de no imposición en estimación parcial, que la Sala no aplica cuando se estima la nulidad de una cláusula abusiva."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 398.2 LEC, en la redacción anterior al Real Decreto-ley 6/2023, de 19 de diciembre",
+      "note": "Regla de no imposición de costas en recursos estimados; la Sala la matiza para la segunda instancia cuando el recurrente o impugnante es el consumidor y la aplica al recurso de casación estimado."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 398.2 y 398.3 LEC tras el Real Decreto-ley 6/2023, de 19 de diciembre",
+      "note": "Se invocan como confirmación de la distinción entre recursos ordinarios (vencimiento objetivo) y casación (no imposición)."
+    },
+    {
+      "type": "norma",
+      "ref": "Disposición adicional 15.ª, apartado 8, LOPJ",
+      "note": "Fundamento de la devolución de los depósitos constituidos para la apelación y la casación."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 24 de la Constitución Española",
+      "note": "Derecho a la tutela judicial efectiva, que no comprende un derecho constitucional a la doble instancia en el orden civil."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 19 y 169, apartados 1 y 2.a), del Tratado de Funcionamiento de la Unión Europea",
+      "note": "Tutela judicial efectiva y protección de los consumidores como objetivo de la Unión."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 38 y 47 de la Carta de los Derechos Fundamentales de la Unión Europea",
+      "note": "Protección de los consumidores y exigencia de modalidades procesales que garanticen los derechos derivados de la Directiva 93/13."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 81 y 95.2 de la Ley Orgánica del Tribunal Constitucional",
+      "note": "Citados al comparar el régimen de gastos y costas del recurso de amparo con el de los recursos extraordinarios."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 17 de mayo de 2022, asunto C-869/19",
+      "note": "El art. 6.1 de la Directiva 93/13 se opone a principios procesales nacionales que impidan al tribunal de apelación examinar de oficio la limitación temporal de la restitución cuando no hay pasividad total del consumidor."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 16 de julio de 2020, asuntos acumulados C-224/19 y C-259/19 (Caixabank y BBVA)",
+      "note": "Que el consumidor cargue con parte de las costas constituye un obstáculo significativo que puede disuadirle del control judicial del carácter abusivo de las cláusulas."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 7 de abril de 2022, asunto C-385/20",
+      "note": "Las costas reembolsables al consumidor vencedor deben ser de importe suficiente respecto del coste total del procedimiento."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 13 de septiembre de 2018, asunto C-176/17",
+      "note": "Indemnidad económica del consumidor obligado a litigar por la imposición de cláusulas abusivas."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJCE de 26 de octubre de 2006, asunto C-168/05",
+      "note": "Autonomía procesal de los Estados miembros condicionada a los principios de equivalencia y efectividad."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJCE de 6 de octubre de 2009, asunto C-40/08",
+      "note": "Criterio de análisis del principio de efectividad atendiendo al lugar de la disposición procesal en el conjunto del procedimiento."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJCE de 16 de diciembre de 1976, asunto C-33/76",
+      "note": "Principio de equivalencia: las normas procesales nacionales no pueden ser menos favorables para el Derecho comunitario."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 31 de mayo de 2018, asunto C-483/16",
+      "note": "La tutela judicial efectiva se extiende a la definición de la regulación procesal de las demandas sobre cláusulas abusivas."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS de Pleno 579/2022, de 26 de julio",
+      "note": "Asunción por la Sala de la doctrina de la STJUE de 17 de mayo de 2022."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 71/2024, de 22 de enero",
+      "note": "Procedencia de imponer las costas cuando, estimada la nulidad de una cláusula abusiva, no cabe apreciar pasividad total del consumidor."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 35/2021, de 27 de enero",
+      "note": "Estimada la acción de nulidad de una cláusula abusiva, procede imponer las costas de primera instancia al banco aunque no se acojan todas las cláusulas o pretensiones restitutorias."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 419/2017, de 4 de julio, y 472/2020, de 17 de septiembre",
+      "note": "Recepción del principio de efectividad en materia de costas de primera instancia y finalidad disuasoria de la condena en costas."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 18/2021, de 19 de enero",
+      "note": "Doctrina anterior sobre no imposición de costas de los recursos, expresamente modificada en cuanto a la segunda instancia."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STC 121/2025, de 26 de mayo",
+      "note": "Estimó un amparo y anuló la STS 287/2023 por falta de motivación sobre la compatibilidad del art. 398.2 LEC con los principios de tutela judicial, equivalencia y efectividad; determina la adaptación jurisprudencial."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTC 91/2023, de 11 de septiembre, y 96/2023, de 25 de septiembre",
+      "note": "Doctrina constitucional sobre motivación en materia de costas en litigios de consumo citada por la STC 121/2025."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTC 37/1995, de 7 de febrero, 111/2000, de 5 de mayo, y 71/2002, de 8 de abril",
+      "note": "Inexistencia de un derecho constitucional a la doble instancia en el orden civil."
+    }
+  ],
+  "cited_by_parties": [
+    "Artículo 477.1 LEC, invocado por la recurrente como cauce del único motivo de casación",
+    "Sentencia de Pleno del Tribunal Supremo 414/2017, de 4 de julio, citada como infringida por la recurrente",
+    "Sentencia del Tribunal Supremo 554/2017, de 11 de octubre, citada como infringida por la recurrente",
+    "Sentencias del Tribunal Supremo 32/2021, 33/2021 y 34/2021, citadas como infringidas por la recurrente"
+  ],
+  "holding": "La Sala estima el recurso de casación interpuesto por D.ª Paloma contra la sentencia n.º 689/2022, de 14 de septiembre, de la Sección 2.ª de la Audiencia Provincial de Badajoz (rollo de apelación 1059/2021) y casa dicha sentencia, modificándola únicamente en cuanto impone las costas de ambas instancias a la parte demandada. No hace expresa imposición de las costas causadas por el recurso de casación, conforme al art. 398.2 LEC, y ordena la devolución de los depósitos constituidos para los recursos de apelación y de casación, conforme a la disposición adicional 15.ª, apartado 8, LOPJ.",
+  "ratio_summary": [
+    "Conforme a los arts. 6.1 y 7.1 de la Directiva 93/13 y al principio de efectividad, el consumidor obligado a litigar por habérsele impuesto cláusulas abusivas debe quedar económicamente indemne, de modo que las reglas procesales internas sobre costas no pueden hacer imposible o excesivamente difícil el ejercicio de los derechos que le confiere el Derecho de la Unión.",
+    "Estimada la acción de nulidad por abusiva de una cláusula, procede imponer las costas de la primera instancia a la entidad demandada aunque no se acojan todas las cláusulas impugnadas ni todas las pretensiones restitutorias, sin que operen la excepción de serias dudas de hecho o de derecho ni la regla de la estimación parcial.",
+    "Cuando la falta de pronunciamiento sobre una pretensión del consumidor no es imputable a una pasividad total suya —aquí impugnó la sentencia de primera instancia para obtener la condena en costas, pretensión debidamente sustanciada—, los principios procesales nacionales no pueden privarle de los medios para hacer valer sus derechos.",
+    "La Sala modifica su jurisprudencia anterior y establece que, cuando el consumidor se ve obligado a acudir a la segunda instancia para no quedar vinculado por una cláusula abusiva y su recurso de apelación o su impugnación de la sentencia de primera instancia resultan total o parcialmente estimados, las costas de esa segunda instancia se imponen al profesional predisponente.",
+    "Esta adaptación jurisprudencial responde a la STC 121/2025, que reprochó a la Sala no haber explicado por qué la aplicación del art. 398.2 LEC, en su redacción anterior al Real Decreto-ley 6/2023, respetaba los principios de tutela judicial, equivalencia y efectividad y no generaba un efecto disuasorio inverso sobre los consumidores.",
+    "El resarcimiento de los gastos del recurso ordinario dirigido a suprimir la cláusula abusiva y a restablecer la situación patrimonial anterior no constituye un coste improbable o anormal para el predisponente, por lo que su imposición cumple el efecto disuasorio perseguido por el Derecho de la Unión.",
+    "El nuevo criterio no se extiende al recurso extraordinario por infracción procesal ni al de casación: por su naturaleza extraordinaria, motivos tasados y función de creación de jurisprudencia, su objeto no es propiamente desvincular al consumidor de la cláusula abusiva ni producen un efecto disuasorio inverso sobre sus derechos."
+  ],
+  "uncertainties": [
+    "La sentencia no precisa el importe de las cantidades a reintegrar por aplicación de la cláusula suelo, cuya determinación quedó remitida a la ejecución de la sentencia de primera instancia.",
+    "El fallo impone las costas de ambas instancias a la demandada, pero el documento no detalla el alcance temporal ni la base de cálculo de las costas de primera instancia, que la sentencia del Juzgado no había impuesto.",
+    "No se explicita si el nuevo criterio sobre costas de la segunda instancia se proyecta también sobre litigios regidos por la redacción del art. 398.2 LEC posterior al Real Decreto-ley 6/2023, más allá de la constatación de que esa reforma ya acoge el vencimiento objetivo en apelación.",
+    "La Sala resuelve directamente sobre las costas pese a que la Audiencia Provincial no llegó a pronunciarse sobre la impugnación de la actora, sin que el documento explique por qué no procede la devolución de actuaciones al tribunal de apelación.",
+    "No consta en el texto si la sentencia, dictada por el Pleno de la Sala, fue acompañada de votos particulares."
+  ],
+  "document_quality_notes": [
+    "Artefactos de OCR con palabras fusionadas: 'renuncia de accionesincorporada', 'acordartambién', 'elrecurso', 'Procede acordartambién', '2020,relativa' y 'asunto C483/16'.",
+    "Error tipográfico en la transcripción de la cláusula suelo: 'NOMINAL AUAL' en lugar de 'NOMINAL ANUAL'.",
+    "La cabecera consigna 'Sección: 991' mientras el encabezamiento interno identifica la resolución como dictada por el PLENO de la Sala de lo Civil; no se explicita la correspondencia entre ambos datos.",
+    "Inconsistencia interna sobre el órgano que denegó el complemento o aclaración: el antecedente segundo, apartado 3, lo atribuye al Juzgado, mientras que el fundamento de derecho primero lo atribuye a la Audiencia Provincial respecto de su propia sentencia.",
+    "Discrepancia en la cita jurisprudencial de la sentencia de Pleno de 4 de julio de 2017: la recurrente la identifica como 414/2017 y la Sala como 419/2017.",
+    "El transcrito de la parte dispositiva de primera instancia designa a la demandada como 'CAJA DE ALMENDRALEJO S.C.C.', omitiendo el término 'RURAL' que figura en el resto del documento.",
+    "En el fundamento de derecho segundo, el epígrafe numerado '2.-' aparece repetido dos veces, alterando la numeración interna.",
+    "Anonimización inconsistente: se anonimiza el nombre de la demandante mediante el alias 'Paloma', pero se identifican con nombre completo procuradores y letrados de ambas partes.",
+    "El número de resolución se escribe con separador de millar en el encabezamiento interno ('1.786/2025') y sin él en la cabecera ('1786/2025')."
+  ],
+  "next_review_questions": [
+    "¿La certificación oficial de la sentencia incluye votos particulares, dado que fue dictada por el Pleno de la Sala de lo Civil?",
+    "¿Qué órgano dictó realmente el auto que denegó el complemento o aclaración: el Juzgado de Primera Instancia n.º 2 bis de Mérida o la Sección 2.ª de la Audiencia Provincial de Badajoz?",
+    "¿Cuál es la referencia correcta de la sentencia de Pleno de 4 de julio de 2017 en materia de costas: 414/2017 o 419/2017?",
+    "¿Cuál es el contenido íntegro de la sentencia n.º 689/2022 de la Audiencia Provincial de Badajoz respecto de la impugnación formulada por la demandante?",
+    "¿Se ha cuantificado en ejecución el importe de las cantidades restituidas por aplicación de la cláusula suelo entre 2011 y julio de 2015?",
+    "¿Quién constituyó cada uno de los depósitos cuya devolución se ordena para los recursos de apelación y de casación?",
+    "¿Cómo se articula la nueva doctrina sobre costas de segunda instancia con la redacción del art. 398 LEC vigente tras el Real Decreto-ley 6/2023, de 19 de diciembre?"
+  ]
+}

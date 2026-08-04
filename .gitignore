@@ -1,0 +1,27 @@
+# Windows / OneDrive
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Archivos temporales de editores y Office
+~$*
+*.tmp
+*.bak
+*.swp
+
+# macOS, por si el repositorio se clona en otra maquina
+.DS_Store
+
+# Configuracion local de Claude Code (especifica de cada maquina)
+.claude/settings.local.json
+
+# Trabajo temporal
+scratch/
+*.log
+Inputs/
+Archive/
+
+Inputs/
+Archive/

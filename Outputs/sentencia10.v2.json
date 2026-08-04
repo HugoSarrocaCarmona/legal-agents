@@ -1,0 +1,170 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2025:5363",
+    "roj": "STS 5363/2025",
+    "resolution_number": "1745/2025",
+    "appeal_number": "5896/2020",
+    "id_cendoj": "28079110012025101702"
+  },
+  "decision_date": "2025-12-01",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Manuel Almenar Belenguer",
+  "parties": [
+    {
+      "name": "Comunidad de Propietarios del DIRECCION000",
+      "role": "Parte recurrente; demandada"
+    },
+    {
+      "name": "D. Gines",
+      "role": "Parte recurrida; demandante"
+    }
+  ],
+  "facts": [
+    "D. Gines es propietario de una vivienda identificada como NUM001, de un trastero y de una plaza de garaje identificada como GAR. NUM000, sitos en el edificio denominado «DIRECCION000», radicado en DIRECCION001, Cala de Villajoyosa (Alicante).",
+    "A principios de septiembre de 2017 el Sr. Gines informó a la Administración de Fincas Admirasa, administradora de la Comunidad, de su intención de instalar en su plaza de garaje un punto de recarga para vehículos eléctricos de uso privativo, aportando informe del instalador eléctrico D. Leoncio y documentación sobre las características de la instalación y la normativa aplicable.",
+    "El administrador contestó por correo electrónico de 7 de septiembre de 2017 advirtiendo de que no está permitido el uso u ocupación de elementos comunes para realizar instalaciones privativas sin autorización de la Junta de Propietarios.",
+    "Por correo electrónico de 22 de septiembre de 2017 el Sr. Gines se dirigió nuevamente al administrador explicando por qué consideraba que tenía derecho a efectuar la instalación.",
+    "El 2 de octubre de 2017 el Sr. Gines remitió escrito a la presidenta de la Comunidad comunicando que instalaría el punto de recarga para uso privado en su plaza de garaje, que asumiría íntegramente el coste y que se alimentaría del suministro eléctrico de su vivienda, con código de punto de suministro CUPS NUM002, comprometiéndose a entregar el certificado eléctrico al terminar los trabajos.",
+    "La presidenta respondió por burofax de 5 de octubre de 2017 negando estar legitimada para otorgar la autorización, afirmando que la ocupación de zonas comunitarias exigía el acuerdo unánime de los propietarios reunidos en asamblea e instando al Sr. Gines a esperar a la próxima junta, con advertencia de medidas judiciales o extrajudiciales.",
+    "Por burofax de 7 de noviembre de 2017 el letrado del Sr. Gines comunicó que se procedería a la instalación, por entender que, al ubicarse en un elemento privativo y correr el coste a cargo del interesado, bastaba la comunicación previa a la Comunidad.",
+    "El administrador respondió por escrito de 27 de noviembre de 2017 insistiendo en que la instalación afectaba a elementos comunes y era preciso obtener el consentimiento de la Comunidad en Junta General.",
+    "A principios de diciembre de 2017 el Sr. Gines ejecutó la instalación anunciada a través del instalador eléctrico Sr. Leoncio, que emitió la certificación con la memoria técnica de diseño.",
+    "El 12 de diciembre de 2017 la Administración autonómica expidió el Certificado de «Instalación Eléctrica en baja tensión para una instalación receptora específica», conexión n.º NUM003.",
+    "El punto de recarga se sitúa en la plaza de garaje privativa del Sr. Gines, pero su instalación discurre por el techo o forjado del garaje hasta el punto de suministro, mediante cableado sujeto al techo y perforaciones en el forjado.",
+    "El 16 de febrero de 2018 se celebró una Junta General Extraordinaria de la Comunidad que incluía como punto 4.º del orden del día los acuerdos y medidas a adoptar para exigir al propietario de GAR. NUM000 la retirada de la instalación de carga de batería que afectase o hubiera invadido zonas comunes.",
+    "En esa reunión el representante del Sr. Gines explicó que lo instalado era un punto de recarga de uso privativo, solicitó que se dejara constancia de la comunicación previa y aportó copia del cuadro de instalación y del certificado eléctrico de baja tensión.",
+    "La propuesta de exigir la retirada fue aceptada con el voto favorable de 18 propietarios y el voto en contra de 5 propietarios, incluido el Sr. Gines.",
+    "El acuerdo aprobado requería al Sr. Gines para que retirase la instalación en un plazo máximo de dos meses y facultaba a la presidenta, en caso de incumplimiento, para nombrar abogado y procurador e iniciar el procedimiento judicial o extrajudicial correspondiente."
+  ],
+  "procedural_posture": "D. Gines presentó el 15 de mayo de 2018 demanda de juicio ordinario contra la Comunidad de Propietarios del DIRECCION000 en la que ejercitaba acción de impugnación del acuerdo adoptado bajo el punto 4.º del orden del día de la junta general extraordinaria de 16 de febrero de 2018, con fundamento en el art. 18.1.a) LPH por vulneración del art. 17.5 LPH, solicitando su nulidad y la condena en costas. La demanda se repartió al Juzgado de Primera Instancia e Instrucción núm. 2 de Villajoyosa y se registró como procedimiento ordinario núm. 445/2018. La Comunidad se personó y contestó oponiendo, con carácter previo, que el acuerdo no era susceptible de impugnación por no constituir propiamente un acuerdo, y, en cuanto al fondo, que la afectación del cableado a elementos comunes exigía autorización de la Junta. La Magistrada-juez dictó sentencia núm. 106/2019, de 30 de mayo, que rechazó la objeción previa, desestimó íntegramente la demanda, absolvió a la Comunidad e impuso las costas al actor, al considerar que las perforaciones en el forjado suponían una alteración de elementos comunes prohibida por el art. 7.1 LPH y necesitada de autorización expresa. D. Gines recurrió en apelación y la Comunidad se opuso. La Sección 5.ª de la Audiencia Provincial de Alicante tramitó el rollo núm. 97/2020 y dictó sentencia núm. 378/2020, de 30 de septiembre, que estimó íntegramente el recurso, revocó la resolución de instancia, estimó la demanda y declaró la nulidad del acuerdo, con imposición a la Comunidad de las costas de la instancia, sin costas de la alzada y con devolución del depósito. La Comunidad de Propietarios interpuso recurso de casación por un único motivo, al amparo del art. 477.2.3.º LEC, por infracción de los arts. 3, 7.1, 9.1.a) y 17.5 LPH y de la doctrina de la sentencia 18/2010, de 17 de febrero. La Audiencia tuvo por interpuesto el recurso y remitió las actuaciones a la Sala Primera del Tribunal Supremo, que por auto de 19 de octubre de 2022 lo admitió y dio traslado a la parte recurrida, que se opuso. Por providencia de 29 de septiembre de 2025 se designó nuevo ponente y, al no solicitarse vista, se señaló para votación y fallo el 19 de noviembre de 2025.",
+  "legal_issues": [
+    "Si la expresión del art. 17.5 LPH según la cual la instalación de un punto de recarga «sólo requerirá la comunicación previa a la comunidad» permite ejecutarla sin más requisitos, afecte o no a elementos comunes.",
+    "Si la afectación del forjado y del techo del garaje por el cableado de la instalación convierte la obra en una alteración de elementos comunes sujeta a la prohibición y a la autorización del art. 7.1 LPH.",
+    "Qué criterios hermenéuticos del art. 3.1 CC deben prevalecer para interpretar el art. 17.5 LPH y qué papel desempeñan los preámbulos de las leyes que introdujeron y modificaron el precepto.",
+    "Si la ubicación sistemática del apartado 5 del art. 17 LPH, que a diferencia de los demás apartados no fija mayoría alguna, revela la voluntad legislativa de excluir la necesidad de acuerdo comunitario.",
+    "Si es aplicable a este supuesto la doctrina que exige autorización unánime para las modificaciones de la estructura del inmueble, incluidos los forjados.",
+    "Qué límites subsisten a la facultad del propietario, en particular ante afectaciones innecesarias o desproporcionadas de elementos comunes o perjuicios a los demás copropietarios."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Art. 17.5 de la Ley 49/1960, de 21 de julio, sobre Propiedad Horizontal, en la redacción dada por la Ley 8/2013, de 26 de junio",
+      "note": "Norma central del litigio: la instalación de un punto de recarga de vehículos eléctricos para uso privado en plaza individual de garaje solo requiere comunicación previa a la comunidad, asumiendo el interesado el coste y el consumo."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 17 de la Ley sobre Propiedad Horizontal, considerado en su conjunto",
+      "note": "Interpretación sistemática: los apartados 1 a 4, 6, 7 y 12 fijan expresamente la mayoría exigible para cada acuerdo, mientras que el apartado 5 la omite, lo que solo se explica porque se ha querido excluir la necesidad de acuerdo."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 3.1 del Código Civil",
+      "note": "Canon interpretativo aplicado: literal, sistemático, histórico, sociológico y teleológico, con preeminencia del espíritu y finalidad de la norma, sin que constituyan un numerus clausus."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 18 de la Ley sobre Propiedad Horizontal",
+      "note": "Cauce de impugnación del acuerdo comunitario contrario a la ley, admitido como vía idónea para combatir el requerimiento de retirada."
+    },
+    {
+      "type": "norma",
+      "ref": "Apartado III del preámbulo de la Ley 19/2009, de 23 de noviembre, de medidas de fomento y agilización procesal del alquiler y de la eficiencia energética de los edificios",
+      "note": "Antecedente legislativo que introdujo la previsión: justifica la reforma en la mejora de la eficiencia energética, la reducción del coste de la factura y la lucha contra el cambio climático, objetivo que inspira también el régimen de los puntos de recarga."
+    },
+    {
+      "type": "norma",
+      "ref": "Preámbulo de la Ley 8/2013, de 26 de junio, de rehabilitación, regeneración y renovación urbanas",
+      "note": "Individualizó el párrafo como apartado 5 autónomo con el objeto de evitar que los regímenes de mayorías impidan las actuaciones previstas; alineado con la Directiva 2010/31/UE."
+    },
+    {
+      "type": "norma",
+      "ref": "Directiva 2010/31/UE",
+      "note": "Marco europeo de eficiencia energética al que se alinea expresamente el preámbulo de la Ley 8/2013 y que refuerza la interpretación teleológica."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 398 de la Ley de Enjuiciamiento Civil",
+      "note": "Imposición de las costas del recurso de casación a la parte recurrente al resultar desestimado."
+    },
+    {
+      "type": "norma",
+      "ref": "Disposición adicional 15.ª, apartado 9, de la Ley Orgánica del Poder Judicial",
+      "note": "Pérdida del depósito constituido para recurrir."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 1232/2024 y 1233/2024, ambas de 3 de octubre",
+      "note": "Recuerdan los criterios de interpretación del art. 3.1 CC y el recurso a los preámbulos como instrumento privilegiado para desvelar la razón de ser de la regulación."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 149/1983, de 15 de marzo",
+      "note": "La interpretación de los preceptos positivos no se obtiene solo de la letra estricta del texto, sino atendiendo a su sentido lógico, espíritu y finalidad."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 519/1991, de 2 de julio",
+      "note": "El espíritu y la finalidad de la norma no son un mero elemento de interpretación sino la clave fundamental para orientarla; insuficiencia del criterio literal."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 205/2001, de 27 de febrero; 877/2024, de 19 de junio; 929/2024, de 1 de julio; 1015/2024, de 17 de julio",
+      "note": "Los preámbulos y exposiciones de motivos son instrumento privilegiado para determinar la finalidad pretendida por las leyes."
+    }
+  ],
+  "cited_by_parties": [
+    "Artículos 3, 7.1 y 9.1.a) de la Ley sobre Propiedad Horizontal, invocados por la Comunidad recurrente en su motivo único y no acogidos como fundamento de la decisión.",
+    "Artículo 12 de la Ley sobre Propiedad Horizontal, citado por la recurrente al desarrollar la exigencia de unanimidad para modificar la estructura del inmueble.",
+    "Sentencia 18/2010, de 17 de febrero, invocada por la recurrente sobre la inclusión de los forjados en la estructura del inmueble y la necesidad de autorización unánime, doctrina que la Sala no aplica al caso.",
+    "Artículo 477.2.3.º y artículo 477.3 de la Ley de Enjuiciamiento Civil, cauce formal e invocación del interés casacional por la recurrente.",
+    "Real Decreto 1053/2014, de 12 de diciembre, por el que se aprueba la ITC BT 52 «Instalaciones con fines especiales. Infraestructura para la recarga de vehículos eléctricos», citado por el demandante en su comunicación a la Comunidad.",
+    "Real Decreto 842/2002, de 2 de agosto, por el que se aprueba el Reglamento electrotécnico para baja tensión, citado por el demandante en su comunicación a la Comunidad.",
+    "Ley 1/2009, de 3 de noviembre, citada en el fallo de la sentencia de apelación al acordar la devolución del depósito."
+  ],
+  "holding": "La Sala desestima el recurso de casación interpuesto por la Comunidad de Propietarios del DIRECCION000 contra la sentencia núm. 378/2020, de 30 de septiembre, de la Sección 5.ª de la Audiencia Provincial de Alicante (rollo de apelación núm. 97/2020), que queda firme y con ella la declaración de nulidad del acuerdo adoptado en el punto 4.º del orden del día de la junta general extraordinaria de 16 de febrero de 2018. Impone a la recurrente las costas procesales del recurso y acuerda la pérdida del depósito constituido para recurrir. Fija que la instalación de un punto de recarga de vehículos eléctricos para uso privado en el aparcamiento de un edificio en régimen de propiedad horizontal, siempre que se ubique en una plaza individual de garaje, solo precisa la comunicación previa a la Comunidad.",
+  "ratio_summary": [
+    "La instalación de un punto de recarga de vehículos eléctricos para uso privado en una plaza individual de garaje solo precisa comunicación previa a la comunidad, sin necesidad de autorización ni de acuerdo de la junta, con independencia de que afecte tangencialmente a elementos comunes.",
+    "Conforme al art. 3.1 CC, el intérprete no debe detenerse en la exégesis gramatical: el espíritu y la finalidad de la norma no son un elemento más de interpretación sino la clave fundamental para orientarla, y los preámbulos son instrumento privilegiado para desvelarlos.",
+    "Los preámbulos de la Ley 19/2009 y de la Ley 8/2013 revelan una voluntad legislativa de fomentar la eficiencia energética y la sustitución de vehículos de combustión, evitando que los regímenes de mayorías impidan las actuaciones previstas.",
+    "Desde el criterio literal, el precepto no distingue según el cableado discurra o se apoye en elementos comunes, ni establece excepción alguna: ordena con carácter general que basta la comunicación previa.",
+    "Sistemáticamente, que los apartados 1 a 4, 6, 7 y 12 del art. 17 LPH fijen expresamente la mayoría exigible y el apartado 5 la omita solo se explica porque se ha querido excluir la necesidad de acuerdo; la reforma de 2013 lo dotó de autonomía para impedir su asimilación a los párrafos anteriores.",
+    "La lógica jurídica conduce al mismo resultado: en un aparcamiento el forjado y las paredes son elementos comunes y toda conducción eléctrica debe discurrir forzosamente por ellos, de modo que el legislador tuvo que representarse que el cableado los atravesaría y aun así no exigió acuerdo comunitario.",
+    "El límite subsiste: la actuación queda al margen de las facultades de decisión de la Comunidad salvo que se aprecie una afectación innecesaria o desproporcionada de elementos comunes o un perjuicio para los demás copropietarios, y sin perjuicio de las autorizaciones administrativas que procedan."
+  ],
+  "uncertainties": [
+    "La Sala reserva como excepción los casos de «afectación innecesaria o desproporcionada» de elementos comunes o de «perjuicio para los demás copropietarios», sin definir sus contornos ni indicar a quién corresponde la carga de acreditarlos.",
+    "Se remite a «la autorización que pueda corresponder a la Administración competente» sin precisar de qué autorización se trata ni sus efectos sobre la validez de la instalación.",
+    "La objeción previa de la Comunidad sobre si el requerimiento de retirada constituye o no un acuerdo susceptible de impugnación fue resuelta en primera instancia y no vuelve a abordarse en casación.",
+    "La sentencia de primera instancia describe perforaciones en el forjado, mientras que la casación reduce la afectación a la «sujeción del cableado al techo del aparcamiento», sin aclarar el alcance real de la obra ejecutada.",
+    "No se determina el régimen de responsabilidad del propietario por los daños que la instalación pudiera causar en los elementos comunes afectados ni las obligaciones de reposición al cesar el uso.",
+    "No se precisa si la comunicación previa exige una forma o un contenido mínimos, ni qué consecuencias tendría su omisión o su carácter defectuoso."
+  ],
+  "document_quality_notes": [
+    "Cabecera con artefactos de OCR y campos fusionados en una sola línea: «T R I B U N A L S U P R E M O Sala de lo Civil», «Tipo de procedimiento: CASACIÓN Número del procedimiento: 5896/2020 Fallo/Acuerdo:» y «Navalón Romero Transcrito por: ACV Nota:».",
+    "Los campos «Fallo/Acuerdo:» y «Nota:» de la cabecera aparecen sin contenido.",
+    "El número de resolución figura con dos formatos: «Sentencia núm. 1.745/2025» y «Sentencia núm. 1745/2025».",
+    "La enumeración romana del relato fáctico está desordenada e incompleta: salta de i) a iii), omite ii), repite vii) y viii) y coloca marcadores en mitad de las frases («correo electrónico de fecha 7 vi) de septiembre de 2017», «el letrado del Sr. Gines vii) informó», «por escrito de 27 de noviembre, en ix) el que insistió», «viii)ix) El 16 de febrero de 2018»).",
+    "Los porcentajes de la votación son incoherentes con el número de votantes: «18 propietarios (9,36%)» a favor y «5 propietarios, incluido el Sr. Gines (3,21%)» en contra.",
+    "Inconsistencia en el anonimizado de la vivienda: el suplico de la demanda dice «vvda NUM001» y la transcripción del acuerdo en el fundamento primero dice «vvda NUM002», identificador que en el resto del documento designa el código CUPS del suministro.",
+    "Aparece un apellido anonimizado distinto del demandante para designar a la misma parte: «los Sres. Enrique» y «los Srs. Enrique, propietarios de la vivienda NUM001», frente a D. Gines.",
+    "Cita normativa deformada en el burofax de la presidenta: «el art. 175 de la LPH», donde debe leerse art. 17.5 LPH, y calificación errónea de los Reales Decretos 1053/2014 y 842/2002 como «RDL».",
+    "Errata en la transcripción de la sentencia de primera instancia: «ar1ículo 17.5 de la Ley de Propiedad Horizontal».",
+    "El fallo de la sentencia de apelación duplica la referencia al punto impugnado: «la nulidad del punto cuarto del acuerdo adoptado [...] en el punto 4º de la junta general extraordinaria».",
+    "El orden del día se cita en el fundamento primero como «el punto 4.ª del orden del día», con ordinal en femenino.",
+    "Palabras unidas o mal transcritas a lo largo del documento: «se digirió» por «se dirigió», «ponto en su conocimiento» por «pongo», «sentido lógicoque busca», «facilitarla adopción», «porla norma», «desestimado( art. 398 LEC)» y «pérdida del depósito constituido recurrir», donde falta «para».",
+    "La cabecera identifica la resolución de primera instancia como «SJPI 987/2019» mientras el cuerpo la numera como «sentencia núm. 106/2019 con fecha 30 de mayo».",
+    "El órgano de instancia se denomina indistintamente «Juzgado de Primera Instancia e Instrucción núm. 2 de Villajoyosa» y, en el fallo de apelación transcrito, «Juzgado de Primera Instancia núm. 2 de Villajoyosa».",
+    "Texto fragmentado por los saltos de página, con la marca «JURISPRUDENCIA» y la numeración intercaladas en mitad de frases, y ausencia de espacio tras coma en «15 de mayo de 2018 y,repartida al Juzgado»."
+  ],
+  "next_review_questions": [
+    "¿Qué criterios permiten calificar una afectación de elementos comunes como «innecesaria o desproporcionada» a efectos de excluir la aplicación del art. 17.5 LPH?",
+    "¿A qué autorización administrativa se refiere la sentencia como eventualmente exigible y ante qué Administración debe tramitarse?",
+    "¿Cuál es el alcance real de la obra ejecutada: existieron perforaciones en el forjado, como afirma la sentencia de primera instancia, o solo sujeción de cableado al techo, como recoge la casación?",
+    "¿Cuál es el resultado correcto de la votación de la junta de 16 de febrero de 2018 en número de propietarios y en cuotas de participación, a la vista de los porcentajes incoherentes del documento?",
+    "¿Qué identificador corresponde a la vivienda del Sr. Gines, NUM001 o NUM002, y a qué parte designa el apellido «Enrique» que aparece en los escritos transcritos?",
+    "¿Responde el propietario de los daños que la instalación cause en los elementos comunes y está obligado a reponerlos al cesar en su uso?",
+    "¿Exige el art. 17.5 LPH alguna forma o contenido mínimo en la comunicación previa y qué consecuencias tendría su ausencia?",
+    "¿Se ha ejecutado ya la sentencia de apelación en cuanto a las costas de la instancia impuestas a la Comunidad?"
+  ]
+}

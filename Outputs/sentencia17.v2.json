@@ -1,0 +1,117 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2025:5767",
+    "roj": "STS 5767/2025",
+    "resolution_number": "1833/2025",
+    "appeal_number": "3181/2018",
+    "id_cendoj": "28079110012025101850"
+  },
+  "decision_date": "2025-12-11",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Rafael Sarazá Jimena",
+  "parties": [
+    { "name": "D. Efrain", "role": "parte recurrente" },
+    { "name": "D. Jacinto", "role": "parte recurrida" },
+    { "name": "Dos Mil Palabras S.L.", "role": "parte recurrida" },
+    { "name": "D. Eloy", "role": "parte recurrida" },
+    { "name": "Ministerio Fiscal", "role": "ha sido parte" }
+  ],
+  "facts": [
+    "D. Efrain era líder de un partido político, candidato en las elecciones generales y encabezaba la candidatura de la provincia de Madrid, además de persona candidatable a la Presidencia del Gobierno.",
+    "Dos Mil Palabras S.L. era la editora del diario digital OKDIARIO.COM, D. Jacinto su director y D. Eloy periodista de investigación del medio.",
+    "D. Eloy obtuvo copias de dos documentos, una «orden de pago» y un «memorando», tanto de un colaborador de la Policía como del entorno del Sr. Maximino, entonces Director Adjunto Operativo de la Policía.",
+    "El 6 de mayo de 2016 OKDIARIO publicó un artículo titulado «El gobierno de Fabio pagó 272.000 dólares a Efrain en el Paraíso fiscal de Granadinas en 2014», ilustrado con copia de la orden de pago y del memorando.",
+    "La redacción inicial del artículo elaborada por D. Eloy informaba de la existencia de una investigación policial sobre esos documentos y empleaba cautelas como «supuesto» o «presunto», sin afirmar la existencia del pago.",
+    "El director del medio, D. Jacinto, ordenó modificar ese artículo, cambió el titular por una afirmación apodíctica sobre la existencia del pago, eliminó las demás cautelas y reprendió al periodista por los términos en que lo había redactado.",
+    "El 7 de mayo de 2016 el mismo diario publicó, firmado por otro periodista, el artículo «Las autoridades españolas acreditan que los documentos del pago a Efrain son auténticos», afirmando que las fuerzas de seguridad habían verificado logotipo, firmas y sellos.",
+    "También el 7 de mayo de 2016 se publicó el artículo «El banco de Efrain dice que no es su cliente ¡pero sabe hasta su segundo nombre!», relativo al comunicado del Euro Pacific Bank que negaba haber recibido la transferencia.",
+    "El 8 de mayo de 2016 se publicó un artículo de opinión firmado por D. Jacinto titulado «A: Efrain. De: Jacinto (Carta a un patriota granadino)», que reiteraba las afirmaciones sobre el pago e incluía expresiones como «mentiroso y charlatán».",
+    "Las informaciones fueron difundidas además por D. Jacinto en medios de televisión y a través de sus cuentas de Twitter y de Facebook.",
+    "La investigación policial sobre esos documentos se encontraba en un estado embrionario y los documentos no fueron remitidos a la policía científica por tratarse de meras fotocopias, lo que impedía comprobar su autenticidad.",
+    "Los artículos se publicaron apenas unas semanas antes de las elecciones generales en las que el demandante concurría como candidato.",
+    "El demandante y su partido político promovieron procesos penales, mediante querella dirigida contra policías y altos mandos del Ministerio del Interior, por una supuesta maniobra de intoxicación con información fabricada."
+  ],
+  "procedural_posture": "D. Efrain presentó el 12 de mayo de 2016 demanda de juicio ordinario sobre protección del derecho al honor contra D. Eloy, D. Jacinto y Dos Mil Palabras S.L., solicitando la declaración de intromisión ilegítima, una indemnización solidaria de 250.000 euros más intereses, la entrega de los beneficios publicitarios obtenidos por la editora, la publicación de los fundamentos jurídicos y el fallo, el cese de la divulgación en Internet, la petición pública de disculpas por el director y la condena en costas. Repartida al Juzgado de Primera Instancia núm. 84 de Madrid y registrada con el núm. 376/2016, fue admitida a trámite y se emplazó a la parte demandada. El Ministerio Fiscal emitió informe contestando a la demanda y el procurador Sr. de Villanueva Ferrer contestó en representación de los demandados solicitando la desestimación con costas. El Juzgado dictó sentencia 68/2017, de 7 de abril, que desestimó la demanda con imposición de costas a la actora. Apelada por el demandante, con oposición del Ministerio Fiscal y de los demandados, el recurso correspondió a la Sección Octava de la Audiencia Provincial de Madrid, rollo 657/2017, que dictó sentencia 195/2018, de 9 de mayo, desestimatoria del recurso con imposición de costas. El demandante interpuso recurso extraordinario por infracción procesal, con dos motivos al amparo del art. 469.1.4.º LEC, y recurso de casación, con motivo único al amparo del art. 477.2.1.º LEC. Remitidas las actuaciones al Tribunal Supremo, por auto de 23 de enero de 2019 se admitieron los recursos y se dio traslado a las recurridas y al Ministerio Fiscal; el Ministerio Fiscal y D. Jacinto y Dos Mil Palabras S.L. se opusieron y D. Eloy impugnó los recursos. Por auto de 19 de noviembre de 2019 se suspendió el procedimiento por prejudicialidad penal, alzándose la suspensión por providencia de 14 de octubre de 2025, confirmada por providencia de 4 de noviembre de 2025; un recurso de reposición contra el alzamiento fue desestimado por auto de 3 de diciembre. El demandante aportó documentos por escrito de 17 de octubre de 2025, declarados irrelevantes por la Sala. Al no solicitarse vista pública por todas las partes, se señaló para votación y fallo el 3 de diciembre de 2025.",
+  "legal_issues": [
+    "Si la vulneración de la presunción de inocencia del art. 24.2 CE en la ponderación entre el derecho al honor y las libertades de información y expresión puede denunciarse en el recurso extraordinario por infracción procesal o solo en casación.",
+    "Si la doctrina del TEDH sobre la proyección de la presunción de inocencia fuera del proceso penal es aplicable cuando la acción no se dirige contra autoridades públicas sino contra particulares.",
+    "Si la sentencia recurrida incurrió en defecto de motivación y en irracional apreciación de la prueba al realizar el juicio de ponderación entre los derechos en conflicto.",
+    "Si la información publicada cumplió el requisito de veracidad, entendido como diligencia en la contrastación de la noticia conforme a pautas profesionales.",
+    "Si es relevante, a efectos de veracidad, la supresión por el director del medio de las cautelas («supuesto», «presunto») y el cambio de titular respecto del texto redactado por el periodista.",
+    "Si afirmar que las autoridades españolas acreditaban la autenticidad de unos documentos, cuando la investigación era embrionaria y no se analizaron por ser fotocopias, excluye la veracidad de la información.",
+    "Si cabe extender la condena al periodista que redactó la versión inicial del artículo con cautelas y no intervino en la publicación del artículo del día siguiente.",
+    "Si un artículo de opinión con juicios de valor lesivos cuenta con base fáctica suficiente cuando esta procede de informaciones previas no veraces.",
+    "Cuál es la cuantía adecuada de la indemnización por daño moral conforme al art. 9.3 LO 1/1982, atendiendo al efecto disuasorio de una indemnización excesiva sobre la libertad de prensa.",
+    "Si procede condenar a la editora a la entrega de los beneficios publicitarios obtenidos cuando no se ha concretado ni probado el lucro vinculado a las publicaciones.",
+    "Cuál es el alcance de las medidas de publicación de la sentencia y de cese y remoción de contenidos en Internet y motores de búsqueda.",
+    "Si puede condenarse al demandado a pedir disculpas públicamente en su cuenta de Twitter y en un programa de televisión de un tercero ajeno al litigio."
+  ],
+  "applied_rules": [
+    { "type": "norma", "ref": "Artículo 18.1 de la Constitución Española", "note": "Derecho al honor cuya vulneración se aprecia respecto del director y la editora del diario digital." },
+    { "type": "norma", "ref": "Artículo 20.1.d) de la Constitución Española", "note": "Libertad de información; la Sala concluye que la información publicada no cumplió los estándares de diligencia exigidos por el requisito de veracidad." },
+    { "type": "norma", "ref": "Artículos 1.1 y 7.7 de la Ley Orgánica 1/1982, de 5 de mayo, de protección civil del derecho al honor, a la intimidad personal y familiar y a la propia imagen", "note": "Base de la declaración de intromisión ilegítima en el derecho al honor del demandante." },
+    { "type": "norma", "ref": "Artículo 9.3 de la Ley Orgánica 1/1982, de 5 de mayo", "note": "Criterios de fijación de la indemnización del daño moral: circunstancias del caso, gravedad de la lesión y difusión o audiencia del medio." },
+    { "type": "norma", "ref": "Artículo 469.1.4.º de la Ley de Enjuiciamiento Civil", "note": "Delimita el ámbito del recurso extraordinario por infracción procesal, en la redacción anterior al Real Decreto-ley 5/2023, de 28 de junio, aplicable por razones temporales; las cuestiones de ponderación sustantiva quedan fuera de esa vía." },
+    { "type": "norma", "ref": "Artículos 227.1 y 228.1 de la Ley de Enjuiciamiento Civil", "note": "Rechazo de la objeción de inadmisibilidad del Ministerio Fiscal: no cabía incidente de nulidad frente a una sentencia de segunda instancia no firme y recurrible." },
+    { "type": "norma", "ref": "Artículo 576 de la Ley de Enjuiciamiento Civil", "note": "La indemnización solo devenga el interés de la mora procesal, dada la desproporción entre lo pedido y lo concedido y la paralización del proceso a instancia del demandante." },
+    { "type": "norma", "ref": "Artículos 394 y 398 de la Ley de Enjuiciamiento Civil", "note": "Régimen de costas de primera instancia, apelación y recursos extraordinarios." },
+    { "type": "norma", "ref": "Artículo 17.1, párrafo final, de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico", "note": "Fundamento de la condena a realizar gestiones ante los titulares de motores de búsqueda para que el contenido ilícito no se muestre en las listas de resultados." },
+    { "type": "norma", "ref": "Disposición adicional 15.ª, apartados 8 y 9, de la Ley Orgánica del Poder Judicial", "note": "Devolución del depósito del recurso de casación estimado y pérdida del constituido para el recurso extraordinario por infracción procesal desestimado." },
+    { "type": "jurisprudencia", "ref": "Sentencia del Tribunal Supremo 594/2015, de 11 de noviembre", "note": "Veracidad como resultado de una razonable diligencia del informador para contrastar la noticia conforme a pautas profesionales, aunque después sea desmentida." },
+    { "type": "jurisprudencia", "ref": "Sentencia del Tribunal Supremo 456/2018, de 18 de julio", "note": "La información es veraz si se basó en fuentes objetivas y fiables, identificadas y susceptibles de contraste, de modo que el lector medio hubiera alcanzado iguales conclusiones con los mismos datos." },
+    { "type": "jurisprudencia", "ref": "Sentencia del Tribunal Supremo 458/2009, de 30 de junio", "note": "Doctrina sobre la irrelevancia de la falta de advertencias de presunción en el encabezamiento, invocada por la Sala pero descartada por las circunstancias de este caso." },
+    { "type": "jurisprudencia", "ref": "Sentencia del Tribunal Supremo 1031/2022, de 23 de diciembre", "note": "Exigencia de base fáctica suficientemente precisa y fiable para los juicios de valor, proporcionada a la naturaleza y grado de la acusación." },
+    { "type": "jurisprudencia", "ref": "Sentencia del Tribunal Supremo 593/2019, de 7 de noviembre", "note": "No procede la publicación íntegra de la sentencia por innecesaria y desproporcionada; basta una nota resumida con la misma difusión y visibilidad." },
+    { "type": "jurisprudencia", "ref": "Sentencia del Tribunal Supremo 910/2023, de 8 de junio", "note": "Rechazo de la condena a leer o difundir personalmente el fallo por constituir una suerte de compulsión personal no asumible." },
+    { "type": "jurisprudencia", "ref": "Sentencias del TEDH de 27 de febrero de 2001, caso Jerusalén contra Austria; 4 de abril de 2013, caso Reznik contra Rusia; 28 de julio de 2020, caso Mónica Macovei contra Rumanía; 25 de marzo de 2021, caso Matalas contra Grecia; y 18 de octubre de 2022, caso Stancu y otros contra Rumanía", "note": "Exigencia de base fáctica suficiente para las opiniones y juicios de valor." },
+    { "type": "jurisprudencia", "ref": "Sentencias del TEDH de 20 de mayo de 1999, caso Bladet Tromsø y Stensaas contra Noruega, y de 15 de junio de 2017, caso Independent Newspapers (Ireland) Limited contra Irlanda", "note": "Advertencia sobre el efecto disuasorio de indemnizaciones excesivas en los procesos por difamación." },
+    { "type": "jurisprudencia", "ref": "Sentencia del Tribunal de Justicia de la Unión Europea de 4 de octubre de 2024, C-633/2022", "note": "Exige extremar la cautela cuando las medidas o sanciones puedan disuadir a la prensa de participar en el debate de asuntos de legítimo interés general." }
+  ],
+  "cited_by_parties": [
+    "Artículo 24.1 de la Constitución Española, invocado por el recurrente como fundamento del deber de motivación y de la racional apreciación de la prueba en el recurso extraordinario por infracción procesal, desestimado.",
+    "Artículo 24.2 de la Constitución Española, invocado por el recurrente por vulneración de la presunción de inocencia, cuestión que la Sala considera sustantiva y no denunciable por esa vía.",
+    "Sentencia del Tribunal Europeo de Derechos Humanos de 28 de junio de 2011, citada por el recurrente sobre la presunción de inocencia fuera del proceso penal, declarada irrelevante por referirse a autoridades públicas."
+  ],
+  "holding": "La Sala desestima el recurso extraordinario por infracción procesal y estima el recurso de casación interpuesto por D. Efrain contra la sentencia 195/2018, de 9 de mayo, de la Sección Octava de la Audiencia Provincial de Madrid, que casa. En su lugar estima en parte el recurso de apelación y revoca la sentencia 68/2017, de 7 de abril, del Juzgado de Primera Instancia núm. 84 de Madrid, y estima en parte la demanda frente a D. Jacinto y Dos Mil Palabras S.L.: declara que los artículos publicados los días 6, 7 y 8 de mayo objeto de la demanda, relativos al cobro por el demandante de una importante cantidad pagada por un gobierno extranjero en un banco radicado en un paraíso fiscal, constituyen una intromisión ilegítima en el derecho al honor del demandante; condena solidariamente a ambos demandados a indemnizarle en dieciocho mil euros, que devengarán el interés legal incrementado en dos puntos desde la fecha de la sentencia; les condena a publicar una nota que recoja resumidamente los principales argumentos y los elementos subjetivos, objetivos y cuantitativos de los pronunciamientos declarativos y de condena, con al menos la misma difusión pública, tipo y tamaño de letra y visibilidad que la intromisión, sin apostillas ni comentarios, en la web y redes sociales del diario digital OKdiario y de su director; y les condena a cesar la divulgación de los artículos en Internet y a realizar las gestiones adecuadas para que su contenido no sea mostrado en las listas de resultados de los motores de búsqueda. Desestima la demanda dirigida contra D. Eloy, a quien absuelve libremente. No hace expresa imposición de las costas de primera instancia y de apelación, excepto las causadas a D. Eloy, que se imponen al demandante y apelante. Condena al recurrente al pago de las costas del recurso extraordinario por infracción procesal y no hace expresa imposición de las del recurso de casación, salvo las causadas a D. Eloy, a cuyo pago condena al demandante. Acuerda devolver el depósito constituido para el recurso de casación y la pérdida del constituido para el recurso extraordinario por infracción procesal.",
+  "ratio_summary": [
+    "La trascendencia de la presunción de inocencia en la ponderación entre el derecho al honor y las libertades de información y expresión es una cuestión sustantiva, propia del recurso de casación, y no puede denunciarse por la vía del recurso extraordinario por infracción procesal del art. 469.1.4.º LEC.",
+    "La doctrina del TEDH sobre la proyección de la presunción de inocencia fuera del proceso penal se dirige a las autoridades públicas, por lo que resulta irrelevante cuando la acción se ejercita frente a particulares: editora, director y periodista de un diario digital.",
+    "En el recurso extraordinario por infracción procesal solo cabe denunciar la falta de racionalidad de la motivación, sin controlar el acierto de la sentencia ni introducir el debate de fondo sobre los criterios de ponderación entre derechos fundamentales y libertades públicas.",
+    "La veracidad no exige correlación absoluta con la realidad, sino diligencia profesional en la contrastación: la información es veraz si se basa en fuentes objetivas y fiables, identificadas y susceptibles de contraste, de modo que el lector medio hubiera alcanzado iguales conclusiones con los mismos datos.",
+    "Sí es relevante la supresión por el director del medio de las cautelas introducidas por el redactor cuando, además, al día siguiente se publica que la Policía «acredita» la autenticidad de los documentos base de la acusación, siendo que la investigación era embrionaria y las copias no llegaron a analizarse.",
+    "La responsabilidad no alcanza al periodista que redactó con cautelas una información sobre la existencia de una investigación policial obtenida de fuente presuntamente fiable y que no intervino en la publicación posterior; una eventual maniobra de intoxicación policial se dilucida en los procesos penales frente a sus responsables.",
+    "Los juicios de valor no están sujetos al requisito de veracidad, pero exigen una base fáctica precisa y fiable proporcionada a la gravedad de la acusación; falta esa base cuando se sustentan en informaciones previas declaradas no veraces.",
+    "Al cuantificar el daño moral debe ponderarse el efecto disuasorio (chilling effect) de una indemnización excesiva sobre la libertad de prensa en asuntos de interés general; y la reparación se satisface con la publicación de una nota resumida, no de la sentencia íntegra, sin que quepa imponer disculpas públicas personales."
+  ],
+  "uncertainties": [
+    "No se resuelve en este proceso si el demandante recibió o no efectivamente el pago del gobierno extranjero, sino únicamente si la información publicada cumplió el estándar de veracidad como diligencia del informador.",
+    "Queda pendiente de los procesos penales iniciados a instancia del demandante y de su partido político la determinación de si la investigación policial fue una maniobra de intoxicación urdida desde el Ministerio del Interior y el eventual reproche a sus responsables.",
+    "La sentencia no concreta el plazo, el texto exacto ni la duración de mantenimiento de la nota resumida que deben publicar los condenados.",
+    "La pretensión de entrega de los beneficios publicitarios se rechaza por defecto de concreción y de prueba del lucro, sin que el documento permita conocer si existió tal lucro vinculado a las publicaciones.",
+    "El alcance práctico de la obligación de gestión ante los titulares de los motores de búsqueda queda indeterminado, al depender de la actuación de terceros ajenos al litigio."
+  ],
+  "document_quality_notes": [
+    "Inconsistencia interna de fechas: en el fundamento quinto se cita el artículo publicado «el día 7 de mayo de 2017», cuando en el resto de la resolución esa publicación se sitúa el 7 de mayo de 2016.",
+    "Referencia normativa duplicada y defectuosa: «lo previsto en el art. 17.1, párrafo final, de la art. 17 de la Ley 34/2002».",
+    "Artefactos de OCR con palabras fusionadas: «haberinfringido», «habertenido», «elrecurrente», «haberfabricado», «AdjuntoOperativo», «Grecia ;y», «Rumanía.Y», «(chilling effect)que».",
+    "Cita anómala en el fundamento primero: «la sentencia de esta sala de 594/2015, de 11 de noviembre», con preposición sobrante.",
+    "Anonimización inconsistente: se anonimiza el Estado pagador como «gobierno de Fabio» y el paraíso fiscal como «Granadinas», pero en varios pasajes se menciona expresamente «Venezuela», «el Presidente de la Asamblea de Venezuela», el banco, «OKDIARIO», «La Sexta» y el programa «AL ROJO VIVO».",
+    "Variación en la grafía del nombre del banco: «Euro Pacif Bank» en los antecedentes y «Euro Pacific Bank» en los fundamentos.",
+    "Inconsistencia en la identificación de las representaciones procesales: el encabezamiento atribuye la representación de D. Eloy al procurador D. José Luis García Guardia, mientras que en los antecedentes se indica que el procurador D. Luis de Villanueva Ferrer contestó a la demanda en representación de D. Jacinto, D. Eloy y Dos Mil Palabras S.L.",
+    "Variación en la grafía del nombre de la procuradora de la parte recurrente: «D.ª María Isabel Afonso Rodríguez» en el encabezamiento y «D.ª Isabel Afonso Rodríguez» en los antecedentes.",
+    "Referencia huérfana: se menciona una sentencia del TEDH «de 28 de junio de 2011» sin identificación del caso ni de las partes.",
+    "El auto que desestimó el recurso de reposición se data «el pasado 3 de diciembre», sin expresión del año, coincidiendo con la fecha señalada para votación y fallo.",
+    "El número de resolución aparece con dos grafías, «Sentencia núm. 1.833/2025» y «Sentencia núm. 1833/2025», referidas a la misma resolución."
+  ],
+  "next_review_questions": [
+    "¿Cuál es el texto literal y el plazo de permanencia de la nota resumida cuya publicación se impone, y en qué ubicaciones concretas de la web y redes sociales debe aparecer?",
+    "¿Consta en las actuaciones el contenido íntegro de la redacción inicial del artículo del 6 de mayo de 2016 firmada por D. Eloy, para contrastar las cautelas suprimidas por el director?",
+    "¿Cuál es el estado y el objeto exactos de los procesos penales iniciados por el demandante y su partido político frente a policías y altos mandos del Ministerio del Interior?",
+    "¿Qué prueba se practicó sobre los ingresos publicitarios de Dos Mil Palabras S.L. y por qué no se acotó a los días de publicación de los artículos litigiosos?",
+    "¿Se corresponde la fecha «7 de mayo de 2017» del fundamento quinto con un error material susceptible de aclaración o rectificación?",
+    "¿Cuál es la identificación completa, caso y partes, de la sentencia del TEDH de 28 de junio de 2011 invocada por el recurrente?",
+    "¿Qué representación procesal ostentaba efectivamente cada procurador respecto de D. Eloy en primera instancia y en casación, dada la discrepancia entre encabezamiento y antecedentes?",
+    "¿Contiene la resolución votos particulares o aclaraciones posteriores que no figuren en esta versión del documento?"
+  ]
+}

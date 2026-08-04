@@ -1,0 +1,105 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2026:1540",
+    "roj": "STS 1540/2026",
+    "resolution_number": "547/2026",
+    "appeal_number": "4936/2025",
+    "id_cendoj": "28079110012026100534"
+  },
+  "decision_date": "2026-04-10",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Rafael Sarazá Jimena",
+  "parties": [
+    { "name": "Liga Nacional de Fútbol Profesional", "role": "parte recurrente" },
+    { "name": "Fútbol Club Barcelona", "role": "parte recurrida" },
+    { "name": "Real Madrid Club de Fútbol", "role": "parte recurrida" }
+  ],
+  "facts": [
+    "El Fútbol Club Barcelona y el Real Madrid Club de Fútbol son clubes integrados en la Liga Nacional de Fútbol Profesional (LaLiga), asociación de pertenencia obligatoria para todo club que quiera participar en el campeonato de fútbol profesional que organiza.",
+    "Los clubes asociados ceden por ley a LaLiga los derechos audiovisuales de los que son titulares para su gestión y comercialización conjunta, existiendo a tal fin un Órgano de Control de la gestión de los derechos audiovisuales.",
+    "El presidente de LaLiga presidía también dicho Órgano de Control de la gestión de los derechos audiovisuales.",
+    "El Fútbol Club Barcelona y el Real Madrid Club de Fútbol tenían la condición de socios de la compañía European Super League Company, S.L., promotora del proyecto de la denominada «Superliga».",
+    "En la sesión de la Comisión Delegada de 1 de diciembre de 2021 el presidente de LaLiga puso de manifiesto la situación de conflicto de interés que, a su juicio, afectaba a ambos clubes por su participación en el proyecto de la Superliga.",
+    "LaLiga había solicitado al despacho Uría un informe sobre esa situación de conflicto de interés.",
+    "El informe anual de buen gobierno corporativo de la temporada 2020/2021, aprobado por la Comisión Delegada el 1 de diciembre de 2021, se limitó a incluir la participación de ambos clubes entre los posibles conflictos de interés actuales o potenciales, sin recoger ninguna otra actuación o decisión.",
+    "En la reunión del Órgano de Control celebrada el 1 de marzo de 2022, el presidente de LaLiga impidió que ambos clubes participaran en la deliberación y votación de los puntos 4, 5 y 6 del orden del día.",
+    "En la reunión del Órgano de Control celebrada el 12 de abril de 2022, el presidente de LaLiga impidió que ambos clubes participaran en la deliberación y votación de los puntos 5 y 6 del orden del día.",
+    "En la reunión del Órgano de Control celebrada el 19 de mayo de 2022, el presidente de LaLiga impidió que ambos clubes participaran en la deliberación y votación del punto 5 del orden del día.",
+    "El presidente de LaLiga fundó esas decisiones en la existencia de un conflicto de interés derivado de la participación de ambos clubes en el proyecto de la Superliga.",
+    "Fue el propio presidente de LaLiga y del Órgano de Control quien formuló la recusación de ambos clubes y quien resolvió sobre ella.",
+    "Según se recoge en la resolución de primera instancia, los dos clubes afectados generan más del 50% de los ingresos de la competición."
+  ],
+  "procedural_posture": "El procurador D. Pablo Sorribes Calle, en nombre del Fútbol Club Barcelona y del Real Madrid Club de Fútbol, interpuso demanda de juicio ordinario contra la Liga Nacional de Fútbol Profesional sobre derecho de asociación, presentada el 20 de mayo de 2022 y registrada con el núm. 773/2022 en el Juzgado de Primera Instancia núm. 63 de Madrid. Admitida a trámite y emplazada la demandada, el Ministerio Fiscal emitió informe contestando a la demanda y la Liga Nacional de Fútbol Profesional, representada por la procuradora D.ª Consuelo Rodríguez Chacón, contestó solicitando la desestimación con condena en costas a la actora. El Juzgado dictó sentencia 334/2023, de 19 de octubre, que estimó sustancialmente la demanda, declaró vulnerados el derecho de asociación y el art. 7.4 del RDL 5/2015 y la nulidad de pleno derecho de las decisiones del presidente adoptadas el 1 de marzo, el 12 de abril y el 19 de mayo de 2022, con imposición de costas a la demandada; el 16 de noviembre de 2023 se dictó auto de aclaración que rectificó el antecedente de hecho primero y los fundamentos de derecho sexto, séptimo y noveno. La Liga Nacional de Fútbol Profesional recurrió en apelación; se opusieron los clubes demandantes y el Ministerio Fiscal. La Sección Décima de la Audiencia Provincial de Madrid tramitó el rollo 452/2024 y dictó sentencia 149/2025, de 7 de abril, que desestimó el recurso con condena en costas y pérdida del depósito. La Liga Nacional de Fútbol Profesional, representada por la procuradora D.ª Isabel Alicia Mota Torres, interpuso recurso de casación con dos motivos al amparo del art. 477.2 LEC. Remitidas las actuaciones y emplazadas las partes, por auto de 29 de octubre de 2025 se admitió el recurso y se dio traslado para oposición a la parte recurrida y al Ministerio Fiscal; ambos se opusieron. Al no solicitarse vista pública por todas las partes, se señaló para votación y fallo el 25 de marzo de 2026, en que tuvo lugar.",
+  "legal_issues": [
+    "Si procede estimar un recurso de casación que impugna solo uno de los argumentos que integran la ratio decidendi de la sentencia recurrida, dejando incólume otro argumento por sí solo suficiente para sostener el fallo.",
+    "Si concurría un conflicto de interés que justificara excluir a los clubes demandantes de la deliberación y votación en el Órgano de Control de la gestión de los derechos audiovisuales.",
+    "Si el control judicial de fondo de los acuerdos asociativos se limita a comprobar la concurrencia de una base razonable en la decisión adoptada.",
+    "Si la recusación de los socios formulada por el propio presidente del órgano debía ser resuelta por un tercero imparcial.",
+    "A quién corresponde el pago de las costas del recurso de casación y qué suerte debe seguir el depósito constituido."
+  ],
+  "applied_rules": [
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 440/2012, de 28 de junio",
+      "note": "Doctrina de la equivalencia de resultados y carencia de efecto útil: no puede surtir efecto en casación un motivo que no determine una alteración del fallo recurrido."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 652/2015, de 20 de noviembre",
+      "note": "La falta de impugnación en casación de uno de los argumentos con rango de fundamental en la sentencia de apelación supone la falta de efecto útil del recurso."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 398.1 en relación con el artículo 394.1 de la Ley de Enjuiciamiento Civil",
+      "note": "Fundamento de la imposición de las costas del recurso de casación a la recurrente."
+    },
+    {
+      "type": "norma",
+      "ref": "Disposición adicional 15.ª, apartado 9, de la Ley Orgánica del Poder Judicial",
+      "note": "Fundamento del acuerdo de pérdida del depósito constituido para recurrir."
+    }
+  ],
+  "cited_by_parties": [
+    "Artículo 477.2 de la Ley de Enjuiciamiento Civil, invocado por la recurrente como cauce de ambos motivos de casación.",
+    "Artículo 7.4 del Real Decreto-ley 5/2015, de 30 de abril, de medidas urgentes en relación con la comercialización de los derechos de explotación de contenidos audiovisuales de las competiciones de fútbol profesional.",
+    "Artículo 21 a) de la Ley Orgánica 1/2002, reguladora del Derecho de Asociación (LODA), sobre el derecho de participación.",
+    "Jurisprudencia definitoria del conflicto de interés en el ámbito de los órganos de dirección, invocada por la recurrente en el primer motivo.",
+    "Jurisprudencia delimitadora del control judicial de acuerdos asociativos y de la exigencia de base razonable, invocada por la recurrente en el segundo motivo."
+  ],
+  "holding": "La Sala desestima el recurso de casación interpuesto por la Liga Nacional de Fútbol Profesional contra la sentencia 149/2025, de 7 de abril, de la Sección Décima de la Audiencia Provincial de Madrid, dictada en el recurso de apelación núm. 452/2024, por falta de efecto útil, al no haberse impugnado uno de los argumentos determinantes del fallo recurrido. Condena a la recurrente al pago de las costas del recurso de casación y acuerda la pérdida del depósito constituido.",
+  "ratio_summary": [
+    "Cuando el fallo de la sentencia recurrida se apoya en varios argumentos que integran su ratio decidendi, la impugnación de solo uno de ellos no permite alterar el fallo si el argumento no combatido basta por sí mismo para sostenerlo.",
+    "Conforme a la doctrina de la equivalencia de resultados y carencia de efecto útil, no procede acoger el recurso cuando la eventual aceptación de la tesis del recurrente conduce a la misma solución contenida en la sentencia impugnada.",
+    "La doctrina de la carencia de efecto útil opera incluso cuando la doctrina seguida por la sentencia impugnada no fuera correcta, si su estimación no produciría una modificación del fallo.",
+    "En el caso, la nulidad de las decisiones se sustentó tanto en la inexistencia del conflicto de interés como en que la recusación formulada por el propio presidente de LaLiga y del Órgano de Control debió resolverse por un tercero, argumento este último no impugnado en casación.",
+    "Al limitarse ambos motivos a cuestionar la inexistencia del conflicto de interés, su eventual estimación no habría revocado los pronunciamientos impugnados, lo que determina la desestimación del recurso sin entrar en el fondo de la cuestión planteada.",
+    "La desestimación del recurso de casación conlleva la imposición de costas a la recurrente por aplicación del criterio del vencimiento objetivo y la pérdida del depósito constituido."
+  ],
+  "uncertainties": [
+    "La Sala no se pronuncia sobre el fondo de la cuestión planteada: no resuelve si concurría o no el conflicto de interés derivado de la participación de los clubes en el proyecto de la Superliga.",
+    "Tampoco se pronuncia sobre el alcance del control judicial de fondo de los acuerdos asociativos ni sobre la exigencia de base razonable invocada en el segundo motivo.",
+    "El alcance del pronunciamiento sobre el conflicto de interés queda condicionado, según la primera instancia, a las circunstancias de cada caso y a la efectiva implantación o no de la competición proyectada, sin que el Tribunal Supremo lo confirme ni lo revise.",
+    "El documento no permite conocer el contenido de los puntos del orden del día de los que fueron excluidos los clubes ni el sentido de los acuerdos adoptados en esas reuniones.",
+    "No consta en el documento el resultado del informe encargado al despacho Uría sobre la situación de conflicto de interés."
+  ],
+  "document_quality_notes": [
+    "El punto 2) del fallo de primera instancia transcrito aparece truncado: «impidió que FÚTBOL CLUB y votación de los puntos del orden del día núm. 4, 5 y 6», omitiendo la mención al Real Madrid Club de Fútbol y el verbo de la deliberación.",
+    "Los puntos 1) y 2) del fallo de primera instancia transcrito reproducen sustancialmente la misma declaración referida a la reunión de 1 de marzo de 2022, mientras que la demanda distinguía entre vulneración del derecho de asociación y del art. 7.4 del RDL 5/2015.",
+    "Redacción incompleta en el fallo de primera instancia: «Y con expresa de la condena de las costas causadas en este procedimiento a la parte demandada».",
+    "El fallo de primera instancia denomina a la demandada «LA LIGA NACIONAL DE FÚTBOL NACIONAL», en lugar de Liga Nacional de Fútbol Profesional.",
+    "Artefactos de OCR y de composición: «European Super League Company $S.L.», «Buen Gobierno 2020/20201», «ElÓrgano», «quedarlimitado», «elrazonamiento», «ratio decidendi[las razones...]».",
+    "El texto intercala en el cuerpo del documento la numeración de página y la marca «JURISPRUDENCIA» procedentes del encabezado o pie de la fuente.",
+    "El auto de aclaración de 16 de noviembre de 2023 rectifica una referencia a «La Real Sociedad Canina de España» contenida en la sentencia de primera instancia, indicio de reutilización de plantilla ajena al litigio.",
+    "Los campos de cabecera «Fallo/Acuerdo:» y «Nota:» figuran sin contenido."
+  ],
+  "next_review_questions": [
+    "¿Cuál es el contenido íntegro de los puntos del orden del día 4, 5 y 6 de las reuniones del Órgano de Control de 1 de marzo, 12 de abril y 19 de mayo de 2022 de los que fueron excluidos los clubes?",
+    "¿Qué texto exacto figura en el punto 2) del fallo de la sentencia 334/2023 del Juzgado de Primera Instancia núm. 63 de Madrid, dado que la transcripción aparece truncada?",
+    "¿Qué pronunciamiento concreto realizó la sentencia de primera instancia sobre la pretensión 7) de la demanda relativa a la inexistencia de conflicto de interés, y en qué medida fue confirmado en apelación?",
+    "¿Qué razonamientos empleó la sentencia 149/2025 de la Audiencia Provincial de Madrid para confirmar que la recusación debía resolverse por un tercero?",
+    "¿En qué sentido informó el Ministerio Fiscal al contestar a la demanda y al oponerse a los recursos de apelación y de casación?",
+    "¿Cuál fue el contenido del informe solicitado al despacho Uría sobre el alegado conflicto de interés y qué valor probatorio se le atribuyó en las instancias?",
+    "¿Cuál es el importe del depósito constituido para recurrir cuya pérdida se acuerda y el alcance cuantificado de la condena en costas?"
+  ]
+}

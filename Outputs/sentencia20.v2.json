@@ -1,0 +1,107 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2025:2348",
+    "roj": "STS 2348/2025",
+    "resolution_number": "842/2025",
+    "appeal_number": "6680/2020",
+    "id_cendoj": "28079110012025100797"
+  },
+  "decision_date": "2025-05-27",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Rafael Sarazá Jimena",
+  "parties": [
+    {
+      "name": "Plataforma Juego Limpio de Administraciones de Loterías",
+      "role": "parte recurrente"
+    },
+    {
+      "name": "Sociedad Estatal Loterías y Apuestas del Estado",
+      "role": "parte recurrida"
+    }
+  ],
+  "facts": [
+    "La Plataforma Juego Limpio de Administraciones de Loterías es una asociación constituida para la defensa de los intereses de los gestores de administraciones de lotería y agrupa a más de dos centenares de ellos.",
+    "La Sociedad Estatal Loterías y Apuestas del Estado (SELAE) es una sociedad mercantil de capital cuyo único socio es la Administración del Estado y se encarga de la gestión, explotación y comercialización de los juegos de titularidad estatal.",
+    "SELAE mantiene relación contractual con la mayoría de los titulares de administraciones de lotería, mientras que con una minoría que no suscribió el contrato conserva una relación preexistente de naturaleza administrativa.",
+    "Los puntos de venta integrales (las tradicionales administraciones de lotería) tienen atribuida la venta en exclusiva del billete tradicional preimpreso de Lotería Nacional, elaborado por la Fábrica Nacional de Moneda y Timbre.",
+    "Los puntos de venta integrales deben reunir características especiales y están sujetos a restricciones que les impiden comercializar productos y servicios distintos de los de SELAE.",
+    "SELAE habilitó la venta de lotería mediante resguardos que se imprimen en el acto en el propio establecimiento expendedor.",
+    "Los resguardos de lotería pueden venderse tanto en los puntos de venta integrales como en los denominados puntos de venta mixtos, que se dedican además a otras actividades (bares, quioscos y similares).",
+    "SELAE comercializa directamente billetes de Lotería Nacional a través de su propia página web en internet.",
+    "En la venta por internet el cliente selecciona en el momento de la compra un punto de venta integral, que percibe una comisión del 4% del importe de la venta.",
+    "SELAE no ha aceptado que las administraciones de lotería amplíen su exclusiva de venta a los nuevos canales de comercialización (resguardos y venta por internet)."
+  ],
+  "procedural_posture": "La Plataforma Juego Limpio de Administraciones de Loterías, representada por el procurador D. Argimiro Vázquez Guillén, presentó el 14 de octubre de 2016 demanda de juicio ordinario contra la Sociedad Estatal Loterías y Apuestas del Estado S.A., repartida al Juzgado de lo Mercantil núm. 6 de Madrid con el núm. 740/2016, en la que ejercitaba acciones declarativa, de cesación y de prohibición de reiteración por actos de competencia desleal de los artículos 15 y 16 de la Ley 3/1991. Admitida a trámite y emplazada la demandada, el Abogado del Estado contestó solicitando la desestimación con condena en costas. El Juzgado dictó sentencia 139/2019, de 8 de abril, que estimó parcialmente la demanda, declaró la existencia de acto desleal del art. 16.2 LCD, condenó a la demandada a cesar en la venta directa por su página web y en la discriminación en la atribución de comisiones por criterios geográficos, desestimó las demás pretensiones y no impuso costas. Ambas partes apelaron; la Sección Vigesimoctava de la Audiencia Provincial de Madrid tramitó el rollo 402/2019 y dictó sentencia 515/2020, de 23 de octubre, que estimó el recurso de SELAE, revocó la resolución de instancia, desestimó íntegramente la demanda con imposición a la demandante de las costas de primera instancia, desestimó el recurso de la Plataforma con imposición de las costas de su apelación y no impuso las costas de la apelación de SELAE. La Plataforma interpuso recurso de casación con dos motivos; remitidas las actuaciones y personadas las partes, por auto de 15 de febrero de 2023 se admitió el recurso y se dio traslado a la recurrida, que se opuso. No solicitada vista pública por todas las partes, se señaló para votación y fallo el 21 de mayo de 2025, en que tuvo lugar.",
+  "legal_issues": [
+    "Si la puesta en marcha por SELAE de nuevos canales de comercialización de la Lotería Nacional (resguardos impresos en el acto y venta directa en su página web) constituye explotación de la situación de dependencia económica de las administraciones de lotería del artículo 16.2 LCD.",
+    "Si la existencia de una situación de dependencia económica y de poder relativo de mercado basta, por sí sola, para calificar de desleal la conducta de la empresa fuerte o si se exige además un abuso carente de justificación objetiva y desproporcionado.",
+    "Si la empresa con poder relativo de mercado está obligada a promover o preservar la posición económica de las empresas dependientes de ella.",
+    "Si el sistema de reparto de comisiones por la venta de lotería en internet, basado en la elección del punto de venta por el cliente, es discriminatorio a efectos del artículo 16.2 LCD.",
+    "Si la eventual infracción de la Instrucción General de Loterías de 1956 y de la disposición adicional 34ª de la Ley 26/2009 puede fundar por sí sola la acción por abuso de dependencia económica del artículo 16.2 LCD.",
+    "Cuál es el objeto propio del proceso de competencia desleal frente a las controversias contractuales o de infracción de la normativa reguladora del juego."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Artículo 16.2 de la Ley 3/1991, de 10 de enero, de Competencia Desleal",
+      "note": "Tipo de la explotación de la situación de dependencia económica; la Sala delimita sus elementos (poder relativo de mercado, ausencia de alternativa equivalente, abuso sin justificación objetiva y desproporcionado) y concluye que la conducta de SELAE no los reúne."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 6.1.b de la Ley 16/1989, de Defensa de la Competencia, y Ley 15/2007, de Defensa de la Competencia",
+      "note": "La Sala razona que la explotación de la dependencia económica estuvo tipificada en la Ley 16/1989 y no se incluyó en la Ley 15/2007, por lo que su tipificación como ilícita ha quedado circunscrita a la Ley de Competencia Desleal."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 398.1 y 394.1 de la Ley de Enjuiciamiento Civil",
+      "note": "Fundamento de la imposición de las costas del recurso de casación a la recurrente."
+    },
+    {
+      "type": "norma",
+      "ref": "Disposición adicional 15.ª, apartado 9, de la Ley Orgánica del Poder Judicial",
+      "note": "Fundamento de la pérdida del depósito constituido para recurrir."
+    }
+  ],
+  "cited_by_parties": [
+    "Artículo 15.1 de la Ley 3/1991, de 10 de enero, de Competencia Desleal (violación de normas), invocado en la demanda y abandonado por la demandante en el recurso de apelación",
+    "Decreto de 23 de marzo de 1956, por el que se aprueba la Instrucción General de Loterías",
+    "Disposición adicional 34ª de la Ley 26/2009, de 23 de diciembre, de Presupuestos Generales del Estado"
+  ],
+  "holding": "La Sala desestima el recurso de casación interpuesto por la Plataforma Juego Limpio de Administraciones de Loterías contra la sentencia 515/2020, de 23 de octubre, de la Sección Vigesimoctava de la Audiencia Provincial de Madrid, dictada en el recurso de apelación núm. 402/2019, que queda confirmada, y condena a la recurrente al pago de las costas del recurso de casación, así como a la pérdida del depósito constituido.",
+  "ratio_summary": [
+    "El objeto del litigio por competencia desleal ex art. 16.2 LCD no es determinar si la demandada ha incumplido los contratos con los titulares de puntos de venta, el régimen administrativo aplicable a la minoría no contratante o la normativa reguladora del juego: no cualquier ilicitud contractual o legal constituye un acto de competencia desleal.",
+    "Los contratos suscritos, la relación administrativa subsistente y la normativa del juego integran el contexto en que se enjuicia la conducta, pero el contexto no puede confundirse con el objeto del litigio.",
+    "La explotación de la dependencia económica del art. 16.2 LCD se relaciona con el abuso de posición dominante: sanciona que empresas con poder relativo de mercado exploten la dependencia de clientes o proveedores sin alternativa equivalente, obstaculizando la competencia por eficiencia. Tras la Ley 15/2007 su tipificación queda circunscrita a la LCD.",
+    "No es ilícito ostentar poder relativo de mercado, sino abusar de la dependencia mediante una conducta que obstaculiza sin justificación objetiva la actividad de terceros y sin guardar proporción con los objetivos lícitos perseguidos.",
+    "La empresa con poder relativo de mercado no está obligada a promover la situación de las empresas dependientes; conserva libertad para fijar sus objetivos empresariales y el modo de alcanzarlos, con el límite de la proporcionalidad respecto de esos objetivos lícitos.",
+    "Los nuevos canales de venta (resguardos impresos en el acto y web propia) responden a una motivación legítima de adaptación tecnológica, tienen justificación empresarial razonable y son proporcionados, sin que se haya probado que vacíen de contenido la relación económica con las administraciones de lotería, que participan en ambos canales.",
+    "No hay discriminación: las exigencias impuestas a los puntos integrales derivan de su exclusiva sobre el billete tradicional, que constituye título valor, y la centralización de la venta por internet se justifica por la protección de menores y la prevención del blanqueo, percibiendo aquellos una comisión del 4%.",
+    "Es artificioso engarzar la interpretación de la Instrucción General de Loterías y de la DA 34ª de la Ley 26/2009 con el art. 16.2 LCD: la eventual infracción de esas normas es irrelevante si no supone abuso de la dependencia económica, máxime tras renunciar la demandante en apelación al ilícito del art. 15.1 LCD."
+  ],
+  "uncertainties": [
+    "La sentencia deja expresamente imprejuzgadas las eventuales pretensiones de la Plataforma por incumplimiento contractual, infracción de la normativa reguladora del juego o vulneración de derechos adquiridos, que exceden del enjuiciamiento del art. 16.2 LCD.",
+    "El alcance de la exclusiva de las administraciones de lotería sobre el billete tradicional frente a los nuevos formatos de comercialización no queda definido con carácter general, sino solo a efectos de descartar el abuso de dependencia económica.",
+    "No se cuantifica en el documento qué proporción del negocio de venta de lotería se ha desplazado a los nuevos canales; la Sala se limita a afirmar que no se ha considerado probado el vaciamiento de la relación económica y que el desplazamiento sería de una parte no mayoritaria.",
+    "El ilícito de violación de normas del art. 15.1 LCD quedó fuera del debate por no sostenerse en apelación, sin que se resuelva sobre su fundamento.",
+    "Los defectos procesales alegados por SELAE en su recurso de apelación se mencionan sin que el documento precise su contenido ni su suerte."
+  ],
+  "document_quality_notes": [
+    "Artefactos de OCR con palabras unidas: «ilícito antitrustconsistente», «InstrucciónGeneral de Loterías», «\"décimo\"de la lotería nacional».",
+    "Erratas de transcripción: «En el encabezamiento del motivo de denuncia la infracción del art. 16.2 LCD» (falta «se») y «por las razones que a continuación de expresan» (por «se expresan»).",
+    "La dirección de la página web de SELAE aparece suprimida y sustituida por comillas vacías («»), lo que deja incompleta la cita del fallo de primera instancia.",
+    "Inconsistencia interna: la disposición adicional 34ª de la Ley 26/2009 es calificada más adelante como «una disposición transitoria de una ley».",
+    "Denominación variable de la parte actora: «Plataforma Juego Limpio de Administraciones de Loterías» y «Plataforma Juego Limpio Administraciones de Lotería».",
+    "El texto incorpora encabezados y numeración de página del repositorio («JURISPRUDENCIA», cifras sueltas de paginación) intercalados en el cuerpo de la resolución.",
+    "Los campos de cabecera «Fallo/Acuerdo:» y «Nota:» figuran sin contenido."
+  ],
+  "next_review_questions": [
+    "¿Puede consultarse el texto íntegro de la sentencia 515/2020 de la Audiencia Provincial de Madrid (SAP M 16506/2020) para verificar los hechos declarados probados sobre el volumen de ventas desplazado a los nuevos canales?",
+    "¿Qué contenía exactamente la alegación de defectos procesales formulada por SELAE en su recurso de apelación y cómo fue resuelta?",
+    "¿Cuál es la dirección de la página web de SELAE suprimida en el texto y afecta su omisión a la identificación del canal de venta enjuiciado?",
+    "¿Consta en el auto de 15 de febrero de 2023 (ATS 4622/2023) la delimitación del interés casacional admitido y de las cuestiones jurídicas sobre las que se apreció ausencia de jurisprudencia?",
+    "¿Existen procedimientos paralelos, contractuales o contencioso-administrativos, sobre los derechos adquiridos de los titulares de puntos de venta al amparo de la DA 34ª de la Ley 26/2009?",
+    "¿Cuál es el contenido literal de los contratos suscritos entre SELAE y los titulares de administraciones de lotería en cuanto al alcance de la exclusiva de venta?",
+    "¿Se dispone del texto de la sentencia 139/2019 del Juzgado de lo Mercantil núm. 6 de Madrid (SJM M 221/2019) para contrastar la fundamentación sobre el reparto de comisiones por criterios geográficos?"
+  ]
+}

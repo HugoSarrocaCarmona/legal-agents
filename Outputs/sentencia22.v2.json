@@ -1,0 +1,132 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2025:2129",
+    "roj": "STS 2129/2025",
+    "resolution_number": "707/2025",
+    "appeal_number": "547/2020",
+    "id_cendoj": "28079110012025100715"
+  },
+  "decision_date": "2025-05-09",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "José Luis Seoane Spiegelberg",
+  "parties": [
+    {
+      "name": "Empresa Municipal de Vivienda y Suelo de Madrid, S.A.",
+      "role": "recurrente en casación"
+    },
+    {
+      "name": "Penélope",
+      "role": "parte recurrida"
+    }
+  ],
+  "facts": [
+    "El 3 de marzo de 2010 Penélope suscribió, como arrendataria, un contrato de arrendamiento de vivienda de protección pública con la Empresa Municipal de la Vivienda y Suelo de Madrid como arrendadora.",
+    "La estipulación decimoprimera del contrato estableció que serían de cuenta del arrendatario el coste de los servicios de que estuviera dotada la vivienda y el inmueble, así como el importe de los tributos que gravaran el mismo.",
+    "Esa misma estipulación detallaba como gastos por servicios a cargo del arrendatario los servicios individuales de agua, luz, gas y análogos, los servicios comunes de luz, elevadores, antena colectiva y portero automático, y los gastos de guardería, limpieza y conservación de viales, parques, jardines y demás superficies vinculadas al inmueble.",
+    "La estipulación vigesimoprimera dispuso que el contrato se celebraba al amparo de la Ley de Arrendamientos Urbanos y se sometía a su régimen jurídico, con la sola excepción de las especificaciones derivadas del propio régimen de protección pública de la vivienda.",
+    "La misma estipulación vigesimoprimera remitía, en lo no regulado, al Reglamento de Adjudicación de Vivienda con Protección Pública afectas al Plan de Primera Vivienda y, subsidiariamente, al Código Civil.",
+    "El contrato no determinó el importe anual de los gastos generales repercutibles a la fecha de su celebración.",
+    "La arrendataria abonó a la entidad arrendadora, durante 44 meses, la cantidad de 45,31 euros mensuales en concepto de cuota de comunidad, lo que totaliza 1.993,64 euros.",
+    "No se cuestionó que el importe de las cuotas repercutidas (45,31 euros) correspondía al coste real de los servicios recibidos y abonados por la entidad arrendadora.",
+    "La Empresa Municipal de la Vivienda y Suelo de Madrid, S.A. es una empresa perteneciente al sector público municipal."
+  ],
+  "procedural_posture": "El procurador Roberto Granizo Palomeque, en nombre de Penélope, interpuso demanda de juicio verbal contra la Empresa Municipal de la Vivienda y Suelo de Madrid solicitando que se declarase indebidamente percibida la cantidad reclamada y se condenase a la EMVS a reintegrar las cantidades cobradas por gastos de comunidad, más intereses legales y costas. La demanda se repartió al Juzgado de Primera Instancia n.º 61 de Madrid; por resolución de 1 de diciembre de 2017 se acordó darle la tramitación de juicio ordinario. La demandada contestó solicitando la desestimación íntegra con imposición de costas a la actora. El Juzgado dictó sentencia de 20 de febrero de 2019 estimando la demanda y condenando a la EMVS al pago de 1.993,64 euros con intereses legales y costas. La demandada apeló; el recurso correspondió a la Sección 25.ª de la Audiencia Provincial de Madrid, rollo 332/2019, que por sentencia n.º 465/2019, de 14 de noviembre de 2019, desestimó el recurso, confirmó la sentencia de instancia e impuso las costas de la alzada a la apelante con pérdida del depósito. La EMVS interpuso recurso de casación por infracción de normas aplicables para resolver las cuestiones objeto del proceso, con interés casacional por oposición a la doctrina jurisprudencial del Tribunal Supremo y por jurisprudencia contradictoria de la propia Audiencia Provincial de Madrid. Por auto de 15 de marzo de 2022 la Sala admitió el recurso y abrió plazo de veinte días para la oposición, que la parte recurrida formalizó por escrito alegando causas de inadmisión y oponiéndose al fondo. Por providencia de 5 de marzo de 2025 se nombró ponente y se acordó resolver sin celebración de vista, señalándose para votación y fallo el 30 de abril de 2025, fecha en que tuvo lugar.",
+  "legal_issues": [
+    "Si concurren óbices formales de inadmisibilidad del recurso de casación derivados de un auto de inadmisión previo dictado en el recurso 1156/2019 y del desistimiento de otros recursos por la entidad recurrente.",
+    "Si al arrendamiento de una vivienda de protección pública de la Comunidad de Madrid le resulta aplicable el requisito del art. 20.1 de la LAU de determinar por escrito el importe anual de los gastos generales a la fecha del contrato.",
+    "Si la legislación autonómica sobre viviendas con protección pública, que permite repercutir el coste real de los servicios, debe integrarse supletoriamente con la LAU de 1994 añadiendo un requisito adicional de cuantificación anual.",
+    "Cuál es el alcance de la remisión que la disposición adicional primera, apartados 4, 7 y 8, de la LAU hace a las normas particulares de las viviendas de protección oficial.",
+    "Si procede la restitución a la arrendataria de las cantidades abonadas en concepto de cuota de comunidad durante 44 mensualidades.",
+    "Si procede la imposición de costas de las instancias cuando existían criterios divergentes en los tribunales provinciales y ausencia de jurisprudencia de la Sala."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Disposición adicional primera, apartados 4, 7 y 8, de la Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos",
+      "note": "El arrendador puede percibir, además de la renta, el coste real de los servicios; lo dispuesto en la LAU se aplica en defecto de legislación específica autonómica y los arrendamientos de VPO de promoción pública se rigen por sus normas particulares, aplicándose la LAU solo en lo no regulado por ellas."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 13.4 del Decreto 74/2009, de 30 de julio, del Consejo de Gobierno, por el que se aprueba el Reglamento de Viviendas con Protección Pública de la Comunidad de Madrid",
+      "note": "Norma autonómica de aplicación preferente que permite al arrendador percibir el coste real de los servicios de que disfrute el inquilino sin exigir la especificación de su importe en cómputo anual."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 20.1 de la Ley 29/1994, de Arrendamientos Urbanos",
+      "note": "La Sala analiza su exigencia de constancia escrita y determinación del importe anual de los gastos y concluye que no resulta aplicable al arrendamiento protegido, al no existir laguna que colmar mediante supletoriedad."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 6 de la Ley 29/1994, de Arrendamientos Urbanos",
+      "note": "Descartada la aplicación del art. 20.1 LAU, la Sala razona que tampoco es de aplicación la norma sobre imperatividad invocada para sostener la nulidad de la cláusula."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 26.1.4 del Estatuto de Autonomía de la Comunidad de Madrid, aprobado por Ley Orgánica 3/1983, de 25 de febrero",
+      "note": "Fundamenta la competencia exclusiva de la Comunidad de Madrid en materia de vivienda y, con ella, la potestad reglamentaria de la que deriva el Decreto 74/2009."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 249.1.6.º de la Ley de Enjuiciamiento Civil",
+      "note": "Justifica que la demanda se tramitara por los cauces del juicio ordinario al ejercitarse una acción de nulidad de cláusula contractual, lo que impide aplicar como precedente el auto de inadmisión dictado en un juicio verbal."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 19 de la Ley de Enjuiciamiento Civil",
+      "note": "El desistimiento de otros recursos por la recurrente es un acto de disposición que no puede operar como precedente sobre la admisibilidad."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 1233/2024, de 3 de octubre, y 1634/2024, de 5 de diciembre, y auto del pleno de 6 de noviembre de 2013 (recurso 485/2012)",
+      "note": "Doctrina de las causas absolutas y relativas de inadmisibilidad: basta la correcta identificación del problema jurídico y una exposición adecuada del interés casacional para pasar el test de admisibilidad."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 394 y 398 de la Ley de Enjuiciamiento Civil y disposición adicional 15.ª, apartado 8, de la Ley Orgánica del Poder Judicial",
+      "note": "Fundamentan la no imposición de costas de primera instancia por las serias dudas derivadas de los criterios divergentes, la no imposición de costas de los recursos estimados y la devolución de los depósitos constituidos para recurrir."
+    }
+  ],
+  "cited_by_parties": [
+    "SSTS 337/2009, de 14 de mayo; 497/2010, de 14 de julio; 192/2011, de 25 de marzo; y 290/2017, de 12 de mayo, invocadas por la recurrente para sostener la prevalencia del régimen especial de las viviendas de protección oficial",
+    "Auto de inadmisibilidad de 6 de octubre de 2021, dictado en el recurso de casación 1156/2019, invocado por la parte recurrida como precedente de inadmisión y descartado por falta de identidad de razón",
+    "Alegación de la recurrente sobre el principio del interés general y sobre la limitación de la exclusión voluntaria de la ley aplicable y la renuncia de derechos cuando contraríen el interés o el orden público"
+  ],
+  "holding": "La Sala estima el recurso de casación interpuesto por la Empresa Municipal de Vivienda y Suelo de Madrid contra la sentencia 465/2019, de 14 de noviembre, de la Sección 25.ª de la Audiencia Provincial de Madrid, dictada en el recurso de apelación 332/2019, sin imposición de costas y con devolución del depósito constituido para recurrir. Casa dicha sentencia, que deja sin efecto, y, con estimación del recurso de apelación de la misma entidad, revoca la sentencia 52/2019, de 20 de febrero, del Juzgado de Primera Instancia n.º 61 de Madrid y desestima la demanda interpuesta por Penélope, sin imposición de las costas de ambas instancias y con devolución del depósito constituido para apelar.",
+  "ratio_summary": [
+    "Los arrendamientos de viviendas de protección oficial de promoción pública se rigen, conforme a la disposición adicional primera, apartados 7 y 8, de la LAU de 1994, por las normas particulares autonómicas, aplicándose la ley arrendaticia estatal únicamente en lo no regulado por ellas.",
+    "El art. 13.4 del Decreto 74/2009 de la Comunidad de Madrid autoriza al arrendador a percibir, además de la renta, el coste real de los servicios de que disfrute el inquilino, con el solo límite de que la repercusión se ciña a ese coste real y medie cláusula contractual que ejercite la facultad.",
+    "La norma autonómica no exige la especificación del importe de los servicios en cómputo anual, por lo que no existe laguna que suplir, norma ausente que reemplazar ni regulación que completar mediante la aplicación supletoria de la LAU de 1994.",
+    "No cabe confundir la supletoriedad, técnica para cubrir lagunas del ordenamiento cuando el supuesto no está regulado por la norma inicialmente aplicable, con la integración del contrato mediante una mixtura de disposiciones que regulan la repercusión de los servicios de forma distinta.",
+    "Al no darse el supuesto de supletoriedad legal, no es aplicable el art. 20.1 LAU, cuyas exigencias se circunscriben a las viviendas del mercado libre y no intervenido, ni tampoco, en consecuencia, el art. 6 de la LAU.",
+    "La aplicación del régimen autonómico respeta la cláusula vigesimoprimera del contrato, pues la propia LAU remite en su disposición adicional primera, apartado séptimo, a las disposiciones particulares reguladoras de las viviendas de protección oficial.",
+    "Basta para superar el test de admisibilidad la correcta identificación del problema jurídico y una exposición adecuada del interés casacional, máxime cuando se plantea una cuestión estrictamente jurídica, de interés general y sin criterio jurisprudencial previo.",
+    "La existencia de criterios divergentes en las audiencias provinciales y la ausencia de jurisprudencia de la Sala sobre la cuestión justifican que no se haga especial condena en costas de primera instancia."
+  ],
+  "uncertainties": [
+    "El contrato remite en su estipulación vigesimoprimera al Reglamento de Adjudicación de Vivienda con Protección Pública afectas al Plan de Primera Vivienda, norma que la sentencia no examina, resolviendo en cambio conforme al Decreto 74/2009 de la Comunidad de Madrid.",
+    "La sentencia no precisa expresamente el efecto sobre la validez de la cláusula decimoprimera del contrato más allá de la desestimación de la pretensión restitutoria de la demandante.",
+    "No consta en el documento si la doctrina fijada se limita a las viviendas de protección oficial de promoción pública sometidas a la normativa madrileña o si alcanza a otros regímenes autonómicos de protección pública.",
+    "No consta cómo se comunicó a la arrendataria el importe de los servicios repercutidos ni si existió información previa sobre su cuantía anual, extremo relevante para el juicio sobre la eficacia del pacto.",
+    "No se explicitan las razones del desistimiento de otros recursos por la EMVS a que alude la resolución, lo que impide valorar su eventual relevancia."
+  ],
+  "document_quality_notes": [
+    "Discrepancia en el número de autos de primera instancia: el antecedente segundo indica que la demanda se registró con el n.º 911/2017, mientras que el resto del documento y la cabecera se refieren al procedimiento 991/2017 (o 991/17).",
+    "Inconsistencia sobre el tipo de procedimiento: la demanda se presenta como juicio verbal y la Audiencia se refiere a autos de juicio verbal, mientras el auto de admisión y el fundamento tercero lo califican de juicio ordinario tramitado conforme al art. 249.1.6.º LEC tras la resolución de 1 de diciembre de 2017.",
+    "Errores de OCR o transcripción: «Porla demandante» sin espacio, «arrícelo 6 de la LAU» por «artículo 6», «estimó Ia demanda» con I mayúscula, «que este dotada» por «que esté dotada», «costas causada» por «costas causadas» y «servicios gastos comunes».",
+    "Inconsistencia en el apellido del procurador de la recurrente: «García de la Noceda de las Alas Pumariño» y «García de la Noceda de las Alas Puñariño», así como en su nombre, «Álvaro» y «Álvaro Armando».",
+    "Inconsistencia en la denominación de la parte recurrente, citada como «Empresa Municipal de Vivienda y Suelo de Madrid, S.A.», «Empresa Municipal de la Vivienda y Suelo de Madrid» y «Empresa de la Vivienda y Suelo de Madrid, S.A.».",
+    "Posible discrepancia en la cita jurisprudencial: se menciona la STS 290/2017, de 12 de mayo, en el fundamento segundo y la STS 292/2017, de 12 de mayo, en el fundamento tercero.",
+    "La sentencia de primera instancia se identifica en el fallo como sentencia 52/2019, de 20 de febrero, numeración que no aparece en ningún otro pasaje del documento ni en la cabecera.",
+    "Anonimización parcial e inconsistente: se anonimiza a la demandante como «Penélope» pero se identifican nominalmente procuradores, letrados, magistrados y la entidad demandada."
+  ],
+  "next_review_questions": [
+    "¿Puede aportarse el texto íntegro del contrato de arrendamiento de 3 de marzo de 2010 para verificar el contenido literal de las estipulaciones decimoprimera y vigesimoprimera y la ausencia de cuantificación anual de los gastos?",
+    "¿Cuál es el número correcto de los autos de primera instancia, 991/2017 o 911/2017, y qué resolución fijó definitivamente la tramitación por juicio ordinario?",
+    "¿Cuál es la numeración oficial de la sentencia del Juzgado de Primera Instancia n.º 61 de Madrid de 20 de febrero de 2019, dado que solo el fallo la identifica como 52/2019?",
+    "¿Es la STS citada la 290/2017 o la 292/2017, de 12 de mayo, y en qué apartado del razonamiento se apoya cada una?",
+    "¿Qué versión del Reglamento de Adjudicación de Vivienda con Protección Pública afectas al Plan de Primera Vivienda estaba vigente al tiempo del contrato y por qué no fue objeto de análisis?",
+    "¿Existen votos particulares o resoluciones aclaratorias posteriores a esta sentencia que consten en la certificación remitida al tribunal de procedencia?",
+    "¿Consta acreditado en las actuaciones el desglose de los servicios cuyo coste real se repercutió y su correspondencia con los conceptos de la estipulación decimoprimera?"
+  ]
+}

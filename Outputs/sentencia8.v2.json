@@ -1,0 +1,232 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2025:5361",
+    "roj": "STS 5361/2025",
+    "resolution_number": "1762/2025",
+    "appeal_number": "5480/2020",
+    "id_cendoj": "28079110012025101701"
+  },
+  "decision_date": "2025-12-02",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Manuel Almenar Belenguer",
+  "parties": [
+    {
+      "name": "D.ª Raimunda",
+      "role": "Parte recurrente; demandada reconviniente"
+    },
+    {
+      "name": "Herencia yacente de D. Carlos María",
+      "role": "Parte recurrente; demandada reconviniente"
+    },
+    {
+      "name": "Liberbank S.L.",
+      "role": "Parte recurrida; demandante"
+    },
+    {
+      "name": "DIRECCION000",
+      "role": "Demandada prestataria; declarada en rebeldía procesal"
+    },
+    {
+      "name": "D. Armando",
+      "role": "Demandado; formuló demanda reconvencional; apelante"
+    }
+  ],
+  "facts": [
+    "Por escritura pública autorizada el 21 de diciembre de 2009 por el notario de Laredo D. Francisco Javier Martín Muñiz, número 865 de su protocolo, la Caja de Ahorros de Santander y Cantabria concedió a DIRECCION000 un préstamo de 300.000 €.",
+    "El préstamo vencía el 21 de diciembre de 2021, con devolución en 144 cuotas mensuales de capital e intereses, calculados al 5,750% el primer año y, en los períodos anuales siguientes, al tipo variable resultante de sumar al Euribor un margen de 3,500 puntos.",
+    "El administrador único de la sociedad prestataria DIRECCION000 era D. Armando.",
+    "En la escritura se pactaron, entre otras, cláusulas de límite mínimo y máximo a la variación del tipo de interés (tercera bis), comisiones de apertura, novación y por reclamación de posiciones deudoras (cuarta), gastos a cargo del prestatario (quinta), intereses moratorios (sexta), vencimiento anticipado (sexta bis) y pacto de liquidez (décimo primera).",
+    "La cláusula vigésimo séptima constituyó en fiadores solidarios de todas las obligaciones de la prestataria a D. Armando y a sus padres D. Carlos María y D.ª Raimunda, con renuncia a los beneficios de excusión y división y con subsistencia de la fianza pese a prórrogas.",
+    "D. Carlos María y D.ª Raimunda estaban jubilados y no consta que tuvieran vinculación alguna con la sociedad prestataria más allá de ser los padres de su administrador.",
+    "En garantía de la devolución del préstamo se constituyó además hipoteca a favor de la entidad financiera sobre una finca urbana sita en Laredo, propiedad de D. Carlos María y D.ª Raimunda, inscrita en el Registro de la Propiedad de Laredo.",
+    "En la cláusula novena las partes tasaron la finca a efectos de ejecución hipotecaria en 1.105.822,10 €, y en la cláusula octava se fijó la responsabilidad hipotecaria total en 433.500 € (300.000 € de principal, 32.250 € de intereses remuneratorios, 50.250 € de intereses moratorios, 45.000 € de costas y gastos de ejecución y 6.000 € para otros gastos).",
+    "Según nota simple incorporada al anexo de la escritura, a 17 de diciembre de 2009 la finca hipotecada figuraba inscrita a nombre de los hipotecantes y sin cargas registradas.",
+    "La prestataria DIRECCION000 abonó las cuotas del préstamo hasta el mes de agosto de 2013, a partir del cual dejó de atender los sucesivos vencimientos.",
+    "El 9 de febrero de 2018, con 54 cuotas impagadas, LIBERBANK S.A., que había adquirido en bloque el negocio bancario de la Caja de Ahorros, declaró el vencimiento anticipado del préstamo y cerró la cuenta, con un saldo deudor de 291.428,97 € (142.890,17 € de capital vencido, 116.271,80 € de capital pendiente y 32.267,00 € de intereses moratorios).",
+    "La entidad bancaria notificó la cantidad adeudada y requirió de pago a la prestataria y a los fiadores mediante comunicaciones al domicilio designado, sin resultado.",
+    "D. Carlos María falleció con posterioridad al otorgamiento de la escritura, quedando su herencia yacente.",
+    "Un informe del centro de salud de Laredo sobre el historial médico de D. Carlos María recogía un accidente cerebrovascular en hemisferio izquierdo en enero de 1995 y una demencia mixta (vascular y degenerativa) con parkinsonismo vascular desde 2007, concluyendo que el paciente tenía disminuidas sus facultades físicas y psíquicas.",
+    "No hay datos sobre el patrimonio real de la sociedad prestataria al tiempo de la firma del contrato, ni sobre la titularidad de otros bienes o la capacidad económica de los fiadores."
+  ],
+  "procedural_posture": "Liberbank, S.A. presentó el 28 de febrero de 2018 demanda de juicio ordinario contra DIRECCION000, D. Armando, la herencia yacente y herederos desconocidos e inciertos de D. Carlos María y D.ª Raimunda, solicitando la resolución contractual y el vencimiento anticipado del préstamo hipotecario de 21 de diciembre de 2009 y la condena solidaria de prestataria y fiadores al pago de 259.161,97 € más intereses; la demanda se repartió al Juzgado de Primera Instancia e Instrucción núm. 1 de Laredo como procedimiento ordinario núm. 115/2018. D.ª Raimunda y la herencia yacente de D. Carlos María contestaron oponiéndose y formularon reconvención interesando la nulidad de la garantía hipotecaria y de la fianza por inexistencia de consentimiento, por vicio y error y por abusividad y falta de transparencia, así como la nulidad por abusivos de los pactos tercero bis, cuarto, quinto, sexto, sexto bis y decimoprimero, con petición subsidiaria de compensación. D. Armando contestó y reconvino solicitando la nulidad del aval solidario, la no incorporación de los mismos pactos, nueva liquidación y el reintegro de 6.740,29 € por comisiones y gastos hipotecarios. Liberbank, S.A. se allanó parcialmente a la nulidad de las cláusulas de intereses moratorios y de vencimiento anticipado, oponiéndose al resto. DIRECCION000 no compareció y fue declarada en rebeldía por diligencia de ordenación de 2 de abril de 2019. El Juzgado dictó sentencia núm. 83/2019, de 28 de mayo, que estimó parcialmente la demanda, declaró la resolución contractual y condenó solidariamente a prestataria y fiadores al pago de 259.161,97 € más intereses, sin imposición de costas, y desestimó las reconvenciones al negar la condición de consumidores de los demandados. Los demandados D.ª Raimunda y la herencia yacente de D. Carlos María y, por separado, D. Armando recurrieron en apelación, sin que Liberbank formulara oposición. La Sección 2.ª de la Audiencia Provincial de Santander tramitó el rollo de apelación núm. 972/2019 y dictó sentencia núm. 434/2020, de 14 de julio, que estimó los recursos y revocó en parte la sentencia de instancia: mantuvo la resolución contractual y la condena solidaria, reconoció la condición de consumidores de D.ª Raimunda y D. Carlos María, declaró nulas las estipulaciones sexta y sexta bis y, respecto de estos demandados, las estipulaciones cuarta, tercera bis y undécima, sin imponer costas de ninguna instancia. D.ª Raimunda y la herencia yacente de D. Carlos María interpusieron recurso extraordinario por infracción procesal (dos motivos, al amparo de los arts. 469.1.4 y 469.1.2 LEC) y recurso de casación (tres motivos por interés casacional). La Audiencia remitió las actuaciones a la Sala Primera del Tribunal Supremo, que por auto de 21 de septiembre de 2022 admitió los recursos y dio traslado a la parte recurrida, que se opuso. Por providencia de 1 de octubre de 2025 se designó nuevo ponente y, al no solicitarse vista, se señaló para votación y fallo el 18 de noviembre de 2025.",
+  "legal_issues": [
+    "Si cabe denunciar por la vía del art. 469.1.4 LEC un error en la valoración de la prueba cuando lo realmente impugnado es la valoración jurídica sobre la capacidad del otorgante para prestar consentimiento.",
+    "Si el informe médico documental aportado basta para desvirtuar el juicio de capacidad efectuado por el notario autorizante de la escritura.",
+    "Si la Audiencia infringió las reglas sobre la carga de la prueba del art. 217 LEC al atribuir a quien alega la falta de capacidad la carga de acreditarla.",
+    "Si la doctrina del control de transparencia permite invertir la carga de la prueba y deducir de la falta de información un consentimiento viciado con nulidad del contrato.",
+    "Si el incumplimiento por la entidad bancaria de sus deberes de información determina por sí solo la nulidad de los contratos accesorios de hipoteca y fianza.",
+    "Si las cláusulas de constitución de hipoteca y de fianza solidaria superan el control de transparencia respecto de fiadores e hipotecantes consumidores.",
+    "Si la acumulación de una hipoteca sobre la vivienda de los garantes y de una fianza solidaria de estos mismos garantes constituye una garantía desproporcionada al riesgo asumido por el acreedor ex art. 88.1 TRLGDCU.",
+    "Si cabe extender por analogía a garantes y fiadores la jurisprudencia del TJUE sobre la consulta al consumidor acerca de los efectos de la nulidad de la cláusula de vencimiento anticipado, cuando la cuestión no se planteó en la instancia ni en apelación."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Art. 469.1.4.º LEC",
+      "note": "Vía del recurso extraordinario por infracción procesal por vulneración de derechos del art. 24 CE; exige error fáctico, patente e inmediatamente verificable, no valoraciones jurídicas."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 477.5 LEC",
+      "note": "Citado como formulación actual y más precisa del límite a la revisión de la valoración de la prueba y la fijación de hechos."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 24 CE",
+      "note": "Derecho a la tutela judicial efectiva como parámetro del test de racionalidad de la valoración probatoria."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 217 LEC",
+      "note": "Reglas sobre carga de la prueba: corresponde a quien afirma la falta de capacidad del otorgante acreditarla y soportar las consecuencias de su falta de prueba."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 1261.1.º y 1265 CC",
+      "note": "Existencia y validez del consentimiento; la acción de nulidad por error se somete a régimen distinto de la acción de nulidad por abusividad."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 10 CE, 322 CC y 760.1 LEC",
+      "note": "Principio de presunción de capacidad que preside la valoración del juicio notarial de capacidad."
+    },
+    {
+      "type": "norma",
+      "ref": "Convención sobre los Derechos de las Personas con Discapacidad, hecha en Nueva York el 13 de diciembre de 2006",
+      "note": "Refuerza el principio de presunción de capacidad ya vigente en el ordenamiento interno."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 6.3 CC",
+      "note": "La Sala descarta su aplicación: la infracción de los deberes de información de la entidad financiera no acarrea la nulidad de pleno derecho del contrato."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 82 y 83 TRLGDCU (Real Decreto Legislativo 1/2007)",
+      "note": "Régimen de la acción de nulidad por abusividad de condiciones generales incorporadas a contratos con consumidores."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 88.1 TRLGDCU (antes apartado 18 de la disposición adicional primera de la LGDCU de 1984)",
+      "note": "Fundamento de la estimación: declara abusiva por ministerio de la ley la imposición de garantías desproporcionadas al riesgo asumido; aplicable por excepción al contrato de garantía en su totalidad."
+    },
+    {
+      "type": "norma",
+      "ref": "Directiva 93/13/CEE, en particular arts. 3 y 6.1",
+      "note": "Marco de protección del consumidor aplicable a los contratos de fianza y de hipoteca en garantía de deuda ajena."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 8, 9.2 y 10.1 LCGC",
+      "note": "Régimen de no incorporación y nulidad de condiciones generales y efectos de la nulidad parcial sobre la subsistencia del contrato."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 1124 CC",
+      "note": "La resolución del contrato se sustenta en el incumplimiento grave imputado a la prestataria, lo que priva de relevancia a la nulidad de la cláusula de vencimiento anticipado."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 394.1 y 398.1 LEC",
+      "note": "Imposición a la recurrente de las costas del recurso extraordinario por infracción procesal y ausencia de condena en las del recurso de casación."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 418/2012, de 28 de junio; 262/2013, de 30 de abril; 44/2015, de 17 de febrero; 235/2016, de 8 de abril; 334/2016, de 20 de mayo; 615/2016, de 10 de octubre; 185/2023, de 7 de febrero; 1497/2025, de 27 de octubre",
+      "note": "Doctrina sobre la excepcionalidad del control de la valoración probatoria por infracción procesal y sobre su limitación a la fijación de hechos."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTC 55/2001, de 26 de febrero; 29/2005, de 14 de febrero; 211/2009, de 26 de noviembre; 25/2012, de 27 de febrero; 167/2014, de 22 de octubre; 152/2015, de 6 de julio",
+      "note": "Concepto constitucional de error patente empleado por la Sala."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 558/2019, de 23 de octubre; 81/2023, de 24 de enero; 716/2014, de 15 de diciembre; 323/2015, de 30 de junio",
+      "note": "La infracción de los deberes de información de las entidades financieras no conlleva por sí sola la nulidad de pleno derecho del contrato."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 56/2020, de 27 de enero",
+      "note": "Doctrina matriz sobre aplicación de la normativa de consumo al contrato de fianza y sobre la excepción de las garantías desproporcionadas; factores de valoración de la desproporción."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 101/2020, de 12 de febrero; 820/2021; 684/2022, de 19 de octubre; 685/2022, de 21 de octubre; 638/2023, de 27 de abril",
+      "note": "Reiteración y extensión a la hipoteca en garantía de deuda ajena de la doctrina sobre garantías desproporcionadas."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "ATJUE de 19 de noviembre de 2015, asunto C-74/15, Tarcãu; STJCE de 17 de marzo de 1998, Dietzinger; STJUE de 30 de mayo de 2013, asunto C-604/2011, Genil 48",
+      "note": "Protección del garante consumidor frente a la entidad financiera y ausencia de imposición europea de consecuencias contractuales por incumplimiento de deberes de información."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS del Pleno 772/2014, de 12 de enero de 2015, y 890/2021, de 21 de diciembre",
+      "note": "Prohibición de plantear cuestiones nuevas en casación, fundamento de la desestimación del tercer motivo."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 463/2019, de 11 de septiembre",
+      "note": "Efectos de la declaración de nulidad por abusiva de la cláusula de vencimiento anticipado, con referencia orientativa al art. 24 de la Ley 5/2019."
+    }
+  ],
+  "cited_by_parties": [
+    "Arts. 1, 8, 9, 10, 59, 59 bis, 60 y 86 TRLGDCU, invocados en el primer motivo de casación y no acogidos por la Sala.",
+    "Arts. 1 y 2 b) de la Directiva 93/13/CEE, invocados como sustento de la nulidad íntegra de los contratos accesorios por falta de información, tesis rechazada.",
+    "Art. 1308 CC, anunciado como infringido en el escrito de interposición del tercer motivo de casación.",
+    "Art. 1306 CC, invocado en el desarrollo del tercer motivo de casación, que la Sala considera que debió ser inadmitido.",
+    "STJUE de 3 de octubre de 2019 sobre la opción del consumidor ante la nulidad de la cláusula de vencimiento anticipado, invocada por los recurrentes y no aplicada.",
+    "Ley 47/2007, de 19 de diciembre, de modificación de la Ley del Mercado de Valores, citada por la recurrente para fundar la inversión de la carga de la prueba.",
+    "Directiva 2004/39, sobre Mercados de Instrumentos Financieros, citada por la recurrente.",
+    "Real Decreto 629/1993, de 3 de mayo, citado por la recurrente.",
+    "Art. 469.1.2 LEC, vía procesal del segundo motivo de infracción procesal, desestimado."
+  ],
+  "holding": "La Sala estima parcialmente el recurso de casación interpuesto por D.ª Raimunda y la herencia yacente de D. Carlos María contra la sentencia núm. 434/2020, de 14 de julio, de la Sección 2.ª de la Audiencia Provincial de Santander (rollo de apelación núm. 972/2019), y casa dicha sentencia en el único sentido de estimar en parte el recurso de apelación de los recurrentes respecto del apartado C) del suplico, declarando la nulidad de la cláusula o contrato de afianzamiento establecida en la cláusula vigésimo séptima de la escritura de préstamo y de cuantas referencias o consecuencias se deriven en la obligación de pago del préstamo suscrito entre LIBERBANK y DIRECCION000, siempre respecto de la fianza. Desestima los motivos del recurso extraordinario por infracción procesal e impone a la recurrente las costas de dicho recurso, sin imponer las derivadas del recurso de casación. No adopta pronunciamiento sobre depósitos, al no haberse constituido por tener reconocida la recurrente el derecho a la asistencia jurídica gratuita.",
+  "ratio_summary": [
+    "El error denunciable por la vía del art. 469.1.4 LEC ha de ser fáctico, patente y verificable de forma incontrovertible a partir de las actuaciones; no cabe emplear ese cauce para revisar la valoración jurídica que el tribunal de apelación hace sobre la capacidad del otorgante para prestar consentimiento.",
+    "La presunción de capacidad, derivada de los arts. 10 CE, 322 CC y 760.1 LEC y reforzada por la Convención de Nueva York de 2006, no queda desvirtuada por un informe médico documental no ratificado en juicio que se limita a aludir a una disminución inespecífica de facultades físicas y psíquicas.",
+    "La carga de probar la falta de capacidad recae sobre quien la alega (art. 217 LEC), sin que la doctrina del control de transparencia permita trasladar esa carga al predisponente ni deducir de la falta de prueba de la información un consentimiento viciado por error.",
+    "La infracción de los deberes de información de la entidad financiera no determina por sí sola la nulidad de pleno derecho del contrato ex art. 6.3 CC; solo podrá provocar error vicio si así se acredita, lo que aquí no ocurre.",
+    "El fiador o hipotecante que actúa fuera de su actividad profesional y sin vínculos funcionales con la sociedad garantizada es consumidor y goza de la protección de la Directiva 93/13/CEE, aunque la obligación principal derive de una operación mercantil.",
+    "El contrato de fianza o de hipoteca no es una mera cláusula o condición general del préstamo, por lo que no cabe declarar su nulidad íntegra por abusiva, salvo la excepción de imposición de garantías desproporcionadas al riesgo asumido (art. 88.1 TRLGDCU).",
+    "La desproporción se valora atendiendo al importe garantizado, la tasación del inmueble, la responsabilidad hipotecaria, la solvencia de los deudores, la correlación entre mayores garantías y menor tipo de interés y el riesgo de depreciación: aquí, exigir además de la hipoteca una fianza solidaria de los mismos hipotecantes es desproporcionado y contrario a la buena fe.",
+    "Las cuestiones nuevas no planteadas en la instancia ni en apelación no pueden introducirse en casación, recurso extraordinario que revisa la aplicación de la ley y no constituye una tercera instancia."
+  ],
+  "uncertainties": [
+    "El fallo declara la nulidad de la cláusula de afianzamiento «siempre respecto de la fianza» sin precisar si el pronunciamiento alcanza también al fiador D. Armando, que no interpuso recurso de casación.",
+    "La cantidad finalmente exigible a D.ª Raimunda y a la herencia yacente de D. Carlos María queda remitida a cálculo en ejecución, sin que la sentencia fije su importe tras la nulidad de la fianza.",
+    "No se precisa el efecto de la nulidad de la fianza sobre la subsistencia y alcance de la garantía hipotecaria constituida sobre la finca de Laredo, que la Sala considera justificada.",
+    "No consta acreditada la solvencia ni el patrimonio de la sociedad prestataria ni de los fiadores al tiempo de la firma, dato que la propia Sala utiliza como premisa para justificar la hipoteca.",
+    "La capacidad de D. Carlos María en el momento del otorgamiento queda no probada, sin que el documento permita conocer el contenido íntegro ni la fecha del informe médico valorado.",
+    "La recurrente alegó que su condición de consumidores habría sido declarada en un procedimiento de ejecución hipotecaria anterior, cuyo contenido y efectos no se detallan en la resolución."
+  ],
+  "document_quality_notes": [
+    "Artefactos de OCR en la cabecera con líneas fusionadas y campos encadenados: «T R I B U N A L S U P R E M O Sala de lo Civil», «Número del procedimiento: 5480/2020 Fallo/Acuerdo:» y «Navalón Romero Transcrito por: ACV Nota:».",
+    "Enumeraciones con marcadores vacíos por pérdida de texto en la digitalización: «a) Estipulación sexta [...] b) c) d) Estipulación sexta bis» en la transcripción del fallo de apelación, y «ii) iii) iv) [...] v) vi) vii) [...] viii) ix)» en el fundamento quinto.",
+    "El encabezamiento identifica a la parte recurrida como «Liberbank S.L.», mientras el resto del documento la denomina «Liberbank, S.A.» (y menciona que hoy es UNICAJA, S.A.).",
+    "La cabecera indica como procedencia la «Audiencia Provincial de Santander, Sección 2.ª», mientras el campo «Resoluciones del caso» la cita como «SAP, Cantabria, Sección 2ª».",
+    "El número de resolución aparece con formatos distintos: «Sentencia núm. 1.762/2025» y «Sentencia núm. 1762/2025».",
+    "Discrepancia de cifras: la demanda y la sentencia de primera instancia reclaman y conceden 259.161,97 € de principal, mientras el fallo de apelación transcrito condena a 250.161,97 €.",
+    "El escrito de interposición anuncia la infracción del «art. 1308 del Código Civil» y el fundamento sexto resuelve sobre la infracción del «art. 1306 CC».",
+    "La STS 820/2021 se cita con dos fechas distintas: «de 29 de noviembre» en el fundamento tercero y «de 19 de noviembre» en el fundamento quinto.",
+    "En el fundamento quinto se alude a una nota simple del «Registro Civil» cuando por el contexto se trata del Registro de la Propiedad.",
+    "Cita normativa deformada por OCR: «arts. 11857 infine y 1876 CC», donde debe leerse art. 1857 CC.",
+    "El segundo fundamento recoge una fecha de firma incoherente con el resto del relato: «a fecha 10 de agosto de 2011 (sic)», cuando la escritura es de 21 de diciembre de 2009; el propio documento marca el (sic).",
+    "La propia Sala advierte una contradicción interna en la sentencia de apelación: en su FD 5.º se razona que no procede la nulidad del pacto de liquidez, pero en el fallo se estima.",
+    "El apartado 2 del fallo se refiere al «apartado C) del suplico de la demanda» cuando dicho apartado corresponde al suplico de la demanda reconvencional de los recurrentes.",
+    "El fallo no contiene un pronunciamiento expreso de desestimación del recurso extraordinario por infracción procesal, pese a imponer sus costas a la recurrente y a desestimar ambos motivos en la fundamentación.",
+    "Frases truncadas o duplicadas en las transcripciones: «que se calcularán. (sic)», «la condición de consumidores de los demandados.» al final de un párrafo ya concluido, y «al tipo de demora del interés legal más dos puntas»."
+  ],
+  "next_review_questions": [
+    "¿Alcanza la nulidad de la cláusula vigésimo séptima al fiador D. Armando, que no recurrió en casación, o queda limitada a D.ª Raimunda y a la herencia yacente de D. Carlos María?",
+    "¿Cuál es el importe exacto exigible a los recurrentes tras la nulidad de la fianza y cómo se articula con la condena solidaria del apartado 3 del fallo de apelación, remitida a cálculo en ejecución?",
+    "¿Subsiste íntegramente la garantía hipotecaria sobre la finca de Laredo y en qué términos, una vez anulado el contrato de afianzamiento?",
+    "¿Cuál es la denominación y personalidad jurídica correcta de la parte recurrida a la fecha de la sentencia (Liberbank S.A. o UNICAJA S.A.) y consta sucesión procesal en las actuaciones?",
+    "¿Es 259.161,97 € o 250.161,97 € la cifra correcta de principal objeto de condena, a la vista de la discrepancia entre la sentencia de instancia y el fallo de apelación transcrito?",
+    "¿Puede accederse al texto íntegro y a la fecha del informe del centro de salud de Laredo y al expediente del procedimiento de ejecución hipotecaria previo invocado por la recurrente?",
+    "¿Se ha dictado alguna resolución de aclaración o complemento sobre la ausencia de pronunciamiento desestimatorio expreso del recurso extraordinario por infracción procesal?",
+    "¿Consta en las actuaciones documentación sobre la solvencia de DIRECCION000 y de los fiadores al tiempo del otorgamiento de la escritura, así como el informe previo de solvencia de la entidad financiera?"
+  ]
+}

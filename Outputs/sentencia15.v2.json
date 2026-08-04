@@ -1,0 +1,366 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2026:1031",
+    "roj": "STS 1031/2026",
+    "resolution_number": "386/2026",
+    "appeal_number": "2404/2021",
+    "id_cendoj": "28079110012026100373"
+  },
+  "decision_date": "2026-03-11",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Pedro José Vela Torres",
+  "parties": [
+    {
+      "name": "Doña Amanda",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandada"
+    },
+    {
+      "name": "Don Rubén",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandado"
+    },
+    {
+      "name": "Doña Antonia",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandada"
+    },
+    {
+      "name": "Don Valeriano",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandado"
+    },
+    {
+      "name": "Don Santiago",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandado"
+    },
+    {
+      "name": "Doña Crescencia",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandada"
+    },
+    {
+      "name": "Doña Rosaura",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandada"
+    },
+    {
+      "name": "Pristina S.L.",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandada"
+    },
+    {
+      "name": "Administración General del Estado",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; demandante"
+    },
+    {
+      "name": "Xunta de Galicia",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; coadyuvante adhesiva simple de la parte demandante"
+    },
+    {
+      "name": "Excma. Diputación de A Coruña",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; coadyuvante adhesiva simple de la parte demandante"
+    },
+    {
+      "name": "Ayuntamiento de A Coruña",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; coadyuvante adhesiva simple de la parte demandante"
+    },
+    {
+      "name": "Concello de Sada",
+      "role": "Parte recurrente en infracción procesal y casación; parte recurrida; coadyuvante adhesivo simple de la parte demandante"
+    },
+    {
+      "name": "Ignorados herederos de Doña Noelia",
+      "role": "Codemandados declarados en situación de rebeldía procesal"
+    }
+  ],
+  "facts": [
+    "El inmueble conocido como DIRECCION000, sito en el término municipal de Sada (A Coruña), era propiedad de Dña. Andrea, fallecida en Madrid el 12 de mayo de 1921; en 1938 sus propietarias eran su hija Dña. Eloisa y su nuera Dña. Noelia.",
+    "El 29 de septiembre de 1936 la Junta de Defensa Nacional nombró a Francisco Franco Bahamonde Jefe del Gobierno del Estado Español y Generalísimo de las fuerzas de tierra, mar y aire, atribuyéndole todos los poderes del Estado; el 31 de enero de 1938 la «Ley Organizando la Administración Central del Estado» vinculó la Presidencia del Gobierno al Jefe del Estado.",
+    "El 3 de marzo de 1938 se constituyó formalmente la Junta Pro Pazo del Caudillo, integrada por el Gobernador Civil de La Coruña, los alcaldes de La Coruña, Betanzos, Ferrol y Santiago de Compostela y diversos industriales, banqueros y empresarios, con la finalidad de adquirir la finca para regalarla, en nombre de la provincia, al Jefe del Estado.",
+    "La adquisición se financió mediante una recaudación solicitada por carta a los alcaldes de la provincia y realizada entre los vecinos con listados nominales de aportantes; como la cantidad recaudada no bastó, la Junta obtuvo del Banco Pastor S.A. un préstamo de quinientas mil pesetas.",
+    "El 5 de agosto de 1938, ante notario constituido en el despacho del Gobernador Civil, Dña. Noelia vendió a la Junta Pro Pazo del Caudillo la finca DIRECCION000 de 66.792 metros cuadrados y dos parcelas destinadas al servicio de conducción de aguas, por 406.346,20 pesetas abonadas mediante talón contra el Banco de España librado por el Banco Pastor, concurriendo Dña. Eloisa a renunciar a su reserva lineal del art. 811 CC.",
+    "El 5 de diciembre de 1938 el General Franco visitó el pazo, pronunció un discurso de aceptación del obsequio y firmó la palabra «Acepto» al pie de un pergamino de entrega cuyo original quedó en los archivos de la Diputación de La Coruña, sin que esa donación se elevara nunca a escritura pública.",
+    "Entre 1938 y 1941 se ejecutaron obras de remodelación financiadas primero por la Junta y después por la Comandancia de Obras del Ministerio del Ejército, la Diputación Provincial y la Jefatura Provincial de Carreteras, incluido un muro de cierre perimetral que, al no respetar el plano de la escritura, incorporó fincas colindantes ajenas mediante ocupación manu militari, desposeyendo a sus titulares y arrendatarios.",
+    "El 24 de mayo de 1941, ante notario de Madrid, se otorgó escritura de «aceptación y adjudicación de herencia y compra-venta» por la que Dña. Noelia vendió el pazo y las fincas de servicio a D. Francisco Franco Bahamonde, representado por el banquero D. Marco Antonio, por un precio de 85.000 pesetas que nunca se entregó.",
+    "Franco inmatriculó las tres fincas a su nombre por asiento de 21 de octubre de 1941 en el Registro de la Propiedad de Betanzos y, mediante compras de 17 de octubre de 1941, 17 de marzo, 17 de abril y 11 de junio de 1942 y ocupaciones forzosas, la superficie intramuros pasó de 66.792,87 a 97.085,87 metros cuadrados, sumando al menos otras 18 fincas intramuros y extramuros.",
+    "Hasta 1975 el pazo fue residencia oficial estival del Jefe del Estado, sede de Consejos de Ministros —incluido el de 30 de agosto de 1974 presidido por el entonces Príncipe de España— y de audiencias oficiales; su gestión, mantenimiento, personal, mobiliario y gastos ordinarios corrían a cargo de la Casa Civil y Militar de la Jefatura del Estado, del mismo modo que en el Palacio de El Pardo, con vigilancia encomendada al Ejército y a la Guardia Civil y con aportaciones de la Diputación y del Ayuntamiento de La Coruña.",
+    "La cuota empresarial de la Seguridad Social Agraria y las pólizas de seguro de incendio figuraban a nombre personal de D. Francisco Franco Bahamonde, que además declaró la propiedad de Meirás y su explotación ganadera en sus declaraciones por el impuesto sobre la renta desde 1958 hasta 1975 y aparecía como titular catastral.",
+    "Extramuros existió un puesto de la Guardia Civil dedicado a la vigilancia perimetral hasta finales de 1981 o principios de 1982, y dentro del recinto residieron guardias civiles con plaza de «hortelano» retribuidos con cargo a la Casa Civil; el último guardia llegó en agosto de 1982, ya retribuido por la Guardia Civil, y permaneció hasta 1990.",
+    "D. Francisco Franco Bahamonde falleció en Madrid el 20 de noviembre de 1975 bajo testamento abierto de 20 de febrero de 1968 y, el 18 de mayo de 1976, su viuda Dña. Elisabeth, su hija Dña. Milagros y los contadores partidores protocolizaron el cuaderno particional, que inventarió las fincas de Meirás.",
+    "El 18 de febrero de 1978 se produjo un incendio en el conjunto, del que respondió el seguro concertado en su día por D. Francisco Franco, con una indemnización de 13.500.000 pesetas a la viuda y a la hija.",
+    "El 30 de noviembre de 1982 Dña. Elisabeth donó a su hija Dña. Milagros las fincas de Meirás; Dña. Elisabeth falleció el 6 de febrero de 1988 y Dña. Milagros, que continuó en la posesión, celebró actos sociales y acometió obras de restauración, falleció el 29 de diciembre de 2017 instituyendo herederos por partes iguales a sus siete hijos, uno de los cuales, D. Valeriano, aportó el 23 de julio de 2018 su séptima parte indivisa de la finca registral NUM000 a la sociedad Pristina S.L."
+  ],
+  "procedural_posture": "El 10 de julio de 2019 el Abogado del Estado, en representación de la Administración General del Estado, presentó demanda de juicio ordinario contra Dña. Amanda, D. Rubén, Dña. Antonia, D. Valeriano, D. Santiago, Dña. Crescencia, Dña. Rosaura, la sociedad Pristina S.L. y los ignorados herederos de Dña. Noelia, acumulando las acciones reivindicatoria, de rectificación del Registro de la Propiedad y de nulidad de negocios jurídicos, y solicitando la nulidad de la donación de 1938, de la compraventa de 24 de mayo de 1941, de la escritura de protocolización particional de 18 de mayo de 1976 y de la donación de 30 de noviembre de 1982, la declaración de propiedad estatal de la parcela catastral NUM015 con restitución de la posesión «previa liquidación, en su caso, del estado posesorio» y la cancelación de los asientos registrales contradictorios. La demanda se repartió al Juzgado de Primera Instancia n.º 1 de A Coruña con el núm. 752/2019; comparecieron como coadyuvantes adhesivos simples de la demandante la Xunta de Galicia, la Diputación Provincial de A Coruña, el Concello de Sada y el Ayuntamiento de A Coruña; los ignorados herederos de Dña. Noelia fueron declarados en rebeldía. Los demandados contestaron oponiéndose y solicitando la desestimación íntegra con costas. En la audiencia previa la Abogacía del Estado formuló una alegación complementaria negando la buena fe posesoria de los demandados e interesando que no se liquidara el estado posesorio; la admisión de esa alegación fue recurrida en reposición por la parte demandada, desestimada la reposición y formulada protesta. Por auto de 12 de julio de 2019 se habían adoptado medidas cautelares. El juzgado dictó sentencia n.º 137/2020, de 2 de septiembre, que estimó íntegramente la demanda, declaró las nulidades interesadas, declaró la propiedad estatal, condenó a restituir la posesión sin liquidación del estado posesorio por apreciar mala fe, ordenó la cancelación registral, impuso las costas de la acción del Estado a los demandados y ratificó las medidas cautelares; se denegó por auto la aclaración, subsanación y complemento solicitada por la parte demandada. Los demandados apelaron y la demandante y sus coadyuvantes se opusieron. La Sección 3.ª de la Audiencia Provincial de A Coruña tramitó el rollo 600/2020 y dictó sentencia núm. 60/2021, de 12 de febrero, que estimó en parte el recurso y revocó parcialmente la sentencia apelada: declaró la inexistencia jurídica de la donación de 5 de diciembre de 1938, la nulidad por simulación absoluta de la escritura de 24 de mayo de 1941, la ineficacia de la partición de 18 de mayo de 1976 y la nulidad de la donación de 30 de noviembre de 1982 en cuanto a las fincas litigiosas, declaró la propiedad estatal del conjunto, condenó a los demandados a desalojar con liquidación previa de los gastos útiles y necesarios acreditados, ordenó la cancelación registral, no impuso costas de primera instancia ni de la apelación y acordó la devolución del depósito. Contra dicha sentencia interpusieron recurso extraordinario por infracción procesal y recurso de casación seis partes: la familia demandada y Pristina S.L. (un motivo procesal y siete motivos de casación), la Administración General del Estado (tres motivos procesales y cinco de casación), la Xunta de Galicia (dos y dos), la Diputación Provincial de A Coruña (tres y uno), el Ayuntamiento de A Coruña (uno y dos) y el Concello de Sada (uno y tres). Remitidas las actuaciones y personadas las partes, la Sala Primera dictó auto de 1 de marzo de 2023 admitiendo los seis recursos y abriendo plazo de veinte días para la oposición, que todas las partes recurridas formalizaron. Al no solicitarse vista pública, se señaló para votación y fallo el 19 de febrero de 2026, en que tuvo lugar. En la fase de oposición se alegó recíprocamente la inadmisibilidad de los recursos: la parte demandada objetó la falta de interés propio de los coadyuvantes y la demandante y sus coadyuvantes objetaron que los recursos de la demandada alteraban la base fáctica; ambas objeciones fueron rechazadas por la Sala.",
+  "legal_issues": [
+    "Si los coadyuvantes adhesivos simples de la parte demandante pueden interponer recursos extraordinarios al margen de la parte principal cuando la eventual estimación no les reporte un beneficio directo.",
+    "Si la aplicación o inaplicación por el tribunal de apelación de una norma sustantiva no invocada por las partes (art. 1935 CC) puede denunciarse por la vía del recurso extraordinario por infracción procesal ex art. 218.1, párrafo segundo, LEC.",
+    "Si la invocación en apelación de la renuncia a la usucapión ganada, no opuesta en la contestación a la demanda, constituye una cuestión nueva inadmisible en la alzada y en casación.",
+    "Si la alegación complementaria formulada por la demandante en la audiencia previa, negando la buena fe posesoria y retirando el ofrecimiento de liquidar el estado posesorio, excede de los límites de los arts. 412.2 y 426 LEC y vulnera la congruencia y el principio de justicia rogada.",
+    "Si la sentencia de apelación infringió el art. 219 LEC al no fijar bases claras y precisas para la liquidación del estado posesorio diferida a ejecución.",
+    "Si la motivación de la sentencia recurrida sobre la buena fe posesoria es ilógica o arbitraria a efectos del art. 218.2 LEC, y si la calificación de la buena o mala fe es cuestión fáctica revisable por infracción procesal o valoración jurídica propia de la casación.",
+    "Si el Estado poseyó el inmueble en concepto de dueño, de forma pública, exclusiva y excluyente e ininterrumpida entre 1938 y 1975, pese a la dificultad de deslindar la persona y el cargo del Jefe del Estado en una autocracia personalista.",
+    "Si el giro de tributos a D. Francisco Franco como sujeto pasivo, su titularidad catastral y la concertación de seguros constituyen un reconocimiento tácito del derecho del dueño que interrumpe la usucapión ex art. 1948 CC.",
+    "Si la venta por el Estado en 1948 de una finca colindante impide apreciar una posesión no interrumpida durante los treinta años del art. 1959 CC.",
+    "Si el inmueble quedó tácitamente desafectado del dominio público al fallecer Franco en noviembre de 1975, deviniendo bien patrimonial susceptible de usucapión, y si el art. 341 CC subsiste tras la Ley 33/2003, de Patrimonio de las Administraciones Públicas.",
+    "Si los herederos de Franco consumaron la usucapión extraordinaria del art. 1959 CC por haber poseído el inmueble durante más de cuatro décadas.",
+    "Si el ejercicio de la acción reivindicatoria más de cuatro décadas después del fallecimiento de Franco constituye retraso desleal y actuación contra los propios actos contrarios al art. 7.1 CC.",
+    "Si cabe declarar la mala fe posesoria de Dña. Elisabeth y Dña. Milagros y aplicar el art. 442 CC para limitar temporalmente los efectos de la buena fe de los demandados en la liquidación del estado posesorio."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Arts. 13 y 13.3 LEC",
+      "note": "Intervención de quien acredita interés directo y legítimo; el interviniente adhesivo adquiere condición de parte y puede utilizar los recursos que procedan contra las resoluciones perjudiciales a su interés aunque las consienta su litisconsorte."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 218.1, párrafo segundo, LEC",
+      "note": "Matización del principio de congruencia por el iura novit curia; la aplicación o inaplicación de una norma sustantiva no invocada no es cuestión procesal y no puede fundar el recurso por infracción procesal."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 456.1 LEC",
+      "note": "Fundamento del rechazo de la renuncia a la usucapión ganada como cuestión nueva no opuesta en primera instancia y por ello inabordable en apelación."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 216 y 218.1 y 2 LEC",
+      "note": "Justicia rogada, congruencia y deber de motivación conforme a las reglas de la lógica y de la razón, referido al entramado argumentativo y no al acierto de la decisión."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 412.2, 426.1, 426.2, 426.3 y 426.4 LEC",
+      "note": "Prohibición del cambio de demanda y numerus clausus de modificaciones admisibles en la audiencia previa, con el límite de no alterar sustancialmente pretensiones ni fundamentos; la alegación complementaria del Estado excedió ese límite."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 24 CE",
+      "note": "Dimensión constitucional de la congruencia y proscripción de la indefensión; parámetro también del error patente en la valoración de la prueba."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 454, 458.2 y 459 LEC",
+      "note": "Irrecurribilidad del auto que resuelve la reposición y posibilidad de reproducir la cuestión al recurrir la resolución definitiva previa protesta; basta impugnar el fallo sin desgranar cada pronunciamiento."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 219 LEC en relación con los arts. 712 a 719 LEC",
+      "note": "Exigencia de precisión en las bases de liquidación como limitación y no prohibición; coordinación con la liquidación en ejecución cuando no ha habido debate sobre los gastos."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 469.1.4.º LEC",
+      "note": "El error en la valoración probatoria solo es revisable si es fáctico, patente, manifiesto e inmediatamente verificable a partir de las actuaciones; la calificación de la buena o mala fe posesoria es jurídica y queda excluida."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 444, 447, 1941, 1942 y 1943 CC",
+      "note": "Requisitos de la posesión ad usucapionem: en concepto de dueño, pública, pacífica e ininterrumpida; la posesión tolerada no sirve para usucapir y el ánimo posesorio ha de ser objetivado con criterios jurídicos."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 1945, 1946.3.º y 1948 CC",
+      "note": "Interrupción civil de la usucapión por citación judicial condicionada a sentencia estimatoria y por reconocimiento expreso o tácito del derecho del dueño, que exige conducta inmediata y directa de reconocimiento."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 1959 CC",
+      "note": "Usucapión extraordinaria de inmuebles por treinta años; el Estado la consumó entre 1938 y 1975 y los demandados no, al no iniciarse su posesión en concepto de dueño hasta principios de los años noventa."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 339.2.º, 340, 341 y 1936 CC",
+      "note": "Son de dominio público los bienes destinados a un servicio público; las cosas fuera del comercio son imprescriptibles; el art. 341 CC no ha sido derogado por la LPAP pero no autoriza una desafectación tácita general."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 132.1 CE",
+      "note": "Principios de inalienabilidad, imprescriptibilidad e inembargabilidad del dominio público y reserva de ley para la desafectación."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 1 de la Ley de Patrimonio Nacional de 7 de marzo de 1940",
+      "note": "Pertenencia al patrimonio nacional de los palacios asignados al uso y servicio del Jefe del Estado y de los que pudieran incorporarse en lo sucesivo; confirma el destino público de una residencia oficial."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 69.2 y 70.2 de la Ley 33/2003, de 3 de noviembre, de Patrimonio de las Administraciones Públicas",
+      "note": "La desafectación exige acto expreso y la tácita solo cabe en los supuestos legalmente previstos; se descarta la derogación tácita del art. 341 CC en los términos del art. 2.2 CC."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 8.5 del Reglamento de Bienes de las Corporaciones Locales de 1955, Ley de Patrimonio del Estado de 15 de abril de 1964, art. 81 de la Ley 7/1985 y art. 8.3 del Reglamento de Bienes de las Corporaciones Locales de 1986",
+      "note": "Evolución normativa que muestra la progresiva desaparición de la desafectación tácita del ordenamiento, utilizada por la Sala para justificar su carácter excepcional."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 7.1 CC",
+      "note": "Buena fe en el ejercicio de los derechos como base de la interdicción de ir contra los actos propios y del retraso desleal, que exige omisión, dilación y confianza legítima generada por actos del titular."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 433, 434, 435 y 1950 CC",
+      "note": "Concepto de poseedor de buena fe como el que ignora el vicio invalidante de su título; la buena fe se presume, ha de ser excusable y puede perderse por actos sobrevenidos (mala fides superveniens nocet)."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 440 CC",
+      "note": "Principio de continuidad posesoria, aplicado para mantener la buena fe posesoria de los demandados reconocida por la Audiencia Provincial."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 442 CC",
+      "note": "La Sala descarta su aplicación: presupone la mala fe del causante del poseedor heredero, cuestión que no se planteó en la demanda y no puede introducirse en casación."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 451 a 458 CC, en particular 451, 453 y 454",
+      "note": "Régimen de liquidación del estado posesorio: todo poseedor tiene derecho a los gastos necesarios; solo el de buena fe a los útiles y a la retención; ninguno a los suntuarios; finalidad de evitar el enriquecimiento injusto del vencedor en la posesión."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 398.1 LEC y disposición adicional 15.ª, apartado 9, LOPJ",
+      "note": "Imposición a cada recurrente de las costas causadas por sus respectivos recursos y pérdida de los depósitos constituidos para su formulación."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 424/2007, de 12 de abril; 454/2015, de 3 de septiembre; 657/2017, de 1 de diciembre",
+      "note": "Naturaleza y límites de la intervención adhesiva simple y condición de parte plena del coadyuvante, con facultad autónoma de recurrir."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 359/2001, de 3 de abril; 580/2016, de 30 de julio; 795/2010, de 29 de noviembre; 881/2011, de 28 de noviembre; 132/2020, de 27 de febrero; 488/2021, de 6 de julio",
+      "note": "Correlación entre justicia rogada y congruencia y criterios para determinar si las alegaciones de la audiencia previa exceden del art. 412 LEC y generan indefensión constitucionalmente relevante."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 198/1976, de 14 de junio; 370/2010, de 17 de junio; 993/2011, de 16 de enero de 2012 (Pleno); 541/2012, de 24 de octubre; 737/2013, de 28 de noviembre; 405/2018, de 29 de junio; 1228/2023, de 14 de septiembre",
+      "note": "Doctrina sobre las bases del art. 219 LEC, la admisibilidad de la reserva de liquidación aunque no se pidiera en la demanda y la concreción en ejecución de los gastos útiles y mejoras."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTC 148/1994, de 12 de mayo; 147/1999, de 4 de agosto; 25/2000, de 31 de enero; 160/1997, de 2 de octubre; 221/2001, de 31 de octubre; 164/2002, de 17 de septiembre; 8/2005, de 17 de enero; 146/2005, de 6 de junio; 118/2006, de 24 de abril",
+      "note": "Canon constitucional del deber de motivación y concepto de resolución arbitraria, irrazonada o irrazonable."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 418/2012, de 28 de junio; 262/2013, de 30 de abril; 44/2015, de 17 de febrero; 303/2016, de 9 de mayo; 411/2016, de 17 de junio; 208/2019, de 5 de abril; 141/2021, de 15 de marzo; 59/2022, de 31 de enero; 391/2022, de 10 de mayo",
+      "note": "Excepcionalidad del control de la valoración probatoria por infracción procesal y requisitos del error patente, fáctico e inmediatamente verificable."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 395/1984, de 19 de junio; 101/1997, de 10 de febrero; 1209/1994, de 30 de diciembre; 467/2002, de 17 de mayo; 8/2010, de 5 de febrero; 353/2012, de 11 de junio; 44/2016, de 11 de febrero",
+      "note": "La posesión en concepto de dueño exige actos inequívocos con manifestación externa en el tráfico y no se presume; incompatibilidad de la usucapión con la incertidumbre sobre quién posee en tal concepto."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 1138/1998, de 2 de diciembre; 525/2000, de 26 de mayo; 900/2002, de 8 de octubre",
+      "note": "Las certificaciones catastrales y el pago de impuestos son meros indicios que no prueban la propiedad ni, con mayor razón, la posesión a título de dueño."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 167/1991, de 5 de marzo, y 1631/2024, de 5 de diciembre",
+      "note": "Sistematización del régimen legal de la interrupción de la usucapión y exigencia de conducta inmediata y directa para apreciar el reconocimiento tácito del art. 1948 CC."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 614/2011, de 17 de noviembre; 632/2012, de 29 de octubre; 32/2013, de 6 de febrero; 268/2013, de 22 de abril; 772/2014, de 12 de enero de 2015 (Pleno)",
+      "note": "Prohibición de plantear en casación cuestiones per saltum no suscitadas en la primera instancia ni en la apelación."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "Sentencias de la Sala Tercera del Tribunal Supremo de 1 de abril de 1985, 2 de julio de 1989, 22 de junio de 1991, 14 de marzo de 2007, 10 de mayo de 2012 (rec. 2310/2009), 25 de septiembre de 2012 y 416/2017, de 9 de marzo",
+      "note": "Admisión restrictiva de la desafectación tácita, solo ante actos administrativos concluyentes e incompatibles con la demanialidad; la mera inactividad o el transcurso del tiempo no bastan."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 492/1995, de 25 de mayo; 724/2009, de 3 de noviembre; 459/2011, de 6 de julio; 640/2011, de 21 de septiembre; y de 12 de enero de 2015 (rec. 967/2012)",
+      "note": "Reconocimiento civil de la desafectación tácita como proyección de los actos propios y de la protección de la confianza, limitado a supuestos en que la voluntad de abandono del servicio público es patente."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 40/2007, de 25 de enero; 856/2010, de 30 de diciembre; 717/2013, de 21 de noviembre",
+      "note": "Imprescriptibilidad de los bienes públicos efectivamente afectos, interpretación restrictiva de la renuncia tácita a la usucapión ganada y ausencia de pérdida del dominio por el mero abandono material."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 352/2010, de 7 de junio; 299/2012 y 300/2012, de 15 de junio; 163/2015, de 1 de abril; 530/2016, de 13 de septiembre; 148/2017, de 2 de marzo; 243/2019, de 24 de abril; 616/2021, de 21 de septiembre; 783/2021, de 15 de noviembre; 112/2022, de 15 de febrero; 467/2023, de 11 de abril",
+      "note": "Requisitos y excepcionalidad del retraso desleal: el mero transcurso del tiempo no basta sin una conducta del titular que genere confianza legítima en el abandono del derecho."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 466/1987, de 10 de julio; 1112/1994, de 12 de diciembre; 500/2015, de 18 de septiembre; 755/2021, de 3 de noviembre; 603/2022, de 14 de septiembre",
+      "note": "Doctrina sobre la buena y mala fe posesoria, su compatibilidad con la insuficiencia de título y reglas de abono de gastos necesarios, útiles y suntuarios; ser vencido en juicio no convierte al poseedor en poseedor de mala fe."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 545/2012, de 28 de septiembre",
+      "note": "La interrupción civil de la posesión ad usucapionem se produce con la citación judicial o la interposición de la demanda contradictoria, con efectos definitivos si recae sentencia estimatoria."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 1017/1994, de 16 de noviembre; 16/2000, de 25 de enero; 193/2010, de 29 de marzo",
+      "note": "Precedentes sobre las dificultades de acreditar la propiedad en el contexto de la Guerra Civil y la dictadura, invocados como marco de las particularidades del caso."
+    }
+  ],
+  "cited_by_parties": [
+    "Art. 1935, párrafo segundo, CC (renuncia tácita a la prescripción ganada), invocado por los demandados en apelación y en el cuarto motivo de casación y rechazado por constituir cuestión nueva y casación per saltum.",
+    "Arts. 430, 431 y 432 CC, invocados en el primer motivo de casación de los demandados sobre la posesión en concepto de dueño, que la Sala resuelve conforme a otros preceptos.",
+    "Art. 436 CC sobre transmisibilidad de la cualidad de la mala fe posesoria, invocado por la Xunta de Galicia y por el Concello de Sada y no acogido.",
+    "Art. 465, apartados 3 y 5, LEC, invocado por el Abogado del Estado en sus motivos primero y segundo de infracción procesal, cuya infracción la Sala descarta expresamente.",
+    "Arts. 400.1 LEC y 238.3 LOPJ, invocados por el Concello de Sada en su único motivo de infracción procesal, desestimado por remisión.",
+    "Arts. 469.1.2.º y 469.1.3.º LEC, cauces procesales empleados por los distintos recurrentes, todos ellos desestimados.",
+    "Arts. 477.1 y 477.2.2.º LEC, invocados alternativamente como vías de acceso a la casación por unos y otros recurrentes.",
+    "Art. 50 de la Ley 5/2016, de 4 de mayo, del Patrimonio Cultural de Galicia, citado como base de la notificación de D. Valeriano a la Dirección Xeral de Patrimonio Cultural a efectos de un eventual retracto."
+  ],
+  "holding": "La Sala desestima los seis recursos extraordinarios por infracción procesal interpuestos por Dña. Amanda, D. Rubén, Dña. Antonia, D. Valeriano, D. Santiago, Dña. Crescencia, Dña. Rosaura y Pristina S.L., por la Administración General del Estado, la Xunta de Galicia, la Diputación de A Coruña, el Ayuntamiento de A Coruña y el Concello de Sada contra la sentencia núm. 60/2021, de 12 de febrero, de la Sección 3.ª de la Audiencia Provincial de A Coruña (rollo de apelación núm. 600/2020); desestima igualmente el recurso de casación de la familia demandada y Pristina S.L. y los recursos de casación de la Administración General del Estado, la Xunta de Galicia, la Diputación de A Coruña, el Ayuntamiento de A Coruña y el Concello de Sada. En consecuencia queda firme la sentencia de apelación, que declara la propiedad del Estado sobre el conjunto reivindicado, la inexistencia jurídica de la donación de 1938, la nulidad por simulación absoluta de la compraventa de 1941, la ineficacia parcial de la partición de 1976 y la nulidad parcial de la donación de 1982, con obligación de los demandados de desalojar previa liquidación de los gastos necesarios y útiles acreditados, período que la Sala precisa que abarca desde el 20 de noviembre de 1975 hasta el emplazamiento de los demandados en el procedimiento. Impone a los recurrentes las costas causadas por sus respectivos recursos extraordinarios por infracción procesal y de casación y ordena la pérdida de los depósitos constituidos.",
+  "ratio_summary": [
+    "La aplicación o inaplicación por el tribunal de una norma sustantiva no invocada por las partes es cuestión de fondo amparada por el iura novit curia y no un vicio procesal: no puede denunciarse por la vía del art. 218.1, párrafo segundo, LEC, sino, en su caso, como error de derecho en casación.",
+    "La demandante que en su demanda reconoce la buena fe posesoria de los demandados y ofrece liquidar el estado posesorio no puede desdecirse después mediante alegación complementaria en la audiencia previa: excede del art. 426 LEC, altera los términos del debate y causa indefensión, y veda reintroducir la cuestión en casación.",
+    "Una administración pública posee en concepto de dueño cuando destina el bien a un servicio público y despliega sobre él, con fondos propios y mediante funcionarios, actos externos e inequívocos de dominio; entre 1938 y 1975 el poseedor único del pazo fue el Estado y no Franco a título particular.",
+    "El pago de impuestos y la titularidad catastral son meros indicios que no prueban el dominio ni la posesión en concepto de dueño, y no constituyen el reconocimiento inmediato y directo del derecho del dueño que exige el art. 1948 CC para interrumpir la usucapión.",
+    "La desafectación tácita del dominio público es excepcional y ha de probarse por actos concluyentes, claros y rotundos incompatibles con la demanialidad; ni el desuso ni el mero transcurso del tiempo bastan. El art. 341 CC no está derogado por la LPAP, pero tampoco permite una desafectación tácita general.",
+    "Mientras el bien permanece afecto al servicio público es imprescriptible; la eventual posesión en concepto de dueño de los herederos no pudo iniciarse antes de los años noventa, por lo que al interponerse la demanda en 2019 no había transcurrido el plazo del art. 1959 CC.",
+    "El retraso desleal exige, además de la inactividad prolongada, una conducta del titular que genere en el sujeto pasivo la confianza legítima de que el derecho no se ejercerá; las circunstancias histórico-políticas de la transición y la laboriosa averiguación de la verdad jurídica e histórica excluyen aquí la deslealtad.",
+    "No cabe examinar en casación la mala fe posesoria de la viuda y de la hija del causante ni aplicar el art. 442 CC cuando la demanda no lo planteó; rige la continuidad posesoria del art. 440 CC y la liquidación se extiende desde el 20 de noviembre de 1975 hasta el emplazamiento de los demandados."
+  ],
+  "uncertainties": [
+    "El importe de los gastos necesarios y útiles reembolsables queda diferido a ejecución sin bases cuantificadas, reconociendo la propia Sala que en el procedimiento no hubo debate probatorio sobre cuáles fueran tales gastos.",
+    "La Sala fija el dies ad quem del período de liquidación en el emplazamiento de los demandados, pero no consta la fecha concreta de dicho emplazamiento ni se precisa el tratamiento de los frutos percibidos ni de las eventuales mejoras y deterioros.",
+    "La calificación de la posesión de Dña. Elisabeth y de Dña. Milagros como de buena o mala fe queda sin enjuiciar por razones estrictamente procesales, no de fondo, de modo que la cuestión sustantiva permanece abierta.",
+    "No se determina la situación jurídica de las fincas extramuros (NUM018 a NUM021) ni de las restantes fincas comprendidas en la donación de 1982 que quedaron fuera de la parcela catastral NUM015 reivindicada.",
+    "No se aborda la calificación del inmueble tras la restitución (demanial o patrimonial) ni la articulación de la titularidad estatal con su declaración como Bien de Interés Cultural por Decreto 299/2008.",
+    "El alcance de las declaraciones de inexistencia, nulidad e ineficacia respecto de los ignorados herederos de Dña. Noelia, declarados en rebeldía y no recurrentes, no se explicita.",
+    "La afirmación de que el Estado mantuvo posesión mediante vigilancia y mantenimiento «como mínimo hasta 1990» convive con hechos probados según los cuales, desde agosto de 1982, el único guardia era retribuido por la Guardia Civil y sus funciones se reducían al cuidado de la viuda, lo que hace discutible la fecha de inicio de la posesión de los herederos.",
+    "No se precisan las consecuencias registrales y societarias de la cancelación de asientos respecto de la séptima parte indivisa de la finca registral NUM000 aportada por D. Valeriano a Pristina S.L."
+  ],
+  "document_quality_notes": [
+    "Artefactos de OCR en la cabecera y en el fallo con letras espaciadas: «T R I B U N A L S U P R E M O», «F A L L O»; campos de cabecera «Fallo/Acuerdo:» y «Nota:» sin contenido.",
+    "Numeración de página y la palabra «JURISPRUDENCIA» intercaladas cada página del volcado, cortando párrafos y frases a mitad.",
+    "Pérdida sistemática de espacios en la digitalización: «ad usucapionemel», «ad usucapionemy», «mutatio libelli)contenida», «sensu contrariode la regla», «in fine,LEC», «ab intestato,en», «per saltum,que», «en tal sentidono cabe duda», «delrecurso de infracción procesal», «del Abogado delEstado», «contenciosoadministrativa».",
+    "Erratas gramaticales de transcripción: «quien ha realizados los gastos útiles» y discordancias de género en el encabezamiento («El Ayuntamiento de A Coruña, representada y defendida por la letrada del Ayuntamiento»).",
+    "El nombre de la procuradora de la parte demandada aparece de tres formas distintas en el mismo documento: «Susana Prego Vieito», «Susana Priego Vieito» y «Susana Prego Vieto».",
+    "Anonimización incoherente: se anonimizan los descendientes, las propietarias originarias y los intervinientes históricos (Andrea, Eloisa, Noelia, Elisabeth, Milagros, Marco Antonio, Pelayo, Landelino, Virgilio, Ismael), mientras se identifica con nombre y apellidos a Francisco Franco Bahamonde y a notarios, letrados y procuradores; se alude además a «la condesa de Andrea», mezclando el seudónimo anonimizado con un título nobiliario real.",
+    "En el fundamento vigésimosexto, apartado 4, se identifica a las causantes de los demandados como «Dña. Elisabeth y Dña. Elisabeth», cuando por el contexto la segunda debe ser Dña. Milagros.",
+    "El fundamento vigésimoctavo sitúa «el fallecimiento de Dña. Elisabeth, ocurrido el 29 de diciembre de 2017», fecha que según el fundamento primero, apartado 20, corresponde al fallecimiento de Dña. Milagros; Dña. Elisabeth falleció el 6 de febrero de 1988.",
+    "El fundamento segundo afirma que la demanda se dirigió «contra los seis hermanos», cuando el encabezamiento, el suplico y el fundamento primero identifican siete hermanos herederos, además de la sociedad Pristina S.L. y de los ignorados herederos de Dña. Noelia.",
+    "Listados de partes inconsistentes respecto de D. Valeriano: figura en la demanda, en el fallo de apelación y en el escrito de interposición de los recursos extraordinarios, pero se omite en la relación de quienes contestaron a la demanda y en la de quienes interpusieron el recurso de apelación.",
+    "Designación colectiva de la familia mediante concatenación de nombres anonimizados sin separadores («los hermanos Amanda Rubén Antonia Santiago Crescencia Rosaura»), con solo seis nombres para siete hermanos, lo que genera referencias ambiguas repetidas a lo largo del texto.",
+    "Contradicción interna relevante: el fundamento décimo afirma que «la demanda no contenía pretensión alguna sobre la liquidación del estado posesorio», mientras los fundamentos segundo, noveno y vigésimoquinto transcriben el suplico y el fundamento de derecho quinto de la demanda, que expresamente contemplaban dicha liquidación y sirven de base para desestimar los recursos del Estado y sus coadyuvantes.",
+    "Discrepancia en la vía procesal del único motivo del Ayuntamiento de A Coruña: en el escrito de interposición se formula «al amparo del art. 469.1.3ª de la LEC» y en el fundamento decimosexto se afirma que «se ampara en el art. 469.1.2º LEC».",
+    "El motivo de infracción procesal de la parte demandada se anuncia «Al amparo del Art. 469.2º LEC» en el escrito de interposición, mientras el fundamento octavo lo sitúa en el art. 469.1.2.º LEC.",
+    "El fundamento trigésimo primero anuncia que el recurso del Concello de Sada «se basa en dos motivos» y a continuación describe tres, con un paréntesis abierto que nunca se cierra.",
+    "El fundamento trigésimo dice «A su vez, el recurso de casación se desarrolla en un único motivo» sin identificar que se refiere al recurso de la Diputación Provincial de A Coruña.",
+    "La transcripción del fallo de apelación contiene la fórmula anómala «Estimar en lo que se infiere el recurso de apelación» y queda sin cierre de comillas, terminando abruptamente en el apartado 4.º sin fórmula de firma.",
+    "Frases truncadas por la sustitución anonimizadora: «se produjo un incendio en una de DIRECCION000», «la gestión y mantenimiento DIRECCION000» y «La financiación de la compra DIRECCION000».",
+    "Uso alternativo y no uniforme de las denominaciones «La Coruña» y «A Coruña», «Ayuntamiento de Sada» y «Concello de Sada», «Diputación Provincial de A Coruña» y «Diputación de A Coruña», y de los códigos «DIRECCION000» y «DIRECCION002» para designar, respectivamente, el pazo originario y el conjunto agrupado.",
+    "Los listados de fincas registrales NUM000 a NUM038 aparecen en secuencias distintas según el documento transcrito (demanda, sentencia de primera instancia y fallo de apelación), con NUM009 a NUM014 en orden variable, lo que dificulta la comprobación de su identidad.",
+    "La cita en gallego de la conclusión cuarta del informe de la comisión de expertos incorpora erratas y mezcla de idiomas («Administración xeral o Estado», «requerimiento ningún», «posesión do boa fe», «habente causas»), advirtiendo el propio texto de que las marcas gráficas figuran así en el original.",
+    "La cabecera consigna la procedencia en formato abreviado y truncado, «AUD.PROVINCIAL A CORUÑA SECCION N. 3», mientras el campo «Resoluciones del caso» emplea códigos Roj sin fecha («SJPI 120/2020», «SAP C 22/2021», «ATS 2953/2023»)."
+  ],
+  "next_review_questions": [
+    "¿Cuál es la fecha exacta del emplazamiento de cada demandado, dies ad quem del período de liquidación del estado posesorio fijado por la Sala, y consta acreditada en las actuaciones?",
+    "¿Qué gastos necesarios y útiles se han acreditado hasta la fecha y conforme a qué trámite de los arts. 712 a 719 LEC se practicará su liquidación en ejecución?",
+    "¿El fallecimiento de 29 de diciembre de 2017 mencionado en el fundamento vigésimoctavo corresponde a Dña. Milagros y no a Dña. Elisabeth, y afecta ese error a la delimitación temporal de la buena fe posesoria?",
+    "¿Fueron siete o seis los hermanos demandados y en qué condición procesal intervino D. Valeriano en la contestación a la demanda y en el recurso de apelación?",
+    "¿Se ha practicado la cancelación de los asientos registrales contradictorios y qué situación registral y societaria tiene la séptima parte indivisa de la finca registral NUM000 aportada a Pristina S.L.?",
+    "¿Qué calificación jurídica (demanial o patrimonial) recibe el inmueble tras la restitución al Estado y cómo se coordina con su declaración como Bien de Interés Cultural por Decreto 299/2008?",
+    "¿Se ha solicitado aclaración o complemento sobre la contradicción del fundamento décimo acerca de si la demanda contenía pretensión de liquidación del estado posesorio?",
+    "¿Puede accederse al texto íntegro del informe de la comisión de expertos del Parlamento de Galicia y al auto de admisión de 1 de marzo de 2023 (ATS 2953/2023) para verificar el alcance de las pretensiones iniciales?"
+  ]
+}
