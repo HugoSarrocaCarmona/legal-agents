@@ -261,3 +261,21 @@ Documentos evaluados: 35
 | document_type | 35/35 | 100 % |
 | **GLOBAL** | **315/315** | **100 %** |
 
+
+## 2026-08-06 00:29
+
+Documentos evaluados: 35
+
+| Campo | Aciertos | Precision |
+|---|---|---|
+| ecli | 35/35 | 100 % |
+| roj | 35/35 | 100 % |
+| resolution_number | 35/35 | 100 % |
+| appeal_number | 35/35 | 100 % |
+| id_cendoj | 35/35 | 100 % |
+| decision_date | 35/35 | 100 % |
+| court_or_body | 35/35 | 100 % |
+| ponente | 35/35 | 100 % |
+| document_type | 35/35 | 100 % |
+| **GLOBAL** | **315/315** | **100 %** |
+
