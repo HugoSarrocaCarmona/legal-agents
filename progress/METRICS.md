@@ -135,3 +135,21 @@ Documentos evaluados: 22
 | ponente | 22/22 | 100 % |
 | **GLOBAL** | **176/176** | **100 %** |
 
+
+## 2026-08-05 01:59
+
+Documentos evaluados: 22
+
+| Campo | Aciertos | Precision |
+|---|---|---|
+| ecli | 22/22 | 100 % |
+| roj | 22/22 | 100 % |
+| resolution_number | 22/22 | 100 % |
+| appeal_number | 22/22 | 100 % |
+| id_cendoj | 22/22 | 100 % |
+| decision_date | 22/22 | 100 % |
+| court_or_body | 22/22 | 100 % |
+| ponente | 22/22 | 100 % |
+| document_type | 22/22 | 100 % |
+| **GLOBAL** | **198/198** | **100 %** |
+

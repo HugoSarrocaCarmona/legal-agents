@@ -41,7 +41,8 @@ $fields = @(
     @{ Name = "id_cendoj";         Path = "case_id.id_cendoj" },
     @{ Name = "decision_date";     Path = "decision_date" },
     @{ Name = "court_or_body";     Path = "court_or_body" },
-    @{ Name = "ponente";           Path = "ponente" }
+    @{ Name = "ponente";           Path = "ponente" },
+    @{ Name = "document_type";     Path = "document_type" }
 )
 
 function Get-NestedValue {

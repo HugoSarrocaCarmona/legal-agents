@@ -36,18 +36,19 @@ Reglas absolutas:
 Orden de ejecución estricto:
 
 1. Extraer cabecera
-2. Extraer identificadores (case_id)
-3. Extraer fecha (decision_date)
-4. Identificar tribunal (court_or_body)
-5. Identificar partes
-6. Separar hechos vs procedimiento
-7. Identificar cuestiones jurídicas
-8. Detectar normas aplicadas
-9. Extraer fallo (holding)
-10. Construir ratio_summary
-11. Detectar uncertainties
-12. Detectar document_quality_notes
-13. Validar JSON
+2. Extraer tipo de resolución (document_type)
+3. Extraer identificadores (case_id)
+4. Extraer fecha (decision_date)
+5. Identificar tribunal (court_or_body)
+6. Identificar partes
+7. Separar hechos vs procedimiento
+8. Identificar cuestiones jurídicas
+9. Detectar normas aplicadas
+10. Extraer fallo (holding)
+11. Construir ratio_summary
+12. Detectar uncertainties
+13. Detectar document_quality_notes
+14. Validar JSON
 
 ---
 
@@ -75,7 +76,7 @@ Nunca devolver texto libre.
 ## 📦 ESQUEMA JSON
 
 {
-  "document_type": "sentencia",
+  "document_type": "sentencia|auto",
   "case_id": {
     "ecli": "",
     "roj": "",
@@ -103,6 +104,16 @@ Nunca devolver texto libre.
 
 ## 📏 REGLAS POR CAMPO
 
+### document_type
+- ENUM CERRADO: "sentencia" | "auto"
+- Fuente ÚNICA: campo "Tipo de Resolución:" de la cabecera
+- Extracción literal en minúscula: "Sentencia" → "sentencia", "Auto" → "auto"
+- No inferir del nombre del archivo ni del cuerpo del documento
+- Si el campo falta o su valor no es ninguno de los dos → null y registrar en
+  document_quality_notes
+
+---
+
 ### case_id
 - Extraer SOLO de cabecera
 - Prioridad:
@@ -127,13 +138,22 @@ Nunca devolver texto libre.
 - Extraer limpio
 - Mantener jerarquía
 - Eliminar nombres de jueces
-- FORMATO NORMALIZADO OBLIGATORIO:
-- "Órgano. Sala. Sección N. Sede: Ciudad"
-- Ejemplo: "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid"
+- FORMATO NORMALIZADO CON NIVELES OPCIONALES:
+- Incluir SOLO los niveles presentes en el documento, separados por punto y espacio,
+  en este orden: "Órgano. Sala. Sección N. Sede: Ciudad"
+- Omitir el nivel ausente. NUNCA rellenarlo ni inferirlo
+- Ejemplos:
+  - "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid"
+  - "Juzgado de lo Mercantil N.º 3. Sede: Valencia"
 - Separador entre niveles: punto y espacio
 - Sección en número arábigo sin ordinal (1, no 1.ª)
 - Sede siempre al final como "Sede: Ciudad"
 - Nunca usar comas ni paréntesis en este campo
+
+#### Sección ambigua
+- Si la cabecera contiene VARIAS líneas "Sección:", usar la NUMÉRICA
+- Si ninguna de ellas es numérica, OMITIR el nivel Sección
+- En ambos casos, registrar la ambigüedad en document_quality_notes
 
 ---
 
@@ -230,6 +250,8 @@ Nunca devolver texto libre.
 Un JSON es válido SOLO si:
 
 - Todos los campos existen, en el orden del esquema
+- document_type ∈ {"sentencia", "auto"} Y coincide con el campo "Tipo de Resolución:"
+  de la cabecera del documento de origen
 - case_id tiene al menos un identificador
 - facts es ARRAY de 5–15 elementos
 - facts ≠ procedural_posture (ni solapamiento de contenido)

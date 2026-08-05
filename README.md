@@ -42,20 +42,21 @@ Orden estricto, definido en `CLAUDE.md` y replicado en el agente:
 |---|---|---|
 | 1 | Leer el input desde `Inputs/dev/` o `Inputs/test/` | — |
 | 2 | Extraer la cabecera (primeras ~15 líneas) | — |
-| 3 | Extraer identificadores | `case_id` |
-| 4 | Extraer la fecha | `decision_date` |
-| 5 | Identificar tribunal y ponente | `court_or_body`, `ponente` |
-| 6 | Identificar las partes | `parties` |
-| 7 | Separar hechos materiales de historia procesal | `facts`, `procedural_posture` |
-| 8 | Identificar cuestiones jurídicas | `legal_issues` |
-| 9 | Separar normas aplicadas de las solo invocadas | `applied_rules`, `cited_by_parties` |
-| 10 | Extraer el fallo | `holding` |
-| 11 | Construir el razonamiento | `ratio_summary` |
-| 12 | Detectar incertidumbres jurídicas | `uncertainties` |
-| 13 | Detectar defectos del soporte documental | `document_quality_notes` |
-| 14 | Formular preguntas de revisión | `next_review_questions` |
-| 15 | Validar contra el contrato | — |
-| 16 | Guardar en `Outputs/<base>.v2.json` | — |
+| 3 | Extraer el tipo de resolución | `document_type` |
+| 4 | Extraer identificadores | `case_id` |
+| 5 | Extraer la fecha | `decision_date` |
+| 6 | Identificar tribunal y ponente | `court_or_body`, `ponente` |
+| 7 | Identificar las partes | `parties` |
+| 8 | Separar hechos materiales de historia procesal | `facts`, `procedural_posture` |
+| 9 | Identificar cuestiones jurídicas | `legal_issues` |
+| 10 | Separar normas aplicadas de las solo invocadas | `applied_rules`, `cited_by_parties` |
+| 11 | Extraer el fallo | `holding` |
+| 12 | Construir el razonamiento | `ratio_summary` |
+| 13 | Detectar incertidumbres jurídicas | `uncertainties` |
+| 14 | Detectar defectos del soporte documental | `document_quality_notes` |
+| 15 | Formular preguntas de revisión | `next_review_questions` |
+| 16 | Validar contra el contrato | — |
+| 17 | Guardar en `Outputs/<base>.v2.json` | — |
 
 **Principios que gobiernan el pipeline:** no inventar; no inferir identificadores ni fechas;
 la cabecera es la fuente primaria ante conflictos; `null` antes que inferencia; consistencia
@@ -67,7 +68,7 @@ interna por encima de completitud.
 
 ```json
 {
-  "document_type": "sentencia",
+  "document_type": "sentencia|auto",
   "case_id": {
     "ecli": "", "roj": "", "resolution_number": "", "appeal_number": "", "id_cendoj": ""
   },
@@ -90,10 +91,10 @@ interna por encima de completitud.
 
 | Campo | Tipo | Restricción |
 |---|---|---|
-| `document_type` | string | `"sentencia"` |
+| `document_type` | string | enum `"sentencia"` \| `"auto"`, literal del campo `Tipo de Resolución:` |
 | `case_id` | objeto | 5 subcampos; al menos uno no nulo; extracción literal de cabecera |
 | `decision_date` | string | `YYYY-MM-DD`, del campo `Fecha:` de la cabecera |
-| `court_or_body` | string | órgano y sección, sin nombres de magistrados |
+| `court_or_body` | string | `Órgano. Sala. Sección N. Sede: Ciudad`, solo los niveles presentes |
 | `ponente` | string \| null | sin `D.` / `Excmo. Sr.` |
 | `parties` | array de objetos | `{name, role}`; roles literales, nunca inferidos |
 | `facts` | **array** | 5–15 elementos, un hecho por elemento, solo hechos materiales |
@@ -157,15 +158,23 @@ powershell -ExecutionPolicy Bypass -File validate_v2.ps1 -Path Outputs/sentencia
 Devuelve exit code `1` si algún archivo tiene un `FAIL`, `0` en caso contrario — encadenable
 en un hook o en CI.
 
-**Comprobaciones:** JSON parseable · 16 campos en orden · `case_id` con al menos un
-identificador · `decision_date` ISO 8601 · `facts` array de 5–15 · `facts` ≠
-`procedural_posture` (identidad y solapamiento literal) · `parties` con `{name, role}` ·
-`applied_rules` con `{type, ref, note}` y `type` válido · `applied_rules` ∩
-`cited_by_parties` = ∅ · `ratio_summary` 3–8 elementos ≤ 400 caracteres ·
-`next_review_questions` 3–8 · campos string obligatorios no vacíos.
+**Comprobaciones:** JSON parseable · 16 campos en orden · `document_type` en el enum **y
+coincidente con la cabecera del input** · `case_id` con al menos un identificador ·
+`decision_date` ISO 8601 · `facts` array de 5–15 · `facts` ≠ `procedural_posture` (identidad
+y solapamiento literal) · `parties` con `{name, role}` · `applied_rules` con
+`{type, ref, note}` y `type` válido · `applied_rules` ∩ `cited_by_parties` = ∅ ·
+`ratio_summary` 3–8 elementos ≤ 400 caracteres · `next_review_questions` 3–8 · campos string
+obligatorios no vacíos.
 
 Distingue **FAIL** (incumple el contrato) de **WARN** (merece revisión humana, no bloquea):
 `case_id` incompleto, `ponente` nulo, marcadores procesales dentro de `facts`.
+
+`document_type` es la única comprobación que mira fuera del JSON: busca el input en
+`Inputs/**/<base>.txt` y compara contra su campo `Tipo de Resolución:`, porque el nombre del
+archivo no es fuente fiable (`sentencia28.txt` contiene un auto). Si `Inputs/` no está
+presente —el caso de un clon del repositorio— se valida solo la pertenencia al enum y se avisa
+una vez al final; nunca se marca FAIL por no poder comparar. La ruta se puede cambiar con
+`-InputsDir`.
 
 ---
 
@@ -188,10 +197,10 @@ powershell -ExecutionPolicy Bypass -File eval_gold.ps1
 ```
 
 Compara cada `Gold/sentenciaN.gold.json` con su `Outputs/sentenciaN.v2.json` y calcula
-**precisión por campo** sobre los 8 campos de cabecera:
+**precisión por campo** sobre los 9 campos de cabecera:
 
 `ecli` · `roj` · `resolution_number` · `appeal_number` · `id_cendoj` · `decision_date` ·
-`court_or_body` · `ponente`
+`court_or_body` · `ponente` · `document_type`
 
 Cada discrepancia se clasifica: **INVENTADO** (el agente rellena lo que no consta),
 **OMITIDO** (el dato existe y no se extrae), **CASE** (solo difiere en capitalización) o
@@ -240,14 +249,18 @@ reservado junto con el conjunto.
 
 ### Resultado actual
 
-**176/176 (100 %) sobre dev** — 22 documentos × 8 campos, sin discrepancias.
+**198/198 (100 %) sobre dev** — 22 documentos × 9 campos, sin discrepancias.
 
-Es un resultado de una sola vuelta y hay que leerlo con tres reservas. Primera: mide 8 campos
+Es un resultado de una sola vuelta y hay que leerlo con tres reservas. Primera: mide 9 campos
 de cabecera, que son los más mecánicos del esquema. Segunda: se ha medido sobre el conjunto en
 el que se iteró. Tercera: se ha medido sobre 22 documentos del **mismo órgano y la misma sala**,
 con cabeceras casi idénticas entre sí; el 100 % dice que el agente lee bien una plantilla, no
 que lea bien una cabecera judicial cualquiera. El número sobre test es desconocido y será igual
 o peor.
+
+En el caso concreto de `document_type` la reserva es más fuerte todavía: los 22 documentos de
+dev son sentencias, así que el campo acierta 22/22 sin haber tenido que distinguir nunca de un
+auto. Los 5 autos del corpus están todos en test.
 
 ### Qué NO mide
 
@@ -271,10 +284,14 @@ Sala usó como fundamento, ni que el fallo esté bien recogido. Un output puede 
   profesional. Es una herramienta de apoyo.
 - El esquema está calibrado sobre la cabecera CENDOJ del Tribunal Supremo, Sala de lo Civil:
   es el único órgano presente en el conjunto sobre el que se ha iterado y medido. El corpus
-  reservado ya contiene 8 resoluciones de Tribunal de Instancia, Tribunal Superior de Justicia
-  y Juzgado de lo Mercantil, **ninguna procesada ni evaluada todavía**. Las reglas de
-  `court_or_body` (que presupone `Sala`) y la prioridad de identificadores de `case_id`
-  requerirán revisión con esos documentos. Autos y resoluciones administrativas siguen
-  declarados como soportados y sin un solo caso en el corpus.
+  reservado contiene 8 resoluciones de Tribunal de Instancia, Tribunal Superior de Justicia y
+  Juzgado de lo Mercantil, y 5 de ellas son **autos**, no sentencias. **Ninguna está procesada
+  ni evaluada todavía.** Las reglas nuevas de `document_type` y de niveles opcionales en
+  `court_or_body` se han escrito mirando esas cabeceras, pero **no se han ejercitado contra
+  ellas**: en dev no hay un solo auto ni un solo órgano sin Sala, así que ninguna de las dos
+  reglas ha llegado a dispararse en una medición real. La prioridad de identificadores de
+  `case_id` tampoco se ha revisado para esos formatos.
+- Las resoluciones administrativas siguen declaradas como soportadas y sin un solo caso en el
+  corpus.
 - El agente no verifica el contenido contra fuentes externas: lo que no consta en el
   documento se escala a `uncertainties` o `next_review_questions`, nunca se completa.

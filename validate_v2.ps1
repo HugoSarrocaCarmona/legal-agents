@@ -11,6 +11,7 @@
 
 param(
     [string]$Path = "Outputs",
+    [string]$InputsDir = "Inputs",
     [switch]$Quiet
 )
 
@@ -22,6 +23,15 @@ $ErrorActionPreference = "Stop"
 if (-not [System.IO.Path]::IsPathRooted($Path)) {
     $Path = Join-Path $PSScriptRoot $Path
 }
+if (-not [System.IO.Path]::IsPathRooted($InputsDir)) {
+    $InputsDir = Join-Path $PSScriptRoot $InputsDir
+}
+
+# Inputs\ no se publica en el repositorio (ver README). Si no esta presente no
+# se puede contrastar document_type contra la cabecera: en ese caso se valida
+# solo la pertenencia al enum y se avisa una vez al final, en vez de marcar
+# cada archivo.
+$INPUTS_AVAILABLE = Test-Path $InputsDir -PathType Container
 
 $SCHEMA_ORDER = @(
     'document_type', 'case_id', 'decision_date', 'court_or_body', 'ponente',
@@ -31,6 +41,7 @@ $SCHEMA_ORDER = @(
 )
 $CASE_ID_KEYS = @('ecli', 'roj', 'resolution_number', 'appeal_number', 'id_cendoj')
 $RULE_TYPES   = @('norma', 'jurisprudencia', 'doctrina')
+$DOC_TYPES    = @('sentencia', 'auto')
 
 # Marcadores de contenido procesal que no deberian aparecer en 'facts'.
 $PROC_MARKERS = @(
@@ -51,6 +62,28 @@ function Remove-Accents([string]$s) {
         }
     }
     return $sb.ToString().ToLowerInvariant()
+}
+
+# Devuelve el 'Tipo de Resolucion:' de la cabecera del input correspondiente a un
+# output, normalizado a minuscula y sin acentos. Devuelve $null si no se encuentra
+# el input, y "" si el input existe pero no declara el campo.
+# El input se busca en cualquier subcarpeta de Inputs\ (dev, test, ...), porque el
+# output no registra de que conjunto procede.
+function Get-HeaderDocType([string]$BaseName) {
+    if (-not $INPUTS_AVAILABLE) { return $null }
+
+    $candidates = @(Get-ChildItem -Path $InputsDir -Filter "$BaseName.txt" -Recurse -File -ErrorAction SilentlyContinue)
+    if ($candidates.Count -eq 0) { return $null }
+
+    # Solo la cabecera: el cuerpo puede contener la palabra en otros contextos.
+    $head = Get-Content $candidates[0].FullName -TotalCount 15 -Encoding UTF8
+    foreach ($line in $head) {
+        $plain = Remove-Accents $line
+        if ($plain -match '^\s*tipo de resolucion\s*:\s*(.+?)\s*$') {
+            return (Remove-Accents $Matches[1]).Trim()
+        }
+    }
+    return ""
 }
 
 # --- recoleccion de archivos ---
@@ -100,9 +133,26 @@ foreach ($f in $files) {
         [void]$fails.Add("los campos no siguen el orden del esquema")
     }
 
-    # --- 2. document_type ---
-    if ($o.document_type -ne 'sentencia') {
-        [void]$warns.Add("document_type = '$($o.document_type)' (el esquema fija 'sentencia')")
+    # --- 2. document_type: enum cerrado Y coincidencia con la cabecera ---
+    # El nombre del archivo no es fuente: sentenciaN.txt puede contener un auto.
+    $dt = $o.document_type
+    if ($DOC_TYPES -notcontains $dt) {
+        # Fuera del enum: contrastarlo ademas con la cabecera solo repetiria el
+        # mismo defecto con otras palabras.
+        [void]$fails.Add("document_type = '$dt' (debe ser 'sentencia' o 'auto')")
+    } else {
+        $base       = $f.Name -replace '\.v2\.json$', ''
+        $headerType = Get-HeaderDocType $base
+
+        if ($null -eq $headerType) {
+            if ($INPUTS_AVAILABLE) {
+                [void]$warns.Add("no se encontro el input '$base.txt': document_type sin contrastar")
+            }
+        } elseif ($headerType -eq "") {
+            [void]$warns.Add("la cabecera de '$base.txt' no declara 'Tipo de Resolucion:'")
+        } elseif ($headerType -ne $dt) {
+            [void]$fails.Add("document_type = '$dt' pero la cabecera dice '$headerType'")
+        }
     }
 
     # --- 3. case_id: al menos un identificador ---
@@ -265,5 +315,11 @@ Write-Output ""
 Write-Output "--- RESUMEN ---"
 $rows | Format-Table -AutoSize | Out-String | Write-Output
 Write-Output ("{0} archivos | {1} con FAIL | {2} avisos" -f $files.Count, $totalFail, $totalWarn)
+
+if (-not $INPUTS_AVAILABLE) {
+    Write-Output ""
+    Write-Output "NOTA: no se encontro '$InputsDir'. document_type se ha validado solo contra"
+    Write-Output "      el enum; no se ha podido contrastar con la cabecera del documento."
+}
 
 if ($totalFail -gt 0) { exit 1 } else { exit 0 }
