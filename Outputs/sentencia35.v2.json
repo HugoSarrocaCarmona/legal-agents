@@ -1,7 +1,7 @@
 {
   "document_type": "auto",
   "case_id": {
-    "ecli": "ES:TICI:2025:2A",
+    "ecli": "ECLI:ES:TICI:2025:2A",
     "roj": "ATICI 2/2025",
     "resolution_number": "205/2025",
     "appeal_number": "382/2025",
@@ -13,55 +13,59 @@
   "parties": [
     {
       "name": "Ministerio Fiscal",
-      "role": "Promotor del expediente de jurisdicción voluntaria (a cuya instancia se siguen los autos)"
+      "role": "Promotor del expediente, a cuya instancia se siguen los autos de jurisdicción voluntaria"
+    },
+    {
+      "name": "Marco Antonio",
+      "role": null
     }
   ],
   "facts": [
     "D. Marco Antonio nació en Torrelavega (Cantabria) el día NUM000 de 1908 y falleció el 30 de octubre de 2003.",
     "Fue detenido en Torrelavega e ingresado en prisión el 17 de mayo de 1938.",
-    "El 6 de marzo de 1939 fue sometido a un Consejo de Guerra celebrado en Santander y condenado a la pena de 30 años de reclusión mayor por el delito de adhesión a la rebelión.",
-    "La sentencia condenatoria (documento nº 4 del expediente) carece de valoración de elemento probatorio de cargo y no refleja que el condenado contara con derecho de defensa alguno, sin poder aportar prueba ni hacer alegaciones.",
-    "En dicha sentencia se emplearon contra él calificativos como \"vago, maleante y matón\", asociados por el órgano judicial a su afiliación al Partido Comunista.",
+    "El 6 de marzo de 1939 fue sometido a un Consejo de Guerra celebrado en Santander, que lo condenó a la pena de 30 años de reclusión mayor por el delito de adhesión a la rebelión.",
+    "La sentencia condenatoria carece de valoración de elemento probatorio de cargo y no refleja que el condenado contase con el más mínimo derecho de defensa, sin poder aportar prueba ni formular alegaciones.",
+    "En dicha sentencia se emplearon contra él calificaciones como \"vago, maleante y matón\".",
+    "Estaba afiliado al Partido Comunista.",
     "El 26 de junio de 1944 le fue conmutada la pena por la de 20 años de reclusión mayor.",
     "El 23 de septiembre de 1944 se le concedió la libertad condicional en la prisión de Talavera de la Reina (Toledo).",
     "El 21 de noviembre de 1957 se le concedió la libertad definitiva.",
-    "Estuvo privado de libertad un total de 6 años, 4 meses y 13 días.",
+    "Estuvo privado de libertad 6 años, 4 meses y 13 días.",
     "Fue sometido a trabajos forzados en Talavera de la Reina (Toledo), en colonias penitenciarias militarizadas.",
-    "Fue obligado en varias ocasiones a acudir a misa, pese a no profesar religión alguna, según declaración testifical de su hijo.",
-    "Tras la excarcelación quedó sometido durante años a control personal, con obligación de presentarse periódicamente (semanalmente, los domingos) a firmar en el cuartel o comisaría de Torrelavega.",
-    "Era objeto de control específico por las Fuerzas del Orden cuando el dictador, designado en el documento como Ángel Daniel, o su sucesor, el príncipe Ildefonso, visitaban la Comunidad de Cantabria.",
-    "El 14 de febrero de 1990 se le reconoció el derecho a una pensión, actualizada por el Ministerio de Economía y Hacienda el 25 de enero de 2000.",
-    "El 26 de noviembre de 1992 el Ministerio de Economía y Hacienda le reconoció una indemnización de 1.200.000 pesetas por el periodo de prisión sufrido."
+    "Fue obligado en varias ocasiones a acudir a misa pese a no profesar religión alguna.",
+    "Tras obtener la libertad quedó sometido durante años a control personal, con obligación de presentarse semanalmente, los domingos, a firmar en el cuartel o comisaría de Torrelavega.",
+    "Era objeto de control específico por las Fuerzas del Orden cuando el dictador, anonimizado como Ángel Daniel, o su sucesor designado, el príncipe Ildefonso, acudían a la Comunidad de Cantabria.",
+    "El 14 de febrero de 1990 se le reconoció el derecho a una pensión, que el Ministerio de Economía y Hacienda actualizó el 25 de enero de 2000; el 26 de noviembre de 1992 el mismo Ministerio le había reconocido una indemnización de 1.200.000 pesetas por el periodo de prisión sufrido."
   ],
-  "procedural_posture": "Ante la Sección Civil y de Instrucción del Tribunal de Instancia de Torrelavega (Plaza nº 5) se siguen autos de jurisdicción voluntaria sobre declaración judicial de hechos pasados nº 0000382/2025 (NIG 3908741120250004278), incoados a instancia del Ministerio Fiscal. Admitido a trámite el expediente, se celebró la comparecencia prevista en la ley y se practicó la prueba propuesta, consistente en prueba documental (documentos nº 4, 4 bis y 5, entre otros) y en la declaración testifical de D. Jesús María y Dª Marí Juana, hijo y nieta del interesado, quedando las actuaciones vistas para resolución. El 18 de diciembre de 2025 se dicta el Auto nº 000205/2025, que estima íntegramente la petición del Ministerio Fiscal. Se ordena notificar la resolución al Ministerio Fiscal y a las partes, con indicación de que cabe recurso de apelación en el plazo de veinte días desde la notificación, del que conocerá la Audiencia Provincial.",
+  "procedural_posture": "Ante la Sección Civil y de Instrucción del Tribunal de Instancia de Torrelavega (plaza nº 5) se siguen autos de jurisdicción voluntaria sobre declaración judicial de hechos pasados nº 0000382/2025 (NIG 3908741120250004278), promovidos a instancia del Ministerio Fiscal. Admitido a trámite el expediente, se celebró la comparecencia prevista en la ley y se practicó la prueba propuesta, consistente en prueba documental (entre otros, los documentos nº 4, 4 bis y 5) y en la declaración testifical de D. Jesús María y Dª Marí Juana, hijo y nieta del interesado, quedando las actuaciones vistas para resolución. El 18 de diciembre de 2025 se dicta el Auto nº 000205/2025, que estima la pretensión del Ministerio Fiscal. Se ordena notificar la resolución al Ministerio Fiscal y a las partes, con indicación de que cabe recurso de apelación en el plazo de veinte días desde la notificación, del que conocerá la Audiencia Provincial.",
   "legal_issues": [
-    "Si concurren los requisitos del artículo 80 bis de la Ley 15/2015 de Jurisdicción Voluntaria para tramitar y estimar un expediente de declaración judicial sobre la realidad y circunstancias de hechos pasados determinados.",
-    "Si D. Marco Antonio reúne la condición de víctima en el sentido del artículo 3 de la Ley 20/2022 de Memoria Democrática, en particular por privación de libertad y por trabajos forzados en colonias penitenciarias militarizadas.",
+    "Si concurren los presupuestos del artículo 80 bis de la Ley 15/2015 de la Jurisdicción Voluntaria para tramitar y estimar un expediente dirigido a obtener una declaración judicial sobre la realidad y las circunstancias de hechos pasados determinados.",
+    "Si D. Marco Antonio reúne la condición de víctima conforme al artículo 3 de la Ley 20/2022 de Memoria Democrática, en particular por privación arbitraria de libertad y por trabajos forzosos en colonias penitenciarias militarizadas.",
     "Si la condena impuesta por el Consejo de Guerra de 6 de marzo de 1939 fue arbitraria e injusta y vulneró los más elementales derechos de defensa.",
-    "Si la privación de libertad sufrida durante 6 años, 4 meses y 13 días puede declararse judicialmente injusta e inhumana.",
-    "Si la prueba documental y testifical practicada resulta suficiente para tener por acreditados los hechos cuya declaración se interesa.",
-    "Cuál es el alcance de la declaración judicial que puede emitirse al amparo de los artículos 15 y 29 de la Ley 20/2022 respecto de hechos ocurridos durante la Guerra y la Dictadura."
+    "Si la privación de libertad padecida durante 6 años, 4 meses y 13 días puede declararse judicialmente injusta e inhumana.",
+    "Si la prueba documental y testifical practicada basta para tener por acreditados los hechos cuya declaración se interesa.",
+    "Cuál es el contenido y alcance de la declaración judicial que cabe emitir al amparo de los artículos 15 y 29 de la Ley 20/2022 respecto de hechos ocurridos durante la Guerra y la Dictadura."
   ],
   "applied_rules": [
     {
       "type": "norma",
       "ref": "Ley 15/2015, de 2 de julio, de la Jurisdicción Voluntaria, artículo 80 bis",
-      "note": "Marco procesal del expediente: define su objeto (declaración judicial sobre la realidad y circunstancias de hechos pasados determinados) y enumera las condiciones de admisibilidad (objeto posible y lícito, principio de prueba, ausencia de perjuicio para persona cierta, inexistencia de procedimiento en trámite o de otro cauce legalmente indicado). El auto lo transcribe como fundamento primero."
+      "note": "Fundamento procesal del expediente. El auto lo transcribe en su fundamento primero: define el objeto (declaración judicial sobre la realidad y circunstancias de hechos pasados determinados, sin controversia que deba sustanciarse en proceso contencioso) y las cinco condiciones de admisibilidad del apartado 2."
     },
     {
       "type": "norma",
       "ref": "Ley 20/2022, de 19 de octubre, de Memoria Democrática, artículo 1",
-      "note": "Objeto de la ley: recuperación, salvaguarda y difusión de la memoria democrática. Se invoca como marco general aplicable al supuesto."
+      "note": "Objeto de la ley: recuperación, salvaguarda y difusión de la memoria democrática. Se invoca como marco general aplicable al supuesto, tal como sostuvo el Ministerio Fiscal."
     },
     {
       "type": "norma",
       "ref": "Ley 20/2022, de 19 de octubre, de Memoria Democrática, artículo 3",
-      "note": "Concepto de víctima. El tribunal encuadra los hechos en las letras b) (privaciones de libertad o detenciones arbitrarias, torturas o malos tratos) y c) (trabajos forzosos e internamiento en colonias penitenciarias militarizadas)."
+      "note": "Concepto legal de víctima. El tribunal encuadra los hechos en las letras b) privaciones de libertad o detenciones arbitrarias, torturas o malos tratos, y c) trabajos forzosos e internamiento en colonias penitenciarias militarizadas."
     },
     {
       "type": "norma",
       "ref": "Ley 20/2022, de 19 de octubre, de Memoria Democrática, artículo 6",
-      "note": "Derecho a obtener una Declaración de reparación y reconocimiento personal por quienes padecieron las circunstancias del artículo 3.1 y los efectos de las condenas y sanciones de los artículos 4 y 5."
+      "note": "Derecho a obtener una Declaración de reparación y reconocimiento personal para quienes padecieron durante la Guerra y la Dictadura las circunstancias del artículo 3.1 y los efectos de las condenas y sanciones de los artículos 4 y 5."
     },
     {
       "type": "norma",
@@ -71,46 +75,49 @@
     {
       "type": "norma",
       "ref": "Ley 20/2022, de 19 de octubre, de Memoria Democrática, artículo 29",
-      "note": "Garantía del derecho a la investigación de las violaciones de derechos humanos ocurridas durante la Guerra y la Dictadura y garantía de tutela judicial en los procedimientos dirigidos a obtener una declaración judicial sobre hechos pasados relacionados con las víctimas del artículo 3.1."
+      "note": "Garantía del derecho a la investigación de las violaciones de derechos humanos ocurridas con ocasión de la Guerra y la Dictadura y de la tutela judicial en los procedimientos dirigidos a obtener una declaración judicial sobre hechos pasados relativos a las víctimas del artículo 3.1."
     }
   ],
   "cited_by_parties": [],
-  "holding": "El tribunal estima la petición del Ministerio Fiscal y DECLARA que D. Marco Antonio fue sometido a un juicio sumarísimo y condenado a 30 años de reclusión mayor con exclusión o negación absoluta de cualquier derecho de defensa, sin poder aportar prueba alguna ni hacer alegaciones; que fue condenado sin quebrantar ley alguna y por su ideología política; que fue arbitrariamente privado de libertad durante 6 años, 4 meses y 13 días; y que no cometió delito alguno, habiendo sido sometido a una privación de libertad injusta e inhumana. Se ordena notificar la resolución al Ministerio Fiscal y a las partes, con indicación de que cabe recurso de apelación en el plazo de veinte días ante la Audiencia Provincial. El auto no contiene pronunciamiento sobre costas ni sobre depósito.",
+  "holding": "El tribunal estima la petición del Ministerio Fiscal y DECLARA que D. Marco Antonio fue sometido a un juicio sumarísimo y condenado a 30 años de reclusión mayor con exclusión o negación absoluta de cualquier derecho de defensa, sin poder aportar prueba alguna ni hacer alegaciones; que fue condenado sin quebrantar ley alguna y por su ideología política; que fue arbitrariamente privado de libertad durante 6 años, 4 meses y 13 días; y que no cometió delito alguno, habiendo sido sometido a una privación de libertad injusta e inhumana. Ordena notificar la resolución al Ministerio Fiscal y a las partes, con advertencia de que cabe recurso de apelación en el plazo de veinte días del que conocerá la Audiencia Provincial. No contiene pronunciamiento alguno sobre costas ni sobre depósito.",
   "ratio_summary": [
-    "El expediente de jurisdicción voluntaria del artículo 80 bis de la Ley 15/2015 es cauce idóneo para obtener una declaración judicial sobre hechos pasados determinados cuando concurren sus condiciones y no existe controversia que deba sustanciarse en proceso contencioso.",
+    "El expediente del artículo 80 bis de la Ley 15/2015 es cauce idóneo para obtener una declaración judicial sobre hechos pasados determinados cuando su objeto es posible y lícito, existe principio de prueba y no hay controversia que deba sustanciarse en proceso contencioso.",
     "La Ley 20/2022 de Memoria Democrática aporta el fundamento sustantivo: sus artículos 15 y 29 reconocen el derecho a la verificación de los hechos y garantizan la tutela judicial en los procedimientos dirigidos a obtener esa declaración respecto de las víctimas del artículo 3.1.",
-    "El interesado encaja en el concepto legal de víctima del artículo 3 de la Ley 20/2022, por haber sufrido privación de libertad derivada de una condena represiva y trabajos forzados en colonias penitenciarias militarizadas.",
-    "La sentencia del Consejo de Guerra de 6 de marzo de 1939 se reputa arbitraria e injusta: carece de valoración de elemento probatorio de cargo y no refleja el más mínimo ejercicio del derecho de defensa.",
-    "El empleo en la resolución condenatoria de calificativos como \"vago, maleante y matón\" evidencia la animadversión del órgano sentenciador por motivos exclusivamente políticos, ligados a la afiliación del condenado al Partido Comunista.",
-    "La prueba documental aportada, unida a la testifical del hijo y la nieta, se considera suficiente para tener por acreditadas la condena, la privación de libertad de 6 años, 4 meses y 13 días, su conmutación, los trabajos forzados y el trato vejatorio posterior.",
-    "El control personal posterior a la excarcelación (firma periódica en comisaría, imposición de asistencia a actos religiosos y vigilancia reforzada durante visitas oficiales) se valora como trato vejatorio integrante de la represión sufrida.",
-    "El reconocimiento administrativo previo de pensión e indemnización no impide la declaración judicial sobre la realidad y circunstancias de los hechos, cuya finalidad es reparadora y de verificación, no indemnizatoria."
+    "El interesado encaja en el concepto legal de víctima del artículo 3 de la Ley 20/2022, por haber padecido privación de libertad derivada de una condena represiva y trabajos forzosos en colonias penitenciarias militarizadas.",
+    "La sentencia del Consejo de Guerra de 6 de marzo de 1939 se reputa arbitraria e injusta: carece de valoración de elemento probatorio de cargo y no revela el más mínimo ejercicio del derecho de defensa.",
+    "El empleo de calificativos como \"vago, maleante y matón\" en la resolución condenatoria denota la animadversión del órgano sentenciador por motivos que no pueden ser sino políticos, ligados a la afiliación del condenado al Partido Comunista.",
+    "La documental aportada, unida a la testifical del hijo y la nieta, se considera suficiente para tener por acreditadas la condena, la privación de libertad, su conmutación, los trabajos forzados y el trato vejatorio posterior.",
+    "El control personal posterior a la excarcelación (firma semanal en comisaría, imposición de asistencia a actos religiosos y vigilancia reforzada durante visitas oficiales) se valora como trato vejatorio integrante de la represión sufrida.",
+    "El reconocimiento administrativo previo de pensión e indemnización no impide la declaración judicial sobre la realidad y circunstancias de los hechos, de finalidad verificadora y reparadora."
   ],
   "uncertainties": [
-    "La parte dispositiva ordena notificar \"al Ministerio Fiscal y a las partes\", pero el documento no identifica ninguna otra parte personada; se desconoce si los familiares que declararon como testigos ostentan además la condición de interesados en el expediente.",
-    "El auto no precisa los efectos jurídicos concretos que se anudan a la declaración emitida (por ejemplo, si sirve de base a la Declaración de reparación y reconocimiento personal del artículo 6 de la Ley 20/2022) ni su eventual proyección indemnizatoria.",
-    "El auto declara que el interesado \"no cometió delito alguno\", pero no aborda la relación entre esa declaración y el régimen de nulidad de condenas y sanciones al que remite el artículo 6 transcrito (artículos 4 y 5 de la Ley 20/2022), que el documento no reproduce.",
-    "No consta en el documento el examen expreso de cada una de las cinco condiciones de admisibilidad del artículo 80 bis.2 de la Ley 15/2015, pese a transcribirlas; solo se motiva la existencia de prueba suficiente.",
-    "La fecha de nacimiento del interesado está anonimizada como \"NUM000 de 1908\", de modo que no puede verificarse su edad en el momento de la detención ni la coherencia de las fechas del cómputo de privación de libertad.",
-    "No es posible verificar internamente el cómputo de 6 años, 4 meses y 13 días de privación de libertad a partir de las fechas del relato (ingreso en prisión el 17 de mayo de 1938 y libertad condicional el 23 de septiembre de 1944), ya que dicho intervalo excede del periodo declarado; el auto remite a los documentos 4 bis y 5 sin explicar el cálculo."
+    "La parte dispositiva ordena notificar el auto \"al Ministerio Fiscal y a las partes\", pero el documento no identifica ninguna parte personada distinta del Ministerio Fiscal ni aclara si los familiares que declararon como testigos ostentan además la condición de interesados.",
+    "El auto no precisa los efectos jurídicos que se anudan a la declaración emitida, en particular si sirve de base a la Declaración de reparación y reconocimiento personal del artículo 6 de la Ley 20/2022 o si tiene alguna proyección indemnizatoria.",
+    "El auto declara que el interesado \"no cometió delito alguno\", pero no aborda la relación de esa declaración con el régimen de nulidad de condenas y sanciones al que remite el artículo 6 transcrito (artículos 4 y 5 de la Ley 20/2022), preceptos que el documento no reproduce.",
+    "Pese a transcribir íntegramente el artículo 80 bis.2 de la Ley 15/2015, el auto no motiva de forma expresa el cumplimiento de cada una de sus cinco condiciones; solo razona sobre la suficiencia de la prueba.",
+    "El cómputo de la privación de libertad no puede verificarse con las fechas del propio relato: del ingreso en prisión el 17 de mayo de 1938 a la libertad condicional el 23 de septiembre de 1944 median 6 años, 4 meses y 6 días, siete días menos que los 6 años, 4 meses y 13 días declarados; el auto remite a los documentos 4 bis y 5 sin explicar el cálculo.",
+    "No se explicita la relación entre la libertad condicional de 23 de septiembre de 1944 y la libertad definitiva de 21 de noviembre de 1957, ni si el periodo intermedio se computó o no como privación de libertad.",
+    "El auto no identifica al titular del órgano que lo dicta, lo que impide comprobar la composición del tribunal que emite la declaración."
   ],
   "document_quality_notes": [
-    "Ambigüedad en el nivel Sección de la cabecera: la línea \"Órgano\" indica \"Tribunal de Instancia. Sección Civil y de Instrucción\" mientras que la línea \"Sección:\" indica \"5\"; se ha conservado la denominación funcional y se ha usado el valor numérico para el nivel Sección.",
-    "La cabecera etiqueta como \"Nº de Recurso: 382/2025\" lo que en el cuerpo es el número de expediente de jurisdicción voluntaria 0000382/2025; se trata de dos denominaciones del mismo número, no de una contradicción.",
-    "El documento no identifica al juez o magistrado que dicta el auto ni contiene mención de ponente, ni firma visible.",
-    "La anonimización del CENDOJ se aplica también a personajes históricos públicos: el dictador aparece como \"Ángel Daniel\" y su sucesor como \"el príncipe Ildefonso\", lo que dificulta la comprensión del relato.",
-    "Referencia huérfana: en el fundamento primero se menciona a \"Ángel Daniel\" sin identificación previa; solo en el fundamento segundo se aclara que el seudónimo corresponde al dictador.",
-    "Divergencia de detalle en la periodicidad del control policial: \"presentarse semanalmente en la comisaría de Torrelavega\" en el relato de hechos frente a \"acudir todos los domingos a firmar a cuartel o comisaría de policía\" en la valoración de la testifical.",
-    "Artefactos de digitalización intercalados en el texto: encabezados repetidos \"JURISPRUDENCIA\", numeración de páginas suelta (1, 2, 3, 4) y el código \"TX018\", así como datos de contacto del órgano insertados en el cuerpo.",
-    "Erratas de espaciado y puntuación, por ejemplo \"D. Marco Antonio ,fue sometido\" y \"Constitución Española .El Fiscal de Sala\"."
+    "Sección ambigua en la cabecera: la línea \"Órgano\" designa \"Tribunal de Instancia. Sección Civil y de Instrucción\" y existe además una línea \"Sección: 5\". Se ha usado el valor numérico para el nivel Sección y se ha conservado la denominación funcional en el nivel superior.",
+    "Inconsistencia terminológica interna: la cabecera y el pie identifican el órgano como Tribunal de Instancia, Sección Civil y de Instrucción, mientras que el antecedente primero se refiere a \"este Juzgado\".",
+    "La cabecera etiqueta \"Nº de Recurso: 382/2025\" un número que en el cuerpo corresponde al expediente de jurisdicción voluntaria 0000382/2025; no existe recurso alguno en la instancia. Son dos denominaciones del mismo número, no una contradicción.",
+    "El documento no consigna el nombre del juez o magistrado que dicta el auto, ni ponente, ni firma visible.",
+    "Anonimización aplicada también a personajes históricos públicos: el dictador figura como \"Ángel Daniel\" y su sucesor como \"el príncipe Ildefonso\", lo que dificulta la comprensión del relato.",
+    "Referencia huérfana: \"Ángel Daniel\" aparece por primera vez en el fundamento primero sin identificación alguna; solo en el fundamento segundo se aclara que el seudónimo corresponde al dictador.",
+    "Artefactos de digitalización intercalados en el texto: encabezados repetidos \"JURISPRUDENCIA\", numeración de páginas suelta (1, 2, 3, 4), el código \"TX018\" y los datos de contacto y dirección del órgano insertados en el cuerpo.",
+    "Erratas de espaciado y puntuación, por ejemplo \"D. Marco Antonio ,fue sometido\" y \"Constitución Española .El Fiscal de Sala\".",
+    "Precisión menor sobre el lugar de la firma periódica: el relato de hechos menciona la comisaría de Torrelavega y la valoración de la testifical, \"cuartel o comisaría de policía\", sin concretar."
   ],
   "next_review_questions": [
     "¿Quiénes son \"las partes\" a las que la parte dispositiva ordena notificar el auto, además del Ministerio Fiscal, y en qué concepto están personadas?",
-    "¿Consta en el expediente original la identidad del juez que dicta el auto, dato omitido en la versión publicada?",
-    "¿Qué documentos concretos son los identificados como nº 4, 4 bis y 5, y cómo justifican el cómputo de 6 años, 4 meses y 13 días de privación de libertad?",
-    "¿Se acompaña al expediente el sumario o la causa completa del Consejo de Guerra celebrado en Santander el 6 de marzo de 1939?",
-    "¿La declaración obtenida se limita a los hechos declarados o se ha solicitado además la Declaración de reparación y reconocimiento personal del artículo 6 de la Ley 20/2022?",
+    "¿Consta en el expediente original la identidad del titular del órgano que dicta el auto, dato omitido en la versión publicada?",
+    "¿Qué documentos concretos son los identificados como nº 4, 4 bis y 5, y cómo sustentan el cómputo de 6 años, 4 meses y 13 días de privación de libertad?",
+    "¿Se aportó el sumario o la causa completa del Consejo de Guerra celebrado en Santander el 6 de marzo de 1939?",
+    "¿Se solicitó también la Declaración de reparación y reconocimiento personal del artículo 6 de la Ley 20/2022, o el objeto se limitó a la declaración de hechos del artículo 80 bis de la Ley 15/2015?",
     "¿Cuál es la fecha completa de nacimiento del interesado, anonimizada como \"NUM000 de 1908\"?",
-    "¿Se verificó expresamente el cumplimiento de las condiciones del artículo 80 bis.2 de la Ley 15/2015, en particular la ausencia de perjuicio para persona cierta y determinada?"
+    "¿Se verificó expresamente el cumplimiento de las condiciones del artículo 80 bis.2 de la Ley 15/2015, en particular la letra c), ausencia de perjuicio para persona cierta y determinada?",
+    "¿Qué situación penitenciaria o de control medió entre la libertad condicional de 23 de septiembre de 1944 y la libertad definitiva de 21 de noviembre de 1957?"
   ]
 }

@@ -261,17 +261,23 @@ niveles opcionales y la regla de sección ambigua, y el resultado sobre test las
 
 ### Resultado actual
 
-**313/315 (99,4 %) sobre el corpus completo** — 35 documentos × 9 campos.
+**315/315 (100 %) sobre el corpus completo** — 35 documentos × 9 campos, sin discrepancias.
 
-| Conjunto | Documentos | Campos | Aciertos | |
-|---|---|---|---|---|
-| dev (1–22) | 22 | 198 | 198 | 100 % |
-| test — Tribunal Supremo (23–27) | 5 | 45 | 45 | 100 % |
-| test — otros órganos (28–35) | 8 | 72 | 70 | 97,2 % |
-| **Total** | **35** | **315** | **313** | **99,4 %** |
+Ese número es posterior a dos correcciones del estándar y **no es una medición de
+generalización**. La medición ciega, la única que lo fue, es la de la primera pasada sobre
+test:
 
-Por campo: `roj`, `resolution_number`, `appeal_number`, `id_cendoj`, `decision_date`,
-`court_or_body` y `document_type` al 100 %; `ecli` y `ponente` en 34/35.
+| Conjunto | Documentos | Campos | Aciertos | | |
+|---|---|---|---|---|---|
+| | | | **primera pasada** | | **tras corregir** |
+| dev (1–22) | 22 | 198 | 198 | 100 % | 198 |
+| test — Tribunal Supremo (23–27) | 5 | 45 | 45 | 100 % | 45 |
+| test — otros órganos (28–35) | 8 | 72 | 70 | 97,2 % | 72 |
+| **Total** | **35** | **315** | **313** | **99,4 %** | **315** |
+
+La cifra que mide generalización es **313/315 (99,4 %)**. El 315/315 confirma que las reglas
+de `ponente` y `ecli` arreglan lo que tenían que arreglar, nada más: se escribieron mirando
+esos dos fallos y después se reprocesaron esos dos documentos.
 
 El salto de dev a test fue de 100 % a 98,3 %, y la degradación se concentra entera en los 8
 documentos que no son del Supremo. Las tres reglas del estándar v2 se ejercitaron aquí por
@@ -281,11 +287,10 @@ todos con nombre de archivo `sentenciaN.txt`; `sentencia34` produjo
 el caso para el que se introdujeron los niveles opcionales; y `sentencia28`, con dos líneas
 `Sección:` (`2` y `SC`), usó la numérica y registró la ambigüedad.
 
-**Las dos discrepancias restantes** son de transcripción de cabecera: `sentencia29` dejó el
-ponente en las mayúsculas sin acentos del CENDOJ y `sentencia35` perdió el prefijo `ECLI:`.
-Ninguna regla las cubría; ambas se añadieron al estándar el 06/08/2026. **Los dos outputs no
-se han reprocesado**, así que el 313/315 sigue reflejando el estándar anterior a esa
-corrección.
+**Las dos discrepancias** fueron de transcripción de cabecera: `sentencia29` dejó el ponente
+en las mayúsculas sin acentos del CENDOJ y `sentencia35` perdió el prefijo `ECLI:`. Ninguna
+regla las cubría; ambas se añadieron al estándar el 06/08/2026 y los dos documentos se
+reprocesaron.
 
 Tres reservas siguen en pie. Primera: se miden 9 campos de cabecera, los más mecánicos del
 esquema. Segunda: dev se midió sobre el conjunto en el que se iteró, y test ya se ha gastado.

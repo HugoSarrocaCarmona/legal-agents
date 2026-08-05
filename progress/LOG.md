@@ -12,6 +12,14 @@
   un subagente por documento
 - **313/315 (99,4 %)**: dev 198/198, test-Supremo 45/45, test-otros órganos 70/72
 - `role: null` admitido en `parties`: pasa de FAIL a WARN en el validador
+- Reglas nuevas de `ponente` (capitalización y acentos) y `ecli` (prefijo `ECLI:`), y
+  `sentencia29` y `sentencia35` reprocesados con ellas: **315/315 (100 %)**
+
+> **El 315/315 no es una medición de generalización.** Las dos reglas se escribieron mirando
+> esos dos fallos concretos y después se reprocesaron esos dos documentos: el resultado
+> confirma que las reglas hacen lo que tienen que hacer, y no dice nada sobre el rendimiento
+> ante una cabecera nueva. La única cifra que mide generalización es el **313/315** de la
+> primera pasada sobre test, cuando el conjunto todavía era ciego.
 
 ### ❌ Problemas encontrados
 - **6 valores mal transcritos en el Gold del test**, detectados al contrastarlos con la
@@ -20,8 +28,8 @@
   `"null"`. Todos eran errores del Gold, no del agente
 - Los 13 agentes de la primera tanda cayeron por límite de sesión; 10 alcanzaron a escribir
 - Dos errores reales del agente, ambos de transcripción de cabecera: ponente en mayúsculas sin
-  acentos (`sentencia29`) y ECLI sin prefijo (`sentencia35`). Corregidos en el estándar, con
-  los outputs **sin reprocesar**
+  acentos (`sentencia29`) y ECLI sin prefijo (`sentencia35`). Corregidos en el estándar y en
+  los outputs, al precio de gastar el conjunto de test
 
 ### 💡 Aprendizajes
 - Un Gold anotado a mano tiene la misma tasa de error que el sistema que pretende medir. Seis
@@ -36,7 +44,6 @@
   `{name, role}` completo obliga a inferir justo lo que el estándar prohíbe
 
 ### 🔜 Siguiente paso
-- Reprocesar `sentencia29` y `sentencia35` con las reglas nuevas y volver a medir
 - Corpus nuevo: ya no queda conjunto ciego con el que medir generalización
 - Evaluación de contenido para `facts`, `applied_rules`, `ratio_summary` y `holding`, que
   siguen sin más control que el formal
