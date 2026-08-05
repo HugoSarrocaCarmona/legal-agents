@@ -11,6 +11,25 @@ El sistema debe producir resultados útiles, consistentes y reutilizables en ent
 
 ---
 
+## 📚 ÍNDICE DE ESTÁNDARES
+
+Este archivo contiene **solo los principios comunes** a todos los tipos de documento. Las
+reglas concretas de cada tipo —esquema JSON, reglas por campo y contrato de validación— viven
+en un archivo por estándar, y **no se repiten en ningún otro sitio**:
+
+| Estándar | Archivo | Estado |
+|---|---|---|
+| Sentencias, autos y resoluciones judiciales | [`standards/sentencias.md`](standards/sentencias.md) | vigente (v2), medido sobre 35 documentos |
+| Contratos civiles y mercantiles | [`standards/contratos.md`](standards/contratos.md) | escrito, sin ejercitar |
+
+**Antes de procesar un documento hay que leer el estándar que le corresponde.** Estos archivos
+no se cargan solos.
+
+Ante cualquier discrepancia entre un estándar y los principios de este archivo, prevalecen los
+principios de este archivo.
+
+---
+
 ## ⚖️ PRINCIPIOS FUNDAMENTALES
 
 Este sistema realiza extracción estructurada de documentos jurídicos.
@@ -25,30 +44,9 @@ Reglas absolutas:
 4. Priorizar consistencia interna sobre completitud
 5. Si hay conflicto entre secciones del documento:
    → usar la cabecera como fuente primaria
-6. JSON final debe ser válido y cumplir el contrato de validación
+6. JSON final debe ser válido y cumplir el contrato de validación de su estándar
 7. En caso de duda:
    → preferir null antes que inferencia
-
----
-
-## 🔁 PIPELINE OBLIGATORIO (SENTENCIAS)
-
-Orden de ejecución estricto:
-
-1. Extraer cabecera
-2. Extraer tipo de resolución (document_type)
-3. Extraer identificadores (case_id)
-4. Extraer fecha (decision_date)
-5. Identificar tribunal (court_or_body)
-6. Identificar partes
-7. Separar hechos vs procedimiento
-8. Identificar cuestiones jurídicas
-9. Detectar normas aplicadas
-10. Extraer fallo (holding)
-11. Construir ratio_summary
-12. Detectar uncertainties
-13. Detectar document_quality_notes
-14. Validar JSON
 
 ---
 
@@ -69,255 +67,7 @@ Nunca devolver texto libre.
 
 ---
 
-# ================================
-# 📚 ESTÁNDAR: SENTENCIAS
-# ================================
-
-## 📦 ESQUEMA JSON
-
-{
-  "document_type": "sentencia|auto",
-  "case_id": {
-    "ecli": "",
-    "roj": "",
-    "resolution_number": "",
-    "appeal_number": "",
-    "id_cendoj": ""
-  },
-  "decision_date": "",
-  "court_or_body": "",
-  "ponente": "",
-  "parties": [{ "name": "", "role": "" }],
-  "facts": [],
-  "procedural_posture": "",
-  "legal_issues": [],
-  "applied_rules": [{ "type": "", "ref": "", "note": "" }],
-  "cited_by_parties": [],
-  "holding": "",
-  "ratio_summary": [],
-  "uncertainties": [],
-  "document_quality_notes": [],
-  "next_review_questions": []
-}
-
----
-
-## 📏 REGLAS POR CAMPO
-
-### document_type
-- ENUM CERRADO: "sentencia" | "auto"
-- Fuente ÚNICA: campo "Tipo de Resolución:" de la cabecera
-- Extracción literal en minúscula: "Sentencia" → "sentencia", "Auto" → "auto"
-- No inferir del nombre del archivo ni del cuerpo del documento
-- Si el campo falta o su valor no es ninguno de los dos → null y registrar en
-  document_quality_notes
-
----
-
-### case_id
-- Extraer SOLO de cabecera
-- Prioridad:
-  1. ROJ
-  2. ECLI
-  3. Nº resolución
-  4. Nº recurso
-  5. ID CENDOJ
-- No reconstruir
-- Si no existe → null
-- `ecli`: conservar el prefijo `ECLI:` tal y como figura en la cabecera
-  - Correcto: "ECLI:ES:TICI:2025:2A"
-  - Incorrecto: "ES:TICI:2025:2A"
-
----
-
-### decision_date
-- Fuente: campo "Fecha"
-- Formato: YYYY-MM-DD
-- Ignorar otras fechas procesales
-
----
-
-### court_or_body
-- Extraer limpio
-- Mantener jerarquía
-- Eliminar nombres de jueces
-- FORMATO NORMALIZADO CON NIVELES OPCIONALES:
-- Incluir SOLO los niveles presentes en el documento, separados por punto y espacio,
-  en este orden: "Órgano. Sala. Sección N. Sede: Ciudad"
-- Omitir el nivel ausente. NUNCA rellenarlo ni inferirlo
-- Ejemplos:
-  - "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid"
-  - "Juzgado de lo Mercantil N.º 3. Sede: Valencia"
-- Separador entre niveles: punto y espacio
-- Sección en número arábigo sin ordinal (1, no 1.ª)
-- Sede siempre al final como "Sede: Ciudad"
-- Nunca usar comas ni paréntesis en este campo
-
-#### Sección ambigua
-- Si la cabecera contiene VARIAS líneas "Sección:", usar la NUMÉRICA
-- Si ninguna de ellas es numérica, OMITIR el nivel Sección
-- En ambos casos, registrar la ambigüedad en document_quality_notes
-
----
-
-### ponente
-- Extraer si aparece
-- Sin "D.", "D.ª"
-- RESTITUIR CAPITALIZACIÓN Y ACENTOS: la cabecera escribe el nombre en mayúsculas y
-  sin acentuar. Transcribirlo con capitalización normal y los acentos restituidos
-  - "RAQUEL BLAZQUEZ MARTIN" → "Raquel Blázquez Martín"
-  - Si el cuerpo del documento trae la grafía acentuada, esa es la fuente
-- Si no existe → null
-
----
-
-### parties
-- ESTRUCTURA OBLIGATORIA: array de objetos `{ "name": "", "role": "" }`
-- Extraer explícitamente
-- No inferir roles: transcribirlos del encabezamiento
-- Si el documento nombra a una parte sin asignarle rol → `role: null`
-  - Prevalece "no inferir" sobre "rellenar el campo"
-  - `name` nunca puede ser null
-- Mantener anonimización
-
----
-
-### facts
-- ESTRUCTURA OBLIGATORIA: array de strings (NO string)
-- Un elemento = un hecho. No agrupar varios hechos en un mismo elemento
-- Entre 5 y 15 elementos
-- SOLO hechos materiales, extraprocesales
-- NO incluir procedimiento
-
----
-
-### procedural_posture
-- Historia procesal completa
-- Incluir:
-  - demanda
-  - recursos
-  - instancias
-
----
-
-### legal_issues
-- Lista de problemas jurídicos
-- Claros y separados
-
----
-
-### applied_rules
-- ESTRUCTURA OBLIGATORIA: array de objetos `{ "type": "", "ref": "", "note": "" }`
-- `type` ∈ {"norma", "jurisprudencia", "doctrina"}
-- SOLO normas usadas por el tribunal como fundamento de su decisión
-- No incluir doctrina irrelevante
-
----
-
-### cited_by_parties
-- Normas citadas pero NO adoptadas
-
----
-
-### holding
-- Decisión final
-- Clara y directa
-
----
-
-### ratio_summary
-- Array obligatorio
-- 3–8 elementos
-- Cada elemento:
-  - una idea jurídica
-  - ≤ 400 caracteres
-
----
-
-### uncertainties
-- SOLO incertidumbres reales del caso
-- No incluir errores de OCR
-- No incluir campos vacíos estándar
-
----
-
-### document_quality_notes
-- Problemas del documento:
-  - OCR
-  - fechas imposibles
-  - inconsistencias internas
-
----
-
-### next_review_questions
-- 3–8 preguntas útiles
-- Para completar o verificar datos
-
----
-
-## ✅ VALIDACIÓN OBLIGATORIA
-
-Un JSON es válido SOLO si:
-
-- Todos los campos existen, en el orden del esquema
-- document_type ∈ {"sentencia", "auto"} Y coincide con el campo "Tipo de Resolución:"
-  de la cabecera del documento de origen
-- case_id tiene al menos un identificador
-- facts es ARRAY de 5–15 elementos
-- facts ≠ procedural_posture (ni solapamiento de contenido)
-- parties es array de objetos {name, role}, con al menos un elemento; `name` no vacío,
-  `role` puede ser null si el documento no lo consigna
-- applied_rules es array de objetos {type, ref, note}, con type válido
-- applied_rules ∩ cited_by_parties = ∅
-- ratio_summary es array de 3–8 elementos, cada uno ≤ 400 caracteres
-- next_review_questions tiene entre 3 y 8 elementos
-- No hay contradicciones internas
-- Longitudes respetadas
-
-Si falla:
-→ añadir en uncertainties
-
-La comprobación mecánica se ejecuta con `validate_v2.ps1` (ver README.md).
-
----
-
-# ================================
-# 📄 ESTÁNDAR: CONTRATOS
-# ================================
-
-## 📦 ESQUEMA JSON
-
-{
-  "document_type": "",
-  "governing_law": "",
-  "parties": [],
-  "key_clauses": [],
-  "missing_clauses": [],
-  "risk_flags": [
-    {
-      "issue": "",
-      "severity": "low|medium|high",
-      "why_it_matters": "",
-      "suggested_fix": ""
-    }
-  ],
-  "plain_language_summary": "",
-  "review_notes": []
-}
-
----
-
-## 📏 REGLAS
-
-- Identificar tipo de contrato
-- Detectar cláusulas estándar
-- Detectar ausencias relevantes
-- Priorizar riesgos jurídicos
-- Explicar riesgos claramente
-
----
-
-# ⚠️ GESTIÓN DE ERRORES
+## ⚠️ GESTIÓN DE ERRORES
 
 Si hay:
 
@@ -325,14 +75,14 @@ Si hay:
 - fechas imposibles
 - múltiples versiones
 
-→ usar cabecera como referencia  
-→ registrar en:
-  - uncertainties
-  - document_quality_notes
+→ usar la cabecera como referencia
+→ registrar la anomalía en los campos que cada estándar destina a ello
+
+Si una duda se despeja con el propio documento, resolverla y no escalarla.
 
 ---
 
-# 🚫 LIMITACIONES
+## 🚫 LIMITACIONES
 
 El sistema NO debe:
 
@@ -342,7 +92,7 @@ El sistema NO debe:
 
 ---
 
-# 🔄 MEJORA CONTINUA
+## 🔄 MEJORA CONTINUA
 
 El sistema debe:
 
@@ -353,7 +103,7 @@ El sistema debe:
 
 ---
 
-# 🧩 COMPORTAMIENTO DEL AGENTE
+## 🧩 COMPORTAMIENTO DEL AGENTE
 
 - Priorizar precisión sobre creatividad
 - Mantener outputs reutilizables
@@ -362,7 +112,7 @@ El sistema debe:
 
 ---
 
-# 📁 ORGANIZACIÓN
+## 📁 ORGANIZACIÓN
 
 - Outputs en JSON
 - Nombres consistentes
@@ -370,7 +120,7 @@ El sistema debe:
 
 ---
 
-# 🎯 OBJETIVO FINAL
+## 🎯 OBJETIVO FINAL
 
 Crear una base sólida para:
 

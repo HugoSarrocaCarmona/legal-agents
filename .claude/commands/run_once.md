@@ -1,6 +1,6 @@
 Lee el archivo que te paso como input.
 
-Aplica estrictamente el esquema definido en CLAUDE.md.
+Aplica estrictamente el esquema definido en `standards/sentencias.md`.
 
 Genera un JSON válido.
 

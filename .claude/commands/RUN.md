@@ -1,5 +1,5 @@
 Objetivo:
-1. Procesar todos los archivos de Inputs/dev/ a JSON siguiendo CLAUDE.md
+1. Procesar todos los archivos de Inputs/dev/ a JSON siguiendo `standards/sentencias.md`
 2. Guardar cada resultado en /Outputs/sentenciaN.v2.json,conservando el mismo número que el input
 
 Reglas:

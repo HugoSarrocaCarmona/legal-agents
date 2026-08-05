@@ -7,4 +7,4 @@ Analiza todos los JSON en Outputs:
 
 Salida:
 - Lista de errores frecuentes
-- Propuesta de mejora del esquema CLAUDE.md
+- Propuesta de mejora del esquema `standards/sentencias.md`

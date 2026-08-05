@@ -10,7 +10,9 @@ entre ellas.
 ## Estructura del repositorio
 
 ```
-CLAUDE.md                       Estándar vigente (v2). Lo carga el harness automáticamente.
+CLAUDE.md                       Principios comunes e índice de estándares. Lo carga el harness.
+standards/sentencias.md         Estándar de sentencias (v2): esquema, reglas y contrato.
+standards/contratos.md          Estándar de contratos. Escrito, sin ejercitar.
 validate_v2.ps1                 Validador mecánico del esquema v2.
 eval_gold.ps1                   Evaluación de precisión contra los ficheros de referencia.
 Outputs/                        JSON generados, con sufijo .v2.json
@@ -30,14 +32,21 @@ cabecera y análisis estructurado**, no republica el texto íntegro de las resol
 quiera reproducir el pipeline descarga las sentencias de la fuente oficial y las coloca en
 `Inputs/dev/` e `Inputs/test/` con el nombre `sentenciaN.txt`.
 
-`CLAUDE.md` es la **fuente de verdad**. Ante cualquier discrepancia con la definición del
-agente o con este README, prevalece `CLAUDE.md`.
+**Ninguna regla está escrita dos veces.** `CLAUDE.md` contiene los principios comunes a todos
+los tipos de documento y un índice; las reglas concretas de cada tipo viven en un único
+archivo bajo `standards/`, y tanto la definición del agente como las recetas de
+`.claude/commands/` remiten allí en lugar de copiarlas. Ante una discrepancia entre un
+estándar y `CLAUDE.md`, prevalece `CLAUDE.md`; ante una discrepancia entre este README y un
+estándar, prevalece el estándar.
+
+Los archivos de `standards/` **no se cargan automáticamente**: el agente los lee en cada
+invocación.
 
 ---
 
 ## Pipeline
 
-Orden estricto, definido en `CLAUDE.md` y replicado en el agente:
+Orden estricto, definido en `standards/sentencias.md`:
 
 | # | Paso | Campo que produce |
 |---|---|---|
@@ -226,7 +235,7 @@ campo; `0` en caso contrario.
 | test | `sentencia23`–`sentencia35` | sí | **gastado**: evaluado el 05/08/2026 |
 
 El conjunto de test estuvo intacto hasta el 5 de agosto de 2026 y ya se ha gastado. Cada
-vuelta de `/DEBUG` → `/IMPROVE` ajustaba `CLAUDE.md` mirando los fallos de dev, y eso hacía
+vuelta de `/DEBUG` → `/IMPROVE` ajustaba el estándar mirando los fallos de dev, y eso hacía
 que la precisión sobre dev dejara de ser una estimación honesta del rendimiento sobre una
 sentencia nueva: el estándar se había adaptado a esos 22 documentos concretos. Test sirvió
 para medir, una sola vez, cuánto de la precisión era método y cuánto sobreajuste.
