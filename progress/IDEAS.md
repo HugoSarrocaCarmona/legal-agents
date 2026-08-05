@@ -45,3 +45,25 @@ el principio de extracción literal.
 de evaluación.
 
 **Coste:** revisar 22 documentos para rellenar el campo en el Gold.
+
+## MCP de legislación española (candidato, fase jurisprudencia)
+
+**Origen:** repositorio github.com/Sistemasansvar/leyespañola-mcp (sin verificar).
+
+**Problema que resolvería:** el fallo más grave de la IA jurídica son las citas
+inventadas — normas o sentencias plausibles que no existen. Un MCP que consulte
+legislación consolidada permite verificar cada referencia contra la fuente en
+lugar de confiar en la memoria del modelo.
+
+**Encaje:** no es un agente nuevo, es una fuente de datos. Serviría para validar
+`applied_rules` y `cited_by_parties` en el módulo de sentencias, y sería
+infraestructura necesaria para el futuro módulo de jurisprudencia.
+
+**Verificar antes de usar:**
+- Quién lo mantiene y con qué licencia
+- De dónde saca los datos: si no es del BOE, no sirve para uso profesional
+- Si devuelve texto consolidado y actualizado o una copia congelada
+- Qué pasa con normativa autonómica
+
+**Cuándo:** después de cerrar el test set y el módulo de contratos.
+No añadir agentes nuevos antes de medir la generalización del extractor actual.
