@@ -1,8 +1,9 @@
 # Legal Tech Agents (España) — extracción estructurada de sentencias
 
 Convierte sentencias judiciales españolas en JSON estructurado, validable y comparable
-entre documentos. Fase actual: resoluciones del orden civil publicadas por CENDOJ. Lo ya
-procesado y medido es Tribunal Supremo; el corpus reservado incluye además otros órganos.
+entre documentos. Fase actual: resoluciones del orden civil publicadas por CENDOJ. Las 35
+resoluciones del corpus están procesadas y medidas, de 8 órganos distintos y con 5 autos
+entre ellas.
 
 ---
 
@@ -92,11 +93,11 @@ interna por encima de completitud.
 | Campo | Tipo | Restricción |
 |---|---|---|
 | `document_type` | string | enum `"sentencia"` \| `"auto"`, literal del campo `Tipo de Resolución:` |
-| `case_id` | objeto | 5 subcampos; al menos uno no nulo; extracción literal de cabecera |
+| `case_id` | objeto | 5 subcampos; al menos uno no nulo; extracción literal de cabecera; `ecli` conserva el prefijo `ECLI:` |
 | `decision_date` | string | `YYYY-MM-DD`, del campo `Fecha:` de la cabecera |
 | `court_or_body` | string | `Órgano. Sala. Sección N. Sede: Ciudad`, solo los niveles presentes |
-| `ponente` | string \| null | sin `D.` / `Excmo. Sr.` |
-| `parties` | array de objetos | `{name, role}`; roles literales, nunca inferidos |
+| `ponente` | string \| null | sin `D.` / `Excmo. Sr.`; capitalización y acentos restituidos |
+| `parties` | array de objetos | `{name, role}`; roles literales, nunca inferidos; `role` null si no consta |
 | `facts` | **array** | 5–15 elementos, un hecho por elemento, solo hechos materiales |
 | `procedural_posture` | string | cronología procesal completa |
 | `legal_issues` | array | cuestiones formuladas como tales |
@@ -161,13 +162,19 @@ en un hook o en CI.
 **Comprobaciones:** JSON parseable · 16 campos en orden · `document_type` en el enum **y
 coincidente con la cabecera del input** · `case_id` con al menos un identificador ·
 `decision_date` ISO 8601 · `facts` array de 5–15 · `facts` ≠ `procedural_posture` (identidad
-y solapamiento literal) · `parties` con `{name, role}` · `applied_rules` con
+y solapamiento literal) · `parties` con `{name, role}` y `name` no vacío · `applied_rules` con
 `{type, ref, note}` y `type` válido · `applied_rules` ∩ `cited_by_parties` = ∅ ·
 `ratio_summary` 3–8 elementos ≤ 400 caracteres · `next_review_questions` 3–8 · campos string
 obligatorios no vacíos.
 
 Distingue **FAIL** (incumple el contrato) de **WARN** (merece revisión humana, no bloquea):
-`case_id` incompleto, `ponente` nulo, marcadores procesales dentro de `facts`.
+`case_id` incompleto, `ponente` nulo, `role` nulo en alguna parte, marcadores procesales
+dentro de `facts`.
+
+Un `role` nulo es WARN y no FAIL de forma deliberada: un encabezamiento puede nombrar a
+alguien sin asignarle rol —`sentencia29` lista tres acreedores así—, y en esa situación el
+principio de no inferir pesa más que el de rellenar el campo. `name`, en cambio, sí es
+obligatorio.
 
 `document_type` es la única comprobación que mira fuera del JSON: busca el input en
 `Inputs/**/<base>.txt` y compara contra su campo `Tipo de Resolución:`, porque el nombre del
@@ -185,7 +192,7 @@ verdad**. Para eso está `Gold/`.
 
 ### Ficheros de referencia
 
-`Gold/` contiene 22 ficheros `sentenciaN.gold.json`, uno por documento del conjunto dev,
+`Gold/` contiene 35 ficheros `sentenciaN.gold.json`, uno por documento del corpus,
 rellenados **manualmente leyendo la cabecera** de cada sentencia. Son la referencia contra la
 que se mide el agente, no una salida suya: si un identificador no consta en el documento, en el
 gold figura `null`, y que el agente lo rellene cuenta como error.
@@ -216,13 +223,18 @@ campo; `0` en caso contrario.
 | Conjunto | Documentos | Gold | Uso |
 |---|---|---|---|
 | dev | `sentencia1`–`sentencia22` | sí | iterar el estándar y medir |
-| test | `sentencia23`–`sentencia35` | no | reservado, **sin evaluar** |
+| test | `sentencia23`–`sentencia35` | sí | **gastado**: evaluado el 05/08/2026 |
 
-El conjunto de test está intacto a propósito. Cada vuelta de `/DEBUG` → `/IMPROVE` ajusta
-`CLAUDE.md` mirando los fallos de dev, y eso hace que la precisión sobre dev deje de ser una
-estimación honesta del rendimiento sobre una sentencia nueva: el estándar se ha adaptado a
-esos 22 documentos concretos. Test sirve para comprobar, una sola vez y al final, cuánto de
-la precisión es método y cuánto es sobreajuste.
+El conjunto de test estuvo intacto hasta el 5 de agosto de 2026 y ya se ha gastado. Cada
+vuelta de `/DEBUG` → `/IMPROVE` ajustaba `CLAUDE.md` mirando los fallos de dev, y eso hacía
+que la precisión sobre dev dejara de ser una estimación honesta del rendimiento sobre una
+sentencia nueva: el estándar se había adaptado a esos 22 documentos concretos. Test sirvió
+para medir, una sola vez, cuánto de la precisión era método y cuánto sobreajuste.
+
+**Ya no es un conjunto ciego.** Las dos correcciones del estándar del 06/08/2026 —acentos en
+`ponente`, prefijo en `ecli`— se escribieron mirando sus fallos, así que a partir de ahí test
+mide lo mismo que dev. Cualquier medición futura que quiera ser honesta necesita documentos
+nuevos.
 
 **Composición por órgano.** Los dos conjuntos no son homogéneos, y conviene saberlo antes de
 leer cualquier número:
@@ -240,27 +252,46 @@ Dev es íntegramente Tribunal Supremo. Test son 5 documentos de Supremo y **8 de
 generalización a **cabeceras de otro tipo**, y son dos cosas distintas mezcladas en el mismo
 conjunto. Los 5 de Supremo permiten separarlas si al evaluar se reportan por separado.
 
-Hay razones concretas para esperar degradación fuera del Supremo. El formato normalizado de
+Había razones concretas para esperar degradación fuera del Supremo. El formato normalizado de
 `court_or_body` —`"Órgano. Sala. Sección N. Sede: Ciudad"`— presupone una `Sala` que un
 Juzgado de lo Mercantil no tiene; el Tribunal de Instancia es una figura reciente cuyas
 cabeceras usan `Sección` con dos sentidos distintos; y la prioridad de identificadores de
-`case_id` está calibrada sobre cabeceras del Supremo. Nada de esto está resuelto: está
-reservado junto con el conjunto.
+`case_id` está calibrada sobre cabeceras del Supremo. Las dos primeras se resolvieron con los
+niveles opcionales y la regla de sección ambigua, y el resultado sobre test las confirma.
 
 ### Resultado actual
 
-**198/198 (100 %) sobre dev** — 22 documentos × 9 campos, sin discrepancias.
+**313/315 (99,4 %) sobre el corpus completo** — 35 documentos × 9 campos.
 
-Es un resultado de una sola vuelta y hay que leerlo con tres reservas. Primera: mide 9 campos
-de cabecera, que son los más mecánicos del esquema. Segunda: se ha medido sobre el conjunto en
-el que se iteró. Tercera: se ha medido sobre 22 documentos del **mismo órgano y la misma sala**,
-con cabeceras casi idénticas entre sí; el 100 % dice que el agente lee bien una plantilla, no
-que lea bien una cabecera judicial cualquiera. El número sobre test es desconocido y será igual
-o peor.
+| Conjunto | Documentos | Campos | Aciertos | |
+|---|---|---|---|---|
+| dev (1–22) | 22 | 198 | 198 | 100 % |
+| test — Tribunal Supremo (23–27) | 5 | 45 | 45 | 100 % |
+| test — otros órganos (28–35) | 8 | 72 | 70 | 97,2 % |
+| **Total** | **35** | **315** | **313** | **99,4 %** |
 
-En el caso concreto de `document_type` la reserva es más fuerte todavía: los 22 documentos de
-dev son sentencias, así que el campo acierta 22/22 sin haber tenido que distinguir nunca de un
-auto. Los 5 autos del corpus están todos en test.
+Por campo: `roj`, `resolution_number`, `appeal_number`, `id_cendoj`, `decision_date`,
+`court_or_body` y `document_type` al 100 %; `ecli` y `ponente` en 34/35.
+
+El salto de dev a test fue de 100 % a 98,3 %, y la degradación se concentra entera en los 8
+documentos que no son del Supremo. Las tres reglas del estándar v2 se ejercitaron aquí por
+primera vez contra casos reales: `document_type` acertó los **5 autos** (28, 29, 31, 32, 35),
+todos con nombre de archivo `sentenciaN.txt`; `sentencia34` produjo
+`"Juzgado de lo Mercantil. Sección 1. Sede: Donostia-San Sebastián"`, sin nivel `Sala`, que es
+el caso para el que se introdujeron los niveles opcionales; y `sentencia28`, con dos líneas
+`Sección:` (`2` y `SC`), usó la numérica y registró la ambigüedad.
+
+**Las dos discrepancias restantes** son de transcripción de cabecera: `sentencia29` dejó el
+ponente en las mayúsculas sin acentos del CENDOJ y `sentencia35` perdió el prefijo `ECLI:`.
+Ninguna regla las cubría; ambas se añadieron al estándar el 06/08/2026. **Los dos outputs no
+se han reprocesado**, así que el 313/315 sigue reflejando el estándar anterior a esa
+corrección.
+
+Tres reservas siguen en pie. Primera: se miden 9 campos de cabecera, los más mecánicos del
+esquema. Segunda: dev se midió sobre el conjunto en el que se iteró, y test ya se ha gastado.
+Tercera: 27 de los 35 documentos son del Tribunal Supremo, Sala de lo Civil, con cabeceras casi
+idénticas entre sí; la muestra de otros órganos son 8 documentos, suficiente para detectar que
+las reglas nuevas disparan, insuficiente para medir su precisión.
 
 ### Qué NO mide
 
@@ -282,15 +313,17 @@ Sala usó como fundamento, ni que el fallo esté bien recogido. Un output puede 
 
 - El sistema **no** emite conclusiones legales definitivas ni sustituye asesoramiento
   profesional. Es una herramienta de apoyo.
-- El esquema está calibrado sobre la cabecera CENDOJ del Tribunal Supremo, Sala de lo Civil:
-  es el único órgano presente en el conjunto sobre el que se ha iterado y medido. El corpus
-  reservado contiene 8 resoluciones de Tribunal de Instancia, Tribunal Superior de Justicia y
-  Juzgado de lo Mercantil, y 5 de ellas son **autos**, no sentencias. **Ninguna está procesada
-  ni evaluada todavía.** Las reglas nuevas de `document_type` y de niveles opcionales en
-  `court_or_body` se han escrito mirando esas cabeceras, pero **no se han ejercitado contra
-  ellas**: en dev no hay un solo auto ni un solo órgano sin Sala, así que ninguna de las dos
-  reglas ha llegado a dispararse en una medición real. La prioridad de identificadores de
-  `case_id` tampoco se ha revisado para esos formatos.
+- El esquema está calibrado sobre la cabecera CENDOJ del Tribunal Supremo, Sala de lo Civil,
+  que son 27 de los 35 documentos del corpus. Los otros 8 —Tribunal de Instancia, Tribunal
+  Superior de Justicia y Juzgado de lo Mercantil, con 5 **autos** entre ellos— ya están
+  procesados y evaluados, y ahí se ejercitaron por primera vez `document_type` como enum, los
+  niveles opcionales de `court_or_body` y la regla de sección ambigua. Las tres se comportaron
+  como se esperaba, pero 8 documentos miden poco: la prioridad de identificadores de `case_id`
+  sigue sin revisarse para esos formatos, y no hay ningún órgano del corpus fuera del orden
+  civil.
+- **Ya no queda conjunto ciego.** Test se gastó el 05/08/2026 y las correcciones posteriores
+  del estándar se escribieron mirando sus fallos. La próxima medición honesta exige documentos
+  que el estándar no haya visto.
 - Las resoluciones administrativas siguen declaradas como soportadas y sin un solo caso en el
   corpus.
 - El agente no verifica el contenido contra fuentes externas: lo que no consta en el

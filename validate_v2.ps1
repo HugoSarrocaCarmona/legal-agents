@@ -215,14 +215,19 @@ foreach ($f in $files) {
     if ($parties.Count -eq 0) {
         [void]$fails.Add("parties vacio")
     } else {
-        $bad = 0
+        # 'role' nulo no es un defecto del output: un encabezamiento puede nombrar a
+        # alguien sin asignarle rol, y el estandar prefiere null antes que inferirlo.
+        # Se avisa para revision humana, pero no incumple el contrato. 'name' si.
+        $bad = 0; $sinRol = 0
         foreach ($p in $parties) {
             if ($p -is [string]) { $bad++; continue }
             $pk = @($p.PSObject.Properties.Name)
             if ($pk -notcontains 'name' -or $pk -notcontains 'role') { $bad++; continue }
-            if ([string]::IsNullOrWhiteSpace([string]$p.name) -or [string]::IsNullOrWhiteSpace([string]$p.role)) { $bad++ }
+            if ([string]::IsNullOrWhiteSpace([string]$p.name)) { $bad++; continue }
+            if ([string]::IsNullOrWhiteSpace([string]$p.role)) { $sinRol++ }
         }
         if ($bad -gt 0) { [void]$fails.Add("$bad de $($parties.Count) elementos de parties no cumplen {name, role}") }
+        if ($sinRol -gt 0) { [void]$warns.Add("$sinRol de $($parties.Count) elementos de parties sin rol (role null)") }
     }
 
     # --- 8. applied_rules: array de objetos {type, ref, note} ---

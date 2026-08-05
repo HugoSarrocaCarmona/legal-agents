@@ -82,6 +82,8 @@ Orden de ejecución estricto:
   ninguno de los dos → `null` y registrarlo en `document_quality_notes`.
 - **`case_id`** — extracción literal de la cabecera, nunca reconstruida. Prioridad:
   ROJ, ECLI, nº resolución, nº recurso, Id Cendoj. Subcampo ausente en el documento → `null`.
+  **`ecli` conserva el prefijo `ECLI:`** tal y como figura en la cabecera:
+  `"ECLI:ES:TICI:2025:2A"`, no `"ES:TICI:2025:2A"`.
 - **`decision_date`** — el campo `Fecha:` de la cabecera, en formato `YYYY-MM-DD`.
   Ignorar fechas de votación y fallo, de vista o de resoluciones de instancia.
 - **`court_or_body`** — órgano, sala, sección y sede. Sin nombres de magistrados.
@@ -97,8 +99,13 @@ Orden de ejecución estricto:
   ninguna lo es, omitir el nivel Sección. En ambos casos registrar la ambigüedad en
   `document_quality_notes`.
 - **`ponente`** — nombre sin tratamiento honorífico (`D.`, `D.ª`, `Excmo. Sr.`). `null` si no consta.
+  **Restituir capitalización y acentos**: la cabecera lo escribe en mayúsculas y sin acentuar,
+  y no se transcribe así. `RAQUEL BLAZQUEZ MARTIN` → `"Raquel Blázquez Martín"`. Si el cuerpo
+  del documento trae la grafía acentuada, esa es la fuente.
 - **`parties`** — **estructura obligatoria**: array de objetos `{name, role}`. Roles tomados
-  literalmente del encabezamiento; no inferirlos. Mantener la anonimización del documento.
+  literalmente del encabezamiento; no inferirlos. Si el documento nombra a alguien sin
+  asignarle rol → `role: null`; «no inferir» prevalece sobre «rellenar el campo». `name` nunca
+  es null. Mantener la anonimización del documento.
 - **`facts`** — **array de strings de 5 a 15 elementos**, un hecho por elemento, sin agrupar
   varios en uno. Solo hechos materiales, extraprocesales. **Prohibido** narrar la historia
   procesal.
@@ -139,7 +146,8 @@ El JSON es válido solo si:
 - `case_id` tiene al menos un identificador.
 - `facts` es array de 5–15 elementos.
 - `facts` ≠ `procedural_posture` y no se solapan en contenido.
-- `parties` es array de objetos `{name, role}` con al menos un elemento.
+- `parties` es array de objetos `{name, role}` con al menos un elemento; `name` no vacío,
+  `role` puede ser `null` si el documento no lo consigna.
 - `applied_rules` es array de objetos `{type, ref, note}` con `type` válido.
 - `applied_rules` ∩ `cited_by_parties` = ∅.
 - `ratio_summary` es array de 3–8 elementos, cada uno ≤ 400 caracteres.

@@ -124,6 +124,9 @@ Nunca devolver texto libre.
   5. ID CENDOJ
 - No reconstruir
 - Si no existe → null
+- `ecli`: conservar el prefijo `ECLI:` tal y como figura en la cabecera
+  - Correcto: "ECLI:ES:TICI:2025:2A"
+  - Incorrecto: "ES:TICI:2025:2A"
 
 ---
 
@@ -160,6 +163,10 @@ Nunca devolver texto libre.
 ### ponente
 - Extraer si aparece
 - Sin "D.", "D.ª"
+- RESTITUIR CAPITALIZACIÓN Y ACENTOS: la cabecera escribe el nombre en mayúsculas y
+  sin acentuar. Transcribirlo con capitalización normal y los acentos restituidos
+  - "RAQUEL BLAZQUEZ MARTIN" → "Raquel Blázquez Martín"
+  - Si el cuerpo del documento trae la grafía acentuada, esa es la fuente
 - Si no existe → null
 
 ---
@@ -168,6 +175,9 @@ Nunca devolver texto libre.
 - ESTRUCTURA OBLIGATORIA: array de objetos `{ "name": "", "role": "" }`
 - Extraer explícitamente
 - No inferir roles: transcribirlos del encabezamiento
+- Si el documento nombra a una parte sin asignarle rol → `role: null`
+  - Prevalece "no inferir" sobre "rellenar el campo"
+  - `name` nunca puede ser null
 - Mantener anonimización
 
 ---
@@ -255,7 +265,8 @@ Un JSON es válido SOLO si:
 - case_id tiene al menos un identificador
 - facts es ARRAY de 5–15 elementos
 - facts ≠ procedural_posture (ni solapamiento de contenido)
-- parties es array de objetos {name, role}, con al menos un elemento
+- parties es array de objetos {name, role}, con al menos un elemento; `name` no vacío,
+  `role` puede ser null si el documento no lo consigna
 - applied_rules es array de objetos {type, ref, note}, con type válido
 - applied_rules ∩ cited_by_parties = ∅
 - ratio_summary es array de 3–8 elementos, cada uno ≤ 400 caracteres
