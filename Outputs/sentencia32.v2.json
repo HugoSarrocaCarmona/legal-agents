@@ -1,0 +1,213 @@
+{
+  "document_type": "auto",
+  "case_id": {
+    "ecli": "ECLI:ES:TSJICAN:2026:1A",
+    "roj": "ATSJ ICAN 1/2026",
+    "resolution_number": null,
+    "appeal_number": "140/2025",
+    "id_cendoj": "35016310012026200001"
+  },
+  "decision_date": "2026-02-10",
+  "court_or_body": "Tribunal Superior de Justicia. Sala de lo Civil y Penal. Sección 1. Sede: Las Palmas de Gran Canaria",
+  "ponente": "Juan Luis Lorenzo Bragado",
+  "parties": [
+    {
+      "name": "Pedro Francisco",
+      "role": "Interviniente"
+    }
+  ],
+  "facts": [
+    "El escrito de interposición del recurso de apelación firmado por el letrado Pedro Francisco contenía 52 citas jurisprudenciales y documentales.",
+    "De esas 52 citas únicamente 4 resultaron correctas y veraces, y las cuatro se limitaban a reproducir resoluciones ya citadas expresamente en la sentencia recurrida.",
+    "Las restantes 48 citas atribuían a sentencias del Tribunal Supremo textos entrecomillados, presentados como transcripciones literales, que no figuran en dichas resoluciones.",
+    "Numerosas citas del escrito consignaban además fechas que no correspondían al número de sentencia indicado.",
+    "Muchas de las resoluciones citadas versaban sobre materias ajenas a lo alegado, como tráfico de drogas, refundición de condenas, malversación de fondos públicos o maltrato animal.",
+    "El escrito invocaba un «Informe del Consejo General del Poder Judicial sobre la credibilidad del testimonio infantil, 2019» y una «Guía de buenas prácticas en la intervención con menores víctimas, 2018» cuya existencia no pudo verificarse en la web del CGPJ, Dialnet ni buscadores abiertos.",
+    "El letrado confió la búsqueda de las referencias jurisprudenciales a una herramienta de inteligencia artificial generativa generalista con suscripción de pago, no diseñada específicamente para el ámbito jurídico.",
+    "El letrado no contrastó ninguna de las referencias con las bases de datos de jurisprudencia, señaladamente la del CENDOJ, de acceso universal y gratuito, antes de incorporarlas al escrito.",
+    "El letrado reconoció expresamente los hechos, asumió su responsabilidad y negó cualquier intención de engañar al Tribunal o de introducir conscientemente citas inexistentes.",
+    "El letrado manifestó que no existía interés personal ni económico vinculado al resultado del recurso.",
+    "El letrado se inscribió en un curso del Consejo General de la Abogacía Española sobre competencias digitales y uso responsable y ético de herramientas de inteligencia artificial.",
+    "La Oficina de Comunicación del Tribunal Superior de Justicia de Canarias difundió el texto de la sentencia de apelación previa pseudonimización mediante la herramienta KENDOJ, alcanzando también los nombres de los profesionales intervinientes.",
+    "El texto difundido incluía el NIG del procedimiento, dato que, introducido en la base del CENDOJ, permitió localizar la sentencia de primera instancia, en la que sí figuran los nombres de abogados y procuradores.",
+    "El letrado afirmó haber sido objeto de comentarios y burlas en entornos profesionales, incluidos chats grupales de abogados, tras trascender su identidad.",
+    "En el mercado existían, en la fecha de interposición del recurso, herramientas de inteligencia artificial específicamente jurídicas con planes de suscripción básicos a partir de unos 70 euros mensuales."
+  ],
+  "procedural_posture": "El escrito de interposición del recurso de apelación se dirigió contra la sentencia n.º 189/2024 de la Sección Segunda de la Audiencia Provincial de Santa Cruz de Tenerife, tramitándose como rollo de apelación 140/2025 ante la Sala. En el fundamento cuarto de la sentencia dictada en dicho rollo la Sala dejó constancia de las citas espurias detectadas y, en el apartado cuarto del fallo, acordó formar pieza separada para depurar las responsabilidades del letrado conforme al art. 247, apartados 3 y 4, LEC en relación con los arts. 552 y siguientes LOPJ. Por providencia de 9 de enero de 2026 se incoó la pieza separada (Pieza Sanciones Mala Fe Procesal - 01) y se acordó solicitar a la documentalista del Tribunal Superior de Justicia un análisis detallado del escrito de interposición. El informe de la responsable del Servicio de Documentación y Bibliotecas se presentó el 20 de enero de 2026. Por providencia de 21 de enero de 2026 se dio traslado del informe al letrado para alegaciones, que evacuó mediante escrito presentado el 26 de enero de 2026. Seguidamente, por diligencia de ordenación, quedaron las actuaciones para dictar resolución, dictándose el presente auto el 10 de febrero de 2026. Contra el auto cabe recurso de audiencia en justicia ante la propia Sala en el plazo de cinco días y, en su caso, recurso de alzada ante la Sala de Gobierno en el mismo plazo, previo informe de la Sala.",
+  "legal_issues": [
+    "Si la incorporación a un escrito procesal de citas jurisprudenciales inexistentes, generadas por una herramienta de inteligencia artificial y no verificadas, vulnera el deber de buena fe procesal exigible al abogado.",
+    "Si esa conducta constituye falta al respeto debido al Tribunal a efectos de la corrección disciplinaria del art. 553.1 LOPJ.",
+    "Cuál es el estándar de diligencia profesional exigible al abogado que emplea sistemas de inteligencia artificial generativa en la elaboración de escritos procesales.",
+    "Si procede imponer multa conforme al art. 247.3 LEC o basta el apercibimiento adoptado en los precedentes conocidos.",
+    "Cuál debe ser la cuantía proporcionada de la multa y qué circunstancias operan como factores de atenuación.",
+    "Si procede dar traslado de la resolución al colegio profesional a efectos disciplinarios conforme al art. 247.4 LEC.",
+    "Si la difusión pseudonimizada de la sentencia de apelación con inclusión del NIG constituyó una actuación irregular en materia de protección de datos respecto de la identidad del letrado.",
+    "Si el nombre del abogado interviniente en un procedimiento está sujeto al mismo régimen de anonimización que los datos personales de partes y testigos en la publicación oficial de resoluciones."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Artículo 247.1 de la Ley 1/2000, de Enjuiciamiento Civil",
+      "note": "Deber de ajustarse a las reglas de la buena fe procesal; su transgresión fundamenta la calificación de la conducta del letrado."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 247.3 de la Ley 1/2000, de Enjuiciamiento Civil",
+      "note": "Faculta a imponer en pieza separada, mediante acuerdo motivado y con respeto al principio de proporcionalidad, multa de 180 a 6.000 euros; su párrafo segundo aporta los criterios de cuantificación."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 247.4 de la Ley 1/2000, de Enjuiciamiento Civil",
+      "note": "Fundamenta el traslado de la resolución y de los antecedentes al Ilustre Colegio de Abogados de Santa Cruz de Tenerife."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 553.1 de la Ley Orgánica del Poder Judicial",
+      "note": "Corrección disciplinaria de abogados y procuradores que falten al respeto debido a jueces y tribunales; norma a la que se remite el art. 247 LEC."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 554.2 de la Ley Orgánica del Poder Judicial",
+      "note": "Impone atender a la gravedad, antecedentes y circunstancias de los hechos y exige audiencia del interesado para imponer la corrección de multa."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 7.1 del Código Civil",
+      "note": "Principio de buena fe como concepto objetivo de comportamiento honrado, justo y leal, trasladado a la conducta procesal del profesional del Derecho."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 4 del Código Deontológico de la Abogacía",
+      "note": "Estándar de diligencia profesional que la Sala considera vulnerado por la omisión de revisión y verificación."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 61.1 del Estatuto General de la Abogacía Española en relación con el artículo 10.2 del Código Deontológico",
+      "note": "Deber de veracidad y buena fe del profesional que actúa ante los tribunales."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 560.10 de la Ley Orgánica del Poder Judicial",
+      "note": "Atribuye al CGPJ la publicación oficial y custodia de las sentencias y su difusión universal y gratuita a través del CENDOJ."
+    },
+    {
+      "type": "norma",
+      "ref": "Reglamento CGPJ 1/2005, de publicación y difusión de resoluciones judiciales, y Reglamento CGPJ 3/2010, de reutilización por terceros",
+      "note": "No extienden el deber de anonimización a los datos de abogados y procuradores, base del rechazo del reproche a la Oficina de Comunicación."
+    },
+    {
+      "type": "norma",
+      "ref": "Instrucción 2/2026, aprobada por Acuerdo de 28 de enero de 2026 del Pleno del Consejo General del Poder Judicial",
+      "note": "Citada como norma de obligado cumplimiento sobre uso de sistemas de inteligencia artificial en la actividad jurisdiccional, que refuerza el principio de supervisión humana."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "Acuerdo del Tribunal Constitucional de 9 de septiembre de 2023",
+      "note": "Precedente en procedimiento sancionador por citas literales inexistentes de diecinueve sentencias; apreció infracción del art. 553.1 LOPJ e impuso apercibimiento del art. 554.1.a) LOPJ. La Sala aprecia mayor analogía con este caso."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "Auto de la Sala de lo Civil y Penal del Tribunal Superior de Justicia de Navarra de 4 de septiembre de 2024, n.º 2/2024, rec. 17/2024",
+      "note": "Precedente sobre cita de precepto del Código Penal colombiano atribuida al uso inadecuado de ChatGPT; apreció vulneración de la buena fe procesal pero archivó sin sanción. La Sala lo distingue del presente caso."
+    },
+    {
+      "type": "doctrina",
+      "ref": "Libro Blanco sobre Inteligencia Artificial y Abogacía, del Consejo General de la Abogacía Española y el Ilustre Colegio de Abogados de Valencia",
+      "note": "Fundamenta el principio de supervisión humana, el deber de análisis previo de proveedores y la responsabilidad plena del abogado sobre los resultados de salida incorporados a sus actuaciones."
+    },
+    {
+      "type": "doctrina",
+      "ref": "Pronunciamientos de la Agencia Española de Protección de Datos (Informe 434/2006 y Resolución de 13 de enero de 2006; Resolución de archivo E/02554/2017; Resolución PS00204-2020, de 6 de mayo de 2022)",
+      "note": "Sustentan la prevalencia de la transparencia sobre intereses individuales cuando se trata de datos estrictamente profesionales, como el nombre del abogado en la resolución."
+    }
+  ],
+  "cited_by_parties": [
+    "STS 494/2020, de 8 de octubre",
+    "STS 104/2019, de 26 de febrero",
+    "STS 282/2019, de 30 de mayo",
+    "STS 387/2022, de 28 de abril",
+    "STS 845/2016, de 17 de noviembre",
+    "STS 65/2023, de 1 de febrero",
+    "STS 798/2022, de 5 de octubre",
+    "STS 381/2019, de 23 de julio",
+    "STS 787/2021, de 22 de octubre",
+    "STS 267/2020, de 29 de mayo",
+    "STS 1134/2009, de 17 de noviembre",
+    "STS 606/2018, de 28 de noviembre",
+    "STC 229/2002, de 9 de diciembre",
+    "STC 168/2011",
+    "STS 779/2020",
+    "STS 3/2017, de 18 de enero",
+    "STS 566/2012, de 13 de junio",
+    "STS 20/2020, de 28 de enero",
+    "STS 565/2020, de 30 de octubre",
+    "STS 258/2021, de 18 de marzo",
+    "STS 543/2020, de 23 de octubre",
+    "STS 805/2017, de 11 de diciembre",
+    "STS 546/2020, de 23 de octubre",
+    "STS 541/2018, de 8 de noviembre",
+    "STS 168/2021, de 25 de febrero",
+    "STS 91/2017, de 15 de febrero",
+    "STS 222/2022, de 9 de marzo",
+    "STS 370/2018, de 19 de julio",
+    "STS 87/2020, de 3 de marzo",
+    "STS 363/2019, de 16 de julio",
+    "STS 112/2021, de 11 de febrero",
+    "STS 197/2019, de 9 de abril",
+    "STS 212/2022, de 9 de marzo",
+    "STS 669/2016, de 28 de julio",
+    "STS 66/2022, de 27 de enero",
+    "STS 869/2021, de 12 de noviembre",
+    "STS 541/2021, de 21 de junio",
+    "STS 290/2020, de 10 de junio",
+    "STS 603/2022, de 16 de junio",
+    "STS 797/2021, de 20 de octubre",
+    "STS 554/2017, de 12 de julio",
+    "STS 106/2020, de 11 de marzo",
+    "Informe del Consejo General del Poder Judicial sobre la credibilidad del testimonio infantil, 2019",
+    "Guía de buenas prácticas en la intervención con menores víctimas, 2018"
+  ],
+  "holding": "La Sala impone al abogado Pedro Francisco, por los hechos indicados en la resolución, una multa de cuatrocientos veinte euros. Acuerda dar traslado de la resolución, con todos sus antecedentes, al Ilustre Colegio de Abogados de Santa Cruz de Tenerife a los efectos disciplinarios que procedan. Declara asimismo que la Oficina de Comunicación del Tribunal Superior de Justicia de Canarias no incurrió en conducta reprochable alguna al difundir la sentencia de apelación pseudonimizada. Contra la resolución cabe recurso de audiencia en justicia ante la propia Sala en el plazo de cinco días y, en su caso, recurso de alzada ante la Sala de Gobierno en el mismo plazo.",
+  "ratio_summary": [
+    "El abogado que incorpora a un escrito procesal resultados de una herramienta de inteligencia artificial generativa asume plena responsabilidad sobre ellos y conserva el deber indeclinable de revisar, validar y corregir esos resultados antes de presentarlos ante el tribunal.",
+    "La elección de una herramienta de IA generalista, no concebida para la investigación jurídica, sin análisis previo de fiabilidad, trazabilidad y adecuación de los proveedores disponibles, integra ya una quiebra de la diligencia profesional exigible.",
+    "Presentar un recurso con citas jurisprudenciales inexistentes, construyendo una fundamentación artificial, transgrede el deber de veracidad y de buena fe procesal del art. 247.1 LEC en relación con el art. 7.1 CC, entendida la buena fe como comportamiento objetivamente honrado y leal.",
+    "Suministrar al tribunal una cantidad masiva de citas espurias, aun de manera negligente, pretendiendo que surtan efectos y sean tenidas por ciertas, constituye falta al respeto debido al Tribunal a efectos del art. 553.1 LOPJ.",
+    "El apercibimiento resulta insuficiente cuando la conducta se produce una vez consolidados los precedentes y la difusión pública sobre las alucinaciones de la IA, y cuando la proporción de citas falsas (48 de 52) excede con creces el mero descuido o error venial.",
+    "La cuantía de la multa puede fijarse con criterio objetivo y ejemplarizante tomando como referencia el coste anual de una suscripción a una herramienta de IA jurídica que habría evitado el resultado, rebajado a la mitad por la admisión de hechos y el propósito de enmienda activo del letrado.",
+    "El nombre del abogado interviniente tiene naturaleza pública en las resoluciones judiciales y no queda sujeto al régimen de anonimización de partes y testigos, pues su identificación responde a un interés público prevalente de transparencia y control de la Administración de Justicia."
+  ],
+  "uncertainties": [
+    "El auto no consigna dato alguno sobre la capacidad económica del infractor, criterio que el art. 247.3, párrafo segundo, LEC ordena expresamente ponderar para cuantificar la multa.",
+    "No consta si el letrado tenía antecedentes disciplinarios previos, circunstancia que el art. 554.2 LOPJ exige valorar.",
+    "El cómputo de las citas incorrectas no resulta plenamente conciliable entre secciones: el razonamiento primero habla de 52 citas con 4 correctas, el razonamiento tercero de 48 citas de sentencias del Tribunal Supremo más el informe del CGPJ, y el informe documental incluye también resoluciones del Tribunal Constitucional, sin que quede claro si estas se integran en el total.",
+    "La conducta se califica como desatención de deberes profesionales por imprudencia grave, pero no se precisa el alcance que dicha calificación puede tener en el ulterior expediente colegial, que queda a la decisión del Colegio de Abogados.",
+    "El auto atribuye a la Instrucción 2/2026 del CGPJ, de 28 de enero de 2026, un valor de refuerzo argumental, sin aclarar su aplicabilidad temporal a una conducta desplegada en 2025 ni su alcance sobre profesionales ajenos a la Carrera Judicial.",
+    "No se identifica en el propio auto la fecha exacta de presentación del escrito de recurso, situada solo de forma genérica en el año 2025, dato relevante para la valoración de la novedad de la problemática."
+  ],
+  "document_quality_notes": [
+    "Discrepancia interna sobre la Sala: la cabecera indica «Sala de lo Civil y Penal», mientras que el membrete y el cuerpo del documento se refieren reiteradamente a la «Sala de lo Penal». Se ha tomado la cabecera como fuente primaria.",
+    "El campo «Nº de Resolución:» de la cabecera figura vacío, por lo que el subcampo resolution_number se consigna como null.",
+    "La cabecera consigna la sede en forma invertida como «Palmas de Gran Canaria (Las)»; se ha normalizado sin paréntesis, con la forma que el propio documento emplea en su cuerpo («Las Palmas de Gran Canaria»), conforme a la regla de formato de court_or_body que prohíbe comas y paréntesis.",
+    "Artefactos de OCR abundantes: texto con espaciado anómalo entre caracteres («M u y a l c o n t r a r i o», «l a s v í c t i m a s», «C o n s e j o de la Abogacía Europea»), palabras fusionadas («citaque», «faltad e signos», «lasintegréenelescrito», «STS798/2022», «yabsurdo», «sehará») y separaciones erróneas.",
+    "Aparece un separador «---» intercalado en el razonamiento jurídico segundo, ajeno al texto de la resolución.",
+    "El apartado IV del informe documental carece de numeración correlativa visible pese a que las conclusiones y el propio listado remiten a puntos numerados (1, 2, 3, 6, 23, 24, 45, 48), lo que impide comprobar la correspondencia con el anexo.",
+    "El informe documental consigna la STS 267/2020 con dos fechas distintas en pasajes diferentes («de 29 de mayo» y «de 28 de mayo»), y en el análisis de la cita 606/2018 se contraponen «28 de noviembre» y «20 de diciembre» de forma confusa.",
+    "Varias entradas del listado del informe omiten el tribunal de la resolución analizada, consignando solo el número («267/2020», «606/2018»).",
+    "Referencia documental inconsistente: el antecedente primero alude a un «Informe del Consejo General del Poder Judicial (CGPJ) sobre la credibilidad del testimonio infantil, 2019», mientras el informe documental y el análisis se refieren a una «Guía de buenas prácticas en la intervención con menores víctimas» fechada en 2018 y en 2019 según el pasaje.",
+    "El artículo 553 LOPJ se cita con dos formatos distintos en el mismo documento («art. 553.º LOPJ» y «art. 553.1 LOPJ»).",
+    "Anonimización inconsistente del propio soporte: se pseudonimizan los nombres del letrado y de la documentalista, pero se reproduce íntegro el NIG del procedimiento (3803843220220003409), dato que el propio auto reconoce que permite la identificación indirecta de los profesionales.",
+    "Erratas de redacción en el cuerpo: «a fin depurar las responsabilidades», «y más aún si sabe ante la Sala», «la convicción de la única actitud posible», «a la risión y descrédito», «todos las actuaciones profesionales».",
+    "El pasaje sobre pronunciamientos de la AEPD contiene una frase truncada y sin cierre de paréntesis: «Resolución de archivo de actuaciones E/02554/2017 que el derecho a la información, o Resolución PS00204-2020...»."
+  ],
+  "next_review_questions": [
+    "¿Cuál es el número y la fecha de la sentencia dictada por esta Sala en el rollo de apelación 140/2025 de la que trae causa la presente pieza separada?",
+    "¿Cuál es la fecha exacta de presentación del escrito de interposición del recurso, dato que el auto sitúa solo de forma genérica en 2025?",
+    "¿Consta en el expediente acreditación de la capacidad económica del letrado, criterio de cuantificación exigido por el art. 247.3, párrafo segundo, LEC?",
+    "¿Existen antecedentes disciplinarios previos del letrado que debieran ponderarse conforme al art. 554.2 LOPJ?",
+    "¿Qué número y fecha corresponden a las cuatro citas consideradas correctas y veraces en los puntos 1, 2, 3 y 48 del apartado IV del informe documental?",
+    "¿Cuál es el contenido íntegro del anexo del informe documental al que remite el listado numerado del apartado IV, para verificar la correlación de las referencias?",
+    "¿Se interpuso recurso de audiencia en justicia o de alzada contra este auto y en qué sentido fue resuelto?",
+    "¿Se refiere el «Informe del CGPJ sobre la credibilidad del testimonio infantil, 2019» al mismo documento que la «Guía de buenas prácticas en la intervención con menores víctimas, 2018», o se trata de dos referencias inexistentes distintas?"
+  ]
+}

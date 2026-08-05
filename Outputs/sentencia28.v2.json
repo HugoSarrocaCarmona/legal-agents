@@ -1,0 +1,194 @@
+{
+  "document_type": "auto",
+  "case_id": {
+    "ecli": "ECLI:ES:TIM:2026:11A",
+    "roj": "ATIM GC 11/2026",
+    "resolution_number": null,
+    "appeal_number": "768/2025",
+    "id_cendoj": "35016470022026200001"
+  },
+  "decision_date": "2026-03-27",
+  "court_or_body": "Tribunal de Instancia. Sección de lo Mercantil. Sección 2. Sede: Las Palmas de Gran Canaria",
+  "ponente": "José Ramón García Aragón",
+  "parties": [
+    {
+      "name": "Regina",
+      "role": "Solicitante"
+    },
+    {
+      "name": "Segismundo",
+      "role": "Administrador concursal"
+    },
+    {
+      "name": "Financiera Carrión, S.A. EFC",
+      "role": "Acreedor"
+    },
+    {
+      "name": "Agencia Tributaria (Agencia Estatal Administración Tributaria)",
+      "role": "Interesado"
+    },
+    {
+      "name": "Tesorería General de la Seguridad Social",
+      "role": "Interesado"
+    }
+  ],
+  "facts": [
+    "Regina es una persona natural en situación de insolvencia, declarada en concurso con la calificación de necesario según el campo «Materia» del procedimiento.",
+    "La concursada pretende exonerarse del pasivo insatisfecho mediante sujeción a un plan de pagos, sin liquidación de su masa activa.",
+    "La relación de acreedores de la concursada se eleva a una veintena, siendo la mayoría de ellos financieros y bancarios.",
+    "Entre los acreedores figuran, según el propio auto, Cofidis, Financiera El Corte Inglés e ING Bank, además de Financiera Carrión, S.A. EFC.",
+    "Según la memoria aportada, el origen de las dificultades económicas se remonta a 2014, cuando la concursada ayudó a atender las deudas de su pareja y el sostenimiento de su familia.",
+    "La situación se complicó años después, cuando la concursada refiere haber entrado en una espiral de deuda, sin precisar en qué fecha se produjo la insolvencia.",
+    "El listado de créditos aportado por la concursada es una mera relación alfabética de acreedores, sin referencia a la fecha de suscripción o celebración de cada operación.",
+    "La concursada no consignó la finalidad ni el destino de los créditos y préstamos contraídos, limitándose a referencias genéricas e imprecisas coincidentes con las de la memoria.",
+    "La concursada alegó dificultades para aportar los documentos contractuales, documentación que, según el auto, no le había sido requerida.",
+    "No consta en las actuaciones que la deudora haya sido condenada por sentencia penal firme en los diez años anteriores por los delitos del artículo 487.1.1.º TRLC.",
+    "No consta que la deudora haya sido sancionada por resolución administrativa firme por infracciones tributarias muy graves, de seguridad social o del orden social, ni acuerdo firme de derivación de responsabilidad.",
+    "El concurso no ha sido calificado como culpable ni se encuentra pendiente sección de calificación.",
+    "No consta dato alguno del que pueda inferirse que la deudora haya sido declarada persona afectada en la sentencia de calificación del concurso de un tercero.",
+    "No consta que la deudora haya obtenido con anterioridad una exoneración del pasivo insatisfecho a efectos de la prohibición del artículo 488 TRLC."
+  ],
+  "procedural_posture": "Por auto de 21 de julio de 2025 se declaró el concurso de Regina, tramitado como concurso abreviado con el número 0000768/2025 ante la Plaza n.º 2 del Tribunal de Instancia (Sección Mercantil) de Las Palmas de Gran Canaria, en su Sección 1.ª de fase común. La representación de la concursada presentó escrito formulando solicitud de exoneración del pasivo insatisfecho con sujeción a un plan de pagos y sin liquidación de la masa activa, con el resultado que consta en los autos. Por providencia de 26 de febrero de 2026 el tribunal requirió a la concursada, con base en la doctrina jurisprudencial del Tribunal Supremo, la aportación de los datos y documentos precisos para el control de oficio de los requisitos legales, precisando los extremos necesarios en cuanto al origen de las deudas, su cronología, el saldo deudor, la finalidad del crédito, su fecha de vencimiento y el número de recibos. La concursada contestó al requerimiento sin aportar los datos relevantes solicitados. La administración concursal mostró su aquiescencia a la solicitud y los acreedores no formularon oposición. El tribunal dictó el auto de 27 de marzo de 2026 denegando el plan de pagos, resolución contra la que se indica que cabe recurso de reposición en los términos y plazos previstos por la ley.",
+  "legal_issues": [
+    "Si la verificación de los presupuestos y requisitos de la exoneración del pasivo insatisfecho, y en particular de las causas de exclusión del artículo 487.1 TRLC, debe realizarse de oficio por el juez del concurso aun cuando la administración concursal muestre su conformidad y ningún acreedor se oponga.",
+    "Si corresponde al deudor la carga de aportar la información sobre el origen, cronología, cuantía, vencimiento y destino de sus deudas para que pueda examinarse su condición de deudor de buena fe.",
+    "Si la falta de aportación por la concursada de los datos requeridos sobre la fecha y la finalidad de los créditos constituye incumplimiento del deber de colaboración e información del artículo 487.1.5.º TRLC.",
+    "Si esa misma falta de información impide descartar el endeudamiento fraudulento o temerario previsto como causa de exclusión en el artículo 487.1.6.º TRLC, con independencia de la calificación del concurso.",
+    "Si la resolución que concede la exoneración con plan de pagos debe identificar los créditos exonerados y qué consecuencias tiene sobre el control de oficio la ausencia de un mapa completo de deudas.",
+    "Si la interpretación favorable a la exoneración conforme al espíritu de la Directiva 2019/1023 impide imponer al deudor una carga procesal de aportación de datos y documentos.",
+    "Qué recurso cabe frente a la resolución que se pronuncia de forma independiente sobre la aprobación del plan de pagos."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Artículo 486 del texto refundido de la Ley Concursal",
+      "note": "Configura la condición de deudor de buena fe como presupuesto esencial e inexcusable de la exoneración del pasivo insatisfecho, tanto con plan de pagos como con liquidación de la masa activa."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 487.1 TRLC",
+      "note": "Enumera de forma taxativa las causas de exclusión de la condición de deudor de buena fe; el tribunal examina de oficio los ordinales 1.º a 6.º y aprecia la concurrencia de los ordinales 5.º y 6.º."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 487.1.5.º TRLC",
+      "note": "Incumplimiento de los deberes de colaboración e información; el tribunal lo aprecia por la falta de aportación de los datos requeridos sobre fecha, finalidad y destino de los créditos."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 487.1.6.º TRLC",
+      "note": "Endeudamiento fraudulento o temerario, apreciable de oficio e incluso sin sentencia de calificación del concurso como culpable; se valoran la información patrimonial suministrada, el nivel social y profesional del deudor, las circunstancias del sobreendeudamiento y el uso de herramientas de alerta temprana."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 488 TRLC",
+      "note": "Prohibición de exoneración por haber obtenido otra anterior; el tribunal constata que no concurre."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 495 TRLC",
+      "note": "Régimen de la solicitud de exoneración con sujeción a plan de pagos y sin liquidación de la masa activa, y documentación que debe acompañarla."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 496 TRLC",
+      "note": "Contenido, límites y duración de la propuesta de plan de pagos, incluido el calendario de pagos y la relación detallada de los recursos previstos para su cumplimiento."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 498 TRLC",
+      "note": "Impone al juez la verificación previa de los presupuestos y requisitos legales, del contenido del plan de pagos y de sus posibilidades objetivas de cumplimiento antes de denegar o conceder provisionalmente la exoneración."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 498 ter TRLC",
+      "note": "Efectos de la exoneración provisional y subsistencia de los deberes de colaboración e información hasta la exoneración definitiva."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 499 TRLC",
+      "note": "Extensión de la exoneración a la parte del pasivo exonerable que, conforme al plan, vaya a quedar insatisfecha."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 502.1 TRLC",
+      "note": "Fundamento literal del control de oficio: el juez debe verificar los presupuestos y requisitos aun cuando la administración concursal y los acreedores personados se muestren conformes o no se opongan."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 481.1 TRLC",
+      "note": "Irrecurribilidad del auto que acuerda la conclusión del concurso; el tribunal razona que, al pronunciarse de forma independiente sobre el plan de pagos, cabe recurso de reposición."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 7.1.º TRLC",
+      "note": "Memoria aportada a los autos por la concursada, valorada junto con los datos requeridos para verificar la trazabilidad de las deudas."
+    },
+    {
+      "type": "norma",
+      "ref": "Directiva (UE) 2019/1023",
+      "note": "Su espíritu fundamenta una interpretación favorable a la exoneración y al derecho del concursado a exonerarse, sin excluir la carga procesal de aportar datos y documentos."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS del Pleno de la Sala Primera 259/2026, 260/2026, 262/2026 y 263/2026, todas de 18 de febrero de 2026",
+      "note": "Fijan la doctrina sobre el deber de verificación de oficio de los requisitos del art. 487.1 TRLC, la carga informativa del deudor sobre el origen y justificación de sus deudas y la finalidad de la exoneración como institución excepcional."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 263/2026, de 18 de febrero (rec. 1939/2024)",
+      "note": "Declara que la verificación de los requisitos del art. 487.1 TRLC debía haber sido realizada de oficio por el juzgado, sin que quepa excusarla por no haber sido opuesta la causa de exclusión por ningún acreedor."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STS 260/2026, de 18 de febrero",
+      "note": "Impone al deudor la carga de reseñar todos los créditos cuya exoneración pretende y a la resolución judicial la de identificar los créditos exonerados, lo que permite controlar la causa de exclusión del art. 487.1.6.º TRLC."
+    }
+  ],
+  "cited_by_parties": [],
+  "holding": "El tribunal acuerda la denegación del plan de pagos presentado por la concursada por los motivos expuestos en la resolución, al concurrir la causa de exclusión de la buena fe prevista en el artículo 487.1.5.º y 6.º TRLC, y dispone que en su caso continúe el curso de los autos. Contra la resolución cabe interponer recurso de reposición en los términos y plazos previstos por la ley. El auto no contiene pronunciamiento alguno sobre costas ni sobre depósitos.",
+  "ratio_summary": [
+    "La condición de deudor de buena fe del artículo 486 TRLC es presupuesto esencial e inexcusable de la exoneración del pasivo insatisfecho y responde a una noción normativa: es el artículo 487.1 TRLC el que enumera de forma taxativa las causas de exclusión cuya concurrencia deslegitima al deudor.",
+    "La verificación de los requisitos del artículo 487.1 TRLC debe realizarse de oficio por el juez del concurso, sin que la ley supedite ese control a la oposición de un acreedor o de la administración concursal, según resulta de los artículos 502.1 y 498.2 TRLC y de las sentencias del Pleno de 18 de febrero de 2026.",
+    "Al tratarse de un presupuesto subjetivo, corresponde al deudor la carga de aportar la información necesaria: no solo su activo y pasivo, sino también el origen de las deudas y su justificación cuando puedan resultar desproporcionadas respecto de los ingresos y rentas que tenía al tiempo de contraerlas.",
+    "La exoneración no es un mecanismo de cancelación automática de deudas, sino una institución excepcional cuya generalización indiscriminada comprometería la seguridad del tráfico y el sistema crediticio, por lo que exige del solicitante un mínimo esfuerzo probatorio sobre las circunstancias que justifican el beneficio.",
+    "Basta con una explicación precisa de las operaciones crediticias —fecha, cuantía, vencimiento y destino— sin necesidad de aportar los documentos contractuales; una mera relación alfabética de acreedores sin fecha de suscripción ni finalidad de los créditos no permite reconstruir los hitos del endeudamiento.",
+    "La falta de aportación de esos datos nucleares, referida al estándar de la totalidad de los créditos y no a un extremo marginal, vulnera el deber de colaborar e informar del artículo 487.1.5.º TRLC e impide al tribunal descartar que el endeudamiento fuese negligente conforme al artículo 487.1.6.º TRLC.",
+    "La interpretación favorable a la exoneración inspirada en la Directiva 2019/1023 no excluye imponer al deudor una carga procesal de aportación de datos, de modo que la aquiescencia de la administración concursal y la falta de oposición de los acreedores no impiden denegar la exoneración solicitada.",
+    "La causa de exclusión por endeudamiento temerario opera con independencia de la calificación del concurso, pues la calificación concursal y la verificación de la buena fe son instituciones distintas, con presupuestos, finalidades y consecuencias jurídicas diferentes."
+  ],
+  "uncertainties": [
+    "Existe una posible divergencia de alcance entre los fundamentos y la parte dispositiva: los fundamentos concluyen que no cabe acceder a «la exoneración del pasivo insatisfecho solicitada» y que procede «denegar la exoneración», mientras que la parte dispositiva acuerda únicamente «la denegación del plan de pagos presentado».",
+    "El auto no precisa si la denegación cierra definitivamente la vía de la exoneración o si la concursada puede formular una nueva solicitud, en particular por el cauce del artículo 486.2.º TRLC con liquidación de la masa activa; la referencia a que «continúe el curso de los autos» no se concreta.",
+    "No consta el importe total del pasivo ni la identificación individualizada de los créditos, pese a que el propio auto invoca la doctrina de la STS 260/2026 sobre la necesidad de identificar los créditos exonerados.",
+    "El auto no fija la fecha en que se produjo la situación de insolvencia de la concursada, dato que él mismo considera relevante para valorar el carácter temerario o negligente del endeudamiento.",
+    "El contenido literal de la providencia de 26 de febrero de 2026 y el alcance exacto del requerimiento no se transcriben, por lo que no puede contrastarse en el documento la afirmación de que la aportación documental contractual no había sido requerida.",
+    "El auto declara recurrible en reposición la denegación del plan de pagos apartándose de la regla de irrecurribilidad del artículo 481.1 TRLC mediante el argumento de que se procede de forma independiente, sin desarrollar el fundamento normativo de esa distinción.",
+    "No se explica la relación entre la condición de «Solicitante» que la cabecera atribuye a Regina y la calificación del concurso como «necesario» que figura en el campo Materia."
+  ],
+  "document_quality_notes": [
+    "La cabecera contiene dos líneas «Sección:» con valores distintos, «2» y «SC»; conforme al criterio de sección ambigua se ha utilizado la numérica (2), coherente con la referencia interna a la «Plaza N.º 2 del Tribunal de Instancia (Sección Mercantil)».",
+    "El campo «Nº de Resolución:» de la cabecera aparece vacío, por lo que el identificador resolution_number se consigna como null.",
+    "La sede figura en la cabecera como «Palmas de Gran Canaria (Las)», con inversión y paréntesis, frente a «Las Palmas de Gran Canaria» empleada en el cuerpo del documento; se ha normalizado a esta última forma.",
+    "El nombre del ponente aparece sin tildes en la cabecera («JOSE RAMON GARCIA ARAGON») y con tildes en la firma («JOSÉ RAMÓN GARCÍA ARAGÓN»).",
+    "Numerosos artefactos de OCR con palabras fusionadas: «sinliquidación», «recursosprevistos», «eltérmino», «ladeclaración», «vayaa», «delas», «debeser», «quepretenda», «lanaturaleza».",
+    "Artefacto de OCR con caracteres separados: «el saldo d e u d o r».",
+    "Erratas de transcripción: «insolvenncia» por «insolvencia», «excusión» por «exclusión», «endeudamiendo» por «endeudamiento», «circunstancia» por «circunstancias» y «cabra» por «cabrá».",
+    "El encabezado «JURISPRUDENCIA» y la numeración de páginas aparecen intercalados dentro del texto de los fundamentos, interrumpiendo la continuidad de los párrafos.",
+    "El ordinal «TERCERO» del fundamento de derecho aparece embebido al final del párrafo correspondiente al apartado 3 del fundamento SEGUNDO, sin salto de línea.",
+    "En la transcripción del artículo 495 TRLC dos apartados consecutivos aparecen numerados ambos como «1».",
+    "El fundamento QUINTO cita el artículo 498.2 TRLC mientras que el fundamento PRIMERO transcribe el artículo 498 sin desglose de apartados, sin que el texto reproducido permita verificar la correspondencia.",
+    "Anonimización inconsistente: se anonimiza a la concursada y al administrador concursal mediante nombres de pila («Regina», «Segismundo»), pero se identifican con denominación completa entidades acreedoras (Financiera Carrión, S.A. EFC, Cofidis, Financiera El Corte Inglés, ING Bank), así como el magistrado-juez y los ponentes de las sentencias citadas.",
+    "Uso alterno del género al referirse a la misma parte: «el deudor» y «el concursado» frente a «la concursada»."
+  ],
+  "next_review_questions": [
+    "¿Cuál es el contenido literal de la providencia de 26 de febrero de 2026 y qué datos y documentos concretos se requirieron a la concursada?",
+    "¿Qué documentación y explicaciones aportó efectivamente la concursada en su contestación al requerimiento y en la memoria del artículo 7.1.º TRLC?",
+    "¿Cuál es la lista definitiva de acreedores, el importe total del pasivo y la clasificación de los créditos en el concurso 768/2025?",
+    "¿La denegación acordada afecta únicamente al plan de pagos o también a la solicitud de exoneración del pasivo insatisfecho en su conjunto?",
+    "¿Puede la concursada formular una nueva solicitud de exoneración con liquidación de la masa activa conforme al artículo 486.2.º TRLC tras esta denegación?",
+    "¿Se interpuso recurso de reposición contra el auto y cuál fue su resultado?",
+    "¿Qué posición formal expresaron la administración concursal y los acreedores personados, y en qué escritos consta la aquiescencia a la solicitud?",
+    "¿Consta un número de resolución asignado a este auto que no figura en la cabecera del documento?"
+  ]
+}

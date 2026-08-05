@@ -171,3 +171,39 @@ Documentos evaluados: 22
 | document_type | 22/22 | 100 % |
 | **GLOBAL** | **198/198** | **100 %** |
 
+
+## 2026-08-05 23:36
+
+Documentos evaluados: 32
+
+| Campo | Aciertos | Precision |
+|---|---|---|
+| ecli | 31/32 | 96.9 % |
+| roj | 32/32 | 100 % |
+| resolution_number | 32/32 | 100 % |
+| appeal_number | 32/32 | 100 % |
+| id_cendoj | 32/32 | 100 % |
+| decision_date | 31/32 | 96.9 % |
+| court_or_body | 30/32 | 93.8 % |
+| ponente | 29/32 | 90.6 % |
+| document_type | 32/32 | 100 % |
+| **GLOBAL** | **281/288** | **97.6 %** |
+
+
+## 2026-08-05 23:51
+
+Documentos evaluados: 35
+
+| Campo | Aciertos | Precision |
+|---|---|---|
+| ecli | 34/35 | 97.1 % |
+| roj | 35/35 | 100 % |
+| resolution_number | 35/35 | 100 % |
+| appeal_number | 35/35 | 100 % |
+| id_cendoj | 35/35 | 100 % |
+| decision_date | 35/35 | 100 % |
+| court_or_body | 35/35 | 100 % |
+| ponente | 34/35 | 97.1 % |
+| document_type | 35/35 | 100 % |
+| **GLOBAL** | **313/315** | **99.4 %** |
+

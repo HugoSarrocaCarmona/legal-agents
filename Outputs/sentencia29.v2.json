@@ -1,0 +1,186 @@
+{
+  "document_type": "auto",
+  "case_id": {
+    "ecli": "ECLI:ES:TIM:2026:8A",
+    "roj": "ATIM MU 8/2026",
+    "resolution_number": null,
+    "appeal_number": "425/2025",
+    "id_cendoj": "30030470032026200002"
+  },
+  "decision_date": "2026-03-24",
+  "court_or_body": "Tribunal de Instancia. Sección de lo Mercantil. Sección 3. Sede: Murcia",
+  "ponente": "JUAN IGNACIO MARTINEZ AROCA",
+  "parties": [
+    {
+      "name": "CAJAMAR Caja Rural, S.C.C.",
+      "role": "parte actora de incidente concursal"
+    },
+    {
+      "name": "Eutimio",
+      "role": "parte demandada; deudor concursado"
+    },
+    {
+      "name": "Luisa",
+      "role": "parte demandada; deudora concursada"
+    },
+    {
+      "name": "BBVA ARGENTARIA",
+      "role": null
+    },
+    {
+      "name": "CAJA POST. B.HIP.",
+      "role": null
+    },
+    {
+      "name": "AEAT",
+      "role": null
+    }
+  ],
+  "facts": [
+    "D. Eutimio y D.ª Luisa son personas físicas deudoras, no empresarias, en situación de insolvencia y con pluralidad de acreedores.",
+    "La vivienda habitual de ambos deudores se halla gravada con dos préstamos hipotecarios concedidos por CAJAMAR Caja Rural, S.C.C.",
+    "Esos dos préstamos hipotecarios fueron formalizados en 2006 y en 2021.",
+    "Ambos préstamos están garantizados con la misma finca registral NUM000 del Registro de la Propiedad de Cieza n.º 3, que constituye la vivienda habitual de los deudores.",
+    "Los gravámenes y cargas existentes sobre el patrimonio de los deudores se sitúan por importe superior al valor de mercado de los bienes, según el supuesto del art. 37 bis.d) TRLC aplicado al caso.",
+    "Los deudores estimaron orientativamente el valor de la vivienda en 65.000 euros, sobre la base de una estimación del portal inmobiliario Idealista.",
+    "CAJAMAR manifestó disponer de un informe de tasación de fecha 25 de marzo de 2021, referido a la finca registral NUM000, por importe total de 189.693,49 euros.",
+    "Pese a la insolvencia, los deudores han continuado abonando puntualmente la cuota hipotecaria para preservar su vivienda habitual.",
+    "Entre los acreedores relacionados en el procedimiento figuran CAJAMAR Caja Rural, S.C.C., BBVA Argentaria, Caja Postal Banco Hipotecario y la Agencia Estatal de Administración Tributaria."
+  ],
+  "procedural_posture": "Por auto de 9 de mayo de 2025 se declaró el concurso sin masa de D. Eutimio y D.ª Luisa, con las especialidades del art. 37 ter TRLC, en el procedimiento S1C Sección I Declaración de Concurso 425/2025 seguido ante la Sección de lo Mercantil del Tribunal de Instancia de Murcia, plaza n.º 3 (N.I.G. 30030 47 1 2025 0001240). Los deudores solicitaron después la exoneración del pasivo insatisfecho, interesando que la deuda hipotecaria de CAJAMAR quedara excluida únicamente hasta el valor de la garantía y que el eventual exceso recibiera tratamiento exonerable. CAJAMAR promovió el incidente concursal común 425/2025 oponiéndose, no a la concesión de la exoneración, sino a que en su alcance se incluyera el exceso de sus créditos con garantía real, invocando los arts. 489.1.8.º, 492 bis.1, 492 bis.2 y 273 TRLC. Los deudores se opusieron al incidente, sosteniendo la exonerabilidad del exceso sobre el valor de la garantía. Mediante providencia de 2 de octubre de 2025 el órgano acordó oír a las partes por plazo común de diez días sobre el posible planteamiento de cuestión prejudicial ante el Tribunal de Justicia de la Unión Europea acerca de la compatibilidad de los arts. 489.1.8.º, 37 bis, 37 ter, 273 y 492 bis TRLC con los arts. 1.4, 20 y 23 de la Directiva (UE) 2019/1023. Evacuado el trámite, CAJAMAR interesó que no se planteara la cuestión y los deudores interesaron su planteamiento. Por el presente auto de 24 de marzo de 2026 se acuerda plantear la petición de decisión prejudicial, se suspende el procedimiento principal y se ordena la remisión de testimonio al Tribunal de Justicia a través de e-Curia, con copia simple al Servicio de Relaciones Internacionales del CGPJ (REDUE) y notificación a las partes, advirtiéndoles de que contra la resolución no cabe recurso alguno.",
+  "legal_issues": [
+    "Si el art. 489.1.8.º TRLC excluye de la exoneración toda la deuda con garantía real o únicamente el tramo cubierto por el privilegio especial, quedando el exceso sobre el valor de la garantía como crédito exonerable.",
+    "Si el art. 492 bis TRLC, previsto para la exoneración con plan de pagos, resulta aplicable por analogía o por interpretación integradora al concurso sin masa del art. 37 bis.d) TRLC tramitado sin liquidación.",
+    "Si la ejecución previa del bien gravado constituye presupuesto necesario para reconocer ex ante el exceso de deuda garantizada sobre el valor de la garantía.",
+    "Si es compatible con los arts. 1.4, 20.1, 23.3.b) y 23.4.a) de la Directiva (UE) 2019/1023 una normativa nacional que admite el tratamiento exonerable del exceso de deuda garantizada en el plan de pagos y no lo prevé en el concurso sin masa y sin liquidación cuando la garantía recae sobre la vivienda habitual.",
+    "Si, cuando el Estado miembro excluye las deudas garantizadas de la exoneración, solo puede mantener como no exonerable la parte efectivamente cubierta por el valor de la garantía.",
+    "Si el Derecho de la Unión se opone a una exclusión automática de la deuda garantizada que impida al juez nacional un control individualizado de justificación y proporcionalidad a la luz de la finalidad de la segunda oportunidad.",
+    "Si concurren los presupuestos que justifican el planteamiento de cuestión prejudicial, esto es, la necesidad de la respuesta para resolver el litigio principal y la inexistencia de acte clair o acte éclairé.",
+    "Si la cuestión suscitada se solapa de forma impeditiva con las cuestiones prejudiciales ya planteadas y resueltas por el Tribunal de Justicia en esta materia."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Artículos 1.4, 20.1, 23.2, 23.3.b) y 23.4.a) de la Directiva (UE) 2019/1023, sobre marcos de reestructuración preventiva, exoneración de deudas e inhabilitaciones, y su considerando 81",
+      "note": "Preceptos cuya interpretación se somete al Tribunal de Justicia: acceso a un procedimiento que desemboque en la plena exoneración, extensión del régimen a personas físicas no empresarias, plazo más largo cuando no se ejecuta la vivienda principal y facultad de excluir categorías de créditos, incluidas las deudas garantizadas, debidamente justificada."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 489.1.8.º del Texto Refundido de la Ley Concursal",
+      "note": "Declara no exonerables las deudas por créditos con garantía real, por principal o intereses, dentro del límite del privilegio especial; norma nuclear cuya lectura literal genera la duda de compatibilidad."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 37 bis y 37 ter del Texto Refundido de la Ley Concursal",
+      "note": "Regulan el concurso sin masa y su tramitación simplificada; la letra d) del art. 37 bis contempla los bienes gravados por importe superior a su valor de mercado, supuesto en que se encuadra el caso."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 501 del Texto Refundido de la Ley Concursal",
+      "note": "Permite solicitar la exoneración del pasivo insatisfecho en los concursos sin masa en que no se hubiera acordado la liquidación de la masa activa; se transcribe y se usa para delimitar el itinerario procesal seguido."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 492 bis del Texto Refundido de la Ley Concursal",
+      "note": "Prevé, en la exoneración con plan de pagos, que la parte de deuda garantizada que exceda del valor de la garantía pueda quedar sometida a exoneración; base de la asimetría normativa que sustenta la duda prejudicial."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 486 del Texto Refundido de la Ley Concursal",
+      "note": "Articula las dos únicas vías de acceso a la exoneración, tras liquidación de la masa activa o sin liquidación mediante plan de pagos, dualidad de la que parte el razonamiento."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 497.2.1.º del Texto Refundido de la Ley Concursal",
+      "note": "Prolonga a cinco años el plan de pagos cuando no se realiza la vivienda habitual; se identifica como transposición del art. 23.3.b) de la Directiva 2019/1023."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículos 272 a 275 del Texto Refundido de la Ley Concursal",
+      "note": "Delimitan el privilegio especial en función del valor razonable del bien gravado y de las deducciones legalmente procedentes; sirven de remisión para el cálculo del límite del privilegio especial."
+    },
+    {
+      "type": "norma",
+      "ref": "Ley 16/2022, de 5 de septiembre, de reforma del texto refundido de la Ley Concursal",
+      "note": "Norma de transposición de la Directiva (UE) 2019/1023 que rediseñó los arts. 486 a 502 TRLC y configuró la exoneración como mecanismo de segunda oportunidad."
+    },
+    {
+      "type": "norma",
+      "ref": "Artículo 206.1.2.º de la Ley de Enjuiciamiento Civil",
+      "note": "Cauce formal de la resolución, según el modelo S40010 de auto de texto libre indicado en la cabecera."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 11 de abril de 2024, asunto C-687/22",
+      "note": "La lista de categorías de créditos excluibles del art. 23.4 de la Directiva no es exhaustiva y los Estados miembros pueden excluir categorías siempre que la exclusión esté debidamente justificada con arreglo al Derecho nacional; versó sobre créditos de Derecho público, distintos de los aquí controvertidos."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 8 de mayo de 2024, asunto C-20/23",
+      "note": "Admite excluir de la exoneración créditos tributarios y de seguridad social siempre que la exclusión esté debidamente justificada en virtud del Derecho nacional; no aborda las deudas garantizadas."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "STJUE de 7 de noviembre de 2024, asuntos acumulados C-289/23 y C-305/23",
+      "note": "Cuando el Estado extiende el régimen a personas físicas no empresarias ex art. 1.4, las normas aplicables deben ajustarse al Título III de la Directiva; las limitaciones nacionales no pueden exceder de lo apropiado y necesario ni comprometer el acceso a la plena exoneración; corresponde al juez nacional el control de justificación y proporcionalidad."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "Sentencias de la Sala Primera del Tribunal Supremo núms. 260/2026, 261/2026, 262/2026, 263/2026, 264/2026 y 265/2026, todas de 18 de febrero de 2026",
+      "note": "Fijan el método de control de las excepciones nacionales a la exoneración —estar bien definidas, debidamente justificadas conforme al Derecho nacional y perseguir un interés público legítimo—, pero versan sobre buena fe y crédito público (arts. 487.1 y 489.1.5.º TRLC) y no resuelven el problema de la deuda garantizada sobre vivienda habitual en concurso sin masa."
+    },
+    {
+      "type": "doctrina",
+      "ref": "Doctrina especializada sobre el régimen de exoneración tras la Ley 16/2022 y sobre la jurisprudencia del TJUE en materia de art. 23 de la Directiva 2019/1023",
+      "note": "Se invoca para sostener la lógica del fresh start, la distinción entre la vía rápida y el plan de pagos como vía lenta y el carácter decisivo del canon de proporcionalidad en el control de las exclusiones."
+    }
+  ],
+  "cited_by_parties": [
+    "Artículo 273 TRLC, invocado por CAJAMAR para negar validez a la valoración aportada por los deudores por no responder a tasación homologada; el auto no resuelve sobre este extremo y lo pospone a la respuesta prejudicial",
+    "Informe de tasación de 25 de marzo de 2021 sobre la finca registral NUM000 por importe de 189.693,49 euros, cuya existencia afirma CAJAMAR y que el auto no valora",
+    "Estimación de valor de mercado de 65.000 euros basada en el portal Idealista, aportada por los deudores con carácter orientativo y no asumida por el órgano judicial"
+  ],
+  "holding": "El órgano acuerda plantear ante el Tribunal de Justicia de la Unión Europea una petición de decisión prejudicial integrada por tres cuestiones sobre la interpretación de los arts. 1.4, 20.1, 23.3.b) y 23.4.a) de la Directiva (UE) 2019/1023, en relación con su considerando 81, referidas a la compatibilidad con el Derecho de la Unión de una normativa nacional que admite el tratamiento exonerable del exceso de deuda con garantía real sobre el valor de la garantía en el itinerario del plan de pagos y no lo prevé en el concurso sin masa y sin liquidación cuando la garantía recae sobre la vivienda habitual del deudor persona física, así como a la posibilidad de un control judicial de proporcionalidad de esa exclusión. Acuerda igualmente la suspensión del procedimiento principal hasta que recaiga la decisión prejudicial, con los efectos previstos en Derecho, la remisión de testimonio de la resolución al Tribunal de Justicia junto con versión anonimizada y copia de los autos a través de e-Curia, la remisión de copia simple al Servicio de Relaciones Internacionales del Consejo General del Poder Judicial (REDUE) y la notificación a las partes personadas, haciéndoles saber que contra la resolución no cabe recurso alguno. No contiene pronunciamiento sobre costas ni sobre depósitos.",
+  "ratio_summary": [
+    "El régimen español de exoneración configura dos itinerarios distintos: la exoneración tras liquidación o en concurso sin masa vía art. 501 TRLC y la exoneración sin liquidación mediante plan de pagos, cuya disciplina de los créditos con garantía real no es idéntica.",
+    "El art. 489.1.8.º TRLC declara no exonerable la deuda con garantía real solo dentro del límite del privilegio especial, mientras que el art. 492 bis TRLC permite tratar como exonerable el exceso sobre el valor de la garantía únicamente en el marco del plan de pagos, generando una asimetría normativa expresa.",
+    "Caben dos interpretaciones del Derecho interno: una literal, que reserva la reconfiguración del pasivo hipotecario al plan de pagos o a la ejecución previa del bien; y otra integradora, que aplica analógicamente el art. 492 bis TRLC al concurso sin masa del art. 37 bis.d) TRLC por identidad de razón.",
+    "El art. 497.2.1.º TRLC, transposición del art. 23.3.b) de la Directiva, muestra que el legislador español solo previó expresamente la conservación de la vivienda habitual en la modalidad de plan de pagos, sacrificando a cambio la rapidez del procedimiento.",
+    "La facultad del art. 23.4 de la Directiva para excluir categorías de créditos, incluidas las deudas garantizadas, no opera de forma incondicionada: las exclusiones deben estar debidamente justificadas conforme al Derecho nacional y sometidas al control judicial de proporcionalidad.",
+    "La jurisprudencia del Tribunal Supremo de 18 de febrero de 2026 fija ese canon metodológico pero se proyecta sobre la buena fe y el crédito público, sin resolver el tratamiento de la deuda garantizada sobre vivienda habitual en concurso sin masa; no hay por ello acte clair ni acte éclairé.",
+    "La respuesta prejudicial es necesaria porque condiciona directamente el sentido estimatorio o desestimatorio del incidente y es previa a la controversia sobre el valor del inmueble, que solo adquiere relevancia decisoria si el exceso puede recibir tratamiento exoneratorio.",
+    "No existe solapamiento impeditivo con los asuntos C-687/22, C-20/23 y C-289/23 y C-305/23, que versaron sobre créditos públicos y presupuestos subjetivos de acceso, y no sobre el alcance objetivo de la exoneración respecto de deuda hipotecaria excedentaria en concurso sin masa."
+  ],
+  "uncertainties": [
+    "El valor razonable de la vivienda habitual permanece indeterminado: los deudores lo estiman orientativamente en 65.000 euros y CAJAMAR invoca una tasación de 2021 por 189.693,49 euros, sin que el auto resuelva la discrepancia ni acuerde tasación homologada.",
+    "No queda determinado si el art. 492 bis TRLC es analógicamente trasladable al concurso sin masa del art. 37 bis.d) TRLC, cuestión de Derecho interno que el propio auto declara controvertida.",
+    "Se desconoce el importe total del pasivo hipotecario pendiente frente a CAJAMAR, de modo que no puede cuantificarse el eventual exceso sobre el valor de la garantía.",
+    "El auto afirma que los deudores son personas físicas no empresarias, pero no detalla los datos que sustentan esa calificación ni su incidencia sobre la aplicación del art. 1.4 de la Directiva.",
+    "No consta si llegó a nombrarse administrador concursal en el concurso sin masa ni el contenido de su eventual informe, extremos a los que el art. 37 ter TRLC anuda la posibilidad de solicitar la exoneración.",
+    "El auto no precisa la posición procesal ni las alegaciones de los restantes acreedores relacionados en la cabecera (BBVA, Caja Postal Banco Hipotecario y AEAT) respecto del planteamiento de la cuestión prejudicial.",
+    "El campo 'Nº de Resolución' de la cabecera está vacío, por lo que el auto solo puede identificarse mediante Roj, ECLI, Id Cendoj y número de procedimiento."
+  ],
+  "document_quality_notes": [
+    "Artefactos de OCR con palabras fusionadas: «fresh startpropia», «fresh starto segunda oportunidad», «quedartotal o parcialmente», «acte éclairéni acte clairen relación», «plan\nde pagos» y «al menos de\nmanera expresa».",
+    "Cita de asunto del TJUE con guion omitido: «C305/23» en el apartado 21, frente a «C-305/23» en el apartado 41.",
+    "Saltos de línea intrusivos que fragmentan frases en los apartados 6, 16, 23, 33 y 35, así como en la cuestión prejudicial tercera («se\noponen a»).",
+    "Ambigüedad en el nivel 'Sección': la cabecera contiene una única línea «Sección: 3» de valor numérico, pero el campo «Órgano» incorpora además la expresión «Sección de lo Mercantil»; se ha usado el valor numérico para el nivel Sección y se ha conservado la denominación orgánica, conforme al cuerpo del auto, que se refiere a la «Sección Mercantil del Tribunal de Instancia de Murcia, plaza nº 3».",
+    "Inconsistencia en la designación del órgano: el apartado cuarto de los antecedentes emplea «este Juzgado» pese a que la cabecera y el encabezamiento identifican el órgano como Sección de lo Mercantil del Tribunal de Instancia de Murcia.",
+    "Anonimización inconsistente: se anonimiza a los deudores con los alias «Eutimio» y «Luisa» y la finca como «NUM000», mientras se identifican con nombre completo procuradores, letrados y el magistrado, y se mantienen las denominaciones de las entidades acreedoras.",
+    "Discrepancia entre la cabecera y el encabezamiento sobre la dirección letrada de CAJAMAR: la carátula deja en blanco el campo Abogado/a para esa parte, mientras el encabezamiento identifica a la Letrada D.ª Ana Montes Alonso.",
+    "La carátula relaciona a BBVA Argentaria, Caja Postal Banco Hipotecario y AEAT sin atribuirles rol procesal expreso en el incidente, por lo que su papel se ha dejado sin determinar.",
+    "El campo «Nº de Recurso: 425/2025» coincide con el número del procedimiento concursal de origen y del incidente concursal común, sin que el documento aclare la relación entre ambas numeraciones.",
+    "Referencia interna al considerando 81 de la Directiva (UE) 2019/1023 en la parte dispositiva sin previa cita ni transcripción de su contenido en los fundamentos de derecho.",
+    "El campo «Nº de Resolución» de la cabecera figura vacío y el campo «Fallo/Acuerdo» no aparece en la cabecera del documento."
+  ],
+  "next_review_questions": [
+    "¿Se ha acordado o practicado finalmente una tasación homologada del inmueble conforme al art. 273 TRLC que permita fijar el valor razonable y el límite del privilegio especial?",
+    "¿Cuál es el importe total del pasivo hipotecario pendiente de los dos préstamos de CAJAMAR sobre la finca registral NUM000?",
+    "¿Se nombró administrador concursal en el concurso sin masa 425/2025 y, en su caso, qué concluyó su informe sobre la continuación del procedimiento?",
+    "¿Qué contenido exacto tiene la providencia de 2 de octubre de 2025 y en qué términos formuló las cuestiones sometidas a audiencia de las partes?",
+    "¿Qué posición adoptaron BBVA Argentaria, Caja Postal Banco Hipotecario y la AEAT en el incidente concursal y en el trámite de audiencia sobre la cuestión prejudicial?",
+    "¿Consta el número de asunto asignado por el Tribunal de Justicia de la Unión Europea a esta petición de decisión prejudicial?",
+    "¿Existe alguna otra cuestión prejudicial pendiente ante el TJUE sobre el tratamiento de las deudas con garantía real sobre vivienda habitual en concurso sin masa?",
+    "¿Qué alcance concreto tiene la suspensión acordada respecto de la tramitación del concurso sin masa y de la solicitud de exoneración de los deudores?"
+  ]
+}

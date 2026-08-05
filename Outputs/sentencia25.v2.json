@@ -1,0 +1,154 @@
+{
+  "document_type": "sentencia",
+  "case_id": {
+    "ecli": "ECLI:ES:TS:2025:1773",
+    "roj": "STS 1773/2025",
+    "resolution_number": "662/2025",
+    "appeal_number": "7236/2024",
+    "id_cendoj": "28079110012025100602"
+  },
+  "decision_date": "2025-04-30",
+  "court_or_body": "Tribunal Supremo. Sala de lo Civil. Sección 1. Sede: Madrid",
+  "ponente": "Pedro José Vela Torres",
+  "parties": [
+    {
+      "name": "D. Jon",
+      "role": "recurrente en casación (demandante en primera instancia)"
+    },
+    {
+      "name": "Triodos Bank NV Sucursal en España",
+      "role": "parte recurrida (demandada en primera instancia y apelante)"
+    }
+  ],
+  "facts": [
+    "D. Jon realizó tres adquisiciones de Certificados de Depósito para Acciones (CDA) de Triodos Bank: el 10 de julio de 2014 por 5.396 euros, el 11 de mayo de 2017 por 9.960 euros y el 24 de enero de 2020 por 9.996 euros.",
+    "El total invertido por el Sr. Jon ascendió a 25.352 euros y percibió rendimientos por importe de 2.232,80 euros.",
+    "Los CDA son títulos nominativos negociables emitidos por la Fundación para la Administración de Acciones de Triodos Bank (SAAT), no canjeables por acciones, de carácter perpetuo, negociados en un mercado interno gestionado por Triodos Bank en los Países Bajos, con precio fijado internamente conforme al valor patrimonial contable de la acción subyacente.",
+    "Conforme al folleto depositado en la CNMV, los CDA tienen nivel de riesgo 6/6 por la imposibilidad o coste de la venta anticipada y por no ser un producto sencillo, y el inversor no está cubierto por el Fondo de Garantía de Depósitos.",
+    "La contratación de los productos se realizó presencialmente en una oficina, en la que la gestora comercial advirtió al Sr. Jon de que los CDA no cotizaban en bolsa sino en un mercado interno y de que podía perder todo el dinero invertido.",
+    "Se entregó al cliente el folleto informativo y se realizó el test de conveniencia, en el que manifestó conocer que el producto no cotizaba en mercado secundario, que no cabía desistimiento, que la rentabilidad no estaba garantizada y que podía perder la totalidad de la inversión.",
+    "El 18 de marzo de 2020 Triodos cerró el mercado interno de los CDA, justificándolo por la incertidumbre derivada de la pandemia de Covid-19.",
+    "El 6 de octubre de 2020 Triodos anunció cambios en las condiciones de los CDA y el 13 de octubre de 2020 reabrió el mercado con nuevas condiciones.",
+    "El 5 de enero de 2021 Triodos publicó una nota de prensa anunciando el nuevo cierre del mercado sin fecha prevista de apertura.",
+    "El 18 de marzo de 2021 Triodos publicó los resultados anuales de 2020, con beneficio neto de 27,20 millones de euros y un crecimiento del 15%; el 8 de febrero de 2022 comunicó perspectiva estable con calificación BBB; y el 17 de marzo de 2022 publicó resultados con beneficio neto de 50,8 millones de euros.",
+    "El 21 de diciembre de 2021 Triodos anunció la desaparición del mercado interno y regulado de los CDA, que pasarían a cotizar en un sistema multilateral, permaneciendo el mercado cerrado hasta su implantación.",
+    "El 31 de diciembre de 2021 Triodos anunció la reducción del valor nominal del CDA en un 30%.",
+    "El 15 de febrero de 2022 Triodos anunció un programa de recompra restringida de CDA, limitado a 2.000 euros por titular al precio de 59 euros, y el 30 de marzo de 2022 comunicó que el programa ya era efectivo y que 59 euros era el valor real del CDA.",
+    "El 20 de febrero de 2022 Triodos anunció que el nuevo mercado estaría operativo entre diez y dieciséis meses después.",
+    "El 11 de octubre de 2022 se aprobó la cotización del CDA en un sistema multilateral de negociación y una nueva política de dividendos."
+  ],
+  "procedural_posture": "D. Jon, representado por el procurador D. Isaac José Giménez López, presentó el 15 de mayo de 2023 demanda de juicio ordinario contra Triodos Bank NV Sucursal en España, repartida al Juzgado de Primera Instancia n.º 2 de Alcañiz y registrada con el núm. 253/2023, en la que ejercitó como acción principal la nulidad absoluta de los contratos de compra de CDA y, subsidiariamente, la anulabilidad por error y dolo en el consentimiento y una acción indemnizatoria por incumplimiento contractual, con reclamación de 23.019,20 euros, intereses legales y costas. La demandada, representada por la procuradora D.ª Olga Pina Bonias, contestó solicitando la desestimación íntegra con condena en costas a la actora. La jueza sustituta del Juzgado dictó sentencia n.º 57/2024, de 20 de marzo, que desestimó la acción principal de nulidad absoluta, estimó la acción de nulidad por error vicio y condenó a Triodos a la restitución con determinación de cantidades en ejecución. Triodos Bank NV recurrió en apelación, oponiéndose el Sr. Jon; el recurso se tramitó ante la sección Única de la Audiencia Provincial de Teruel con el rollo núm. 70/2024, que dictó sentencia núm. 75/2024, de 16 de julio, estimando el recurso, revocando la sentencia de instancia, desestimando íntegramente la demanda, imponiendo a la demandante las costas de la primera instancia y sin imposición de las costas de la apelación. El demandante interpuso recurso de casación articulado en seis motivos, admitido por auto de la Sala de 18 de diciembre de 2024; se dio traslado a la parte recurrida, que formalizó su oposición por escrito. Al no solicitarse vista pública, se señaló para votación y fallo el 23 de abril de 2025, fecha en que tuvo lugar.",
+  "legal_issues": [
+    "Si los Certificados de Depósito para Acciones (CDA) de Triodos Bank constituyen un producto financiero complejo y de riesgo máximo sujeto a los deberes reforzados de información de la normativa MiFID.",
+    "Si la entidad de servicios de inversión cumplió las obligaciones de clasificación del cliente como minorista y de información sobre la naturaleza y los riesgos esenciales del producto.",
+    "Si concurrió error vicio del consentimiento invalidante de las adquisiciones de CDA por déficit informativo.",
+    "Si el alegado incumplimiento de los deberes de asesoramiento y de determinación del perfil inversor genera responsabilidad indemnizatoria de daños y perjuicios al amparo del art. 1101 CC.",
+    "Si la modificación sobrevenida del sistema de cotización de los CDA, posterior a la contratación, permite apreciar error del consentimiento o un incumplimiento contractual indemnizable.",
+    "Cuál es el régimen de costas y del depósito aplicable a la desestimación del recurso de casación."
+  ],
+  "applied_rules": [
+    {
+      "type": "norma",
+      "ref": "Arts. 1265 y 1266 del Código Civil",
+      "note": "Régimen del error vicio del consentimiento; la Sala descarta su infracción al no existir déficit informativo."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 1101 del Código Civil",
+      "note": "Responsabilidad civil por incumplimiento o cumplimiento negligente de las obligaciones de asesoramiento financiero; la Sala declara que su presupuesto -el incumplimiento del deber de información- no concurre."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 78 bis de la Ley 47/2007 del Mercado de Valores",
+      "note": "Obligación de clasificar al cliente en minorista, profesional o contraparte elegible, con distintos niveles de protección; la Sala confirma que se dio al inversor tratamiento de cliente minorista."
+    },
+    {
+      "type": "norma",
+      "ref": "Arts. 79 y 79 bis de la Ley 47/2007 del Mercado de Valores",
+      "note": "Estándares de información sobre los riesgos asumidos por el cliente en productos de inversión; la Sala los considera correctamente aplicados por la sentencia recurrida."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 78 de la Ley 47/2007 del Mercado de Valores",
+      "note": "Normas de conducta exigibles a las entidades de servicios de inversión, cuya aplicación por la Audiencia la Sala declara ajustada a derecho."
+    },
+    {
+      "type": "norma",
+      "ref": "RD 217/2008, de 15 de febrero, sobre el régimen jurídico de las empresas de servicios de inversión",
+      "note": "Desarrollo de las obligaciones de conducta e información; la Sala avala su aplicación por la sentencia recurrida."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 11 de la Directiva 1993/22/CEE, de 10 de mayo, sobre servicios de inversión en el ámbito de los valores negociables",
+      "note": "Fundamenta el carácter esencial del conocimiento por el cliente de los riesgos asumidos."
+    },
+    {
+      "type": "norma",
+      "ref": "Art. 398.1 LEC",
+      "note": "Imposición al recurrente de las costas causadas por el recurso de casación desestimado."
+    },
+    {
+      "type": "norma",
+      "ref": "Disposición adicional 15.ª, apartado 9, LOPJ",
+      "note": "Pérdida del depósito constituido para la formulación del recurso."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "SSTS 677/2016, de 16 de noviembre; 62/2019, de 31 de enero; y 249/2019, de 6 de mayo",
+      "note": "Doctrina sobre la responsabilidad civil ex art. 1101 CC derivada del incumplimiento de las obligaciones de la relación de asesoramiento financiero; la Sala la asume y concluye que aquí falta su presupuesto."
+    },
+    {
+      "type": "jurisprudencia",
+      "ref": "Decisión de la Sala de Empresa del Tribunal de Ámsterdam de 16 de marzo de 2023",
+      "note": "Resolución neerlandesa invocada por la Sala como apoyo: los folletos advertían del riesgo de suspensión prolongada de la negociación y el cambio de sistema de cotización buscaba facilitar el comercio de certificados."
+    }
+  ],
+  "cited_by_parties": [
+    "Arts. 1255 y 1258 del Código Civil (motivos primero y sexto)",
+    "Art. 1256 del Código Civil (motivo sexto)",
+    "Art. 1124 del Código Civil (motivo sexto)",
+    "Art. 78 ter de la Ley 47/2007 del Mercado de Valores (motivos primero, segundo, cuarto)",
+    "Art. 52 de la Directiva 2006/73 (motivos primero y cuarto)",
+    "Arts. 60, 61, 64, 72, 73, 74 y 77 del RD 217/2008 en su cita articulada por el recurrente"
+  ],
+  "holding": "La Sala desestima íntegramente el recurso de casación interpuesto por D. Jon contra la sentencia núm. 75/2024, de 16 de julio, de la Audiencia Provincial de Teruel dictada en el recurso de apelación núm. 70/2024, confirmando la desestimación de la demanda. Impone al recurrente las costas del recurso de casación y ordena la pérdida del depósito constituido para su formulación.",
+  "ratio_summary": [
+    "Los Certificados de Depósito para Acciones de Triodos no son ni depósitos ni acciones, sino títulos nominativos negociables, perpetuos, no canjeables por acciones y negociados en un mercado interno gestionado por la propia entidad, con precio fijado internamente conforme al valor patrimonial contable de la acción subyacente.",
+    "Los CDA son un producto de inversión complejo y de riesgo máximo (6/6), no cubierto por el Fondo de Garantía de Depósitos, cuyos riesgos esenciales son la rentabilidad variable o nula, la posible pérdida total del capital y la ausencia de mercado secundario con riesgo de iliquidez prolongada.",
+    "La normativa del mercado de valores impone estándares muy altos de información porque los detalles sobre qué riesgo se asume y de qué circunstancias depende no son accesorios, sino esenciales, al proyectarse sobre la sustancia y condiciones del objeto del contrato y sobre su causa.",
+    "El art. 78 bis LMV obliga a clasificar al cliente como minorista, profesional o contraparte elegible; al minorista, categoría residual, debe otorgársele el mayor nivel de protección y el cumplimiento íntegro de las normas de conducta.",
+    "Acreditado en la instancia -y no revisable en casación- que el cliente minorista fue informado presencialmente de la ausencia de cotización bursátil, del mercado interno y del riesgo de pérdida total, y que recibió folleto y superó el test de conveniencia, no existe déficit informativo ni, por tanto, error vicio ex arts. 1265 y 1266 CC.",
+    "La acción indemnizatoria del art. 1101 CC por incumplimiento de las obligaciones de asesoramiento financiero exige como presupuesto el incumplimiento de los deberes de información; inexistente este, decae la pretensión resarcitoria.",
+    "El cierre del mercado interno y el cambio del sistema de cotización, posteriores a la contratación y debidos a una circunstancia excepcional, no generan error del consentimiento, pues el riesgo de suspensión ya había sido advertido y es mera hipótesis aventurar la decisión que el cliente habría adoptado de conocerlo.",
+    "No cabe atribuir repercusión contractual indemnizable al cambio sobrevenido del sistema de cotización cuando no perjudica per se al inversor -se adoptó para facilitar la liquidez ante el bloqueo del mercado interno- ni se acredita relación de causalidad entre esa modificación y las pérdidas sufridas."
+  ],
+  "uncertainties": [
+    "La sentencia no aclara la relación entre el 'Sr. Amadeo', destinatario de los correos electrónicos invocados en los motivos primero y segundo, y el inversor demandante; la propia Sala afirma desconocerla, lo que deja sin determinar el soporte fáctico de esas alegaciones.",
+    "No queda resuelto si existió o no una relación de asesoramiento financiero entre la entidad y el cliente: la Sala señala que la sentencia recurrida no contiene mención alguna al respecto, por lo que la calificación del servicio prestado (mera comercialización o asesoramiento) permanece indeterminada.",
+    "El sexto motivo alegaba inexistencia de jurisprudencia sobre el cambio sobrevenido de las características esenciales de un producto financiero complejo; la Sala lo desestima por razones del caso concreto sin formular una doctrina general expresa sobre esa cuestión.",
+    "La resolución no precisa si el test practicado fue de conveniencia o de idoneidad más allá de su denominación, ni el resultado concreto de la evaluación del perfil inversor, elementos relevantes para el alcance de los deberes de información aplicables.",
+    "No consta en el documento el importe efectivo de la pérdida patrimonial sufrida, al remitirse la cuantificación de las prestaciones restitutorias a ejecución de sentencia en la instancia y quedar sin objeto tras la desestimación."
+  ],
+  "document_quality_notes": [
+    "Inconsistencia numérica: los antecedentes de hecho de los fundamentos cifran la inversión total en 25.352 euros (5.396 + 9.960 + 9.996) y los rendimientos en 2.232,80 euros, mientras que el suplico de la demanda reclama reiteradamente 23.019,20 euros, cantidad que no coincide con la diferencia entre ambas cifras.",
+    "Inconsistencia en la parte dispositiva transcrita de la sentencia de primera instancia: estima la demanda y condena a Triodos Bank, pero concluye 'con imposición de costas a la parte actora'.",
+    "Discordancia en la fecha del RD 217/2008: el primer motivo de casación lo cita como 'de 5 de febrero' mientras que el resto del documento y los fundamentos lo citan como 'de 15 de febrero'.",
+    "El fundamento de derecho tercero, apartado 10, concluye que 'los tres primeros motivos de casación deben ser desestimados', pese a que ese fundamento resuelve únicamente los motivos primero y segundo; el tercero se resuelve después, en los fundamentos sexto y séptimo.",
+    "Salto en la numeración interna del fundamento de derecho tercero: los apartados pasan del 6 al 8, sin apartado 7.",
+    "Anonimización inconsistente: el demandante aparece anonimizado como 'D. Jon' y se menciona un 'Sr. Amadeo' de identidad y vinculación no explicadas, mientras que constan sin anonimizar los nombres de procuradores, letrados, magistrados y del letrado de la Administración de Justicia.",
+    "Artefactos de OCR con palabras fusionadas: 'fechade la orden', 'conocer a prioridicha circunstancia', 'intento ex postde revertir', 'perjudicara per seal demandante', 'reservas del banco (buffer),consistentes', 'la integra desestimación'.",
+    "Los campos de cabecera 'Fallo/Acuerdo:' y 'Nota:' aparecen vacíos en el documento de origen.",
+    "Discordancia menor en la denominación del órgano de instancia: la cabecera indica 'AUD.PROVINCIAL DE TERUEL SECCION N. 1' mientras que el cuerpo se refiere a la 'sección Única' de la Audiencia Provincial de Teruel.",
+    "El juzgado de origen se identifica como 'Juzgado de Primera Instancia n.º 2 de Alcañiz' en los antecedentes y como 'Juzgado de Primera Instancia e Instrucción número dos de Alcañiz' en el fallo transcrito de la Audiencia Provincial."
+  ],
+  "next_review_questions": [
+    "¿Cuál es el importe exacto reclamado y su cálculo, dada la discrepancia entre los 25.352 euros de inversión declarados en los fundamentos y los 23.019,20 euros reclamados en el suplico de la demanda?",
+    "¿Qué relación tenía el 'Sr. Amadeo' mencionado en los motivos primero y segundo con el demandante D. Jon, y qué correos electrónicos concretos se invocaron?",
+    "¿Qué declaró exactamente probado la sentencia de la Audiencia Provincial de Teruel núm. 75/2024, de 16 de julio, sobre la existencia o inexistencia de una relación de asesoramiento?",
+    "¿Cuál fue el contenido y resultado concreto de los tests de conveniencia practicados en cada una de las tres adquisiciones de 2014, 2017 y 2020?",
+    "¿Se aportó al procedimiento la grabación de la segunda inversión alegada por la demandada y qué valor probatorio le atribuyeron las instancias?",
+    "¿Qué versión del folleto depositado en la CNMV se entregó en cada una de las tres contrataciones y en qué medida difieren sus advertencias sobre liquidez?",
+    "¿Existen otras resoluciones de la Sala Primera sobre CDA de Triodos Bank contemporáneas a esta que permitan contrastar la coherencia del criterio aplicado?",
+    "¿Cuál es el texto íntegro de la Decisión de la Sala de Empresa del Tribunal de Ámsterdam de 16 de marzo de 2023 y su alcance respecto de los titulares españoles de certificados?"
+  ]
+}
