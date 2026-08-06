@@ -1,5 +1,55 @@
 # 📜 Project Log
 
+## [06/08/2026] — 🏁 Cierre del módulo de sentencias
+
+Fase 1 cerrada. El pipeline de extracción de sentencias está completo, medido y documentado.
+
+### 📊 Métricas finales
+
+| | Resultado |
+|---|---|
+| `eval_gold.ps1` | **315/315 (100 %)** — 35 documentos × 9 campos de cabecera, sin discrepancias |
+| `validate_v2.ps1` | 35 archivos, **0 FAIL**, 9 avisos, exit 0 |
+| Medición ciega (05/08) | **313/315 (99,4 %)** — dev 198/198, test-Supremo 45/45, test-otros órganos 70/72 |
+
+Los nueve campos —`ecli`, `roj`, `resolution_number`, `appeal_number`, `id_cendoj`,
+`decision_date`, `court_or_body`, `ponente`, `document_type`— al 100 %.
+
+### 📦 Corpus
+
+35 resoluciones del orden civil del CENDOJ: 27 del Tribunal Supremo (Sala de lo Civil) y 8 de
+otros órganos —Tribunal de Instancia (Mercantil y Civil y de Instrucción), Tribunal Superior
+de Justicia y Juzgado de lo Mercantil—, con **5 autos** entre ellas. Los 8 documentos fuera
+del Supremo son los que ejercitaron las tres reglas del estándar v2 por primera vez.
+
+### 🏗️ Arquitectura final
+
+- `CLAUDE.md`: principios comunes e índice. Ni una regla de campo.
+- `standards/sentencias.md`: fuente única del pipeline, el esquema de 16 campos, las reglas por
+  campo y el contrato de validación.
+- `standards/contratos.md`: borrador, sin ejercitar.
+- `.claude/agents/sentencia_agent.md`: 40 líneas, sin duplicar ninguna regla.
+- `validate_v2.ps1` (forma) + `eval_gold.ps1` (verdad) + `Gold/` de 35 ficheros.
+
+### ⚠️ Lo que este 100 % no dice
+
+- **No mide contenido.** `facts`, `applied_rules`, `ratio_summary` y `holding` solo tienen
+  control de forma. Un output puede pasar las dos comprobaciones y contener un razonamiento
+  equivocado. Los 9 campos medidos son los más mecánicos del esquema.
+- **No mide generalización.** El conjunto de test **está gastado**: se evaluó el 05/08/2026,
+  dio 313/315, y después se corrigieron dos reglas mirando esos dos fallos y se reprocesaron
+  los documentos afectados. El 315/315 confirma que las reglas nuevas funcionan, nada más.
+  Dev y test miden ya lo mismo: documentos que el estándar ha visto.
+- **No cubre otros órdenes.** Todo el corpus es del orden civil.
+
+### 🔜 Siguiente
+
+Fase 2, Contract Analyzer. Ver `ROADMAP.md`. El primer paso no es escribir el esquema sino
+**decidir cómo se evalúan campos sustantivos**: la comparación exacta que da el 100 % en
+`ecli` o `decision_date` no sirve para `risk_flags` ni `missing_clauses`.
+
+---
+
 ## [05-06/08/2026] — Test set procesado: 313/315 y el conjunto ciego se agota
 
 ### ✅ Hecho

@@ -34,27 +34,33 @@ Sistema de agentes legales autónomos que:
 
 ## 📦 Fase 2 — Contract Analyzer (ACTUAL)
 
-En este orden. Cada paso depende del anterior: el estándar se escribe mirando documentos
-reales, no al revés, y el Gold no se puede anotar sin un esquema estable.
+En este orden. La métrica va primero **a propósito**: en la fase 1 el esquema se diseñó antes
+de saber cómo se iba a medir, y el resultado es que los campos sustantivos —los que aportan el
+valor real— se quedaron sin evaluación de contenido. En contratos, casi todo el esquema es
+sustantivo, así que ese error saldría mucho más caro.
 
-- [ ] **1. Corpus de contratos.** Reunir contratos civiles y mercantiles reales, anonimizados,
-      con variedad de tipo (arrendamiento, compraventa, prestación de servicios, NDA). Separar
-      dev y test **desde el principio**, y no tocar test
-- [ ] **2. Esquema y estándar.** `standards/contratos.md` existe con un esquema borrador de 8
-      campos, escrito sin un solo contrato delante. Revisarlo contra el corpus: reglas por
-      campo, contrato de validación y un `validate_contratos.ps1` equivalente al de sentencias
+- [ ] **1. Decidir la métrica de evaluación para campos sustantivos.** Qué significa que un
+      riesgo esté bien detectado, que falte una cláusula o que un resumen sea correcto. La
+      comparación exacta que da el 100 % en `ecli` o `decision_date` no sirve para
+      `risk_flags`, `key_clauses` ni `missing_clauses`. Opciones a valorar: solapamiento sobre
+      conjuntos anotados (precisión/exhaustividad por cláusula), rúbrica con revisión humana
+      muestreada, o juicio por modelo con criterios fijos. **Sin esto, los pasos 2 y 4 se
+      diseñan a ciegas**
+- [ ] **2. Esquema.** `standards/contratos.md` existe con un borrador de 8 campos escrito sin
+      un solo contrato delante. Revisarlo contra documentos reales y contra la métrica del
+      paso 1: reglas por campo, contrato de validación y un `validate_contratos.ps1`
+      equivalente al de sentencias
 - [ ] **3. `contrato_agent`.** Definición del agente, remitiendo a `standards/contratos.md` sin
       duplicar reglas, como hace `sentencia_agent`
-- [ ] **4. Gold.** Ficheros de referencia anotados a mano sobre el conjunto dev. Contrastar
-      cada valor con el documento antes de darlo por bueno: en el Gold de sentencias, 6 de las
-      8 discrepancias de la primera evaluación eran errores del Gold, no del agente
-- [ ] **5. Evaluación.** `eval_gold` adaptado a los campos de contratos y primera medición
+- [ ] **4. Gold.** Ficheros de referencia anotados a mano. Contrastar cada valor con el
+      documento antes de darlo por bueno: en el Gold de sentencias, 6 de las 8 discrepancias
+      de la primera evaluación del test eran errores del Gold, no del agente
+- [ ] **5. Evaluación.** Primera medición con la métrica del paso 1
 
-Lo que ya se sabe de la fase 1 y aplica aquí: identificación de cláusulas, extracción de
-riesgos, resumen estructurado y clasificación jurídica son campos **sustantivos**, no de
-cabecera. La evaluación por comparación exacta que funciona con `ecli` o `decision_date` no
-sirve para `risk_flags` ni para `missing_clauses`, así que el paso 5 exige decidir antes qué
-significa que un riesgo esté bien detectado.
+**Prerrequisito transversal: el corpus.** Los pasos 2, 4 y 5 necesitan contratos reales
+anonimizados, con variedad de tipo (arrendamiento, compraventa, prestación de servicios, NDA).
+Separar dev y test **desde el principio** y no mirar test hasta el final — la fase 1 terminó
+sin conjunto ciego y esa lección conviene no repetirla.
 
 ---
 
