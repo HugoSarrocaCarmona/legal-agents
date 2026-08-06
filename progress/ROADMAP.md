@@ -62,6 +62,55 @@ anonimizados, con variedad de tipo (arrendamiento, compraventa, prestación de s
 Separar dev y test **desde el principio** y no mirar test hasta el final — la fase 1 terminó
 sin conjunto ciego y esa lección conviene no repetirla.
 
+### Composición de `Inputs/contratos/` (13 documentos, medido el 06/08/2026)
+
+| # | Tipo contractual | Categoría | Datos |
+|---|---|---|---|
+| 1 | Servicio de agregación de posiciones (CaixaBank–CWML) | Adhesión | Solo predisponente (CIF A08663619); cliente sin rellenar |
+| 2 | Representante de comercio (laboral especial, RD 1438/1985) | **Mixto** ⁽¹⁾ | Empresa con placeholders `[EMPRESA]`/`[NIF]`, trabajador con datos reales |
+| 3 | Contrato multicanal de banca a distancia (BBVA) | Adhesión | Solo predisponente (A-48265169); cabecera en blanco (`En , a de de`) |
+| 4 | Servicio de alarma y seguridad (Movistar Prosegur) | Adhesión | Solo predisponente (A-82018474, B87222006) |
+| 5 | Servicio de telecomunicaciones (Orange Espagne) | Adhesión | Solo predisponente (A82009812) |
+| 6 | Contrato marco RTO de renta fija, clientes profesionales (CaixaBank) | Adhesión | Solo predisponente (A08663619) |
+| 7 | Póliza de seguro de automóviles (MAPFRE) | Adhesión | Solo condiciones generales; sin condiciones particulares |
+| 8 | Contrato general de seguridad + orden de domiciliación (Movistar Prosegur) | Adhesión | Solo predisponente (A-82018474, B87222006) |
+| 9 | Suministro de energía eléctrica (Endesa Energía) | Adhesión | Solo predisponente (A81948077, B09732520) |
+| 10 | Convenio administrativo de subvención (Mº Transportes–Generalitat) | **No es contrato** | **Datos reales completos** (partes, cargos, fecha) |
+| 11 | Arrendamiento de vivienda | Negociado (plantilla) | Placeholders `[lugar]`, `[Nombre del propietario]`… (62) |
+| 15 | Constitución de sociedad civil | Negociado (plantilla) | Placeholders `.........` |
+| 17 | Prestación de servicios (Colegio de Graduados Sociales) | Negociado (plantilla) | Campos en blanco; modelo `de 200_` |
+
+⁽¹⁾ **`contrato2` no admite la clasificación binaria y se queda en categoría propia.** Tiene
+forma negociada —comparecientes identificados, REUNIDOS, ESTIPULACIONES en ordinales, dos
+ejemplares firmados— sobre un clausulado íntegramente predispuesto por la empresa que el
+trabajador no negoció. En el eje de los datos también está partido: una parte anonimizada con
+placeholders y la otra con datos reales. Forzarlo a "adhesión" o a "negociado" perdería
+justamente lo que lo hace interesante como caso de prueba.
+
+**Resumen:** 9 de adhesión con datos reales solo del predisponente · 3 plantillas negociadas
+sin ningún dato · 1 mixto (nº 2) · 1 que no es contrato (nº 10). **Cero contratos negociados
+con datos reales de ambas partes.**
+
+**Depuración aplicada el 06/08/2026:** eliminado el antiguo nº 16 (sociedad de capital e
+industria) por ser de **derecho argentino** —Ley 19.550, importes en pesos—, fuera del alcance
+del proyecto. De los cuatro arrendamientos de vivienda casi intercambiables (11–14) se
+conserva solo el **nº 11**, el de mayor cobertura de cláusulas (408 líneas) y con placeholders
+nombrados —`[Nombre del propietario]`— que identifican qué campo va en cada hueco, frente a
+los guiones bajos anónimos de los otros. Los nº 12, 13 y 14 quedan en `Inputs/apartados/`:
+redundancia no es cobertura. La numeración conserva los huecos a propósito, para que las
+referencias anteriores del LOG sigan resolviendo.
+
+> ⚠️ **El corpus actual no permite evaluar `risk_flags` ni extracción de datos concretos.**
+> Falta material negociado con datos reales antes de construir el Gold.
+
+**Dónde queda material aprovechable.** `Inputs/descartados-contratos/` son 13 documentos que
+no son contratos —9 sentencias, 1 comentario doctrinal, 3 pliegos de contratación pública—,
+pero **6 de ellos sí transcriben cláusulas con datos concretos** y son la fuente más cercana
+a lo que falta: los 3 pliegos (nº 1, 11 y 14) traen importes, plazos y penalidades reales de
+un órgano de contratación real, y 3 sentencias de condiciones generales (nº 2, 3 y 12)
+transcriben literalmente cláusulas de préstamo y de tarjeta revolving con sus cifras. Ninguno
+sirve tal cual como contrato, pero sí como cantera de cláusulas anotables.
+
 ---
 
 ## 📦 Fase 3 — Agente Universidad
