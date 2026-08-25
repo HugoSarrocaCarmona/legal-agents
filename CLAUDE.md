@@ -11,6 +11,17 @@ El sistema debe producir resultados útiles, consistentes y reutilizables en ent
 
 ---
 
+## 📍 PUNTO DE ENTRADA
+
+**Antes que nada, leer [`progress/ESTADO.md`](progress/ESTADO.md).** Resume en qué fase está
+cada pipeline, qué bloqueos siguen abiertos y qué alcance está decidido. Se mantiene corto a
+propósito para poder cargarlo siempre.
+
+Este archivo (`CLAUDE.md`) contiene los principios permanentes; `ESTADO.md` contiene la
+situación, que cambia. Si divergen sobre un hecho, `ESTADO.md` es más reciente.
+
+---
+
 ## 📚 ÍNDICE DE ESTÁNDARES
 
 Este archivo contiene **solo los principios comunes** a todos los tipos de documento. Las
@@ -20,7 +31,7 @@ en un archivo por estándar, y **no se repiten en ningún otro sitio**:
 | Estándar | Archivo | Estado |
 |---|---|---|
 | Sentencias, autos y resoluciones judiciales | [`standards/sentencias.md`](standards/sentencias.md) | vigente (v2), medido sobre 35 documentos |
-| Contratos civiles y mercantiles | [`standards/contratos.md`](standards/contratos.md) | escrito, sin ejercitar |
+| Contratos civiles y mercantiles | [`standards/contratos.md`](standards/contratos.md) | v1, sin ejercitar — `risk_flags` con `regimen` |
 
 **Antes de procesar un documento hay que leer el estándar que le corresponde.** Estos archivos
 no se cargan solos.

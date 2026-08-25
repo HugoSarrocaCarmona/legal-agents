@@ -1,5 +1,46 @@
 # 📜 Project Log
 
+## [25/08/2026] — 🧹 Reconstrucción del corpus de contratos
+
+Sesión dedicada a que el corpus sea auditable antes de construir nada encima.
+
+### ✅ Hecho
+- **Inventario desde el disco**, no desde la tabla anterior: `corpus/inventario-contratos.csv`,
+  30 filas con `sha256`. Instantánea declarada y suma reconciliada (23 activos + 7 depurados)
+- **Reestructuración por vías**: `Inputs/corpus/via-{a,b,c}/` y `Inputs/_depurados/`.
+  El renombrado no alteró ningún byte — los 30 hashes son idénticos a los previos
+- **Dos ejes separados** en el inventario: `via` (procedencia) y `funcion` (para qué sirve)
+- `corpus/alcance.md` — criterios de inclusión y exclusión por vía, escritos antes de descargar
+- `corpus/evaluaciones.md` — registro de ejecuciones, para no repetir el gasto del test
+- `corpus/candidatos-descartados.md` — población valorada y motivo de cada descarte
+- `progress/ESTADO.md` — punto de entrada corto, enlazado desde `CLAUDE.md`
+- `standards/contratos.md` v1: `risk_flags` con `regimen` y `control_aplicable`
+- Copia externa del corpus a OneDrive, verificada por hash
+
+### ❌ Problemas encontrados
+- **Se perdió un documento.** El modelo argentino (nº 16) se borró el 06/08 en vez de moverse, y
+  `Inputs/` está en `.gitignore`: no hay copia. Dado por perdido
+- **La tabla anterior no cuadraba**: el resumen decía 9 documentos de adhesión donde la tabla
+  tenía 8. Error de suma, no de depuración
+- **Un fichero truncado** de 35 bytes ocupaba plaza en el corpus sin figurar en la tabla
+- **Colisión de nombres**: `contrato1` significaba dos documentos distintos según la carpeta
+- **Las vías A/B/C no estaban definidas en ningún sitio del repo**, solo en un documento externo
+
+### 💡 Aprendizajes
+- **Una tabla de composición sin instantánea declarada no es auditable.** Dentro de un mes no se
+  puede saber qué contaba
+- **Un corpus se depura moviendo, nunca borrando.** El único documento perdido lo demuestra
+- **`risk_flags` no necesita datos reales de las partes.** El riesgo está en el texto y las
+  cifras de la cláusula, no en quién firma. Confundirlo hizo descartar 12 documentos que eran
+  justamente el corpus
+- **Definir las vías por su fuente y asignarlas por su función son dos cosas distintas.**
+  Mezclarlas en una columna bloqueó el inventario hasta desdoblarla en dos
+
+### 🔜 Siguiente paso
+- Paso 1 de la fase 2: decidir la métrica de campos sustantivos. Bloquea rúbrica, Gold y evaluación
+
+---
+
 ## [06/08/2026] — 🏁 Cierre del módulo de sentencias
 
 Fase 1 cerrada. El pipeline de extracción de sentencias está completo, medido y documentado.

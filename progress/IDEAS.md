@@ -65,3 +65,41 @@ ratio_summary, holding) siguen sin evaluación de contenido.
 
 **Orden:** decidir la métrica ANTES de rellenar el Gold. Si se rellena primero
 y se decide después, el Gold no servirá.
+
+**Estado:** sigue abierto. Es el paso 1 de la fase 2 en `ROADMAP.md`, y bloquea
+la rúbrica, el Gold y la evaluación.
+
+## Tamaño mínimo del conjunto de evaluación (abierto)
+
+**Problema:** el corpus anotado será de decenas aunque el descargado llegue a
+cientos — el cuello de botella es la anotación, no la obtención. Partido en
+ciego-1 y ciego-2 quedan ~20 documentos por partición.
+
+Para `risk_flags`, que es multietiqueta, 20 documentos dan intervalos de
+confianza tan anchos que casi cualquier diferencia entre versiones será
+indistinguible del ruido. Se puede acabar "midiendo" mejoras que son azar.
+
+**Opciones a valorar:**
+- Fijar un mínimo por partición y no evaluar hasta alcanzarlo
+- Medir por cláusula anotada en vez de por documento: multiplica la N efectiva,
+  pero las cláusulas de un mismo documento no son independientes
+- Aceptar por escrito que la primera medición es orientativa, y no usarla para
+  decidir entre versiones
+
+**Relacionado:** `corpus/alcance.md`, sección de partición.
+
+## Anotación asistida por modelo (candidato, no decidido)
+
+**Idea:** si el cuello de botella es la anotación manual, usar el modelo para
+pre-anotar y que el trabajo humano sea revisar en lugar de escribir.
+
+**Riesgo grave:** si el mismo modelo que se evalúa pre-anota el Gold, el Gold
+hereda sus sesgos y la evaluación deja de ser independiente. Mediría consistencia
+consigo mismo, no acierto.
+
+**Condición mínima si se hace:** modelo distinto del evaluado, revisión humana de
+todas las pre-anotaciones, y registrar qué documentos fueron pre-anotados para
+poder medir si difieren de los anotados desde cero.
+
+**Cuándo:** no antes de tener la rúbrica escrita. Sin criterio previo, la
+pre-anotación no es revisable.
