@@ -39,28 +39,40 @@ en la fase 1 el esquema se diseñó antes de saber cómo se iba a medir, y los c
 —los que aportan el valor real— se quedaron sin evaluación de contenido. En contratos casi todo
 el esquema es sustantivo, así que ese error saldría mucho más caro.
 
-- [ ] **1. Decidir la métrica de evaluación para campos sustantivos.** Qué significa que un
-      riesgo esté bien detectado, que falte una cláusula o que un resumen sea correcto. La
-      comparación exacta que da el 100 % en `ecli` o `decision_date` no sirve para
-      `risk_flags`, `key_clauses` ni `missing_clauses`. Opciones a valorar: solapamiento sobre
-      conjuntos anotados (precisión/exhaustividad por cláusula), rúbrica con revisión humana
-      muestreada, o juicio por modelo con criterios fijos. **Sin esto, los pasos 2 y 4 se
-      diseñan a ciegas**
+- [x] **1. Métrica de evaluación para campos sustantivos.**
+      [`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md) — decidida el 06/09/2026,
+      antes de anotar ningún documento. Adopta el esquema de **ContractEval** (arXiv 2508.03080)
+      con dos desviaciones documentadas, en vez de diseñar una métrica propia: el problema ya
+      estaba resuelto y así los resultados son comparables con la literatura. Tres niveles que
+      **no se agregan** —mecánicos por igualdad exacta, detección por F1/F2/Jaccard/pereza,
+      texto libre fuera de la métrica—; unidad de medida el **criterio anotado**, no el
+      documento; **F2** como métrica principal porque pondera la exhaustividad; y `severity`
+      medida **aparte** de la detección
 - [x] **2. Alcance del corpus.** [`corpus/alcance.md`](../corpus/alcance.md) — criterios de
       inclusión y exclusión por vía, escritos **antes** de descargar nada. Este paso se saltó en
       la iteración anterior y produjo la depuración a posteriori
-- [x] **3. Esquema con régimen.** `standards/contratos.md` v1: `risk_flags` lleva `regimen` y
-      `control_aplicable`. Pendiente el `validate_contratos.ps1` y la revisión contra la métrica
-      del paso 1
-- [ ] **4. Rúbrica de `risk_flags`** (`corpus/rubrica-riskflags.md`). Cada flag con
-      identificador, criterio, régimen aplicable, consecuencia jurídica y ejemplo de cláusula.
-      Los criterios se extraen de las 9 resoluciones de la vía C. **Redactar antes de anotar
-      ningún documento**
+- [x] **3. Esquema con régimen.** `standards/contratos.md` **v2** (06/09/2026), revisado contra
+      la métrica del paso 1. Sobre v1 añade: `standard_version` verificable, anclaje al texto
+      (`cita` verbatim + `localizador`) en `key_clauses` y `risk_flags`, `condicion_adherente`
+      —del que `control_aplicable` pasa a ser derivable—, anclajes operativos de `severity`,
+      `risk_flags[].id` como vocabulario cerrado de la rúbrica, y semántica de
+      `missing_clauses` por lista de referencia. v1 nunca produjo output: no hay nada que
+      migrar. **Pendiente el `validate_contratos.ps1`**
+- [ ] **4. Rúbrica de `risk_flags`** (`corpus/rubrica-riskflags.md`) — **siguiente paso, y el
+      único que bloquea todo lo demás**. Cada flag con identificador, criterio, régimen
+      aplicable, consecuencia jurídica y ejemplo de cláusula. Los criterios se extraen de las 9
+      resoluciones de la vía C. **Redactar antes de anotar ningún documento**: el esquema v2
+      exige que `risk_flags[].id` exista en la rúbrica, así que sin ella el estándar no es
+      aplicable. Incluye también las **listas de referencia de `missing_clauses`** por régimen
 - [ ] **5. `contrato_agent`.** Definición del agente, remitiendo a `standards/contratos.md` sin
       duplicar reglas, como hace `sentencia_agent`
 - [ ] **6. Gold.** Ficheros de referencia anotados a mano contra la rúbrica. Contrastar cada
       valor con el documento antes de darlo por bueno: en el Gold de sentencias, 6 de las 8
-      discrepancias de la primera evaluación del test eran errores del Gold, no del agente
+      discrepancias de la primera evaluación del test eran errores del Gold, no del agente.
+      **Antes de anotar los 23, anotar 5 y medir el acuerdo consigo mismo** (protocolo en
+      `metrica-contratos.md`): dos semanas de reposo, reanotación a ciegas, y F1 < 0,75
+      significa que el problema está en la rúbrica. Cuesta 5 documentos descubrirlo; descubrirlo
+      al final cuesta 23
 - [ ] **7. Evaluación.** Primera medición con la métrica del paso 1, sobre ciego-1 y registrada
       en [`corpus/evaluaciones.md`](../corpus/evaluaciones.md)
 - [ ] **8. Scripts de PLACSP.** Solo cuando 1–7 estén cerrados: descarga del ZIP mensual de
@@ -160,16 +172,22 @@ Los 7 depurados actuales, por motivo:
 > escaneados sin capa de texto. Descartarlos *después* de muestrear sesga la muestra hacia los
 > órganos con mejor ofimática. Comprobar extractabilidad **antes** de muestrear.
 
-> ⚠️ **El tamaño no da para lo que se quiere medir.** Corpus anotado de decenas, partido en
-> ciego-1 y ciego-2, deja ~20 documentos por partición. Para un campo multietiqueta como
-> `risk_flags`, los intervalos de confianza serán tan anchos que casi cualquier diferencia
-> entre versiones será indistinguible del ruido. **Fijar el tamaño mínimo por partición antes
-> de anotar**, o asumir por escrito que la primera medición es orientativa.
+> ✅ **El tamaño: resuelto en el paso 1, no por tener más documentos.** La unidad de medida
+> pasa a ser el **criterio anotado** en vez del documento, y ~23 documentos × 15-25 unidades dan
+> varios centenares de unidades en vez de decenas. Como las unidades de un mismo documento **no
+> son independientes**, no se calculan intervalos de confianza sobre ellas: para comparar
+> versiones se usa la **regla del documento único** —si quitar cualquier documento invierte el
+> resultado, la comparación no vale—, y queda escrito que **la primera medición es
+> orientativa**. Detalle en [`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md).
 
 > ⚠️ **Régimen de las resoluciones sin verificar.** Las 9 están marcadas `consumo` por defecto.
 > Algunas pueden ser de adherente empresario (Ley 7/1998, solo control de incorporación y
 > transparencia). Confirmar documento a documento al redactar la rúbrica: son dos niveles de
 > control distintos, no un mismo régimen atenuado.
+>
+> El esquema v2 da ahora dónde registrar esa verificación: `condicion_adherente`. Y convierte
+> el descuido en error detectable — `regimen: consumo` con `condicion_adherente: empresario` es
+> una **contradicción** que el contrato de validación rechaza, no un caso raro.
 
 **Corpus de arranque, no definitivo.** Hay recopilación de contratos nuevos pendiente, y los
 actuales no son intocables. Toda incorporación pasa por `corpus/alcance.md` **antes** de

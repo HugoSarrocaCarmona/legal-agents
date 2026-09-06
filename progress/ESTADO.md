@@ -1,7 +1,7 @@
 # 📍 ESTADO DEL PROYECTO
 
 **Punto de entrada. Leer esto primero, antes que cualquier otro documento del repo.**
-Actualizado: 25/08/2026.
+Actualizado: 06/09/2026.
 
 Este fichero se mantiene **corto a propósito**: es lo que se carga al empezar cualquier
 conversación, y si crece deja de cumplir su función. Los detalles viven en los ficheros que
@@ -14,7 +14,7 @@ enlaza. Si algo se puede consultar cuando haga falta, no va aquí.
 | Pipeline | Estado | Esquema | Medición |
 |---|---|---|---|
 | **Sentencias** | Funcionando | v2, 16 campos ([`standards/sentencias.md`](../standards/sentencias.md)) | 315/315 en 9 campos de cabecera — **no extrapolable** |
-| **Contratos** | En diseño | v1, sin ejercitar ([`standards/contratos.md`](../standards/contratos.md)) | Ninguna |
+| **Contratos** | En diseño | v2, 12 campos, sin ejercitar ([`standards/contratos.md`](../standards/contratos.md)) | Métrica decidida ([`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md)), sin ejecutar |
 
 No comparten esquema, ni validador, ni métricas. Son contratos de datos distintos.
 
@@ -27,10 +27,25 @@ evaluaron una vez a ciegas (313/315) y después se corrigieron dos reglas *miran
 El 315/315 confirma que las reglas funcionan; **no mide generalización**. Cualquier medición
 honesta exige un corpus nuevo, reservado y no mirado. Detalle en [`ROADMAP.md`](ROADMAP.md).
 
-**2. Los campos sustantivos no tienen evaluación de contenido.** `facts`, `applied_rules`,
-`ratio_summary` y `holding` solo tienen control de forma: un output puede pasar las dos
-comprobaciones y contener un razonamiento equivocado. En contratos casi todo el esquema es
-sustantivo, así que el problema es mayor. Detalle en [`IDEAS.md`](IDEAS.md).
+**2. Los campos sustantivos de sentencias no tienen evaluación de contenido.** `facts`,
+`applied_rules`, `ratio_summary` y `holding` solo tienen control de forma: un output puede pasar
+las dos comprobaciones y contener un razonamiento equivocado. Detalle en [`IDEAS.md`](IDEAS.md).
+
+> **En contratos este bloqueo ya no está abierto.** La métrica se decidió el 06/09/2026, antes
+> de anotar nada: [`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md). Lo que
+> bloquea ahora la fase 2 es **la rúbrica**, que es trabajo por hacer, no una decisión pendiente.
+
+---
+
+## Lo siguiente: la rúbrica de `risk_flags`
+
+Único paso que bloquea todo lo demás. El esquema v2 exige que `risk_flags[].id` exista en
+`corpus/rubrica-riskflags.md`, así que **sin rúbrica el estándar no es aplicable** y no se puede
+anotar ni un documento. Los criterios salen de las 9 resoluciones de la vía C, y hay que
+verificar en cada una si juzga a un consumidor o a un adherente empresario.
+
+Antes de anotar los 23 documentos, anotar **5** y medir el acuerdo consigo mismo tras dos
+semanas de reposo. Protocolo y umbral en la métrica.
 
 ---
 
@@ -70,3 +85,12 @@ unilaterales), nunca las *calificaciones*. Por eso `risk_flags` lleva campo `reg
 inventario. `Inputs/` está en `.gitignore` y seguirá estándolo: contiene datos personales
 reales que no deben entrar en un histórico inmutable. La protección es la copia externa
 (`robocopy` a OneDrive) más los `sha256` del inventario.
+
+---
+
+## Contexto de mercado
+
+[`research/mercado-legaltech-2026.md`](../research/mercado-legaltech-2026.md) — investigación
+del 03/09/2026 sobre cómo funcionan y cómo se evalúan los sistemas de automatización jurídica
+pioneros. De ahí salen la métrica del paso 1 y los cambios del esquema v2. No es documento
+operativo: se consulta, no se carga por defecto.

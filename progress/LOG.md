@@ -1,5 +1,70 @@
 # 📜 Project Log
 
+## [06/09/2026] — 📐 Métrica de contratos y esquema v2
+
+Se cierra el paso 1 de la fase 2, que llevaba bloqueando la rúbrica, el Gold y la evaluación, y
+se aplican al esquema los cambios que la métrica exige. Todo, antes de anotar el primer
+documento a propósito.
+
+Origen: la investigación de mercado del 03/09 (`research/mercado-legaltech-2026.md`).
+
+### ✅ Hecho
+- **`corpus/metrica-contratos.md`** — qué significa que un output de contratos sea correcto.
+  Adopta el esquema de **ContractEval** (arXiv 2508.03080) con dos desviaciones documentadas, en
+  vez de diseñar una métrica propia
+- **Tres niveles que no se agregan**: mecánicos por igualdad exacta, detección por
+  F1/F2/Jaccard/pereza, texto libre fuera de la métrica
+- **Unidad de medida: el criterio anotado, no el documento.** Es lo que hace medible un corpus
+  de decenas
+- **F2 como métrica principal** — pondera la exhaustividad, que es la respuesta a «¿penalizan
+  los falsos positivos?»
+- **`severity` se mide aparte de la detección**, con matriz de confusión 3×3
+- **`standards/contratos.md` v2** — `standard_version`, `cita` verbatim + `localizador` en
+  `key_clauses` y `risk_flags`, `condicion_adherente`, anclajes de `severity`,
+  `risk_flags[].id` como vocabulario cerrado, y semántica de `missing_clauses` por lista de
+  referencia. v1 nunca produjo output: nada que migrar
+- **Protocolo de acuerdo consigo mismo**: 5 documentos, dos semanas de reposo, reanotación a
+  ciegas, umbral F1 < 0,75
+- Actualizados `ESTADO.md`, `ROADMAP.md`, `IDEAS.md`, `alcance.md`, `CLAUDE.md` y `README.md`
+
+### ❌ Problemas encontrados
+- **`missing_clauses` no tenía semántica.** «Falta una cláusula» solo significa algo contra una
+  lista de referencia, y v1 no decía cuál. Dos anotadores habrían marcado cosas distintas sin
+  forma de decir quién acierta
+- **`control_aplicable` dependía de un dato que no era campo.** La tabla lo hacía depender de la
+  condición del adherente, que el anotador tenía que inferir y no quedaba registrada — justo lo
+  que prohíbe el principio 3 de `CLAUDE.md`
+- **Nada estaba anclado al texto.** Sin `cita` no hay métrica de solapamiento, no hay
+  verificación sin releer el contrato entero, y no hay trazabilidad
+- **No hay `pwsh` en el entorno de la sesión**, así que `validate_contratos.ps1` no se ha
+  escrito: un validador sin ejecutar ni una vez no es un validador
+
+### 💡 Aprendizajes
+- **La métrica antes del Gold no era una preferencia de orden, era una dependencia.** Al fijar
+  la métrica aparecieron cuatro carencias del esquema que solo se ven cuando intentas calcular
+  algo con él
+- **Adoptar una métrica publicada gana más que diseñar una propia.** No solo por tiempo: un
+  resultado calculado con el mismo esquema que la literatura es comparable, uno casero solo se
+  compara consigo mismo
+- **El problema del tamaño muestral no se resolvió con más documentos, sino cambiando la unidad
+  de medida.** ~23 documentos siguen siendo ~23 documentos; como criterios anotados son varios
+  centenares
+- **Un 100 % en campos mecánicos no dice nada de los sustantivos, y ahora hay evidencia externa:**
+  ContractEval mide F1 ≈ 0,9 en cláusulas frecuentes y cerca de cero en las raras de alto riesgo,
+  con el mismo modelo y el mismo documento
+- **Separar lo que se mide de lo que no.** `why_it_matters` y `suggested_fix` quedan fuera de la
+  métrica a propósito: dos redacciones distintas pueden ser correctas, y puntuarlas daría una
+  cifra falsa sobre campos que no deciden nada
+
+### 🔜 Siguiente paso
+- **Paso 4: la rúbrica de `risk_flags`** (`corpus/rubrica-riskflags.md`). Es ahora el único
+  bloqueo: el esquema v2 exige que `risk_flags[].id` exista en la rúbrica, así que sin ella el
+  estándar no es aplicable. Los criterios salen de las 9 resoluciones de la vía C, verificando en
+  cada una si juzga a un consumidor o a un adherente empresario
+- Después: listas de referencia de `missing_clauses`, y `validate_contratos.ps1`
+
+---
+
 ## [25/08/2026] — 🧹 Reconstrucción del corpus de contratos
 
 Sesión dedicada a que el corpus sea auditable antes de construir nada encima.

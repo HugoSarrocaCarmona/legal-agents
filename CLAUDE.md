@@ -31,7 +31,7 @@ en un archivo por estándar, y **no se repiten en ningún otro sitio**:
 | Estándar | Archivo | Estado |
 |---|---|---|
 | Sentencias, autos y resoluciones judiciales | [`standards/sentencias.md`](standards/sentencias.md) | vigente (v2), medido sobre 35 documentos |
-| Contratos civiles y mercantiles | [`standards/contratos.md`](standards/contratos.md) | v1, sin ejercitar — `risk_flags` con `regimen` |
+| Contratos civiles, mercantiles y administrativos | [`standards/contratos.md`](standards/contratos.md) | vigente (v2), sin ejercitar — `risk_flags` con `regimen` y ancla al texto |
 
 **Antes de procesar un documento hay que leer el estándar que le corresponde.** Estos archivos
 no se cargan solos.

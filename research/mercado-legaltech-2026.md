@@ -3,8 +3,15 @@
 **Fecha de la investigación:** 03/09/2026
 **Encargo:** mapear las empresas pioneras en automatización jurídica a nivel mundial y en España,
 entender cómo funcionan por dentro, y extraer lo aprovechable para este proyecto.
-**Estado:** documento de investigación. No modifica ningún estándar ni el `ROADMAP.md`; las
-propuestas de la sección 10 son eso, propuestas, y no se han aplicado.
+**Estado:** documento de investigación, congelado en su fecha. Describe el repositorio tal como
+estaba el 03/09/2026 — cuando el estándar de contratos era el v1.
+
+> **Actualización 06/09/2026.** Las prioridades **P1 a P5** de la sección 10 se han aplicado:
+> métrica en [`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md) y esquema **v2** en
+> [`standards/contratos.md`](../standards/contratos.md). Las carencias que la sección 9.2
+> describe como abiertas están cerradas; se dejan escritas porque explican **por qué** se
+> cambió el esquema. Siguen pendientes **P6** (acuerdo consigo mismo, que se ejecuta al anotar) y
+> **P7** (nota de encaje regulatorio).
 
 ---
 

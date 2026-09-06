@@ -13,13 +13,15 @@ entre ellas.
 CLAUDE.md                       Principios comunes e índice de estándares. Lo carga el harness.
 progress/ESTADO.md              Punto de entrada: en qué fase está cada pipeline. Leer primero.
 standards/sentencias.md         Estándar de sentencias (v2): esquema, reglas y contrato.
-standards/contratos.md          Estándar de contratos (v1). Escrito, sin ejercitar.
-validate_v2.ps1                 Validador mecánico del esquema v2.
+standards/contratos.md          Estándar de contratos (v2). Escrito, sin ejercitar.
+corpus/metrica-contratos.md     Cómo se mide un output de contratos. Anterior al Gold.
+validate_v2.ps1                 Validador mecánico del esquema v2 de sentencias.
 eval_gold.ps1                   Evaluación de precisión contra los ficheros de referencia.
 Outputs/                        JSON generados, con sufijo .v2.json
 Gold/                           Ficheros de referencia anotados a mano, con sufijo .gold.json
-corpus/                         Alcance, inventario con hashes y registro de evaluaciones.
+corpus/                         Alcance, inventario con hashes, métrica y registro de evaluaciones.
 progress/                       Bitácora, métricas históricas y hoja de ruta.
+research/                       Investigación de contexto. Se consulta, no se carga.
 .claude/agents/sentencia_agent.md   Definición del agente.
 .claude/commands/               Recetas invocables como /RUN, /DEBUG, /IMPROVE, /run_once.
 ```

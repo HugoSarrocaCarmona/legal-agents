@@ -96,6 +96,10 @@ generales.
 > juzga a un **consumidor** o a un **adherente empresario**. Son dos niveles de control
 > distintos (abusividad vs. solo incorporación y transparencia), no un mismo régimen atenuado.
 > Ahora mismo las 9 están marcadas `consumo` por defecto y eso está sin verificar.
+>
+> El esquema v2 da dónde registrarlo (`condicion_adherente`) y convierte el descuido en error
+> detectable: `regimen: consumo` con `condicion_adherente: empresario` es una contradicción que
+> el contrato de validación rechaza.
 
 ---
 
@@ -119,13 +123,20 @@ Ortogonal a las vías. Dentro de cada vía, el corpus anotado se parte en **cieg
 - Se evalúa **solo sobre ciego-1**, y **una única ejecución por versión del pipeline**.
 - **Ciego-2 no se abre hasta la siguiente release mayor.**
 - Toda ejecución se registra en [`evaluaciones.md`](evaluaciones.md) antes de mirar el resultado.
+- **Qué se mide y cómo**: [`metrica-contratos.md`](metrica-contratos.md). Las métricas van
+  separadas por vía y no se agregan en una sola cifra, por la misma razón por la que los corpus
+  van separados.
 
 Esto es la corrección directa del error cometido con el corpus de sentencias, donde el test se
 gastó por reevaluación repetida. La regla sin registro se incumple sola: por eso el fichero.
 
-> ⚠️ **Tamaño mínimo por decidir.** El corpus *anotado* será de decenas aunque el *descargado*
-> llegue a cientos: el cuello de botella es la anotación. Partido en dos, quedan ~20 documentos
-> por partición, y para un campo multietiqueta como `risk_flags` eso da intervalos de confianza
-> tan anchos que casi cualquier diferencia entre versiones será indistinguible del ruido.
-> **Fijar el tamaño mínimo por partición antes de empezar a anotar**, o asumir por escrito que
-> la primera medición es orientativa.
+> ✅ **Tamaño mínimo: resuelto el 06/09/2026, cambiando la unidad de medida.** El corpus
+> *anotado* sigue siendo de decenas —el cuello de botella es la anotación, no la obtención—,
+> pero la unidad pasa a ser el **criterio anotado** en vez del documento, y ~20 documentos por
+> partición dan varios centenares de unidades. No se calculan intervalos de confianza sobre
+> ellas, porque las de un mismo documento no son independientes; para comparar versiones se usa
+> la **regla del documento único**. Y queda escrito que la primera medición es orientativa.
+> Detalle en [`metrica-contratos.md`](metrica-contratos.md).
+>
+> **No se fija un mínimo por partición.** Bloquearía el uso diagnóstico, que funciona desde el
+> primer documento y es el uso principal de la métrica.
