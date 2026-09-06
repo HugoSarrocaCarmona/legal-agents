@@ -1,7 +1,7 @@
 # Alcance del corpus de contratos
 
 **Criterios de inclusión y exclusión, escritos antes de descargar nada.**
-Fijado: 25/08/2026.
+Fijado: 25/08/2026. **Vía B eliminada del alcance: 06/09/2026.**
 
 Este fichero existe porque la iteración anterior descargó primero y depuró después. El
 resultado fue un corpus que hubo que reconciliar a mano y del que se perdió un documento. **Un
@@ -24,6 +24,9 @@ Dos causas de exclusión automática, sin más análisis:
 
 La segunda es la que más corpus ha depurado, y es deliberada. Cada régimen nuevo obliga a
 escribir su rúbrica de riesgos completa antes de poder anotar un solo documento.
+
+**El alcance vigente son dos regímenes y solo dos**, uno por vía viva: `administrativo` (vía A) y
+`condiciones_generales` (vía C). Un documento que no encaje en ninguno de los dos no entra.
 
 ---
 
@@ -50,25 +53,31 @@ que no traigan clausulado nuevo, y expedientes desiertos o desistidos.
 
 ---
 
-## Vía B — Mercantil negociada (secundaria, **diferida**)
+## Vía B — Mercantil negociada: **ELIMINADA del alcance (06/09/2026)**
 
-**Fuente:** CNMV, registros oficiales e información relevante con contrato anexo.
-**Función:** clausulado genuinamente negociado — covenants, reps & warranties, MAC, indemnidades.
+Estaba definida como clausulado genuinamente negociado obtenido de la CNMV, y estaba diferida.
+**Se elimina, no se difiere más.** Con ella desaparece el régimen `mercantil` del estándar
+(`contratos` v3).
 
-| Criterio | Valor |
-|---|---|
-| Tipo de anexo | Contratos completos anexados a hechos relevantes; no resúmenes ni notas |
-| Rango temporal | 2020 en adelante |
-| Volumen esperado | Decenas |
+**Motivo, y es de fondo, no de oportunidad.** Un contrato libremente negociado entre partes
+simétricas no tiene control de contenido ni lista de referencia defendible: lo que «debería»
+estar en él es una preferencia de negociación, no una exigencia jurídica. Anotar `missing_clauses`
+ahí sería registrar la opinión del anotador y llamarlo dato, y anotar `risk_flags` sin un control
+al que referirlos produce hallazgos que no significan nada en Derecho.
 
-> ⚠️ **Vía explícitamente diferida, no paralela.** Los contratos íntegros anexados a la CNMV
-> son raros —lo habitual es el resumen—, y los que hay son de M&A y financiación, con
-> clausulado muy alejado del resto del corpus. Declararla "en paralelo" con todo lo demás
-> pendiente equivale a que no ocurra. Se abre cuando A y C estén cerradas.
+**Motivo secundario, ya registrado el 25/08:** los contratos íntegros anexados a la CNMV son
+raros —lo habitual es el resumen— y los que hay son de M&A y financiación, con clausulado muy
+alejado del resto del corpus. Una vía que lleva meses diferida y cuya obtención es dudosa no es
+una vía: es una intención.
 
-Mientras tanto, las 3 plantillas negociadas del corpus actual sirven como **vocabulario de
-cláusulas** para construir la rúbrica del régimen mercantil, no como corpus de evaluación: no
-traen ni un dato real.
+**Qué pasa con sus 3 documentos.** `plantilla-01` a `03` quedan `pendiente_depurar` en el
+inventario. No se reclasifican a vía C porque **no cumplen su criterio de inclusión**: son
+plantillas sin predisponente identificable y sin ningún dato real, y la vía C exige condiciones
+generales de un predisponente identificable.
+
+> **Si en el futuro se quiere reabrir el clausulado negociado**, no basta con recuperar los
+> documentos: hace falta antes decidir contra qué se mide un contrato sin control de contenido.
+> Esa pregunta sigue sin respuesta, y es la razón de la eliminación.
 
 ---
 
@@ -88,6 +97,15 @@ comparten función pero no procedencia.
 | Clausulado de adhesión | Condiciones generales completas y vigentes de un predisponente identificable |
 | Resoluciones | Materia: condiciones generales, cláusulas abusivas, transparencia. Cualquier instancia |
 
+**Toda la vía C es régimen `condiciones_generales`**, y dentro de ella `condicion_adherente`
+decide qué control se aplica: contenido y transparencia si el adherente es consumidor, solo
+incorporación y transparencia si es empresario (Ley 7/1998).
+
+> **La vía C no es «la vía de consumo».** El corpus ya contiene un contrato de adhesión de
+> servicios de inversión dirigido a **clientes profesionales** (`adhesion-05`): misma procedencia,
+> mismo régimen, control distinto. Un adherente empresario **no** excluye un documento de la vía
+> C — lo que lo excluiría es que el clausulado no fuera predispuesto.
+
 **Exclusiones:** fuentes secundarias —comentarios doctrinales, notas de jurisprudencia— por no
 transcribir clausulado original; y resoluciones cuya materia no sea el control de condiciones
 generales.
@@ -95,7 +113,9 @@ generales.
 > **Pendiente al redactar la rúbrica:** confirmar documento a documento si cada resolución
 > juzga a un **consumidor** o a un **adherente empresario**. Son dos niveles de control
 > distintos (abusividad vs. solo incorporación y transparencia), no un mismo régimen atenuado.
-> Ahora mismo las 9 están marcadas `consumo` por defecto y eso está sin verificar.
+> Desde el 06/09/2026 las 9 están marcadas `condicion_adherente: por_verificar` en el
+> inventario. Antes estaban como `consumo` por defecto, que era una suposición disfrazada de
+> dato: `por_verificar` dice la verdad y deja el trabajo visible fila a fila.
 >
 > El esquema v2 da dónde registrarlo (`condicion_adherente`) y convierte el descuido en error
 > detectable: `regimen: consumo` con `condicion_adherente: empresario` es una contradicción que

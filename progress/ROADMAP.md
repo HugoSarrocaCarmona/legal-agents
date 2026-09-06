@@ -51,19 +51,25 @@ el esquema es sustantivo, así que ese error saldría mucho más caro.
 - [x] **2. Alcance del corpus.** [`corpus/alcance.md`](../corpus/alcance.md) — criterios de
       inclusión y exclusión por vía, escritos **antes** de descargar nada. Este paso se saltó en
       la iteración anterior y produjo la depuración a posteriori
-- [x] **3. Esquema con régimen.** `standards/contratos.md` **v2** (06/09/2026), revisado contra
-      la métrica del paso 1. Sobre v1 añade: `standard_version` verificable, anclaje al texto
-      (`cita` verbatim + `localizador`) en `key_clauses` y `risk_flags`, `condicion_adherente`
-      —del que `control_aplicable` pasa a ser derivable—, anclajes operativos de `severity`,
-      `risk_flags[].id` como vocabulario cerrado de la rúbrica, y semántica de
-      `missing_clauses` por lista de referencia. v1 nunca produjo output: no hay nada que
-      migrar. **Pendiente el `validate_contratos.ps1`**
+- [x] **3. Esquema con régimen.** `standards/contratos.md` **v3** (06/09/2026), revisado contra
+      la métrica del paso 1. Frente al v1: `standard_version` verificable; anclaje al texto
+      (`cita` verbatim + `localizador`) en `key_clauses` y `risk_flags`; `condicion_adherente`,
+      del que `control_aplicable` pasa a ser derivable; `risk_flags[].id` y `criterio` como
+      vocabularios cerrados; y semántica de `missing_clauses` por lista de referencia.
+      **El eje de régimen se rehízo en v3**: `administrativo | condiciones_generales`, uno por
+      vía viva, en lugar de `consumo | administrativo | mercantil`, que mezclaba la fuente del
+      control con su consecuencia. **`severity` pasa a ser derivada** de `severity_driver` y
+      `desproporcion`, dejando el juicio en una sola casilla acotada. Ninguna versión anterior
+      produjo output: no hay nada que migrar. **Pendiente el `validate_contratos.ps1`**
 - [ ] **4. Rúbrica de `risk_flags`** (`corpus/rubrica-riskflags.md`) — **siguiente paso, y el
-      único que bloquea todo lo demás**. Cada flag con identificador, criterio, régimen
-      aplicable, consecuencia jurídica y ejemplo de cláusula. Los criterios se extraen de las 9
-      resoluciones de la vía C. **Redactar antes de anotar ningún documento**: el esquema v2
-      exige que `risk_flags[].id` exista en la rúbrica, así que sin ella el estándar no es
-      aplicable. Incluye también las **listas de referencia de `missing_clauses`** por régimen
+      único que bloquea todo lo demás**. Cada flag con identificador, definición, régimen
+      aplicable, su `criterio` y su `severity_driver` típicos, consecuencia jurídica y ejemplo de
+      cláusula. Se extrae de las 9 resoluciones de la vía C, verificando en cada una si juzga a
+      un consumidor o a un adherente empresario —lo que se registra en la columna
+      `condicion_adherente` del inventario—. **Redactar antes de anotar ningún documento**: el
+      esquema v3 exige que `risk_flags[].id` exista en la rúbrica, así que sin ella el estándar
+      no es aplicable. Incluye también las **listas de referencia de `missing_clauses`** por
+      régimen
 - [ ] **5. `contrato_agent`.** Definición del agente, remitiendo a `standards/contratos.md` sin
       duplicar reglas, como hace `sentencia_agent`
 - [ ] **6. Gold.** Ficheros de referencia anotados a mano contra la rúbrica. Contrastar cada
@@ -79,39 +85,53 @@ el esquema es sustantivo, así que ese error saldría mucho más caro.
       sindicación, parseo ATOM/CODICE, filtrado por CPV e importe, muestreo con semilla fija,
       `pdftotext -layout`, y partición ciego-1 / ciego-2
 
-### Alcance del corpus: tres vías, métricas separadas
+### Alcance del corpus: dos vías, un régimen cada una, métricas separadas
 
 Corpora y métricas **separados**. No se agregan en una sola tabla de precisión.
 
-| Vía | Fuente | Función | Volumen esperado |
-|---|---|---|---|
-| **A — Administrativa** (principal) | PLACSP: sindicación ATOM + pliegos PCAP/PPT | Volumen, datos reales de ambas partes, medida del pipeline mecánico | Cientos, escalable |
-| **B — Mercantil negociada** (**diferida**) | CNMV: registros oficiales con contrato anexo | Clausulado genuinamente negociado: covenants, reps & warranties, MAC, indemnidades | Decenas |
-| **C — Condiciones generales** (soporte) | Clausulado de adhesión + resoluciones de CENDOJ | Material anotable **y** fuente de verdad de la rúbrica | Decenas |
+| Vía | Régimen | Fuente | Función | Volumen esperado |
+|---|---|---|---|---|
+| **A — Administrativa** (principal) | `administrativo` | PLACSP: sindicación ATOM + pliegos PCAP/PPT | Volumen, datos reales de ambas partes, medida del pipeline mecánico | Cientos, escalable |
+| **C — Condiciones generales** (soporte) | `condiciones_generales` | Clausulado de adhesión + resoluciones de CENDOJ | Material anotable **y** fuente de verdad de la rúbrica | Decenas |
 
 **Corpus descargado ≠ corpus anotado.** La vía A escala a cientos en la descarga, pero el
 corpus *anotado* seguirá siendo de decenas. El cuello de botella es la anotación, no la
 obtención: no confundir ambas cifras al reportar tamaño.
 
-> **La vía B queda diferida, no paralela.** Los contratos íntegros anexados a la CNMV son
-> raros —lo habitual es el resumen— y los que hay son de M&A y financiación, con clausulado
-> muy alejado del resto. Declararla "en paralelo" con todo lo demás pendiente equivale a que no
-> ocurra. Se abre cuando A y C estén cerradas.
+> **La vía B queda eliminada (06/09/2026), no diferida.** El régimen mercantil negociado sale
+> del estándar: un contrato libremente negociado no tiene control de contenido ni lista de
+> referencia defendible, así que `missing_clauses` registraría la opinión del anotador y
+> `risk_flags` produciría hallazgos sin consecuencia jurídica a la que referirlos. Se suma el
+> motivo ya registrado el 25/08 —los contratos íntegros de la CNMV son raros y su clausulado
+> está muy alejado del resto—. Una vía diferida durante meses y de obtención dudosa no es una
+> vía, es una intención. Detalle en [`corpus/alcance.md`](../corpus/alcance.md).
+
+> **Dentro de la vía C conviven dos controles, y eso no la parte en dos vías.** `condicion_adherente`
+> distingue al consumidor (control de contenido y transparencia, TRLGDCU) del empresario (solo
+> incorporación y transparencia, Ley 7/1998). El corpus ya tiene un caso de adherente empresario,
+> `adhesion-05`. La procedencia es la misma, así que la vía es la misma; el desglose por control
+> se reporta dentro de ella.
 
 ### Composición del corpus
 
-> **Instantánea: 25/08/2026, posterior a la reestructuración por vías.** Total en disco:
-> **30**. Activos: **23**. Depurados: **7**. 23 + 7 = 30. Inventario con hashes en
-> [`corpus/inventario-contratos.csv`](../corpus/inventario-contratos.csv); criterio de cribado
-> en [`corpus/candidatos-descartados.md`](../corpus/candidatos-descartados.md).
+> **Instantánea: 06/09/2026, posterior a la eliminación de la vía B.** Total en disco: **30**.
+> Activos: **20**. Pendientes de depurar: **3**. Depurados: **7**. 20 + 3 + 7 = 30. Inventario
+> con hashes en [`corpus/inventario-contratos.csv`](../corpus/inventario-contratos.csv);
+> criterio de cribado en
+> [`corpus/candidatos-descartados.md`](../corpus/candidatos-descartados.md).
 
 | Vía | Función | Documentos | N |
 |---|---|---|---|
 | A | evaluación | `pliego-01` a `03` — servicios, concesión demanial, obras | 3 |
-| B | vocabulario | `plantilla-01` a `03` — arrendamiento, sociedad civil, servicios | 3 |
-| C | evaluación | `adhesion-01` a `08` — banca, telecos, energía, seguros, seguridad | 8 |
+| C | evaluación | `adhesion-01` a `08` — banca, telecos, energía, seguros, seguridad. `05` es el único de adherente empresario | 8 |
 | C | rúbrica | `resolucion-01` a `09` — 4 casación, 3 apelación, 1 ordinario, 1 auto | 9 |
+| B | **pendiente de depurar** | `plantilla-01` a `03` — vía eliminada del alcance | 3 |
 | — | depurado | fuera de alcance (3), redundantes (3), truncado (1) | 7 |
+
+> ⚠️ **Paso manual pendiente.** Los 3 de `plantilla-*` siguen físicamente en
+> `Inputs/corpus/via-b/`. Están como `pendiente_depurar` y no como `depurado` para que el
+> inventario no afirme algo que el disco no confirma. Al moverlos a `Inputs/_depurados/` hay que
+> actualizar su columna `archivo` y su `estado`.
 
 **El inventario lleva dos columnas, `via` y `funcion`, a propósito.** `via` es la
 **procedencia** —y es el eje por el que se separan las métricas—; `funcion` es **para qué
@@ -121,7 +141,13 @@ procedencia, y no se pueden agregar en la misma medición.
 
 **Estructura en disco:** `Inputs/corpus/via-{a,b,c}/` y `Inputs/_depurados/`. El renombrado del
 25/08/2026 no alteró ningún contenido —los 30 `sha256` son idénticos a los previos— y el
-inventario conserva el nombre anterior en `archivo_origen`.
+inventario conserva el nombre anterior en `archivo_origen`. La reclasificación del 06/09/2026
+tampoco tocó ningún byte: solo columnas del inventario, y los 30 hashes siguen siendo los mismos.
+
+**El inventario gana la columna `condicion_adherente`**, que es donde se registra la
+verificación consumidor/empresario documento a documento. Las 9 resoluciones están
+`por_verificar`: es trabajo de la rúbrica, y ahora está visible fila a fila en vez de en una nota
+al pie.
 
 ### Corrección del blocker de `risk_flags`
 
@@ -180,14 +206,14 @@ Los 7 depurados actuales, por motivo:
 > resultado, la comparación no vale—, y queda escrito que **la primera medición es
 > orientativa**. Detalle en [`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md).
 
-> ⚠️ **Régimen de las resoluciones sin verificar.** Las 9 están marcadas `consumo` por defecto.
-> Algunas pueden ser de adherente empresario (Ley 7/1998, solo control de incorporación y
-> transparencia). Confirmar documento a documento al redactar la rúbrica: son dos niveles de
-> control distintos, no un mismo régimen atenuado.
+> ⚠️ **Condición del adherente de las 9 resoluciones, sin verificar.** Todas tratan de
+> abusividad, pero algunas pueden juzgar a un adherente **empresario** (Ley 7/1998, solo control
+> de incorporación y transparencia). Confirmar documento a documento al redactar la rúbrica: son
+> dos niveles de control distintos, no un mismo régimen atenuado.
 >
-> El esquema v2 da ahora dónde registrar esa verificación: `condicion_adherente`. Y convierte
-> el descuido en error detectable — `regimen: consumo` con `condicion_adherente: empresario` es
-> una **contradicción** que el contrato de validación rechaza, no un caso raro.
+> Desde el 06/09/2026 están marcadas `condicion_adherente: por_verificar` en el inventario, en
+> lugar de `consumo` por defecto — que era una suposición presentada como dato. El trabajo
+> pendiente queda visible fila a fila en vez de en una nota al pie.
 
 **Corpus de arranque, no definitivo.** Hay recopilación de contratos nuevos pendiente, y los
 actuales no son intocables. Toda incorporación pasa por `corpus/alcance.md` **antes** de

@@ -24,9 +24,10 @@
 Si el agente no carga `standards/`, produce JSON plausible con reglas recordadas y ninguno de
 los dos scripts lo detecta: seguirían dando verde.
 
-**Resuelto en contratos, abierto en sentencias.** El esquema v2 de contratos lleva un campo
-`standard_version` cuyo valor —`"contratos-v2"`— solo puede conocerse leyendo el fichero del
-estándar. No demuestra que las reglas se aplicaran bien; convierte «no cargó el estándar» de
+**Resuelto en contratos, abierto en sentencias.** El esquema v3 de contratos lleva un campo
+`standard_version` cuyo valor —`"contratos-v3"`— solo puede conocerse leyendo el fichero del
+estándar. Que el valor cambie con cada versión del esquema es intencionado: si no cambiara,
+dejaría de identificar qué reglas se aplicaron. No demuestra que las reglas se aplicaran bien; convierte «no cargó el estándar» de
 fallo silencioso en fallo detectable, que es el mínimo y es mucho más que nada.
 
 **Por qué no se ha hecho lo mismo en sentencias.** Añadir un campo al esquema v2 de sentencias

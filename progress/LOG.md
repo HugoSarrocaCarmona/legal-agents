@@ -1,5 +1,62 @@
 # 📜 Project Log
 
+## [06/09/2026] — 🔧 Alcance a dos regímenes, `severity` derivada y encaje regulatorio
+
+Segunda sesión del día. La primera cerró la métrica y subió el esquema a v2; esta poda el
+alcance, rehace el eje de régimen y añade la nota regulatoria pendiente. **Sigue sin existir
+ningún output de contratos**, que es justamente cuando cambiar el esquema es gratis.
+
+### ✅ Hecho
+- **Vía B eliminada del alcance**, y con ella el régimen `mercantil`. No diferida: eliminada
+- **Eje de régimen rehecho** (`contratos` v3): `administrativo | condiciones_generales`, uno por
+  vía viva. El eje anterior mezclaba la fuente del control con su consecuencia
+- **Columna `condicion_adherente` en el inventario**, donde se registra la verificación
+  consumidor/empresario documento a documento
+- **`severity` pasa a ser derivada** de `severity_driver` (enum de 4) y `desproporcion` (enum de
+  4), con tabla de derivación de 6 filas
+- **`criterio` pasa a enum cerrado** de 5 valores, los criterios que se transfieren entre
+  regímenes
+- **Se descarta reportar la variante estricta de ContractEval.** Dos cómputos por evaluación
+  para un número que responde a otra tarea
+- **`docs/encaje-regulatorio.md`** — Instrucción 2/2026 CGPJ, Circular 3/2026 CGAE y Reglamento
+  (UE) 2024/1689, con la calidad de cada fuente declarada y las preguntas abiertas señaladas
+- **Bug preexistente del inventario arreglado**: dos filas tenían una coma sin comillas dentro
+  de `motivo` y parseaban con 14 campos en vez de 13. El fichero no era CSV válido
+
+### ❌ Problemas encontrados
+- **Borrar `mercantil` a secas habría dejado `adhesion-05` sin clasificación.** Es clausulado de
+  adhesión de vía C dirigido a clientes profesionales, y estaba marcado `regimen: mercantil`. El
+  eje viejo lo obligaba a elegir entre su procedencia y su control
+- **Las 9 resoluciones estaban marcadas `consumo` por defecto**: una suposición presentada como
+  dato. Ahora son `por_verificar`, que es la verdad
+- **Los 3 documentos de vía B no se pueden reclasificar a vía C**: son plantillas sin
+  predisponente identificable ni datos reales, y no cumplen su criterio de inclusión
+- **No se pueden mover ficheros de `Inputs/`** desde esta sesión. Quedan `pendiente_depurar`, un
+  estado nuevo, en vez de mentir poniéndolos `depurado`
+
+### 💡 Aprendizajes
+- **Podar el alcance mejoró el diseño en vez de solo reducirlo.** Al quitar `mercantil` quedó a
+  la vista que `consumo` tampoco era un régimen: era la consecuencia de quién se adhiere. El eje
+  correcto —fuente del control por un lado, condición del adherente por otro— solo se vio al
+  quitar el tercer valor
+- **El corpus valida el esquema antes que ningún test.** `adhesion-05` existía desde agosto y era
+  la prueba de que el eje estaba mal; nadie la leyó como tal hasta que hubo que tocar el eje
+- **Un campo subjetivo se arregla aislando el juicio, no eliminándolo.** `severity` era una
+  opinión no falsable. Ahora tres de los cuatro drivers son deterministas y el juicio vive en una
+  casilla con una pregunta escrita — y cuando Gold y agente discrepen, el desacuerdo dirá si el
+  fallo es de lectura o de criterio
+- **Un inventario que no parsea no es auditable, por muy bien redactado que esté.** El bug de la
+  coma llevaba desde el 06/08 y ninguna revisión a ojo lo vio
+
+### 🔜 Siguiente paso
+- **Paso 4: la rúbrica de `risk_flags`.** Único bloqueo. Ahora con dos regímenes en vez de tres,
+  y con `criterio` y `severity_driver` como ejes ya cerrados que la rúbrica solo tiene que
+  poblar
+- **Manual, fuera de esta sesión**: mover `Inputs/corpus/via-b/plantilla-0{1,2,3}.txt` a
+  `Inputs/_depurados/` y pasar su `estado` a `depurado`
+
+---
+
 ## [06/09/2026] — 📐 Métrica de contratos y esquema v2
 
 Se cierra el paso 1 de la fase 2, que llevaba bloqueando la rúbrica, el Gold y la evaluación, y

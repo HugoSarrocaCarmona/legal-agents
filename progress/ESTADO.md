@@ -14,7 +14,7 @@ enlaza. Si algo se puede consultar cuando haga falta, no va aquí.
 | Pipeline | Estado | Esquema | Medición |
 |---|---|---|---|
 | **Sentencias** | Funcionando | v2, 16 campos ([`standards/sentencias.md`](../standards/sentencias.md)) | 315/315 en 9 campos de cabecera — **no extrapolable** |
-| **Contratos** | En diseño | v2, 12 campos, sin ejercitar ([`standards/contratos.md`](../standards/contratos.md)) | Métrica decidida ([`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md)), sin ejecutar |
+| **Contratos** | En diseño | v3, 12 campos, sin ejercitar ([`standards/contratos.md`](../standards/contratos.md)) | Métrica decidida ([`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md)), sin ejecutar |
 
 No comparten esquema, ni validador, ni métricas. Son contratos de datos distintos.
 
@@ -51,17 +51,24 @@ semanas de reposo. Protocolo y umbral en la métrica.
 
 ## Alcance decidido del corpus de contratos
 
-Tres vías, **con corpus y métricas separados** — no se agregan en una sola tabla de precisión:
+**Dos vías, un régimen cada una**, con corpus y métricas separados — no se agregan en una sola
+tabla de precisión:
 
-- **Vía A — administrativa (principal).** Pliegos de PLACSP. Volumen y datos reales.
-- **Vía B — mercantil negociada (secundaria, diferida).** CNMV. Clausulado genuinamente negociado.
-- **Vía C — condiciones generales (soporte).** Clausulado de adhesión y la jurisprudencia que lo controla.
+- **Vía A — administrativa (principal).** Pliegos de PLACSP. Régimen `administrativo` (LCSP).
+- **Vía C — condiciones generales (soporte).** Clausulado de adhesión y la jurisprudencia que lo
+  controla. Régimen `condiciones_generales`; dentro, `condicion_adherente` decide si el control
+  es de contenido (consumidor) o solo de incorporación y transparencia (empresario).
+
+**La vía B —mercantil negociada— se eliminó el 06/09/2026**, y con ella el régimen `mercantil`.
+Un contrato libremente negociado no tiene control de contenido ni lista de referencia
+defendible: `missing_clauses` registraría la opinión del anotador y `risk_flags` daría hallazgos
+sin consecuencia jurídica a la que referirlos.
 
 Criterios de inclusión y exclusión: [`corpus/alcance.md`](../corpus/alcance.md).
 Inventario con hashes: [`corpus/inventario-contratos.csv`](../corpus/inventario-contratos.csv).
 
-**Corpus actual: 23 activos, 7 depurados.** Es corpus de arranque, no definitivo: hay
-recopilación de contratos nuevos pendiente, y los actuales no son intocables.
+**Corpus actual: 20 activos, 3 pendientes de depurar, 7 depurados.** Es corpus de arranque, no
+definitivo: hay recopilación de contratos nuevos pendiente, y los actuales no son intocables.
 
 ---
 
@@ -75,7 +82,13 @@ contrato administrativo (LCSP).
 Consecuencia práctica: **una cláusula declarada abusiva por un juez no es una etiqueta
 transferible a un pliego administrativo.** De la jurisprudencia se transfieren los *criterios*
 (desequilibrio, falta de reciprocidad, opacidad, desproporción de la penalización, facultades
-unilaterales), nunca las *calificaciones*. Por eso `risk_flags` lleva campo `regimen`.
+unilaterales), nunca las *calificaciones*.
+
+**Cómo lo recoge el esquema v3.** `regimen` nombra la **fuente** del control
+(`administrativo` | `condiciones_generales`); `condicion_adherente` nombra **quién** se adhiere;
+y `control_aplicable` se **deriva** de los dos. Antes era un solo eje que mezclaba las tres
+cosas, y un contrato de adhesión dirigido a clientes profesionales —que el corpus ya tiene— no
+tenía clasificación posible.
 
 ---
 
@@ -94,3 +107,18 @@ reales que no deben entrar en un histórico inmutable. La protección es la copi
 del 03/09/2026 sobre cómo funcionan y cómo se evalúan los sistemas de automatización jurídica
 pioneros. De ahí salen la métrica del paso 1 y los cambios del esquema v2. No es documento
 operativo: se consulta, no se carga por defecto.
+
+---
+
+## Encaje regulatorio
+
+[`docs/encaje-regulatorio.md`](../docs/encaje-regulatorio.md) — Instrucción 2/2026 del CGPJ,
+Circular 3/2026 del CGAE y Reglamento (UE) 2024/1689. Dos cosas que conviene tener presentes sin
+abrir el fichero:
+
+- **La predicción de resultado judicial está fuera de alcance por decisión**, no por falta de
+  medios.
+- **`Inputs/` tiene datos personales reales y el `.gitignore` no cubre ese riesgo**: protege el
+  histórico de git, no regula qué se envía al modelo. Con corpus público —PLACSP, CENDOJ— el
+  riesgo es bajo; con documentos de cliente, hay que verificar antes las condiciones de la
+  herramienta.

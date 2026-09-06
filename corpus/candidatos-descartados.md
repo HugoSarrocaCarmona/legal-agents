@@ -94,9 +94,15 @@ documento es lo que motivó la regla de que nada se elimina, solo se mueve a
 
 ## Lo que el cribado no resuelve
 
-El corpus actual es de **arranque**, no definitivo. Tiene tres vías cubiertas de forma muy
-desigual: 3 documentos en la A, 3 en la B —y sin un solo dato real— y 17 en la C. Hay
-recopilación de contratos nuevos pendiente, y los actuales no son intocables.
+El corpus actual es de **arranque**, no definitivo. Tras la eliminación de la vía B
+(06/09/2026) quedan **dos vías, cubiertas de forma muy desigual: 3 documentos en la A y 17 en la
+C.** Hay recopilación de contratos nuevos pendiente, y los actuales no son intocables.
+
+> **La vía A es el desequilibrio serio.** Es la vía *principal* del proyecto —la que escala a
+> cientos en PLACSP y la que sostiene el régimen administrativo— y tiene 3 documentos. La rúbrica
+> del régimen administrativo va a construirse sobre una base mucho más fina que la de condiciones
+> generales, que cuenta con 9 resoluciones como fuente de verdad. Conviene tenerlo presente al
+> interpretar la primera medición de la vía A: no será comparable en solidez con la de la vía C.
 
 Toda incorporación futura pasa por [`alcance.md`](alcance.md) **antes** de descargarse. Esa es
 la vacuna contra volver a depurar a posteriori, que es lo que ha costado esta sesión entera.

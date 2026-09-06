@@ -31,7 +31,7 @@ en un archivo por estándar, y **no se repiten en ningún otro sitio**:
 | Estándar | Archivo | Estado |
 |---|---|---|
 | Sentencias, autos y resoluciones judiciales | [`standards/sentencias.md`](standards/sentencias.md) | vigente (v2), medido sobre 35 documentos |
-| Contratos civiles, mercantiles y administrativos | [`standards/contratos.md`](standards/contratos.md) | vigente (v2), sin ejercitar — `risk_flags` con `regimen` y ancla al texto |
+| Contratos administrativos y clausulado sometido a condiciones generales | [`standards/contratos.md`](standards/contratos.md) | vigente (v3), sin ejercitar — `risk_flags` con `regimen`, ancla al texto y `severity` derivada |
 
 **Antes de procesar un documento hay que leer el estándar que le corresponde.** Estos archivos
 no se cargan solos.
@@ -66,7 +66,12 @@ Reglas absolutas:
 - Sentencias judiciales
 - Autos
 - Resoluciones administrativas
-- Contratos civiles y mercantiles básicos
+- Contratos administrativos sometidos a la LCSP
+- Clausulado predispuesto sometido a condiciones generales de la contratación
+
+**El contrato mercantil negociado está fuera de alcance** desde el 06/09/2026: sin control de
+contenido ni lista de referencia defendible, no hay nada contra lo que medirlo. El motivo, en
+[`standards/contratos.md`](standards/contratos.md).
 
 ---
 

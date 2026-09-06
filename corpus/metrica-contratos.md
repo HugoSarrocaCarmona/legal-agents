@@ -105,8 +105,8 @@ orden de 15-25 unidades por documento, la N efectiva pasa de decenas a varios ce
 
 **Un riesgo está bien detectado cuando el agente emite un flag con el mismo identificador de
 rúbrica que el Gold y anclado en la misma cláusula.** Nada más entra en la detección: ni la
-redacción de `issue`, ni `why_it_matters`, ni `suggested_fix`, ni la `severity` — que se mide
-aparte y por separado.
+redacción de `issue`, ni `why_it_matters`, ni `suggested_fix`, ni los atributos calificadores
+—`criterio`, `severity_driver`, `desproporcion`—, que se miden aparte y por separado.
 
 Esto exige dos cosas del esquema, y por eso la métrica se decide antes que el Gold:
 
@@ -176,19 +176,31 @@ mide hasta un 30 % de falsos «no hay cláusula relacionada» en modelos abierto
 1-7 % en propietarios. Un FN por pereza y un FN por haber anclado mal se corrigen de formas
 distintas, y agregarlos oculta cuál está ocurriendo.
 
-### Severidad: medida aparte, nunca dentro de la detección
+### Atributos del flag: medidos aparte, nunca dentro de la detección
 
-Solo sobre los pares emparejados. Se reporta:
+Solo sobre los pares emparejados (TP). Un flag detectado con un atributo equivocado es **un
+acierto de detección y un fallo de calificación**; mezclarlos en una sola cifra oculta cuál de
+los dos está fallando, que es la segunda pregunta que `IDEAS.md` dejaba abierta.
 
-- **Coincidencia exacta** de `severity` (%).
-- **Coincidencia adyacente**: `medium` frente a `high` cuenta como desacuerdo de un nivel, no
-  como fallo total.
-- **Matriz de confusión 3×3**, que es lo que dice si el agente sobrevalora o infravalora de
-  forma sistemática.
+El esquema v3 hace esto medible de verdad, porque los tres atributos que importan son enums
+cerrados y `severity` ya no es un juicio suelto:
 
-> Un flag detectado con severidad distinta es **un acierto de detección y un fallo de
-> calibración**. Mezclarlos en una sola cifra oculta cuál de los dos está fallando, que es la
-> segunda pregunta que `IDEAS.md` dejaba abierta. Se responde separándolos.
+| Atributo | Cómo se mide | Qué diagnostica su fallo |
+|---|---|---|
+| `criterio` | Coincidencia exacta, y **matriz de confusión 5×5** | El agente ve el riesgo pero lo encuadra en la doctrina equivocada |
+| `severity_driver` | Coincidencia exacta, y **matriz de confusión 4×4** | El agente lee mal **qué puede hacer** la cláusula. Es un error de lectura del texto |
+| `desproporcion` | Coincidencia exacta, solo sobre los pares con `severity_driver = coste_economico` | Error de **criterio**, no de lectura: es la única casilla de juicio del esquema |
+| `severity` | **Comprobación de derivación**, no acierto sustantivo | Si `severity` no se sigue de los dos anteriores, el agente no aplicó la tabla del estándar |
+
+> **Esto es lo que se gana derivando `severity`.** Con una escala de tres niveles suelta, un
+> desacuerdo `high`/`medium` era un número y nada más. Ahora el desacuerdo se localiza: si está
+> en `severity_driver`, el agente no entendió la cláusula; si está en `desproporcion`, entendió
+> la cláusula y discrepa del criterio. Son dos fallos distintos que se corrigen en sitios
+> distintos —el segundo, en la rúbrica— y antes se veían iguales.
+
+**No se calcula coincidencia adyacente sobre `severity`.** Con `severity` derivada, «fallar por
+un nivel» ya no es una categoría: o la derivación es correcta, o alguno de los dos campos de
+origen está mal, y eso ya se mide arriba.
 
 ### `key_clauses`
 
@@ -217,17 +229,21 @@ Se reportan P, R, F1 y F2 igual que arriba.
 
 ## Métricas separadas por vía
 
-Las tres vías del corpus **no se agregan en una sola tabla**, por la misma razón por la que no
+Las dos vías del corpus **no se agregan en una sola tabla**, por la misma razón por la que no
 se agregan los tres niveles: miden cosas distintas.
 
-| Vía | Qué mide su cifra |
-|---|---|
-| **A — administrativa** | Pipeline mecánico sobre documentos reales, régimen LCSP |
-| **B — mercantil** (diferida) | Clausulado negociado. Sin corpus de evaluación todavía |
-| **C — condiciones generales** | Detección de riesgo con la rúbrica en su régimen de origen |
+| Vía | Régimen | Qué mide su cifra |
+|---|---|---|
+| **A — administrativa** | `administrativo` | Pipeline sobre pliegos reales, con el catálogo de riesgos de la LCSP |
+| **C — condiciones generales** | `condiciones_generales` | Detección de riesgo sobre clausulado de adhesión, con el catálogo de la rúbrica |
 
 Un F2 global que promediase vía A y vía C sería un número sin referente: el catálogo de riesgos
 aplicable no es el mismo.
+
+**Dentro de la vía C se reporta además el desglose por `condicion_adherente`.** No es una tercera
+vía —la procedencia es la misma— pero el control aplicable no lo es, y el corpus ya contiene un
+documento de adherente empresario (`adhesion-05`). Si el agente rinde peor en ese caso que en
+consumo, es un dato que un promedio de la vía C escondería.
 
 ---
 
@@ -239,7 +255,11 @@ aplicable no es el mismo.
 2. Dejarlos reposar **dos semanas sin mirarlos**.
 3. Reanotarlos desde cero, sin abrir la primera versión.
 4. Calcular F1 de la segunda anotación contra la primera, con el mismo emparejamiento de arriba,
-   y la coincidencia de `severity` sobre los pares.
+   y la coincidencia de `criterio`, `severity_driver` y `desproporcion` sobre los pares.
+
+> **Mirar `desproporcion` con especial atención.** Es la única casilla de juicio del esquema, así
+> que es donde la inconsistencia consigo mismo va a aparecer primero. Si el resto concuerda y esa
+> no, el problema no es la rúbrica entera: es la definición de desproporción.
 
 **Umbral: F1 < 0,75 significa que el problema está en la rúbrica, no en el agente.** Un criterio
 que el propio autor aplica de dos formas distintas con dos semanas de diferencia no es
@@ -296,24 +316,29 @@ independientes. Si en algún momento hacen falta, hay que agruparlos por documen
 Dos desviaciones deliberadas respecto de las fuentes:
 
 **1. La coincidencia parcial no es un fallo de detección.** ContractEval exige que la predicción
-**cubra completamente** el span del Gold para contar como TP, y manda las coincidencias
-parciales a FN. Aquí no: un par emparejado es TP aunque la cita cubra el 80 % de la cláusula, y
-esa imprecisión se recoge en Jaccard.
+**cubra completamente** el span del Gold para contar como TP, y manda las coincidencias parciales
+a FN. Aquí no: un par emparejado es TP aunque la cita cubra el 80 % de la cláusula, y esa
+imprecisión se recoge en Jaccard.
 
 La razón es que las tareas son distintas. En ContractEval el span *es* la respuesta —se pregunta
 por la cláusula y se extrae—. Aquí el span es el **ancla** de un riesgo: señalar el riesgo
 correcto en la cláusula correcta citando parte de ella es un acierto de detección con una
-imprecisión de cita. Fundirlos sería el mismo error que fundir severidad y detección.
+imprecisión de cita. Fundirlos sería el mismo error que fundir la calificación y la detección.
 
-> **Se reporta también la variante estricta de ContractEval** —TP solo con cobertura completa—
-> junto a la principal. Es la misma anotación calculada de otra forma, no cuesta nada, y
-> mantiene la comparabilidad con la literatura que motivó adoptar el esquema.
+**No se calcula además la variante estricta.** Se valoró reportar las dos cifras para conservar
+comparabilidad con la literatura, y se descarta: obliga a computar dos veces cada evaluación
+para producir un número que responde a una tarea que no es la nuestra. La comparabilidad que
+importa se conserva igualmente —la estructura F1/F2, el Jaccard y la tasa de pereza son las de
+ContractEval— y donde no se conserva es donde deliberadamente medimos otra cosa.
+
+**Consecuencia, dicha por escrito:** el F1 y el F2 de detección de este proyecto **no son
+directamente comparables** con los F1 publicados de ContractEval. El Jaccard y la tasa de pereza
+sí lo son. No presentar las cifras de detección como si estuvieran en la misma escala.
 
 **2. No se usa puntuación *all-pass*.** El *Legal Agent Benchmark* de Harvey exige que **todos**
-los criterios de una tarea acierten: detectar 8 de 10 riesgos puntúa cero. Tiene sentido con
-1.200 tareas y para comunicar a un cliente empresarial cómo se revisa el trabajo de verdad. Con
-23 documentos produciría un cero casi seguro y ninguna señal de mejora entre versiones. Se toma
-de Harvey la **descomposición en criterios atómicos binarios**, no su agregación.
+los criterios de una tarea acierten. Con 23 documentos produciría un cero casi seguro y ninguna
+señal de mejora entre versiones. Se toma de Harvey la **descomposición en criterios atómicos
+binarios**, no su agregación.
 
 ---
 
@@ -323,7 +348,10 @@ Consecuencia directa de todo lo anterior. Para cada documento anotado:
 
 - Los campos del nivel 1, con su valor exacto.
 - Cada `risk_flag` con su `id` de rúbrica, su `cita` **literal y verbatim** del documento, su
-  `localizador` y su `severity`.
+  `localizador`, y sus tres atributos calificadores: `criterio`, `severity_driver` y
+  `desproporcion`. **`severity` no se anota: se deriva.** Anotarla a mano reintroduciría el
+  juicio suelto que el esquema v3 elimina, y además permitiría que el Gold se contradijese
+  consigo mismo.
 - Cada `key_clause` con `tipo`, `cita` y `localizador`.
 - `missing_clauses` **solo** si el régimen del documento tiene lista de referencia escrita.
 

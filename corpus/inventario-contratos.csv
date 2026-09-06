@@ -1,48 +1,75 @@
-# Inventario del corpus de contratos. Instantanea: 25/08/2026, posterior a la reestructuracion por vias.
-# Total en disco: 30. Activos: 23. Depurados: 7. 23 + 7 = 30.
-# Reparto de activos: via A = 3 | via B = 3 | via C = 17 (8 adhesion + 9 resoluciones).
+# Inventario del corpus de contratos. Instantanea: 06/09/2026, posterior a la eliminacion de la via B.
+# Total en disco: 30. Activos: 20. Pendientes de depurar: 3. Depurados: 7. 20 + 3 + 7 = 30.
+# Reparto de activos: via A = 3 | via C = 17 (8 adhesion + 9 resoluciones).
 #
-# 'via' identifica la PROCEDENCIA del documento (corpus y metrica separados por via, segun 2.1
-# de fase2corpuscontratos). 'funcion' identifica PARA QUE sirve dentro de su via. Son dos ejes
-# distintos: mezclarlos en una sola columna fue el defecto que bloqueaba este inventario.
-#   via A = administrativa (PLACSP)  | via B = mercantil negociada (CNMV) | via C = condiciones generales
-#   funcion evaluacion = documento anotable | rubrica = fuente de verdad | vocabulario = lexico de clausulas
+# 'via' identifica la PROCEDENCIA del documento y NO cambia nunca: es un hecho sobre de donde
+# salio. 'funcion' identifica PARA QUE sirve dentro del alcance vigente. Son dos ejes distintos:
+# mezclarlos en una sola columna fue el defecto que bloqueaba este inventario.
+#   via A = administrativa (PLACSP)  | via C = condiciones generales
+#   funcion evaluacion = documento anotable | rubrica = fuente de verdad de la rubrica
+#
+# CAMBIO 06/09/2026 - LA VIA B SALE DEL ALCANCE. El regimen mercantil negociado se elimina del
+# estandar (contratos v3): sin control de contenido y sin lista de referencia defendible, lo que
+# "deberia" estar en un contrato negociado es preferencia de negociacion, no exigencia juridica.
+# Los 3 documentos de via B pasan a 'pendiente_depurar'. Su 'via' sigue siendo B porque la
+# procedencia no cambia; lo que cambia es que ya no tienen funcion dentro del alcance.
+#
+# ESTADO 'pendiente_depurar': la decision esta tomada y registrada, pero el fichero SIGUE EN
+# Inputs/corpus/via-b/. Se pone este estado en vez de 'depurado' para que el inventario no
+# afirme algo que el disco no confirma. Al mover los ficheros a Inputs/_depurados/ hay que
+# actualizar la columna 'archivo' y poner estado 'depurado'.
+#
+# CAMBIO 06/09/2026 - EJE DE REGIMEN REHECHO. 'consumo' y 'mercantil' desaparecen como valores
+# de regimen. El regimen nombra ahora la FUENTE del control (administrativo | condiciones_
+# generales) y la nueva columna 'condicion_adherente' nombra QUE control se aplica dentro de las
+# condiciones generales. Motivo: adhesion-05 es clausulado de adhesion (via C) dirigido a
+# clientes profesionales, y con el eje anterior no tenia clasificacion posible.
+#
+# 'condicion_adherente' en las 8 de adhesion se toma del destinatario que declara el propio
+# documento. adhesion-05 es la excepcion verificada: clientes profesionales = empresario.
+#
+# PENDIENTE: 'condicion_adherente' de las 9 resoluciones esta como 'por_verificar'. Todas tratan
+# de abusividad, pero algunas pueden juzgar a un adherente empresario (Ley 7/1998, solo control
+# de incorporacion y transparencia). Confirmar documento a documento al redactar la rubrica.
+# 'por_verificar' es un estado de gestion del corpus, no un valor del enum del estandar.
+#
+# ARREGLO 06/09/2026: dos filas ('convenio-subvencion' y 'comentario-doctrinal') tenian una coma
+# sin comillas dentro de 'motivo', lo que las hacia parsear con 14 campos en vez de 13 y rompia
+# el fichero como CSV. Ahora esos dos 'motivo' van entrecomillados. Bug preexistente, no de la
+# reclasificacion. Toda coma dentro de un campo debe ir entre comillas dobles.
 #
 # 'archivo_origen' conserva el nombre anterior al renombrado del 25/08/2026 para que las
 # referencias antiguas sigan resolviendo. El renombrado no altero ningun contenido: los 30
-# sha256 son identicos a los del inventario previo.
-#
-# PENDIENTE: el 'regimen' de las 9 resoluciones esta fijado a 'consumo' porque todas tratan de
-# abusividad, pero algunas pueden ser de adherente empresario (Ley 7/1998, solo control de
-# incorporacion y transparencia). Confirmar documento a documento al redactar la rubrica.
-archivo,archivo_origen,sha256,tipo_contractual,categoria,datos_reales,regimen,via,funcion,estado,motivo,fecha_alta
-corpus/via-a/pliego-01.txt,desc-contrato1.txt,ba59e0309f27ec59c837f614fa8496858cefa3c9784ccd7b6e2e42597041f863,servicios,pliego,solo_predisponente,administrativo,A,evaluacion,activo,,2026-08-06
-corpus/via-a/pliego-02.txt,desc-contrato11.txt,903df3a5d915a221cdd38000c958f121669373f929d760ee9102541393f70ae3,concesion_demanial,pliego,solo_predisponente,administrativo,A,evaluacion,activo,,2026-08-06
-corpus/via-a/pliego-03.txt,desc-contrato14.txt,9ec70e9e2adcbbac39404cf67177bcdeb6de9a32ba6b72785cad07408c5854ed,obra,pliego,solo_predisponente,administrativo,A,evaluacion,activo,,2026-08-06
-corpus/via-b/plantilla-01.txt,contrato11.txt,f066cf31874d988b0d046b9ccdc65b7082e8291f6ef2e676d5f9bc80d63b0bbe,arrendamiento,plantilla,ninguna,mercantil,B,vocabulario,activo,,2026-08-06
-corpus/via-b/plantilla-02.txt,contrato15.txt,081fcfe56135a1fdcb776cade67cae846562d515959524ba444ea917e05fbfe7,sociedad_civil,plantilla,ninguna,mercantil,B,vocabulario,activo,,2026-08-06
-corpus/via-b/plantilla-03.txt,contrato17.txt,e90a3b3da3842b3b25bbc6e1ee474d4c80739cc83bbeb85206ca719387e04ea7,servicios,plantilla,ninguna,mercantil,B,vocabulario,activo,,2026-08-06
-corpus/via-c/adhesion-01.txt,contrato1.txt,b1c5588da1709ba5fcc8dab5fee4282fcfaeeb19a3297dc3b380e120377ff8e1,servicios,adhesion,solo_predisponente,consumo,C,evaluacion,activo,,2026-08-06
-corpus/via-c/adhesion-02.txt,contrato3.txt,a70ef403374174ee0eea7916ee21b33ea14b9eed001ab173a353c4a83cb3981f,servicios_bancarios,adhesion,solo_predisponente,consumo,C,evaluacion,activo,,2026-08-06
-corpus/via-c/adhesion-03.txt,contrato4.txt,0be3c275576cdabbca4c7f6330174ed066ebfee925ef44e6ac8d01752b842320,servicios_seguridad,adhesion,solo_predisponente,consumo,C,evaluacion,activo,,2026-08-06
-corpus/via-c/adhesion-04.txt,contrato5.txt,81c7d64071f69590da5141ff42c2a826a2e856ea3f313f313726d5181709ae2e,telecomunicaciones,adhesion,solo_predisponente,consumo,C,evaluacion,activo,,2026-08-06
-corpus/via-c/adhesion-05.txt,contrato6.txt,4e7dde2304afb39b5bc5b3ee0b0557bef86e88d3cef32d07a5f14d952f91803a,servicios_inversion,adhesion,solo_predisponente,mercantil,C,evaluacion,activo,Clientes profesionales y contrapartes elegibles: NO es consumo,2026-08-06
-corpus/via-c/adhesion-06.txt,contrato7.txt,9ce72e4d7704ea779e7388296e68f45fa916ddb0a8f2c5c79bf5ebe301e51fd0,seguro,adhesion,solo_predisponente,consumo,C,evaluacion,activo,,2026-08-06
-corpus/via-c/adhesion-07.txt,contrato8.txt,57477be2ee235780b7b28d9c43e0478a383c365cd6ddf3849ac67d4233402a9d,servicios_seguridad,adhesion,solo_predisponente,consumo,C,evaluacion,activo,,2026-08-06
-corpus/via-c/adhesion-08.txt,contrato9.txt,e1715fa4eb2fc0d571ce13cdbfbe83f780c149ff9ef44e3bf653842ac1e94900,suministro_energia,adhesion,solo_predisponente,consumo,C,evaluacion,activo,,2026-08-06
-corpus/via-c/resolucion-01.txt,desc-contrato2.txt,bbee16909f92d9cb860ead5c03f9a256a03618320cf9621205372801e7f15c33,auto_judicial,sentencia,ninguna,consumo,C,rubrica,activo,AJPI 1/2025 Cartagena. 28 menciones a abusividad,2026-08-06
-corpus/via-c/resolucion-02.txt,desc-contrato3.txt,e11b64d352b6fe1ccafca4e1c65e2a6180f590303f97e9bfb2ffb79118f7b37e,sentencia_casacion,sentencia,ninguna,consumo,C,rubrica,activo,STS 3413/2026. 29 menciones a transparencia,2026-08-06
-corpus/via-c/resolucion-03.txt,desc-contrato4.txt,86a8147581761f4fb7dcf65e68653126a27fb0be340c69f2bb533a3f6565b772,sentencia_casacion,sentencia,ninguna,consumo,C,rubrica,activo,STS 3399/2026. Marginal: solo 2 menciones a abusividad,2026-08-06
-corpus/via-c/resolucion-04.txt,desc-contrato5.txt,3981a45615dc91b523e689b9bfb0e0a6b94c1d1df2a14a94863ebfb2d51ef6fa,sentencia_casacion,sentencia,ninguna,consumo,C,rubrica,activo,STS 3171/2026,2026-08-06
-corpus/via-c/resolucion-05.txt,desc-contrato8.txt,e5817ce48be6e89b8748c432f7e3d2854b8192f30bee5562cfb0de30c9f320fc,sentencia_casacion,sentencia,ninguna,consumo,C,rubrica,activo,Casacion 2697/2014 TS. El mas rico del corpus: 44 abusividad / 22 cond.grales / 49 transparencia,2026-08-06
-corpus/via-c/resolucion-06.txt,desc-contrato10.txt,84826e19724ee919f9c693f95af38ab2d59abdc17bba96c19f339cb5d11ca4e3,sentencia_apelacion,sentencia,ninguna,consumo,C,rubrica,activo,AP Barcelona seccion 15,2026-08-06
-corpus/via-c/resolucion-07.txt,desc-contrato12.txt,33281ce9f7d6b3fb8c9e6945d7d666a05d83ef55dab5bee6bbf9382e0dd86259,sentencia_apelacion,sentencia,ninguna,consumo,C,rubrica,activo,SAP B 4988/2026,2026-08-06
-corpus/via-c/resolucion-08.txt,desc-contrato13.txt,c10add06c579916836c154262714ab55aaf7789a2693c4b7e4e37d072b26e0f7,sentencia_apelacion,sentencia,ninguna,consumo,C,rubrica,activo,SAP B 4973/2026,2026-08-06
-corpus/via-c/resolucion-09.txt,desc-contrato15.txt,3d1fdb4264126239dbeb260f7d1951eecdcaf45aa04e67b84bb7544b0d6c0094,sentencia_ordinario,sentencia,ninguna,consumo,C,rubrica,activo,SJM C 3188/2018 Mercantil A Coruna,2026-08-06
-_depurados/laboral-representante-comercio.txt,contrato2.txt,bc8e39c99fbd2baf1850b11f4d929272d87bef663c37ab0f8730722f4770ebd9,representacion_comercial,n_a,n_a,n_a,depurado,n_a,depurado,Fuera de alcance: relacion laboral especial (RD 1438/1985). Exigiria un cuarto regimen y una rubrica propia,2026-08-06
-_depurados/convenio-subvencion.txt,contrato10.txt,863788d5ecb04a45c5ab700f83a8a8651c3efaa684aa5a6debadc9c80c80ea18,convenio_subvencion,n_a,n_a,n_a,depurado,n_a,depurado,Fuera de alcance: es un convenio administrativo de subvencion, no un contrato. Exigiria una categoria propia,2026-08-06
-_depurados/comentario-doctrinal.txt,desc-contrato9.txt,b5ce69ff84bf9d811da5eefe2f42e530d5ee35602f79f8f5b4940cb1b35ecff5,comentario_doctrinal,n_a,n_a,n_a,depurado,n_a,depurado,Fuera de alcance: fuente secundaria sobre la STS 671/2018, no transcribe clausulado original,2026-08-06
-_depurados/arrendamiento-redundante-01.txt,apar-contrato12.txt,ec68bf482bba1ed00c01494578ba6ee4283005d6a28ee5a3e6a40e7b14f84da4,arrendamiento,n_a,n_a,n_a,depurado,n_a,depurado,Redundante: cuatro arrendamientos casi identicos; se conserva via-b/plantilla-01,2026-08-06
-_depurados/arrendamiento-redundante-02.txt,apar-contrato13.txt,8b497996544aebad0b8ac458adf78be1ebeb61cdefdc34724ac747f2550a84fa,arrendamiento,n_a,n_a,n_a,depurado,n_a,depurado,Redundante: idem arrendamiento-redundante-01,2026-08-06
-_depurados/arrendamiento-redundante-03.txt,apar-contrato14.txt,a74259725bb2d92c071d984815bc8f106104e5beafebba891466068d53758386,arrendamiento,n_a,n_a,n_a,depurado,n_a,depurado,Redundante: idem arrendamiento-redundante-01,2026-08-06
-_depurados/truncado-arrendamiento.txt,trunc-contrato14.txt,8b0220625fedd926d12b2194871f41f58044052447c727a717911c6d80b66672,arrendamiento,n_a,n_a,n_a,depurado,n_a,depurado,Fichero truncado de 35 bytes: solo el titulo. Sin contenido,2026-08-06
+# sha256 son identicos a los del inventario previo, y siguen siendolo tras este cambio, que solo
+# toca columnas de clasificacion.
+archivo,archivo_origen,sha256,tipo_contractual,categoria,datos_reales,regimen,condicion_adherente,via,funcion,estado,motivo,fecha_alta
+corpus/via-a/pliego-01.txt,desc-contrato1.txt,ba59e0309f27ec59c837f614fa8496858cefa3c9784ccd7b6e2e42597041f863,servicios,pliego,solo_predisponente,administrativo,n_a,A,evaluacion,activo,,2026-08-06
+corpus/via-a/pliego-02.txt,desc-contrato11.txt,903df3a5d915a221cdd38000c958f121669373f929d760ee9102541393f70ae3,concesion_demanial,pliego,solo_predisponente,administrativo,n_a,A,evaluacion,activo,,2026-08-06
+corpus/via-a/pliego-03.txt,desc-contrato14.txt,9ec70e9e2adcbbac39404cf67177bcdeb6de9a32ba6b72785cad07408c5854ed,obra,pliego,solo_predisponente,administrativo,n_a,A,evaluacion,activo,,2026-08-06
+corpus/via-b/plantilla-01.txt,contrato11.txt,f066cf31874d988b0d046b9ccdc65b7082e8291f6ef2e676d5f9bc80d63b0bbe,arrendamiento,plantilla,ninguna,n_a,n_a,B,n_a,pendiente_depurar,Via B fuera de alcance (06/09/2026). Tampoco cumple el criterio de via C: plantilla sin predisponente identificable ni datos reales,2026-08-06
+corpus/via-b/plantilla-02.txt,contrato15.txt,081fcfe56135a1fdcb776cade67cae846562d515959524ba444ea917e05fbfe7,sociedad_civil,plantilla,ninguna,n_a,n_a,B,n_a,pendiente_depurar,Via B fuera de alcance (06/09/2026). Tampoco cumple el criterio de via C: plantilla sin predisponente identificable ni datos reales,2026-08-06
+corpus/via-b/plantilla-03.txt,contrato17.txt,e90a3b3da3842b3b25bbc6e1ee474d4c80739cc83bbeb85206ca719387e04ea7,servicios,plantilla,ninguna,n_a,n_a,B,n_a,pendiente_depurar,Via B fuera de alcance (06/09/2026). Tampoco cumple el criterio de via C: plantilla sin predisponente identificable ni datos reales,2026-08-06
+corpus/via-c/adhesion-01.txt,contrato1.txt,b1c5588da1709ba5fcc8dab5fee4282fcfaeeb19a3297dc3b380e120377ff8e1,servicios,adhesion,solo_predisponente,condiciones_generales,consumidor,C,evaluacion,activo,,2026-08-06
+corpus/via-c/adhesion-02.txt,contrato3.txt,a70ef403374174ee0eea7916ee21b33ea14b9eed001ab173a353c4a83cb3981f,servicios_bancarios,adhesion,solo_predisponente,condiciones_generales,consumidor,C,evaluacion,activo,,2026-08-06
+corpus/via-c/adhesion-03.txt,contrato4.txt,0be3c275576cdabbca4c7f6330174ed066ebfee925ef44e6ac8d01752b842320,servicios_seguridad,adhesion,solo_predisponente,condiciones_generales,consumidor,C,evaluacion,activo,,2026-08-06
+corpus/via-c/adhesion-04.txt,contrato5.txt,81c7d64071f69590da5141ff42c2a826a2e856ea3f313f313726d5181709ae2e,telecomunicaciones,adhesion,solo_predisponente,condiciones_generales,consumidor,C,evaluacion,activo,,2026-08-06
+corpus/via-c/adhesion-05.txt,contrato6.txt,4e7dde2304afb39b5bc5b3ee0b0557bef86e88d3cef32d07a5f14d952f91803a,servicios_inversion,adhesion,solo_predisponente,condiciones_generales,empresario,C,evaluacion,activo,Clientes profesionales y contrapartes elegibles: NO es consumo. Unico caso verificado de adherente empresario; control solo de incorporacion y transparencia,2026-08-06
+corpus/via-c/adhesion-06.txt,contrato7.txt,9ce72e4d7704ea779e7388296e68f45fa916ddb0a8f2c5c79bf5ebe301e51fd0,seguro,adhesion,solo_predisponente,condiciones_generales,consumidor,C,evaluacion,activo,,2026-08-06
+corpus/via-c/adhesion-07.txt,contrato8.txt,57477be2ee235780b7b28d9c43e0478a383c365cd6ddf3849ac67d4233402a9d,servicios_seguridad,adhesion,solo_predisponente,condiciones_generales,consumidor,C,evaluacion,activo,,2026-08-06
+corpus/via-c/adhesion-08.txt,contrato9.txt,e1715fa4eb2fc0d571ce13cdbfbe83f780c149ff9ef44e3bf653842ac1e94900,suministro_energia,adhesion,solo_predisponente,condiciones_generales,consumidor,C,evaluacion,activo,,2026-08-06
+corpus/via-c/resolucion-01.txt,desc-contrato2.txt,bbee16909f92d9cb860ead5c03f9a256a03618320cf9621205372801e7f15c33,auto_judicial,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,AJPI 1/2025 Cartagena. 28 menciones a abusividad,2026-08-06
+corpus/via-c/resolucion-02.txt,desc-contrato3.txt,e11b64d352b6fe1ccafca4e1c65e2a6180f590303f97e9bfb2ffb79118f7b37e,sentencia_casacion,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,STS 3413/2026. 29 menciones a transparencia,2026-08-06
+corpus/via-c/resolucion-03.txt,desc-contrato4.txt,86a8147581761f4fb7dcf65e68653126a27fb0be340c69f2bb533a3f6565b772,sentencia_casacion,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,STS 3399/2026. Marginal: solo 2 menciones a abusividad,2026-08-06
+corpus/via-c/resolucion-04.txt,desc-contrato5.txt,3981a45615dc91b523e689b9bfb0e0a6b94c1d1df2a14a94863ebfb2d51ef6fa,sentencia_casacion,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,STS 3171/2026,2026-08-06
+corpus/via-c/resolucion-05.txt,desc-contrato8.txt,e5817ce48be6e89b8748c432f7e3d2854b8192f30bee5562cfb0de30c9f320fc,sentencia_casacion,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,Casacion 2697/2014 TS. El mas rico del corpus: 44 abusividad / 22 cond.grales / 49 transparencia,2026-08-06
+corpus/via-c/resolucion-06.txt,desc-contrato10.txt,84826e19724ee919f9c693f95af38ab2d59abdc17bba96c19f339cb5d11ca4e3,sentencia_apelacion,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,AP Barcelona seccion 15,2026-08-06
+corpus/via-c/resolucion-07.txt,desc-contrato12.txt,33281ce9f7d6b3fb8c9e6945d7d666a05d83ef55dab5bee6bbf9382e0dd86259,sentencia_apelacion,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,SAP B 4988/2026,2026-08-06
+corpus/via-c/resolucion-08.txt,desc-contrato13.txt,c10add06c579916836c154262714ab55aaf7789a2693c4b7e4e37d072b26e0f7,sentencia_apelacion,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,SAP B 4973/2026,2026-08-06
+corpus/via-c/resolucion-09.txt,desc-contrato15.txt,3d1fdb4264126239dbeb260f7d1951eecdcaf45aa04e67b84bb7544b0d6c0094,sentencia_ordinario,sentencia,ninguna,condiciones_generales,por_verificar,C,rubrica,activo,SJM C 3188/2018 Mercantil A Coruna,2026-08-06
+_depurados/laboral-representante-comercio.txt,contrato2.txt,bc8e39c99fbd2baf1850b11f4d929272d87bef663c37ab0f8730722f4770ebd9,representacion_comercial,n_a,n_a,n_a,n_a,depurado,n_a,depurado,Fuera de alcance: relacion laboral especial (RD 1438/1985). Exigiria un cuarto regimen y una rubrica propia,2026-08-06
+_depurados/convenio-subvencion.txt,contrato10.txt,863788d5ecb04a45c5ab700f83a8a8651c3efaa684aa5a6debadc9c80c80ea18,convenio_subvencion,n_a,n_a,n_a,n_a,depurado,n_a,depurado,"Fuera de alcance: es un convenio administrativo de subvencion, no un contrato. Exigiria una categoria propia",2026-08-06
+_depurados/comentario-doctrinal.txt,desc-contrato9.txt,b5ce69ff84bf9d811da5eefe2f42e530d5ee35602f79f8f5b4940cb1b35ecff5,comentario_doctrinal,n_a,n_a,n_a,n_a,depurado,n_a,depurado,"Fuera de alcance: fuente secundaria sobre la STS 671/2018, no transcribe clausulado original",2026-08-06
+_depurados/arrendamiento-redundante-01.txt,apar-contrato12.txt,ec68bf482bba1ed00c01494578ba6ee4283005d6a28ee5a3e6a40e7b14f84da4,arrendamiento,n_a,n_a,n_a,n_a,depurado,n_a,depurado,Redundante: cuatro arrendamientos casi identicos; se conservaba plantilla-01 - que a su vez sale del alcance el 06/09/2026 con la via B,2026-08-06
+_depurados/arrendamiento-redundante-02.txt,apar-contrato13.txt,8b497996544aebad0b8ac458adf78be1ebeb61cdefdc34724ac747f2550a84fa,arrendamiento,n_a,n_a,n_a,n_a,depurado,n_a,depurado,Redundante: idem arrendamiento-redundante-01,2026-08-06
+_depurados/arrendamiento-redundante-03.txt,apar-contrato14.txt,a74259725bb2d92c071d984815bc8f106104e5beafebba891466068d53758386,arrendamiento,n_a,n_a,n_a,n_a,depurado,n_a,depurado,Redundante: idem arrendamiento-redundante-01,2026-08-06
+_depurados/truncado-arrendamiento.txt,trunc-contrato14.txt,8b0220625fedd926d12b2194871f41f58044052447c727a717911c6d80b66672,arrendamiento,n_a,n_a,n_a,n_a,depurado,n_a,depurado,Fichero truncado de 35 bytes: solo el titulo. Sin contenido,2026-08-06

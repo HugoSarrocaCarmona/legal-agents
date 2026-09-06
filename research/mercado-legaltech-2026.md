@@ -6,12 +6,18 @@ entender cómo funcionan por dentro, y extraer lo aprovechable para este proyect
 **Estado:** documento de investigación, congelado en su fecha. Describe el repositorio tal como
 estaba el 03/09/2026 — cuando el estándar de contratos era el v1.
 
-> **Actualización 06/09/2026.** Las prioridades **P1 a P5** de la sección 10 se han aplicado:
-> métrica en [`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md) y esquema **v2** en
-> [`standards/contratos.md`](../standards/contratos.md). Las carencias que la sección 9.2
-> describe como abiertas están cerradas; se dejan escritas porque explican **por qué** se
-> cambió el esquema. Siguen pendientes **P6** (acuerdo consigo mismo, que se ejecuta al anotar) y
-> **P7** (nota de encaje regulatorio).
+> **Actualización 06/09/2026.** Las prioridades **P1 a P5 y P7** de la sección 10 se han
+> aplicado: métrica en [`corpus/metrica-contratos.md`](../corpus/metrica-contratos.md), esquema
+> **v3** en [`standards/contratos.md`](../standards/contratos.md), y nota regulatoria en
+> [`docs/encaje-regulatorio.md`](../docs/encaje-regulatorio.md). Las carencias que la sección 9.2
+> describe como abiertas están cerradas; se dejan escritas porque explican **por qué** se cambió
+> el esquema. **P6** —el acuerdo consigo mismo— es un protocolo que se ejecuta al anotar, no algo
+> aplicable de antemano.
+>
+> Dos decisiones posteriores se apartan de lo que este informe recomendaba, y con razón: el
+> alcance se podó a **dos regímenes** (fuera el mercantil negociado y la vía B), y se descartó
+> reportar la variante estricta de ContractEval que la sección 10 proponía mantener por
+> comparabilidad. Los motivos, en el `LOG.md` del 06/09/2026.
 
 ---
 
