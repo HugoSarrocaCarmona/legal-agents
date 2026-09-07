@@ -67,7 +67,7 @@ sin consecuencia jurídica a la que referirlos.
 Criterios de inclusión y exclusión: [`corpus/alcance.md`](../corpus/alcance.md).
 Inventario con hashes: [`corpus/inventario-contratos.csv`](../corpus/inventario-contratos.csv).
 
-**Corpus actual: 20 activos, 3 pendientes de depurar, 7 depurados.** Es corpus de arranque, no
+**Corpus actual: 20 activos, 10 depurados (3 via B + 7 otros).** Es corpus de arranque, no
 definitivo: hay recopilación de contratos nuevos pendiente, y los actuales no son intocables.
 
 ---

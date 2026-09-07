@@ -125,13 +125,7 @@ obtención: no confundir ambas cifras al reportar tamaño.
 | A | evaluación | `pliego-01` a `03` — servicios, concesión demanial, obras | 3 |
 | C | evaluación | `adhesion-01` a `08` — banca, telecos, energía, seguros, seguridad. `05` es el único de adherente empresario | 8 |
 | C | rúbrica | `resolucion-01` a `09` — 4 casación, 3 apelación, 1 ordinario, 1 auto | 9 |
-| B | **pendiente de depurar** | `plantilla-01` a `03` — vía eliminada del alcance | 3 |
-| — | depurado | fuera de alcance (3), redundantes (3), truncado (1) | 7 |
-
-> ⚠️ **Paso manual pendiente.** Los 3 de `plantilla-*` siguen físicamente en
-> `Inputs/corpus/via-b/`. Están como `pendiente_depurar` y no como `depurado` para que el
-> inventario no afirme algo que el disco no confirma. Al moverlos a `Inputs/_depurados/` hay que
-> actualizar su columna `archivo` y su `estado`.
+| — | depurado | fuera de alcance (3), redundantes (3), truncado (1), via B (3) | 10 |
 
 **El inventario lleva dos columnas, `via` y `funcion`, a propósito.** `via` es la
 **procedencia** —y es el eje por el que se separan las métricas—; `funcion` es **para qué
