@@ -1,0 +1,157 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                    REDACCIÓN DE RÚBRICA: GUÍA RÁPIDA                           ║
+║                                                                                 ║
+║              Tiempo total: 6-11 horas | Sesiones: máx 2 horas c/u             ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+📋 ARCHIVOS A USAR:
+  ├─ corpus/metodologia-rubrica.md → LEE ESTO PRIMERO (guía completa)
+  ├─ corpus/plantilla-rubrica.csv → RELLENA ESTO (template)
+  ├─ Inputs/corpus/via-c/resolucion-0X.txt → FUENTE DE VERDAD (9 documentos)
+  └─ standards/contratos.md → CONSULTA POR DEFINICIONES
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+🔄 FLUJO EN 5 PASOS:
+
+PASO 1: VERIFICAR ADHERENTE
+  ├─ Lee COMPLETA cada resolución
+  ├─ Identifica: ¿consumidor o empresario?
+  ├─ Registra en columna `condicion_adherente_verificada`
+  └─ Tiempo: ~30-45 min por resolución
+
+PASO 2: EXTRAER RISK_FLAGS
+  ├─ Busca cláusulas/prácticas criticadas por el juez
+  ├─ Mapea a uno de estos criterios:
+  │  • desequilibrio
+  │  • falta_reciprocidad
+  │  • falta_transparencia
+  │  • desproporcion_penalizacion
+  │  • facultad_unilateral
+  ├─ Una cláusula = una fila en CSV
+  └─ Tiempo: ~20-30 min por resolución
+
+PASO 3: RELLENAR CSV EN EXCEL
+  ├─ Abre corpus/plantilla-rubrica.csv en Excel/LibreOffice
+  ├─ NO en editor de texto (rompe los datos)
+  ├─ Una resolución a la vez (9 iteraciones)
+  ├─ Mantén el corpus abierto en otra ventana
+  └─ Copia literal de cláusulas (sin parafrasear)
+
+PASO 4: VALIDAR COHERENCIA
+  ├─ ¿IDs únicos? (sin duplicados)
+  ├─ ¿Criterios en enum? (solo los 5 permitidos)
+  ├─ ¿Ejemplos literales? (copias del corpus, no inventados)
+  ├─ ¿Citas reales? (están en la resolución)
+  └─ ¿Consumidor↔empresario coherente? (verificado vs aplicable)
+
+PASO 5: ENTREGAR
+  ├─ Avísame cuando termines
+  ├─ Yo valido el CSV
+  ├─ Genero rubrica-riskflags.md
+  └─ Lo cargamos en el repo
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+⚡ CONSEJOS DE PRODUCTIVIDAD:
+
+ 1. DIVIDE SESIONES:
+    • Sesión 1 (2h): Leer resoluciones 1-3, verificar adherente
+    • Sesión 2 (2h): Leer resoluciones 4-6, extraer risk_flags de 1-3
+    • Sesión 3 (2h): Completar todas las resoluciones, llenar CSV
+    • Sesión 4 (1h): Validación y revisión
+
+ 2. ABRE 3 VENTANAS:
+    • Ventana 1: Metodología (corpus/metodologia-rubrica.md)
+    • Ventana 2: CSV (corpus/plantilla-rubrica.csv en Excel)
+    • Ventana 3: Resolución actual (Inputs/corpus/via-c/resolucion-0X.txt)
+
+ 3. PARA CADA RESOLUCIÓN:
+    A) Lee encabezado: ¿consumidor o empresario? → registra
+    B) Lee sentencia: busca críticas a cláusulas específicas
+    C) Mapea cada crítica a criterio (desequilibrio, falta_reciprocidad, etc.)
+    D) Copia literal de cláusula → pega en CSV
+    E) Cita STS/AP/SAP exacta → pega en CSV
+    F) Pausa 10 min antes de siguiente resolución
+
+ 4. EVITA:
+    ✗ Rellenar de memoria (sin ver la cláusula)
+    ✗ Parafrasear ejemplos (deben ser literales)
+    ✗ Inventar risk_flags no vistos (si no está en corpus, no va)
+    ✗ Sesiones > 2 horas (baja precisión)
+    ✗ Mezclar consumidor/empresario (verifica cada una)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+📊 TEMPLATE CSV - COLUMNAS:
+
+resolucion_origen  → STS 3413/2026, AP Barcelona, etc.
+id                 → snake_case único (ej: penalidad_asimetrica)
+criterio           → desequilibrio | falta_reciprocidad | falta_transparencia |
+                     desproporcion_penalizacion | facultad_unilateral
+regimen            → condiciones_generales (todos en esta rúbrica)
+condicion_adherente_verificada → consumidor | empresario | indeterminado
+condicion_adherente_aplicable → consumidor | empresario | ambos
+severity_driver_tipico → perdida_prestacion | restriccion_defensa | coste_economico |
+                         sin_efecto_economico
+definicion         → 1-2 párrafos claros (como redacción de riesgo en informe)
+consecuencia_juridica → qué pasa si se materializa (nulidad, voidability, etc.)
+cita_doctrinal     → "STS 3413/2026, FJ 3" o similar
+ejemplo_clausula_reales → COPIA LITERAL de la resolución
+notas_anotador     → Dudas, observaciones, referencias cruzadas
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+✓ CHECKLIST ANTES DE ENTREGAR:
+
+  □ He leído todas las 9 resoluciones
+  □ He registrado consumidor/empresario verificado en cada una
+  □ He extraído todos los risk_flags (sin inventar)
+  □ Cada fila tiene cita doctrinal real
+  □ Cada fila tiene ejemplo literal de cláusula
+  □ No hay IDs duplicados
+  □ Todos los criterios están en el enum (5 opciones)
+  □ Coherencia: si consumidor, ¿tiene sentido en TRLGDCU? (art. 82 y ss.)
+  □ He revisado ortografía y puntuación (nivel profesional)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+❓ PREGUNTAS FRECUENTES:
+
+P: ¿Puedo rellenar el CSV en Google Sheets / OneDrive?
+R: Sí, pero descárgalo como .csv antes de entregarlo. Excel local es más seguro.
+
+P: ¿Qué si encuentro un risk_flag en dos resoluciones?
+R: Mismo id (no duplicar). Usa dos ejemplos_clausula_reales distintos.
+
+P: ¿Qué si una resolución no tiene criterios claros?
+R: Regístralo en `notas_anotador`. Si un documento es vacío, con una fila que lo
+   indique es suficiente.
+
+P: ¿Hay mínimo de risk_flags?
+R: No. Cada resolución produce lo que produce. Si resolucion-03 produce 1 y
+   resolucion-05 produce 15, es lo que es.
+
+P: ¿Puedo parafrasear ejemplos de cláusula?
+R: No. Deben ser copias literales (puedes truncar si es larga, pero con «...»).
+
+P: ¿Qué hago si una cláusula criticada no está literal en el PDF?
+R: Si la sentencia describe prácticas sin citar texto exacto, usa la descripción
+   del juez como "ejemplo_clausula_reales" con formato: «[Descripción judicial]»
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+📞 CUANDO TERMINES:
+
+  Avísame con:
+   • CSV completado (plantilla-rubrica.csv)
+   • Número de filas (risk_flags totales)
+   • Cualquier duda o bloqueo encontrado
+
+  Yo haré:
+   1. Validar estructura y coherencia
+   2. Generar rubrica-riskflags.md (Markdown legible)
+   3. Cargar en repositorio con commit
+   4. Proceder a Paso 5 (agente contrato_agent)
+
+═══════════════════════════════════════════════════════════════════════════════════
