@@ -1,7 +1,16 @@
-# Ver videos
+# Entender videos
 
-Claude no reproduce video. Esta carpeta convierte un video en lo que si puede
-leer: **transcripcion con marcas de tiempo** y **fotogramas clave** en JPEG.
+Claude no reproduce video. Esta carpeta lo convierte en texto analizable: una
+**transcripcion con marcas de tiempo**, seccionada por los capitulos del video.
+
+El objetivo es el **analisis** posterior, no la reproduccion. Por eso la salida
+por defecto es solo texto: es lo rapido y es casi siempre suficiente. Los
+fotogramas existen (`--frames N`) para el caso concreto en que el audio no
+lleva la informacion — diapositivas, demos de pantalla, graficos — y son
+opcionales a proposito.
+
+El criterio de analisis vive en la skill `ver-video`
+(`.claude/skills/ver-video/SKILL.md`); aqui esta solo la mecanica.
 
 ## Instalacion
 
@@ -28,23 +37,26 @@ sitio soportado por yt-dlp (Vimeo, Twitter/X, LinkedIn, Twitch...).
 ```
 video_out/charla/
 ├── metadata.json     titulo, canal, duracion, fecha, descripcion, capitulos
-├── transcript.md     transcripcion en bloques de ~30s, sin duplicados
-├── frames/           fotogramas en los cambios de plano, nombrados por timestamp
+├── transcript.md     transcripcion sin duplicados, seccionada por capitulos
+├── frames/           solo con --frames N
 │   └── index.json
 └── index.json        inventario y procedencia de la transcripcion
 ```
+
+`transcript.md` lleva un indice de capitulos y encabezados `###` en el punto en
+que empieza cada uno, para poder analizar un video largo por secciones sin
+leerlo entero de una vez.
 
 ### Opciones
 
 | Opcion | Por defecto | Para que |
 |---|---|---|
 | `--lang es,en` | `es,en` | idiomas de subtitulos preferidos, por orden |
-| `--frames N` | `24` | maximo de fotogramas |
-| `--no-frames` | — | solo transcripcion; bastante mas rapido |
+| `--frames N` | `0` | extraer hasta N fotogramas clave; 0 = solo texto |
 | `--frame-height` | `540` | alto de los JPEG |
 | `--max-height` | `480` | calidad del video descargado para los fotogramas |
 | `--scene-threshold` | `0.25` | sensibilidad del cambio de plano (bajar = mas cortes) |
-| `--chunk` | `30` | segundos por bloque de transcripcion |
+| `--chunk` | `30` / `60` | segundos por bloque; 60 si el video pasa de 30 min |
 | `--whisper` | — | forzar transcripcion local aunque haya subtitulos |
 | `--whisper-model` | `small` | `tiny`/`base`/`small`/`medium`/`large-v3` |
 | `--vad` | — | filtrar silencios (ver limitaciones) |
@@ -86,11 +98,13 @@ Tres cosas que costaron encontrar y conviene no deshacer:
 
 | Tarea | Video de 1h |
 |---|---|
-| Transcripcion desde subtitulos | segundos |
+| Transcripcion desde subtitulos (por defecto) | segundos |
 | Transcripcion con whisper `small` en CPU | 5-15 min |
-| Deteccion de planos + 24 fotogramas | 2-4 min |
+| `--frames 24` (descarga + deteccion de planos) | 2-4 min extra |
 
-Para leer rapido: `--no-frames`.
+Los fotogramas son la parte cara, en tiempo y en contexto. Por eso estan
+desactivados por defecto: se activan cuando la transcripcion demuestra que
+hacen falta, no por si acaso.
 
 ## El bloqueo de YouTube (importante)
 

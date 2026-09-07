@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Extrae de un video todo lo necesario para poder 'verlo' sin reproducirlo.
+"""Convierte un video en texto analizable, sin reproducirlo.
 
 Dado un enlace (YouTube, Vimeo, Twitter/X, y ~1800 sitios mas via yt-dlp) o un
 fichero local, produce en un directorio de salida:
 
     metadata.json    titulo, canal, duracion, fecha, descripcion, capitulos
-    transcript.md    transcripcion con marcas de tiempo, sin duplicados
-    frames/          fotogramas clave en JPEG, nombrados por su timestamp
+    transcript.md    transcripcion con marcas de tiempo, seccionada por capitulos
     index.json       inventario de lo generado y como se obtuvo
+    frames/          fotogramas clave en JPEG; solo con --frames N
 
 La transcripcion sale de los subtitulos del propio video cuando existen (rapido
 y exacto) y, si no los hay, de una transcripcion local con faster-whisper.
+
+Los fotogramas son opcionales a proposito: sirven cuando el audio no lleva la
+informacion (diapositivas, demos, graficos) y cuestan tiempo y contexto.
 
 Uso:
     python3 tools/video/watch_video.py URL [--out DIR] [--lang es] [--frames 24]
@@ -405,6 +408,9 @@ def grab_frames(video: Path, stamps: list[float], outdir: Path, height: int) -> 
 
 def render_transcript(lines: list[tuple[float, str]], meta: dict, source: str,
                       chunk: int) -> str:
+    """Transcripcion en bloques con marca de tiempo, seccionada por los
+    capitulos del video cuando los publica. La estructura es lo que permite
+    analizar un video largo por partes en vez de leerlo entero de una vez."""
     long_video = (meta.get("duration_seconds") or 0) >= 3600
     blocks: list[tuple[float, str]] = []
     block_start: float | None = None
@@ -419,6 +425,7 @@ def render_transcript(lines: list[tuple[float, str]], meta: dict, source: str,
     if buf and block_start is not None:
         blocks.append((block_start, " ".join(buf)))
 
+    words = sum(len(t.split()) for _, t in lines)
     head = [
         f"# {meta.get('title') or 'Video'}",
         "",
@@ -426,19 +433,22 @@ def render_transcript(lines: list[tuple[float, str]], meta: dict, source: str,
         f"- Canal: {meta.get('channel') or '-'}",
         f"- Duracion: {meta.get('duration_hms') or '-'}",
         f"- Transcripcion obtenida de: {source}",
-        f"- Bloques de ~{chunk}s",
+        f"- {words} palabras en bloques de ~{chunk}s",
         "",
     ]
     if meta.get("chapters"):
-        head += ["## Capitulos", ""]
+        head += ["## Indice", ""]
         head += [f"- [{c['start_hms']}] {c['title']}" for c in meta["chapters"]]
         head += [""]
     head += ["## Transcripcion", ""]
 
-    body = [
-        f"**[{hhmmss(t, force_hours=long_video)}]** {text}\n"
-        for t, text in blocks
-    ]
+    pending = list(meta.get("chapters") or [])
+    body: list[str] = []
+    for t, text in blocks:
+        while pending and (pending[0]["start"] or 0) <= t:
+            ch = pending.pop(0)
+            body.append(f"### [{ch['start_hms']}] {ch['title']}\n")
+        body.append(f"**[{hhmmss(t, force_hours=long_video)}]** {text}\n")
     return "\n".join(head + body)
 
 
@@ -455,17 +465,18 @@ def main() -> int:
                     help="directorio de salida (por defecto ./video_out/<id>)")
     ap.add_argument("--lang", default="es,en",
                     help="idiomas preferidos de subtitulos, por orden (por defecto es,en)")
-    ap.add_argument("--frames", type=int, default=24,
-                    help="numero maximo de fotogramas (0 los desactiva; por defecto 24)")
-    ap.add_argument("--no-frames", action="store_true", help="no extraer fotogramas")
+    ap.add_argument("--frames", type=int, default=0,
+                    help="extraer hasta N fotogramas clave (por defecto 0: solo texto)")
+    ap.add_argument("--no-frames", action="store_true",
+                    help="(ya es el comportamiento por defecto)")
     ap.add_argument("--frame-height", type=int, default=540,
                     help="alto en px de los fotogramas (por defecto 540)")
     ap.add_argument("--max-height", type=int, default=480,
                     help="calidad maxima del video descargado para fotogramas")
     ap.add_argument("--scene-threshold", type=float, default=0.25,
                     help="sensibilidad de deteccion de cambio de plano (0-1)")
-    ap.add_argument("--chunk", type=int, default=30,
-                    help="segundos por bloque de transcripcion (por defecto 30)")
+    ap.add_argument("--chunk", type=int, default=None,
+                    help="segundos por bloque (por defecto 30, o 60 si dura mas de 30 min)")
     ap.add_argument("--whisper", action="store_true",
                     help="forzar transcripcion local aunque haya subtitulos")
     ap.add_argument("--whisper-model", default="small",
@@ -550,7 +561,10 @@ def main() -> int:
         lines = whisper_transcribe(wav, args.whisper_model, lang_hint, vad=args.vad)
         source_label = f"transcripcion local con faster-whisper ({args.whisper_model})"
 
-    transcript = render_transcript(lines, meta, source_label, args.chunk)
+    chunk = args.chunk
+    if chunk is None:
+        chunk = 60 if (meta.get("duration_seconds") or 0) > 1800 else 30
+    transcript = render_transcript(lines, meta, source_label, chunk)
     (outdir / "transcript.md").write_text(transcript, encoding="utf-8")
     words = sum(len(t.split()) for _, t in lines)
     log(f"transcripcion: {len(lines)} segmentos, ~{words} palabras")

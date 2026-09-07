@@ -1,59 +1,90 @@
 ---
 name: ver-video
-description: Ver un video a partir de un enlace o un fichero local y extraer lo que explica. Usar cuando aparezca una URL de YouTube, Vimeo, Twitter/X, LinkedIn o similar y se pida ver, resumir, analizar, transcribir o sacar conclusiones del video, o cuando haya que aprender algo de una charla, tutorial, webinar, ponencia juridica o clase grabada.
+description: Entender y analizar un video a partir de un enlace o un fichero local. Usar cuando aparezca una URL de YouTube, Vimeo, Twitter/X, LinkedIn o similar y se pida ver, resumir, analizar, transcribir o sacar conclusiones del video, o cuando haya que aprender algo de una charla, tutorial, webinar, ponencia juridica o clase grabada.
 ---
 
-# Ver un video
+# Entender un video
 
-Claude no reproduce video. Esta skill lo convierte en dos cosas que Claude si
-puede leer: una **transcripcion con marcas de tiempo** y una serie de
-**fotogramas clave** en JPEG. Con las dos juntas se puede seguir lo que dice y
-lo que ensena en pantalla.
+El objetivo no es "ver" el video: es **entender que sostiene y decidir que vale**.
+La extraccion es el medio, y ocupa un solo comando. El trabajo esta en el
+analisis posterior.
 
-## 1. Comprobar dependencias
+## 1. Extraer
 
-Solo la primera vez de cada sesion (el contenedor de Claude Code en la web es
-efimero y se reinstala en cada sesion nueva):
+Comprobar dependencias solo la primera vez de cada sesion (el contenedor de
+Claude Code en la web es efimero):
 
 ```bash
 command -v yt-dlp >/dev/null && command -v ffmpeg >/dev/null \
   && echo "listo" || bash tools/video/setup.sh
 ```
 
-## 2. Extraer
-
 ```bash
 python3 tools/video/watch_video.py "URL" --out video_out/<nombre-corto>
 ```
 
-Opciones que importan:
+Por defecto saca **solo texto**: `transcript.md` (con marcas de tiempo y
+seccionado por capitulos), `metadata.json` e `index.json`. Es lo rapido y es
+casi siempre suficiente.
 
 | Situacion | Anadir |
 |---|---|
-| Solo interesa lo que se dice | `--no-frames` (mucho mas rapido) |
-| Charla con diapositivas o demo de pantalla | `--frames 40` |
-| Video largo (>1h) y solo se busca una idea | `--no-frames --chunk 60` |
-| El video no trae subtitulos | nada: cae solo a whisper |
-| Subtitulos automaticos malos | `--whisper --whisper-model medium` |
-| Video en otro idioma | `--lang en` (o el que sea) |
+| Subtitulos automaticos ilegibles | `--whisper --whisper-model medium` |
+| Video en otro idioma | `--lang en` |
+| Hay contenido visual imprescindible (paso 3) | `--frames 24` |
 
-Escribe en `--out`: `metadata.json`, `transcript.md`, `frames/` e `index.json`.
+## 2. Leer
 
-## 3. Leer
+Lee `index.json` y despues `transcript.md` **entero**. Si pasa de ~2000 lineas,
+guiate por el indice de capitulos y lee por secciones, pero no analices sobre
+un fragmento suelto: la tesis de una charla suele estar al final.
 
-1. **Siempre**: `index.json` y luego `transcript.md` entero. Si pasa de ~2000
-   lineas, leer por partes guiandose por los capitulos de `metadata.json`.
-2. **Los fotogramas, con criterio.** No los leas todos por defecto: cada imagen
-   cuesta contexto. Leelos cuando la transcripcion sola no baste — hay
-   diapositivas, codigo en pantalla, graficos, una demo, o el ponente dice
-   "como veis aqui". Usa las marcas de tiempo de `frames/index.json` para
-   elegir los que caen en los minutos que importan.
-3. Si el video no aporta nada que no estuviera ya en el titulo, dilo. No
-   inventes profundidad que no hay.
+Dos lecturas, no una:
 
-## 4. Responder
+1. **Estructura.** De que va, como esta organizado, donde estan las partes con
+   contenido y donde el relleno (presentaciones, agradecimientos, promocion).
+2. **Afirmaciones.** Que sostiene exactamente, con que lo respalda y donde
+   pasa de describir a opinar.
 
-Guarda un `resumen.json` junto a la salida, con esta forma:
+## 3. Fotogramas: solo si hacen falta
+
+No los extraigas por defecto. La transcripcion te dira si los necesitas: si el
+ponente dice "como veis aqui", "en esta tabla", "este grafico", o si es una
+demo de pantalla o una clase con diapositivas, entonces hay contenido que el
+audio no lleva. Solo en ese caso vuelve a lanzar el script con `--frames 24` y
+lee **los que caen en los minutos que importan**, no todos: cada imagen cuesta
+contexto.
+
+## 4. Analizar
+
+Esto es el trabajo. Aplica el criterio de `CLAUDE.md`: no inventar, y separar
+siempre lo extraido de lo interpretado.
+
+- **Separa afirmacion de respaldo.** Que el video diga algo no lo convierte en
+  cierto. Para cada afirmacion con peso: que aporta como apoyo — un dato, una
+  norma, una sentencia, una experiencia propia, o nada.
+- **Clasifica el registro.** Hecho comprobable, interpretacion, prediccion o
+  norma vigente son cosas distintas y se mezclan constantemente en las charlas.
+- **Las citas normativas son provisionales.** Los subtitulos automaticos y
+  whisper destrozan nombres propios, numeros de articulo y referencias de
+  sentencias: "artículo 82" y "artículo 8.2" suenan igual. Toda cita legal
+  sacada de una transcripcion va marcada como no verificada hasta contrastarla
+  con la fuente primaria. **Nunca la des por buena en un output del proyecto.**
+- **Situa al ponente.** Quien habla y desde donde: un webinar de un proveedor
+  de software de cumplimiento tiene un interes; una clase universitaria, otro.
+  No es descalificar, es contextualizar.
+- **Di lo que no cubre.** Lo que un espectador razonable esperaria y no esta.
+  Evita la falsa sensacion de tema cerrado.
+- **Calibra.** Un explicativo de cinco minutos no da para un analisis de dos
+  paginas. Si el video no aporta mas que su titulo, dilo: es una conclusion
+  valida y util.
+
+## 5. Responder
+
+En el chat, explica el video **en prosa**: que sostiene, que tal lo sostiene y
+que sacas de el. Para eso se analiza.
+
+Guarda ademas `resumen.json` junto a la salida, como artefacto reutilizable:
 
 ```json
 {
@@ -61,43 +92,43 @@ Guarda un `resumen.json` junto a la salida, con esta forma:
   "titulo": "...",
   "duracion": "HH:MM:SS",
   "tipo": "charla | tutorial | entrevista | webinar | clase | otro",
-  "tesis": "en una frase, lo que el video sostiene o ensena",
-  "puntos_clave": [
-    {"t": "MM:SS", "punto": "afirmacion concreta, no un tema"}
-  ],
-  "datos_citados": [
-    {"t": "MM:SS", "dato": "cifra, ley, sentencia o fuente mencionada"}
-  ],
-  "aplicable_al_proyecto": ["que se puede usar aqui, o lista vacia"],
-  "no_cubierto": ["lo que uno esperaria y el video no trata"],
   "base": "subtitulos manuales | subtitulos automaticos | whisper",
+  "fiabilidad_transcripcion": "alta | media | baja",
+  "tesis": "en una frase, lo que el video sostiene",
+  "estructura": [{"t": "MM:SS", "seccion": "..."}],
+  "afirmaciones": [
+    {
+      "t": "MM:SS",
+      "afirmacion": "concreta, no un tema",
+      "registro": "hecho | interpretacion | prediccion | norma",
+      "apoyo": "que aporta como respaldo, o null si no aporta nada"
+    }
+  ],
+  "citas_normativas": [
+    {"t": "MM:SS", "cita": "tal y como suena en la transcripcion",
+     "verificado": false, "nota": "por que hay que contrastarla"}
+  ],
+  "postura_del_ponente": "quien habla y desde que interes, o null",
+  "aplicable_al_proyecto": ["lectura propia; va aparte de lo que dice el video"],
+  "no_cubierto": ["lo que uno esperaria y no trata"],
   "incertidumbres": ["audio confuso, terminos dudosos, tramos ilegibles"]
 }
 ```
 
-Reglas heredadas de `CLAUDE.md` que aqui tambien aplican:
-
-- **No inventar.** Si el ponente no dice una cifra, no aparece en
-  `datos_citados`. Ante la duda, `incertidumbres`.
-- **Separar lo dicho de lo interpretado.** `puntos_clave` recoge lo que el
-  video afirma; `aplicable_al_proyecto` es lectura propia y va aparte.
-- Los subtitulos automaticos y whisper **transcriben mal los nombres propios y
-  los terminos tecnicos**. Un nombre de ley, sentencia o herramienta sacado de
-  ahi va marcado en `incertidumbres` salvo que se confirme en pantalla.
-
-En el chat, explica el video en prosa: para eso se ve. El `resumen.json` es el
-artefacto reutilizable, no el mensaje.
+`afirmaciones` recoge lo que el video dice. `aplicable_al_proyecto` es
+interpretacion tuya y por eso va en un campo distinto: no las mezcles.
 
 ## Si YouTube lo bloquea
 
-En Claude Code **en la web** (contenedor en la nube, IP de datacenter) YouTube
-rechaza muchos videos con "Sign in to confirm you're not a bot". El script
-reintenta solo con clientes alternativos; si aun asi no hay subtitulos ni audio,
-falla con un mensaje explicito y deja `metadata.json`.
+En Claude Code **en la web** (IP de datacenter) YouTube rechaza muchos videos
+con "Sign in to confirm you're not a bot". El script reintenta con clientes
+alternativos; si aun asi no hay subtitulos ni audio, falla con un mensaje
+explicito y deja `metadata.json`.
 
-Cuando pase, **no lo disimules ni resumas el video por el titulo**: di que no se
-ha podido acceder y ofrece las salidas reales — ejecutarlo en local, o
-`--cookies-from-browser chrome`. Detalle en `tools/video/README.md`.
+Cuando pase, **no lo disimules ni analices el video por el titulo y la
+descripcion**: di que no se ha podido acceder y ofrece las salidas reales —
+ejecutarlo en local, o `--cookies-from-browser chrome`. Detalle en
+`tools/video/README.md`.
 
 ## Otros limites
 
