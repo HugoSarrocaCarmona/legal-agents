@@ -30,8 +30,12 @@ en un archivo por estándar, y **no se repiten en ningún otro sitio**:
 
 | Estándar | Archivo | Estado |
 |---|---|---|
-| Sentencias, autos y resoluciones judiciales | [`standards/sentencias.md`](standards/sentencias.md) | vigente (v2), medido sobre 35 documentos |
-| Contratos civiles y mercantiles | [`standards/contratos.md`](standards/contratos.md) | v1, sin ejercitar — `risk_flags` con `regimen` |
+| Sentencias, autos y resoluciones judiciales | [`standards/sentencias.md`](standards/sentencias.md) | vigente (v2), medido sobre 35 documentos — **línea congelada** |
+| Contratos, con ámbito operativo en **pliegos LCSP** | [`standards/contratos.md`](standards/contratos.md) | v2, **línea activa** — `risk_flags` con `regimen`, `clase` y `base_normativa` |
+
+La métrica de los campos sustantivos vive en [`corpus/metrica.md`](corpus/metrica.md) y es
+transversal al estándar: define qué significa acertar, y por tanto qué puede afirmar un output.
+**Leerla antes de anotar o evaluar nada.**
 
 **Antes de procesar un documento hay que leer el estándar que le corresponde.** Estos archivos
 no se cargan solos.
