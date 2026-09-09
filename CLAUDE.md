@@ -2,12 +2,21 @@
 
 ## 🎯 OBJETIVO GENERAL
 
-Construir agentes de IA capaces de automatizar tareas jurídicas repetitivas en el contexto del derecho español, priorizando:
+Construir agentes de IA capaces de automatizar tareas jurídicas repetitivas en el contexto del
+derecho español, produciendo resultados útiles, consistentes y reutilizables en entornos
+profesionales.
 
-1. Resumen estructurado de sentencias
-2. Análisis de contratos (riesgos, cláusulas, faltantes)
+**Línea activa — riesgo de ejecución de pliegos (LCSP).** Responde una pregunta concreta desde la
+posición del licitador: *¿qué riesgos asumo si gano este contrato público?* Es donde coinciden un
+corpus abierto y reutilizable (PLACSP), volumen real, un destinatario que paga y no es abogado, y
+ausencia de datos de cliente.
 
-El sistema debe producir resultados útiles, consistentes y reutilizables en entornos profesionales.
+**Línea congelada — resumen estructurado de sentencias.** Completa y medida. Se conserva como
+banco de pruebas del método; su corpus depende del CENDOJ, que prohíbe la descarga masiva y el
+uso comercial.
+
+El giro del 09/09/2026 y lo que lo motivó están en [`progress/LOG.md`](progress/LOG.md); el
+análisis que lo sostiene, en [`research/`](research/).
 
 ---
 
@@ -67,10 +76,18 @@ Reglas absolutas:
 
 ## 🧾 TIPOS DE DOCUMENTOS SOPORTADOS
 
-- Sentencias judiciales
-- Autos
-- Resoluciones administrativas
-- Contratos civiles y mercantiles básicos
+**En la línea activa:**
+
+- Pliegos de cláusulas administrativas particulares (PCAP) y de prescripciones técnicas (PPT) de
+  contratos sujetos a la LCSP: servicios, obras y suministros
+
+**En la línea congelada:**
+
+- Sentencias judiciales, autos y resoluciones administrativas
+
+**Definidos en el esquema pero no ejercitados:** contratos civiles y mercantiles en régimen de
+consumo o mercantil. Siguen en `standards/contratos.md` porque son lo que impide la
+contaminación entre regímenes, pero no tienen rúbrica, ni Gold, ni métrica.
 
 ---
 

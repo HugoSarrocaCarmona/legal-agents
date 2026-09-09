@@ -1,5 +1,125 @@
 # 📜 Project Log
 
+## [09/09/2026] — 🧭 Giro a pliegos: de analizador de contratos a analizador de riesgo de ejecución
+
+Cambio de rumbo del proyecto. La fase 2 deja de ser un «Contract Analyzer» genérico sobre tres
+regímenes y pasa a responder **una sola pregunta, desde la posición del licitador**: *¿qué me
+puede costar dinero si gano este contrato público?*
+
+### 🧭 Qué lo ha motivado
+
+El giro no sale de una intuición sino de dos análisis encadenados, ambos en
+[`research/`](../research/).
+
+**Primero, un marco.** El análisis del mercado global de IA legal (más de mil empresas, 32 casos
+de uso, 8 categorías) deja una idea aprovechable: **toda herramienta legaltech razona sobre una
+de cinco fuentes de datos, y la fuente —no el modelo— es la barrera de entrada.** El modelo es
+una *commodity*; el corpus, no.
+
+**Después, ese filtro aplicado a España.** De las cinco fuentes, cuatro están cerradas para este
+proyecto:
+
+| Fuente | Situación en España |
+|---|---|
+| La ley misma | **Cerrada.** El CENDOJ no tiene API, prohíbe la descarga masiva y el uso comercial, y ha desplegado CAPTCHA. El corpus con valor es de cuatro editoriales que ya tienen su capa de IA encima |
+| Conocimiento del despacho | Exige que un despacho abra su archivo: confianza, secreto profesional, art. 28.3 RGPD |
+| Prueba del caso | Datos personales de terceros, secreto profesional, Circular 3/2026 del CGAE, Anexo III del Reglamento de IA |
+| Datos operativos | Ocupado por Aranzadi, Lefebvre, Sepín y Clio-vLex. Es integración, no criterio jurídico |
+| **Internet abierto** | **Abierta.** BOE, **PLACSP**, BORME, CNMV, DOUE |
+
+**El único cuadrante viable es el quinto, y su mayor corpus jurídico-económico es la
+contratación pública:** más de 201.000 expedientes y 180.600 M€ licitados en 2025, con 9.819
+concursos desiertos —4.011 M€ paralizados— porque la complejidad de los pliegos ha crecido por
+encima de la capacidad administrativa de las pymes. Datos abiertos, destinatario que paga y no
+es abogado, sin datos de cliente y por tanto fuera del Anexo III y de las obligaciones de
+encargo de tratamiento.
+
+**Y una razón que pesa tanto como las de mercado:** `standards/contratos.md` **ya tenía escrita**
+la taxonomía de riesgo administrativo —penalidades, garantías, revisión de precios, *ius
+variandi*, resolución, subcontratación, plazos de pago— y la vía A del corpus **ya era PLACSP**.
+El giro no abre un frente nuevo: reconoce hacia dónde apuntaba el repo sin haberlo dicho.
+
+### 🔓 El hallazgo técnico: por qué el giro además desatasca la fase
+
+`risk_flags` llevaba semanas sin métrica posible, y con ello bloqueada la rúbrica, el Gold y la
+evaluación. **La causa no era la dificultad del campo: era que no es un campo.**
+
+- Los flags que afirman **divergencia respecto de la LCSP** tienen respuesta única y se
+  comprueban contra la ley.
+- Los que afirman **desproporción dentro de lo legal** son juicio y no la tienen.
+
+Esa frontera no existía mientras el corpus era de consumo: **el control de abusividad del
+TRLGDCU es valorativo casi por entero** —el «desequilibrio importante» no tiene umbral—. La
+LCSP, en cambio, **fija cifras**: 10 % y 50 % en penalidades (art. 192), 0,60 € por 1.000 € y
+día (art. 193), 5 % y 10 % en garantías (art. 107), 20 % y 50 % en modificaciones (arts.
+204–205), 30 + 30 días en pagos (art. 198).
+
+**Consecuencia: la mitad de `risk_flags` pasa a admitir la misma métrica exacta que dio 315/315
+en `ecli`.** El problema de medición no desaparece — se reduce a la mitad valorativa, que es
+donde de verdad estaba.
+
+### ✅ Hecho
+
+- **`corpus/metrica.md`** — paso 1 de la fase 2, que era el bloqueo. `risk_flags` se parte en
+  `normativo` (métrica exacta, umbral F1 ≥ 0,95) y `valorativo` (P/R con F₂, que pondera doble
+  no omitir). **Se reportan por separado; agregarlos está prohibido.** Fija además unidad de
+  medida (la cláusula, con intervalos remuestreados por documento), emparejamiento por `id` +
+  ancla, `severity` como métrica secundaria, tres fallos duros y tamaños mínimos con cifra
+- **`standards/contratos.md` v2** — ámbito operativo en `regimen = administrativo`; `risk_flags`
+  incorpora `clase`, `base_normativa`, `clausula_ref` y `materia`; `missing_clauses` exige
+  `base_normativa`; vocabulario cerrado de **16 materias** con su ancla en la LCSP verificada
+  contra el texto consolidado del BOE
+- **Regla nueva del régimen administrativo** — la prerrogativa de la Administración no es un
+  riesgo, es el régimen. Solo son riesgo la divergencia de la ley, la omisión de lo que exige y
+  la desproporción dentro de lo legal
+- **Alcance revisado** — vía B (CNMV) **cerrada**, no «diferida». Vía C degradada a fuente de
+  los cinco criterios valorativos: la rúbrica ya no se extrae de las 9 resoluciones de consumo
+  sino de la LCSP. Ningún documento se depura: cambian de función, no de estado
+- **Fase 1 congelada** y fuera del camino crítico. **Vigilancia normativa** reclasificada de
+  fase futura a transversal, con ámbito cerrado a LCSP, RIA, gobernanza de IA y deontología
+- **`research/`** — los dos informes que sostienen el giro, con fuentes enlazadas, y la
+  transcripción del vídeo analizado
+
+### ❌ Problemas encontrados
+
+- **`pliego-02` puede estar fuera de alcance.** Es una concesión demanial, y las concesiones
+  sobre dominio público se rigen por la **Ley 33/2003 (LPAP)**: el **art. 9.1 LCSP las excluye
+  de su ámbito**. No es anotable con una rúbrica anclada en la LCSP sin añadir la LPAP como
+  ancla propia — el supuesto de exclusión automática de `corpus/alcance.md`. **Verificar antes
+  de anotar**; si se confirma, el corpus de arranque baja de 3 pliegos a 2
+- **El ancla depende del tipo contractual, no solo de la materia.** El art. 210 regula la
+  recepción con carácter general, pero en obras rige el art. 243. Se detectó al verificar contra
+  el BOE una cita escrita de memoria — exactamente el fallo que el proyecto existe para no
+  cometer
+- **La fase 1 se congela con su bloqueo abierto.** El 315/315 sigue sin validar generalización y
+  ahora no se va a corregir pronto. Es una decisión con coste, no un olvido: ampliar el corpus
+  de sentencias es trabajo cuyo resultado no es explotable mientras el CENDOJ prohíba el uso
+  comercial
+
+### 💡 Aprendizajes
+
+- **La fuente de datos es la barrera de entrada, no el modelo.** Es el criterio que ordena todas
+  las decisiones de alcance de aquí en adelante
+- **Un campo que no se puede medir puede ser dos campos.** Antes de inventar una métrica difusa,
+  comprobar si el campo mezcla naturalezas distintas. `risk_flags` llevaba semanas bloqueado por
+  esto
+- **La regla del régimen era correcta, y es lo que ha permitido girar sin contaminar.** Si el
+  esquema hubiera importado etiquetas de consumo, el giro a pliegos habría exigido rehacerlo
+  entero en vez de estrecharlo
+- **Un riesgo real de un pliego no es lo mismo que un defecto del pliego.** Analizar desde la
+  posición de quien ejecuta, no de quien impugna, cambia qué es un flag y qué es
+  `suggested_fix` — donde el licitador no negocia, sino que cuantifica, pregunta, impugna o
+  desiste
+
+### 🔜 Siguiente paso
+
+- **`corpus/rubrica-riesgos-lcsp.md`** — catálogo **cerrado** de flags, no una guía: la métrica
+  empareja por `id`. Bloque numérico primero (arts. 192, 193, 107, 202, 204–205, 198, 215–216),
+  bloque valorativo después. Máximo ~40–50 flags en v1, cada `base_normativa` transcrita del BOE
+  y no citada de memoria. **Redactar antes de anotar ningún documento**
+
+---
+
 ## [25/08/2026] — 🧹 Reconstrucción del corpus de contratos
 
 Sesión dedicada a que el corpus sea auditable antes de construir nada encima.
