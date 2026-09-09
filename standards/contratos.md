@@ -212,7 +212,7 @@ citados son el ancla normativa de la materia, verificados contra el texto consol
 | 7 | Condiciones especiales de ejecución | art. 202 |
 | 8 | Modificación del contrato — prevista y no prevista | arts. 203–205 |
 | 9 | Suspensión del contrato | art. 208 |
-| 10 | Cumplimiento, recepción y plazo de garantía | art. 210 |
+| 10 | Cumplimiento, recepción y plazo de garantía | art. 210 (general) · **art. 243 en obras** |
 | 11 | Causas de resolución | art. 211 |
 | 12 | Cesión del contrato | art. 214 |
 | 13 | Subcontratación y pago a subcontratistas | arts. 215–216 |
@@ -224,6 +224,21 @@ citados son el ancla normativa de la materia, verificados contra el texto consol
 > riesgo real fuera de ella, va a `review_notes` y la tabla se amplía **aquí**, con su ancla
 > verificada, antes de poder anotarlo. Es la misma disciplina que `corpus/alcance.md` aplica al
 > corpus: nada entra sobre la marcha.
+
+**El ancla depende del tipo de contrato, no solo de la materia.** El art. 210 es la regla
+general de recepción, pero los contratos de **obras** se rigen por el art. 243. Antes de emitir
+un flag normativo hay que confirmar que el artículo citado es el aplicable *a ese tipo
+contractual*, no solo a la materia. Citar la regla general donde rige la especial es una
+`base_normativa` incorrecta, y por tanto **fallo duro**.
+
+> ⚠️ **Cuestión abierta sobre el alcance: las concesiones demaniales.** El corpus actual incluye
+> un pliego de concesión demanial (`pliego-02`). Las concesiones sobre bienes de dominio público
+> se rigen por la **Ley 33/2003 del Patrimonio de las Administraciones Públicas**, no por la
+> LCSP, cuyo art. 9.1 las excluye de su ámbito. Un pliego así **no es anotable con esta rúbrica**
+> sin añadir la LPAP como ancla normativa propia — es decir, exactamente el supuesto de exclusión
+> automática que fija `corpus/alcance.md`: un documento que obliga a crear referencias nuevas no
+> entra en esta iteración. **Verificar el tipo contractual de `pliego-02` y, si se confirma,
+> apartarlo antes de anotar.**
 
 ---
 
