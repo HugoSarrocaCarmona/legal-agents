@@ -65,27 +65,40 @@ es sustantivo, así que ese error saldría mucho más caro.
       `regimen = administrativo`; `risk_flags` incorpora `clase`, `base_normativa`,
       `clausula_ref` y `materia`; `missing_clauses` pasa a exigir `base_normativa`; vocabulario
       cerrado de 16 materias con su ancla en la LCSP verificada contra el BOE
-- [ ] **4. Rúbrica de riesgos LCSP** (`corpus/rubrica-riesgos-lcsp.md`). **Siguiente tarea.**
-      Catálogo **cerrado** —no una guía— con un `id` por flag, su clase, su materia, y según la
-      clase: `base_normativa` verificada o `criterio`. Con ejemplo de cláusula real tomado de
-      `pliego-01` a `03`. **Redactar antes de anotar ningún documento**, porque la métrica del
-      paso 1 empareja por `id`: sin vocabulario cerrado no hay medición posible
-- [ ] **5. `validate_contratos.ps1`.** Comprobación mecánica: `id` dentro del catálogo,
+- [ ] **4. PLACSP: descarga y verificación de la premisa.** **Siguiente tarea** — adelantada
+      desde el puesto 9 el 15/09/2026 por el veredicto del consejo. Descarga del ZIP mensual de
+      sindicación, parseo ATOM/CODICE, filtrado por CPV e importe, comprobación de
+      extractabilidad **antes** de muestrear, muestreo con semilla fija, `pdftotext -layout`, y
+      partición ciego-1 / ciego-2.
+      **Y una pregunta que se responde con esos mismos datos: por qué quedaron desiertos los
+      9.819 concursos de 2025.** El informe 2 dio por «causa identificada» la complejidad de los
+      pliegos; era una inferencia de fuente secundaria. PLACSP publica el motivo de cada
+      desierto, desistimiento y renuncia. Si el motivo mayoritario es precio inviable o falta de
+      financiación, **la tesis del producto cae y hay que saberlo ahora**
+- [ ] **5. Rúbrica de riesgos LCSP** (`corpus/rubrica-riesgos-lcsp.md`). Catálogo **cerrado**
+      —no una guía— con un `id` por flag, su clase, su materia, y según la clase:
+      `base_normativa` verificada o `criterio`. **Se induce, no se deduce:** leer diez pliegos a
+      mano, anotar todo riesgo que aparezca, y solo entonces anclar cada uno a su artículo. Para
+      los flags `valorativo`, usar las resoluciones del **TACRC** y de los tribunales
+      autonómicos —abiertas y sin prohibición de uso comercial— para poder citar anulaciones en
+      vez de opinar sobre desproporción
+- [ ] **6. `validate_contratos.ps1`.** Comprobación mecánica: `id` dentro del catálogo,
       coherencia `clase` ↔ `base_normativa`, coincidencia de `regimen`, vocabulario de
       `consecuencia_juridica` por régimen, y `base_normativa` presente en todo `missing_clauses`
-- [ ] **6. `pliego_agent`.** Definición del agente, remitiendo a `standards/contratos.md` y a la
+- [ ] **7. `pliego_agent`.** Definición del agente, remitiendo a `standards/contratos.md` y a la
       rúbrica sin duplicar reglas, como hace `sentencia_agent`
-- [ ] **7. Gold.** Ficheros de referencia anotados a mano contra la rúbrica. Contrastar cada
+- [ ] **8. Gold.** Ficheros de referencia anotados a mano contra la rúbrica. Contrastar cada
       valor con el documento antes de darlo por bueno: en el Gold de sentencias, 6 de las 8
       discrepancias de la primera evaluación del test eran errores del Gold, no del agente
-- [ ] **8. Evaluación.** Primera medición sobre ciego-1, registrada en
+- [ ] **9. Evaluación.** Primera medición sobre ciego-1, registrada en
       [`corpus/evaluaciones.md`](../corpus/evaluaciones.md) **antes** de mirar el resultado.
       Recordatorio del compromiso del paso 1: la clase valorativa es orientativa hasta los ~100
       flags por partición y no decide entre versiones; la normativa sí, desde 40
-- [ ] **9. Scripts de PLACSP.** Solo cuando 1–8 estén cerrados: descarga del ZIP mensual de
-      sindicación, parseo ATOM/CODICE, filtrado por CPV e importe, comprobación de
-      extractabilidad **antes** de muestrear, muestreo con semilla fija, `pdftotext -layout`, y
-      partición ciego-1 / ciego-2
+> **Nota sobre el orden, 15/09/2026.** La secuencia original ponía los scripts de PLACSP en el
+> puesto 9, «solo cuando 1–8 estén cerrados». Era un error: dejaba el corpus en 3 documentos y la
+> premisa del proyecto sin verificar mientras se diseñaba todo lo demás sobre ella. Los pasos 4 y
+> 5 se han intercambiado. El razonamiento completo está en
+> [`research/04-veredicto-consejo.md`](../research/04-veredicto-consejo.md).
 
 ### Alcance del corpus tras el giro
 

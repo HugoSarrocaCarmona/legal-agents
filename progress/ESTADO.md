@@ -25,7 +25,7 @@ del Anexo III del Reglamento de IA y de las obligaciones de la Circular 3/2026 d
 | Línea | Estado | Referencia |
 |---|---|---|
 | **Pliegos** (fase 2) | **Activa** — esquema v2 y métrica cerrados | [`standards/contratos.md`](../standards/contratos.md) · [`corpus/metrica.md`](../corpus/metrica.md) |
-| **Sentencias** (fase 1) | **Congelada** — funciona, fuera del camino crítico | [`standards/sentencias.md`](../standards/sentencias.md) |
+| **Sentencias** (fase 1) | **Aparcada**, no bloqueada — ver corrección abajo | [`standards/sentencias.md`](../standards/sentencias.md) |
 | **Vigilancia normativa** (fase 3) | Transversal, ámbito cerrado | [`ROADMAP.md`](ROADMAP.md) |
 
 ---
@@ -45,15 +45,42 @@ cerrado de **16 materias** con su ancla en la LCSP verificada contra el BOE.
 
 ---
 
-## Siguiente tarea: la rúbrica
+## Siguiente tarea: bajar PLACSP y responder una pregunta con los datos
 
-**`corpus/rubrica-riesgos-lcsp.md`** — catálogo **cerrado** de flags, uno por `id`. No es una
-guía: la métrica empareja por identificador, así que sin vocabulario cerrado no hay medición
-posible. **Se redacta antes de anotar ningún documento.**
+> **Reordenada el 15/09/2026 por el veredicto del consejo**
+> ([`research/04-veredicto-consejo.md`](../research/04-veredicto-consejo.md)). Antes la tarea
+> siguiente era escribir la rúbrica. No lo es: la rúbrica es el paso 2 y no se puede escribir
+> bien sin el paso 1.
+
+**Paso 1 — una tarde, y es software, no un documento.** Descargar los datos abiertos de PLACSP y
+responder con ellos **por qué quedaron desiertos los 9.819 concursos de 2025**.
+
+Hace dos cosas a la vez, y por eso va primero:
+
+1. **Verifica la premisa sobre la que se apoya toda la línea activa.** El informe 2 dio por
+   «causa identificada» que las pymes no pueden con la complejidad de los pliegos. Eso era una
+   inferencia de fuente secundaria, no un dato. PLACSP publica el motivo de cada desierto,
+   desistimiento y renuncia. **Si el motivo mayoritario es precio inviable o falta de
+   financiación, la tesis del producto cae** — y conviene saberlo en un día, no en dos años.
+2. **Produce el corpus.** Tres pliegos no son un corpus. Bajar 200 PCAP es una tarde de script.
+
+**Paso 2 — la rúbrica, con el orden invertido.** `corpus/rubrica-riesgos-lcsp.md` sigue siendo un
+catálogo **cerrado** —la métrica empareja por `id`— pero **se induce, no se deduce**: leer diez
+pliegos a mano, anotar todo riesgo que aparezca, y **solo entonces** anclar cada uno a su
+artículo de la LCSP verificado contra el BOE.
+
+> Un catálogo deducido de la ley recoge lo que la ley regula. Uno inducido de documentos recoge
+> **lo que los pliegos hacen**. Solo el segundo sirve para medir nada.
 
 ---
 
-## Dos bloqueos abiertos
+## Tres bloqueos abiertos
+
+**0. La premisa de la línea activa está sin verificar.** *(Abierto el 15/09/2026.)* Todo el giro
+descansa en que los concursos quedan desiertos **porque** las pymes no pueden con la complejidad
+del pliego. Eso nunca se comprobó: se tomó de una fuente secundaria y se escribió como «causa
+identificada». Es el bloqueo más grave porque invalidaría los otros dos si cae, y es el más
+barato de cerrar — lo cierra el paso 1 de la tarea siguiente.
 
 **1. La `base_normativa` inventada.** Es el riesgo que introduce el giro y el más grave del
 proyecto: un flag que cite un artículo de la LCSP que no dice lo que se le atribuye es la
@@ -80,6 +107,28 @@ al muestrear.
 Ningún documento se depura por el giro: cambian de función, no de estado. Criterios de inclusión
 en [`corpus/alcance.md`](../corpus/alcance.md); inventario con hashes en
 [`corpus/inventario-contratos.csv`](../corpus/inventario-contratos.csv).
+
+> **Corrección del 15/09/2026 — el TACRC es un corpus abierto.** El informe 2 dio por cerrada
+> «la ley» como fuente de datos sin distinguir jurisdicción de doctrina administrativa. Las
+> resoluciones del **Tribunal Administrativo Central de Recursos Contractuales** y de los
+> tribunales autonómicos **se publican sin las restricciones del CENDOJ y sin prohibición de uso
+> comercial**, y tratan exactamente de qué cláusulas de pliego se anulan. Eso es una fuente de
+> verdad para los flags `valorativo` mucho mejor que las 9 resoluciones de consumo: en vez de
+> opinar que una cláusula es desproporcionada, se cita que cláusulas de esa forma fueron
+> anuladas. **Incorporar al redactar la rúbrica.**
+
+---
+
+## Corrección sobre la línea de sentencias
+
+Se congeló el 09/09 con el argumento de que el CENDOJ hace inexplotable ampliar su corpus. **El
+argumento estaba mal aplicado.** El aviso legal prohíbe la **descarga masiva y el uso
+comercial**; no prohíbe leer. Medir generalización exige veinte o treinta sentencias leídas a
+mano, que es precisamente lo permitido.
+
+Consecuencia: el bloqueo histórico —el conjunto de test gastado— **sigue siendo reparable con
+trabajo manual**. La línea se aparca por prioridad, no porque sea imposible medirla. Decir lo
+contrario fue una racionalización cómoda y queda corregido aquí.
 
 ---
 

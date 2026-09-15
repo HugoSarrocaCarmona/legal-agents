@@ -1,5 +1,62 @@
 # 📜 Project Log
 
+## [15/09/2026] — ⚖️ Auditoría de la cadena de consejo, y reordenación de la fase 2
+
+Se instaló `llm-council` (`.claude/skills/llm-council/`) y se sometió a juicio **la propia cadena
+de recomendaciones de Claude** de la última semana: el giro a pliegos, la métrica, la especialidad
+recomendada y la secuencia empleo→emprendimiento. Veredicto íntegro en
+[`research/04-veredicto-consejo.md`](../research/04-veredicto-consejo.md).
+
+### ✅ Hecho
+
+- **`corpus/metrica.md`** — umbral **F1 ≥ 0,95 suspendido**. Fijar una cifra sobre un catálogo
+  que no existe no mide nada. Se fijará mirando la dispersión real de los datos. Sigue vigente el
+  fallo duro: un solo flag con `base_normativa` falsa bloquea la versión
+- **`standards/contratos.md`** — **la rúbrica se induce, no se deduce**. Antes: escribir el
+  catálogo desde la LCSP y después anotar. Ahora: leer diez pliegos a mano, anotar todo riesgo
+  que aparezca, y solo entonces anclar cada uno a su artículo. El catálogo sigue cerrado y la
+  `base_normativa` se sigue transcribiendo del BOE — cambia de dónde sale la lista, no el rigor
+- **`standards/contratos.md`** — añadido el **TACRC** como fuente de los flags `valorativo`
+- **`ROADMAP.md`** — pasos 4 y 5 intercambiados: **PLACSP pasa del puesto 9 al 4**
+- **`ESTADO.md`** — tarea siguiente reescrita, tercer bloqueo abierto, corrección sobre sentencias
+
+### ❌ Problemas encontrados — todos en trabajo propio
+
+- **La premisa de la línea activa nunca se verificó.** «9.819 concursos desiertos **porque** las
+  pymes no pueden con la complejidad del pliego» se escribió como «causa identificada» y era una
+  inferencia de fuente secundaria. Si el motivo real es precio inviable o falta de financiación,
+  la tesis del producto cae. **Nuevo bloqueo nº 0**
+- **El TACRC estaba mal clasificado.** El informe 2 dio por cerrada «la ley» como fuente sin
+  distinguir jurisdicción de doctrina administrativa. Las resoluciones del TACRC y de los
+  tribunales autonómicos son abiertas y sin prohibición de uso comercial
+- **La línea de sentencias se congeló con un argumento mal aplicado.** El CENDOJ prohíbe descarga
+  masiva y uso comercial; no prohíbe leer. Medir generalización exige veinte o treinta sentencias
+  leídas a mano, que sí está permitido. Se confundió «no se puede comercializar» con «no se puede
+  medir». Pasa de *congelada* a *aparcada*
+- **Tres pliegos no son un corpus**, y bajar 200 es una tarde. Que no ocurriera mientras se
+  escribían cuatro documentos es el diagnóstico entero
+
+### 💡 Aprendizajes
+
+- **Un dato que sostiene una tesis se verifica antes de construir sobre él, no después.** Es la
+  misma regla que el proyecto aplica a `base_normativa` y no se aplicó a sí mismo
+- **Una taxonomía deducida de la ley recoge lo que la ley regula; una inducida de documentos
+  recoge lo que los documentos hacen.** Solo la segunda mide algo real
+- **El consejo aportó valor donde no se esperaba.** Los cinco asesores convergieron en el mismo
+  remedio equivocado —«haz diez llamadas»—. El hallazgo que cambia la semana —que PLACSP publica
+  el motivo de cada desierto, así que es una consulta y no una entrevista— apareció **solo en la
+  ronda de revisión cruzada**, y apareció cinco veces
+- **Y su límite:** cinco asesores del mismo modelo comparten sesgos. La unanimidad del consejo no
+  es evidencia externa. Sigue sin haber una sola persona real consultada
+
+### 🔜 Siguiente paso
+
+- **Descargar los datos abiertos de PLACSP y responder por qué quedaron desiertos los 9.819
+  concursos.** Una tarde. Es software, no un documento. Produce el corpus y verifica la premisa a
+  la vez — y puede salir mal, que es lo que ningún paso de la última semana podía
+
+---
+
 ## [09/09/2026] — 🧭 Giro a pliegos: de analizador de contratos a analizador de riesgo de ejecución
 
 Cambio de rumbo del proyecto. La fase 2 deja de ser un «Contract Analyzer» genérico sobre tres

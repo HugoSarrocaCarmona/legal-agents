@@ -259,7 +259,26 @@ contractual*, no solo a la materia. Citar la regla general donde rige la especia
 
 - **`corpus/rubrica-riesgos-lcsp.md`** — catálogo cerrado de flags. Cada uno con `id`, `clase`,
   materia, criterio o base normativa según su clase, consecuencia jurídica y ejemplo de cláusula
-  real. **Redactar antes de anotar ningún documento.** Es el paso siguiente.
+  real.
+
+  > **Orden invertido el 15/09/2026, por el veredicto del consejo.** La redacción anterior decía
+  > «redactar antes de anotar ningún documento», deduciendo el catálogo de la LCSP en abstracto.
+  > **El orden correcto es inducirlo:** leer diez pliegos a mano, anotar todo riesgo que
+  > aparezca, y **solo entonces** anclar cada uno a su artículo verificado contra el BOE.
+  >
+  > Lo que no cambia: el catálogo sigue siendo **cerrado** —la métrica empareja por `id`— y toda
+  > `base_normativa` se sigue transcribiendo del BOE, nunca de memoria. Cambia de dónde sale la
+  > lista, no el rigor con que se ancla.
+  >
+  > Razón: un catálogo deducido de la ley recoge lo que la ley regula; uno inducido de documentos
+  > recoge **lo que los pliegos hacen**. Solo el segundo mide algo real.
+
+  > **Fuente añadida para los flags `valorativo`: el TACRC.** Las resoluciones del Tribunal
+  > Administrativo Central de Recursos Contractuales y de los tribunales autonómicos se publican
+  > sin las restricciones del CENDOJ y tratan de qué cláusulas de pliego se anulan. Permiten
+  > sustituir la opinión —«esta cláusula es desproporcionada»— por la cita —«cláusulas de esta
+  > forma han sido anuladas»—, que es infinitamente más defendible ante un cliente y ante un
+  > socio.
 - **`validate_contratos.ps1`** — validador mecánico. Debe comprobar, como mínimo: `id` dentro del
   catálogo, coherencia `clase` ↔ `base_normativa`, coincidencia de `regimen`, vocabulario de
   `consecuencia_juridica` por régimen, y que toda entrada de `missing_clauses` lleve

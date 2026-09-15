@@ -90,8 +90,16 @@ Métrica: **precisión, exhaustividad y F1**, sin ponderar.
 
 **Exigencia distinta al resto del esquema:** aquí no vale «razonablemente bien». Un flag
 normativo mal emitido es una afirmación falsa sobre el contenido de una ley, que es exactamente
-el fallo que este proyecto existe para no cometer. Umbral de aceptación: **F1 ≥ 0,95**. Por
-debajo, el pipeline no se da por bueno aunque la clase valorativa vaya bien.
+el fallo que este proyecto existe para no cometer.
+
+> ⏸️ **Umbral numérico suspendido el 15/09/2026.** La versión anterior fijaba **F1 ≥ 0,95** como
+> condición de aceptación. El consejo lo calificó de *teatro*: fijar un objetivo numérico sobre
+> un catálogo que todavía no existe no mide nada, solo aparenta rigor. El umbral se fijará
+> **cuando exista la rúbrica y se haya anotado el primer conjunto**, y se fijará mirando la
+> dispersión real de los datos, no eligiendo una cifra bonita de antemano.
+>
+> Lo que sí sigue vigente sin necesidad de umbral: **un solo flag normativo con
+> `base_normativa` falsa bloquea la versión.** Eso es un fallo duro (§5), no un percentil.
 
 ### Clase `valorativo` — conjuntos, con asimetría explícita
 
