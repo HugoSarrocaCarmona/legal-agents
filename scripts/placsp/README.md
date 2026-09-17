@@ -15,6 +15,10 @@ python3 scripts/placsp/parse_resultados.py /ruta/raw/*.zip -o /ruta/datos/result
 
 # 3 · responder la pregunta
 python3 scripts/placsp/analiza_desiertos.py /ruta/datos/resultados_2025.csv --anio 2025
+
+# 4 · elegir los pliegos que hay que leer a mano para inducir la rúbrica
+python3 scripts/placsp/selecciona_pliegos.py /ruta/datos/resultados_2025.csv \
+        -n 10 -o corpus/pliegos-a-leer.csv
 ```
 
 Sin dependencias: biblioteca estándar de Python 3.11. `parse_resultados.py` hace *streaming*
@@ -29,6 +33,7 @@ descomprimen a ~1,4 GB cada uno.
 | `parse_resultados.py` | XML → CSV. **Transcribe, no interpreta** |
 | `codigos.py` | Listas CODICE transcritas de los `.gc` oficiales (17/09/2026) |
 | `analiza_desiertos.py` | El análisis. Clasifica y agrega — aquí sí hay juicio |
+| `selecciona_pliegos.py` | Elige el corpus a leer a mano, estratificado por órgano |
 
 La separación entre el paso 2 y el paso 3 es deliberada. Si la extracción y el juicio viven en
 el mismo fichero, cuando el resultado sorprenda no se puede saber cuál de los dos falló.
@@ -59,3 +64,7 @@ el mismo fichero, cuando el resultado sorprenda no se puede saber cuál de los d
 - Los `.gc` de CODICE solo responden por **https**; por http devuelven 404.
 - El servidor **ignora las peticiones `Range`** y responde `HEAD` con conexión vacía. Para
   comprobar si un fichero existe hay que empezar a descargarlo.
+- **El PCAP y el PPT no se pueden descargar con `curl` desde el deeplink.** La ficha de la
+  licitación es un portlet JSF y los documentos cuelgan de *postbacks* de JavaScript, no de
+  `href`. Para diez pliegos se abren a mano en el navegador; automatizarlo exigiría un navegador
+  headless, y no compensa hasta que el corpus pase de unas decenas.

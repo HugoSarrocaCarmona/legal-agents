@@ -37,6 +37,7 @@ from xml.etree import ElementTree as ET
 # Orden fijo: el CSV se lee a mano y con pandas, y las columnas no deben bailar.
 CAMPOS = [
     "atom_id",             # identificador de la publicación en la sindicación
+    "enlace",              # deeplink a la ficha de la licitación, donde están el PCAP y el PPT
     "actualizado",         # <updated> del entry: permite quedarse con la última versión
     "expediente",          # cbc:ContractFolderID
     "estado",              # ContractFolderStatusCode: PUB, EV, ADJ, RES, ANUL...
@@ -125,6 +126,15 @@ def extrae_entry(entry, fichero: str) -> Iterator[dict]:
     atom_id = texto(entry, "id")
     actualizado = texto(entry, "updated")
 
+    # El <link> del entry es la única forma de llegar a los documentos del
+    # expediente: el PCAP y el PPT cuelgan de esa ficha, no de la sindicación.
+    # Sin este campo el CSV describe licitaciones que luego no se pueden leer.
+    enlace = ""
+    for hijo_entry in entry:
+        if local(hijo_entry.tag) == "link" and hijo_entry.get("href"):
+            enlace = hijo_entry.get("href", "")
+            break
+
     cfs = hijo(entry, "ContractFolderStatus")
     if cfs is None:
         return
@@ -170,6 +180,7 @@ def extrae_entry(entry, fichero: str) -> Iterator[dict]:
 
     base = {
         "atom_id": atom_id,
+        "enlace": enlace,
         "actualizado": actualizado,
         "expediente": expediente,
         "estado": estado,

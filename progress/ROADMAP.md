@@ -65,20 +65,27 @@ es sustantivo, así que ese error saldría mucho más caro.
       `regimen = administrativo`; `risk_flags` incorpora `clase`, `base_normativa`,
       `clausula_ref` y `materia`; `missing_clauses` pasa a exigir `base_normativa`; vocabulario
       cerrado de 16 materias con su ancla en la LCSP verificada contra el BOE
-- [ ] **4. PLACSP: descarga y verificación de la premisa.** **Siguiente tarea** — adelantada
-      desde el puesto 9 el 15/09/2026 por el veredicto del consejo. Descarga del ZIP mensual de
-      sindicación, parseo ATOM/CODICE, filtrado por CPV e importe, comprobación de
-      extractabilidad **antes** de muestrear, muestreo con semilla fija, `pdftotext -layout`, y
-      partición ciego-1 / ciego-2.
-      **Y una pregunta que se responde con esos mismos datos: por qué quedaron desiertos los
-      9.819 concursos de 2025.** El informe 2 dio por «causa identificada» la complejidad de los
-      pliegos; era una inferencia de fuente secundaria. PLACSP publica el motivo de cada
-      desierto, desistimiento y renuncia. Si el motivo mayoritario es precio inviable o falta de
-      financiación, **la tesis del producto cae y hay que saberlo ahora**
-- [ ] **5. Rúbrica de riesgos LCSP** (`corpus/rubrica-riesgos-lcsp.md`). Catálogo **cerrado**
-      —no una guía— con un `id` por flag, su clase, su materia, y según la clase:
-      `base_normativa` verificada o `criterio`. **Se induce, no se deduce:** leer diez pliegos a
-      mano, anotar todo riesgo que aparezca, y solo entonces anclar cada uno a su artículo. Para
+- [x] **4. PLACSP: descarga y verificación de la premisa.** ✅ **17/09/2026.**
+      [`scripts/placsp/`](../scripts/placsp/) — descarga, parseo ATOM/CODICE por *streaming*,
+      análisis y selección estratificada del corpus a leer. Todo 2025: 12 ficheros, 1,7 GB,
+      933.611 publicaciones, 207.145 resultados con fecha en el año.
+      **La premisa quedó parcialmente falsada:** de 18.808 declaraciones de desierto, en el
+      **72,0 % no se presentó nadie** —causa anterior al pliego, fuera del alcance de cualquier
+      herramienta de lectura—. El 28,0 % restante sí tuvo ofertas, y **el 69,3 % de esos tenía un
+      solo licitador, que fue excluido** (3.651 casos). Cifras y consecuencias en
+      [`ESTADO.md`](ESTADO.md) y [`LOG.md`](LOG.md).
+      **Queda pendiente de este paso** la descarga de los PDF en sí: comprobación de
+      extractabilidad antes de muestrear, `pdftotext -layout` y partición ciego-1 / ciego-2. Se
+      hace sobre la selección del paso 5, no antes, porque la población objetivo ha cambiado
+- [ ] **5. Rúbrica de riesgos LCSP** (`corpus/rubrica-riesgos-lcsp.md`). **Siguiente tarea, y es
+      de Hugo.** Catálogo **cerrado** —no una guía— con un `id` por flag, su clase, su materia, y
+      según la clase: `base_normativa` verificada o `criterio`. **Se induce, no se deduce:** leer
+      diez pliegos a mano, anotar todo riesgo que aparezca, y solo entonces anclar cada uno a su
+      artículo.
+      **Los diez pliegos ya no son al azar.** `scripts/placsp/selecciona_pliegos.py` los saca de
+      la población «un solo licitador, excluido» —obras, servicios y suministros, procedimiento
+      abierto u abierto simplificado, un órgano por pliego—. La pregunta que se le hace a cada
+      documento es: **¿qué exigía este pliego que fuera razonablemente fácil de incumplir?** Para
       los flags `valorativo`, usar las resoluciones del **TACRC** y de los tribunales
       autonómicos —abiertas y sin prohibición de uso comercial— para poder citar anulaciones en
       vez de opinar sobre desproporción

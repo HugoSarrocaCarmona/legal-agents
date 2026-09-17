@@ -1,7 +1,7 @@
 # 📍 ESTADO DEL PROYECTO
 
 **Punto de entrada. Leer esto primero, antes que cualquier otro documento del repo.**
-Actualizado: 09/09/2026.
+Actualizado: 17/09/2026.
 
 Este fichero se mantiene **corto a propósito**: es lo que se carga al empezar cualquier
 conversación, y si crece deja de cumplir su función. Los detalles viven en los ficheros que
@@ -24,7 +24,7 @@ del Anexo III del Reglamento de IA y de las obligaciones de la Circular 3/2026 d
 
 | Línea | Estado | Referencia |
 |---|---|---|
-| **Pliegos** (fase 2) | **Activa** — esquema v2 y métrica cerrados | [`standards/contratos.md`](../standards/contratos.md) · [`corpus/metrica.md`](../corpus/metrica.md) |
+| **Pliegos** (fase 2) | **Activa** — esquema, métrica y datos de PLACSP cerrados; falta la rúbrica | [`standards/contratos.md`](../standards/contratos.md) · [`corpus/metrica.md`](../corpus/metrica.md) · [`scripts/placsp/`](../scripts/placsp/) |
 | **Sentencias** (fase 1) | **Aparcada**, no bloqueada — ver corrección abajo | [`standards/sentencias.md`](../standards/sentencias.md) |
 | **Vigilancia normativa** (fase 3) | Transversal, ámbito cerrado | [`ROADMAP.md`](ROADMAP.md) |
 
@@ -45,42 +45,73 @@ cerrado de **16 materias** con su ancla en la LCSP verificada contra el BOE.
 
 ---
 
-## Siguiente tarea: bajar PLACSP y responder una pregunta con los datos
+## Lo que dijeron los datos el 17/09/2026
 
-> **Reordenada el 15/09/2026 por el veredicto del consejo**
-> ([`research/04-veredicto-consejo.md`](../research/04-veredicto-consejo.md)). Antes la tarea
-> siguiente era escribir la rúbrica. No lo es: la rúbrica es el paso 2 y no se puede escribir
-> bien sin el paso 1.
+Paso 1 ejecutado. Todo 2025 de la sindicación de la PLACSP —12 ficheros, 1,7 GB, 933.611
+publicaciones— procesado con [`scripts/placsp/`](../scripts/placsp/). Cifras sobre **207.145
+resultados (expediente, lote) con fecha en 2025**:
 
-**Paso 1 — una tarde, y es software, no un documento.** Descargar los datos abiertos de PLACSP y
-responder con ellos **por qué quedaron desiertos los 9.819 concursos de 2025**.
+| | |
+|---|---|
+| Declaraciones de desierto | **18.808** — 9,08 % de los resueltos |
+| └ **nadie se presentó** (0 ofertas) | **13.542 — 72,0 %** |
+| └ hubo ofertas y aun así desierto | 5.266 — 28,0 % |
+| &nbsp;&nbsp;&nbsp;└ **un solo licitador, excluido** | **3.651** — 69,3 % de los anteriores, 19,4 % del total |
+| &nbsp;&nbsp;&nbsp;└ todas las ofertas eran de pymes | 3.397 — 64,5 % |
 
-Hace dos cosas a la vez, y por eso va primero:
+**La premisa era falsa para dos de cada tres casos.** El informe 2 dio por «causa identificada»
+que los concursos quedan desiertos porque las pymes no pueden con la complejidad del pliego. En
+el 72 % de los desiertos **no se presentó nadie**: la causa es anterior al pliego —precio
+inviable, plazo, mercado inexistente— y ninguna herramienta de lectura la toca.
 
-1. **Verifica la premisa sobre la que se apoya toda la línea activa.** El informe 2 dio por
-   «causa identificada» que las pymes no pueden con la complejidad de los pliegos. Eso era una
-   inferencia de fuente secundaria, no un dato. PLACSP publica el motivo de cada desierto,
-   desistimiento y renuncia. **Si el motivo mayoritario es precio inviable o falta de
-   financiación, la tesis del producto cae** — y conviene saberlo en un día, no en dos años.
-2. **Produce el corpus.** Tres pliegos no son un corpus. Bajar 200 PCAP es una tarde de script.
+**Pero dentro del 28 % restante hay una población mejor definida de lo que se esperaba.** En
+3.651 licitaciones se presentó **exactamente una empresa y fue excluida**. Ahí sí hay un fallo
+observable ligado al documento, y es el único sitio donde una herramienta de lectura produce un
+efecto medible en los datos abiertos.
 
-**Paso 2 — la rúbrica, con el orden invertido.** `corpus/rubrica-riesgos-lcsp.md` sigue siendo un
-catálogo **cerrado** —la métrica empareja por `id`— pero **se induce, no se deduce**: leer diez
-pliegos a mano, anotar todo riesgo que aparezca, y **solo entonces** anclar cada uno a su
-artículo de la LCSP verificado contra el BOE.
+**Consecuencia sobre el rumbo.** La línea activa se enunció como *riesgo de ejecución*: «¿qué
+asumo si gano?». Los datos apuntan a un dolor anterior y más agudo, el **riesgo de admisión**:
+«¿por qué han tirado mi oferta?». **La decisión entre los dos encuadres está abierta y es de
+Hugo**, y se toma después de leer los diez pliegos, no antes.
+
+**Tres cosas más que salieron, y que corrigen el histórico:**
+
+- **El titular de 9.819 concursos era casi correcto en magnitud**: son **11.088 expedientes
+  desiertos por completo** en 2025. Lo que no era correcto era la causa. El presupuesto de esos
+  expedientes suma 2.880 M€, no los 4.011 M€ citados.
+- **PLACSP no publica el motivo de cada desierto.** El consejo lo dio por hecho y no es cierto:
+  falta en el 55 %. Lo que sí está en el 100 % es `ReceivedTenderQuantity`, y por suerte es el
+  campo que decide. Todo el análisis se apoya en él.
+- **Patrimonial (31,2 %), concesión de servicios (26,3 %) y administrativo especial (25,2 %)
+  tienen tasas de desierto tres veces superiores a obras (12,1 %), servicios (8,4 %) y
+  suministros (7,3 %).** Quedan fuera del corpus porque se rigen en todo o en parte por la LPAP
+  y no por la LCSP — pero la anomalía queda registrada aquí.
+
+---
+
+## Siguiente tarea: los diez pliegos, y son de Hugo
+
+**Paso 2 — la rúbrica, inducida.** `corpus/rubrica-riesgos-lcsp.md` es un catálogo **cerrado**
+—la métrica empareja por `id`— pero **se induce, no se deduce**: leer diez pliegos a mano,
+anotar todo riesgo que aparezca, y **solo entonces** anclar cada uno a su artículo de la LCSP
+verificado contra el BOE.
 
 > Un catálogo deducido de la ley recoge lo que la ley regula. Uno inducido de documentos recoge
 > **lo que los pliegos hacen**. Solo el segundo sirve para medir nada.
 
+**Los diez pliegos ya no se eligen al azar.** `scripts/placsp/selecciona_pliegos.py` los saca de
+la población «un solo licitador, excluido», restringidos a obras, servicios y suministros en
+procedimiento abierto u abierto simplificado, y estratificados **un órgano por pliego** —que es
+la mitigación del bloqueo nº 2—. La pregunta que hay que hacerle a cada documento es concreta:
+**¿qué exigía este pliego que fuera razonablemente fácil de incumplir?**
+
 ---
 
-## Tres bloqueos abiertos
+## Dos bloqueos abiertos
 
-**0. La premisa de la línea activa está sin verificar.** *(Abierto el 15/09/2026.)* Todo el giro
-descansa en que los concursos quedan desiertos **porque** las pymes no pueden con la complejidad
-del pliego. Eso nunca se comprobó: se tomó de una fuente secundaria y se escribió como «causa
-identificada». Es el bloqueo más grave porque invalidaría los otros dos si cae, y es el más
-barato de cerrar — lo cierra el paso 1 de la tarea siguiente.
+**0. La premisa de la línea activa.** ✅ **CERRADO el 17/09/2026 con datos.** Ver más abajo: la
+premisa quedó **parcialmente falsada**, y la línea activa sigue en pie pero apuntando a otra
+población. Se conserva el enunciado del bloqueo porque su cierre cambió el rumbo.
 
 **1. La `base_normativa` inventada.** Es el riesgo que introduce el giro y el más grave del
 proyecto: un flag que cite un artículo de la LCSP que no dice lo que se le atribuye es la

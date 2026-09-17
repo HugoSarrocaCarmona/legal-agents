@@ -1,5 +1,59 @@
 # 📜 Project Log
 
+## [17/09/2026] — 📊 Primer código del proyecto: se cierra el bloqueo nº 0 con datos
+
+Se ejecutó el paso 1 de la fase 2. Todo 2025 de la sindicación de la PLACSP —12 ficheros
+mensuales, 1,7 GB comprimidos, **933.611 publicaciones**— descargado y procesado con código
+propio. **Es el primer software ejecutable del repositorio**, después de una semana produciendo
+documentos.
+
+### ✅ Hecho
+
+- **`scripts/placsp/`** — pipeline completo sin dependencias: `descarga.sh`,
+  `parse_resultados.py` (XML CODICE → CSV por *streaming*), `codigos.py` (listas CODICE
+  transcritas de los `.gc` oficiales), `analiza_desiertos.py` y `selecciona_pliegos.py`
+- La extracción y el juicio van en **ficheros separados** a propósito: si el resultado sorprende,
+  hay que poder saber cuál de los dos falló
+- **`ESTADO.md`** — bloqueo nº 0 cerrado con cifras; tarea siguiente reescrita
+
+### 🔍 Lo que dijeron los datos
+
+Sobre 207.145 resultados (expediente, lote) con fecha en 2025:
+
+- **18.808 declaraciones de desierto**, el **9,08 %** de los resueltos
+- **72,0 % — no se presentó nadie.** La causa es anterior al pliego y ninguna herramienta de
+  lectura la toca
+- 28,0 % hubo ofertas y aun así quedó desierto. De esos, **el 69,3 % tenía un solo licitador, que
+  fue excluido**: 3.651 casos, el 19,4 % de todos los desiertos. En el 64,5 % todas las ofertas
+  eran de pymes
+
+**La premisa del informe 2 queda parcialmente falsada**: es falsa para dos de cada tres desiertos.
+La línea activa sobrevive, pero apuntando a una población mucho más estrecha y mejor definida.
+
+**Reencuadre pendiente de decisión (de Hugo, no de Claude):** el proyecto se enunció como *riesgo
+de ejecución* —«¿qué asumo si gano?»—. Los datos apuntan al *riesgo de admisión* —«¿por qué han
+tirado mi oferta?»—. Se decide después de leer los diez pliegos.
+
+### ❌ Errores corregidos, ambos propios
+
+- **Error en el primer script: el dinero salía multiplicado.** `importe_sin_iva` es el presupuesto
+  del expediente entero y se repite en la fila de cada lote; sumar por filas daba **6.233 M€ para
+  un solo mes**. Corregido sumando por expediente único y separando los expedientes con lotes como
+  cota superior. Es exactamente la clase de cifra que habría acabado en un informe
+- **El consejo se equivocó y se da por corregido:** dijo que PLACSP publica el motivo de cada
+  desierto. **Falta en el 55 %.** Lo que sí está en el 100 % es `ReceivedTenderQuantity`, y es el
+  campo que decide. El análisis se apoya en el número obligatorio, no en el texto libre
+
+### 📌 Anotado, no resuelto
+
+- El titular de «9.819 concursos desiertos» era correcto en magnitud —son **11.088 expedientes
+  desiertos por completo**— pero su presupuesto suma **2.880 M€**, no los 4.011 M€ citados
+- **Patrimonial (31,2 %), concesión de servicios (26,3 %) y administrativo especial (25,2 %)**
+  tienen tasas de desierto tres veces superiores a obras, servicios y suministros. Quedan fuera
+  del corpus por regirse por la LPAP, pero la anomalía queda registrada
+
+---
+
 ## [15/09/2026] — ⚖️ Auditoría de la cadena de consejo, y reordenación de la fase 2
 
 Se instaló `llm-council` (`.claude/skills/llm-council/`) y se sometió a juicio **la propia cadena
