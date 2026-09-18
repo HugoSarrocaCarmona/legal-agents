@@ -64,6 +64,10 @@ el mismo fichero, cuando el resultado sorprenda no se puede saber cuál de los d
 - Los `.gc` de CODICE solo responden por **https**; por http devuelven 404.
 - El servidor **ignora las peticiones `Range`** y responde `HEAD` con conexión vacía. Para
   comprobar si un fichero existe hay que empezar a descargarlo.
+- **En `GetDocumentByIdServlet`, el parámetro que identifica el documento es `DocumentIdParam`,
+  no `cifrado`.** El `cifrado` es **idéntico en todos los documentos de la plataforma**, así que
+  no sirve para saber a qué expediente pertenece una URL; buscar por él devuelve el inventario
+  entero.
 - **El PCAP y el PPT no se pueden descargar con `curl` desde el deeplink.** La ficha de la
   licitación es un portlet JSF y los documentos cuelgan de *postbacks* de JavaScript, no de
   `href`. Para diez pliegos se abren a mano en el navegador; automatizarlo exigiría un navegador

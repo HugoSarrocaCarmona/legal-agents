@@ -56,6 +56,13 @@ python3 scripts/placsp/extrae_documentos.py /ruta/raw/placsp_2025*.zip \
 **Comprobado el 18/09/2026: los 20 PDF (PCAP + PPT de los diez) llevan texto extraíble; ninguno
 está escaneado.** No hará falta OCR en ningún punto de la fase.
 
+> ⚠️ **Cuidado con la página «Documento de Pliegos».** Navegando desde la ficha web se llega
+> fácilmente a una **página índice** que lista todos los documentos del expediente —con sus
+> anexos .xls y .doc— y que no es ningún pliego. El PCAP es el enlace que aparece ahí como
+> **«Pliego Cláusulas Administrativas»**. La columna `url` de
+> [`documentos-pliegos.csv`](documentos-pliegos.csv) apunta siempre al documento en sí, no al
+> índice: es el camino corto.
+
 ---
 
 ## El procedimiento, pliego a pliego
