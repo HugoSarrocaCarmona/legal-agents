@@ -69,7 +69,8 @@ PROCEDIMIENTOS_CON_PLIEGO = {"1", "9"}
 IMPORTE_MINIMO = 15_000
 
 SALIDA = [
-    "orden", "expediente", "organo", "tipo_contrato", "procedimiento",
+    "orden", "expediente", "organo", "organo_id_plataforma",
+    "tipo_contrato", "procedimiento",
     "importe_sin_iva", "tramo", "cpv", "nuts", "lote",
     "ofertas_recibidas", "ofertas_pymes", "fecha_resultado",
     "motivo_publicado", "enlace",
@@ -184,6 +185,7 @@ def main() -> int:
                 "orden": n,
                 "expediente": c["expediente"],
                 "organo": c["organo"],
+                "organo_id_plataforma": c["organo_id_plataforma"],
                 "tipo_contrato": nombre(TIPO_CONTRATO, c["tipo_contrato"]),
                 "procedimiento": nombre(PROCEDIMIENTO, c["procedimiento"]),
                 "importe_sin_iva": c["importe_sin_iva"],
