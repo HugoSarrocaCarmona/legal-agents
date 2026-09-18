@@ -56,6 +56,10 @@ es su tesis de valor y el criterio con el que hay que juzgar cualquier consejo q
    tarea abierta antes de empezar una nueva.
 5. **Ser crítico, honesto y eficaz.** Sin complacencia, sin adornar un resultado flojo, sin
    alargar una respuesta que cabe en tres líneas.
+6. **Citar los ficheros por su ruta del repo, siempre.** `corpus/PROTOCOLO-LECTURA.md`, no «el
+   protocolo». En la terminal son clicables y le ahorran buscarlos. Vale también para el código:
+   `scripts/placsp/analiza_desiertos.py`, y con número de línea cuando se hable de una parte
+   concreta.
 
 ### Patrones observados que conviene vigilar
 
