@@ -40,14 +40,49 @@ por esta cláusula?*
 
 ---
 
+## Cómo conseguir los PDF
+
+No hay que abrirlos a mano. El XML de la sindicación lleva la URL de descarga directa de cada
+documento, y [`documentos-pliegos.csv`](documentos-pliegos.csv) ya las tiene todas — 69
+documentos de los 10 expedientes, con el número de páginas de los que son PCAP o PPT.
+
+```bash
+python3 scripts/placsp/extrae_documentos.py /ruta/raw/placsp_2025*.zip \
+        --expedientes corpus/pliegos-a-leer.csv \
+        -o corpus/documentos-pliegos.csv \
+        --descargar Inputs/pliegos --solo-pliegos
+```
+
+**Comprobado el 18/09/2026: los 20 PDF (PCAP + PPT de los diez) llevan texto extraíble; ninguno
+está escaneado.** No hará falta OCR en ningún punto de la fase.
+
+---
+
 ## El procedimiento, pliego a pliego
 
-Presupuesto: **35–45 minutos por pliego**. Si uno se va a hora y media, se corta y se anota por
-qué; esa también es información.
+**Presupuesto realista: entre 45 y 100 minutos por pliego, según tamaño.** Los diez PCAP suman
+**700 páginas**, y están muy mal repartidas:
+
+| Páginas del PCAP | Pliegos |
+|---|---|
+| 25 – 49 | 4 (los pliegos 1, 6, 9, 10) |
+| 61 – 85 | 4 |
+| 115 y 158 | 2 |
+
+En total, **entre 12 y 15 horas de lectura**, no siete. Buena parte de un PCAP es articulado de
+formulario que se lee en diagonal, pero la cifra honesta es esa y conviene saberla antes de
+empezar en vez de descubrirla en el pliego 4.
+
+> **Empieza por los cortos —1, 6, 9, 10—.** Se calibra el criterio de anotación con cuatro
+> pliegos de 25 a 49 páginas, y solo después se entra en los de 115 y 158. Al revés, el criterio
+> se fija leyendo el caso más atípico del corpus.
+
+**El PPT no se lee entero.** Solo se abre si el PCAP remite a él para un requisito de admisión.
+El PPT del pliego 7 son **905 páginas** —es el proyecto de obra— y leerlo no entra en esta fase.
 
 1. **Abrir el PCAP.** El PPT solo si el PCAP remite a él para un requisito de admisión.
-2. **Leer entero y del tirón, sin anotar.** Veinte minutos. Anotar mientras se lee produce
-   veinte notas sobre la primera mitad y ninguna sobre la segunda.
+2. **Leer entero y del tirón, sin anotar.** Anotar mientras se lee produce veinte notas sobre
+   la primera mitad y ninguna sobre la segunda.
 3. **Segunda pasada, anotando.** Ahora sí, rellenando
    [`anotaciones-pliegos.csv`](anotaciones-pliegos.csv), una fila por riesgo.
 4. **Entre 8 y 20 filas por pliego.** Menos de 8 es lectura superficial. Más de 20 es estar
