@@ -40,6 +40,58 @@ por esta cláusula?*
 
 ---
 
+## Dónde está el riesgo: los cuatro marcadores
+
+> **Añadido el 04/10/2026, después del primer intento real de lectura.** El protocolo decía qué
+> pregunta hacerle a una cláusula, pero no **dónde mirar**, y eso bloqueó la tarea: abrir un PCAP
+> de 43 páginas «buscando riesgos» no funciona, porque **un riesgo no está escrito como riesgo**.
+> El 80 % de un PCAP es articulado de formulario que repite la LCSP. Lo que se busca son estos
+> cuatro marcadores, que son localizables por vocabulario.
+
+**① Verbos de consecuencia.** Donde el pliego dice **qué pasa si fallas**: «quedarán
+automáticamente excluidas», «se considerará retirada», «no se aceptarán», «dará lugar a la no
+admisión», «bajo apercibimiento de exclusión», «no abonándose las facturas», «será causa de
+resolución».
+
+> **Este es el filtro principal: si una cláusula no tiene consecuencia, no es un riesgo.** Es lo
+> que convierte una lectura difusa en una búsqueda concreta.
+
+**② Plazos cortos y horas concretas.** «tres días hábiles», «24 horas», «antes de las catorce
+horas». Un plazo corto con una consecuencia grave detrás es el riesgo más puro que existe, y el
+que más empresas se lleva por delante.
+
+**③ Reenvíos.** «según el apartado I del cuadro de características», «en la forma del Anexo
+VIII», «en los términos del pliego de prescripciones técnicas». **Aquí están las cifras.** El
+cuerpo del PCAP es plantilla reutilizada entre expedientes; el **cuadro de características** y
+los **anexos** son lo que de verdad firma este contrato concreto. Un reenvío sin seguir es una
+cláusula sin leer.
+
+**④ Palabras de discrecionalidad.** «podrá», «a juicio de», «lo que el órgano estime
+fundamental», «cuando lo considere necesario». No son ilegales —la prerrogativa es el régimen—
+pero marcan dónde el resultado depende de un criterio ajeno y no de lo que haga el licitador.
+
+### Dónde mirar primero, en cualquier PCAP
+
+| Prioridad | Parte del documento |
+|---|---|
+| **1.ª** | **El cuadro de características.** Casillas marcadas, porcentajes, plazos, lotes. Es lo más denso en cifras y lo más rápido de barrer |
+| **2.ª** | **Bloque de admisión:** solvencia y clasificación, condiciones y forma de presentación, contenido de los sobres, examen y subsanación, garantía |
+| **3.ª** | **Bloque de ejecución:** obligaciones, facultades del órgano, penalidades, pago, revisión de precios, modificación, cesión y subcontratación, resolución |
+| **4.ª** | **Los anexos de condiciones especiales, penalidades, modificaciones previstas, causas de resolución y criterios de adjudicación.** Nunca son relleno |
+
+> ⚠️ **El pie de página interno del PDF no suele coincidir con la página del lector** —los cuadros
+> y anexos descuadran la numeración—. En `clausula` va **el número de cláusula primero** y la
+> página del PDF después.
+
+### Sospechar sí, anclar no
+
+Cuando una cifra del pliego te suene a que se aparta de un tope legal, **anótalo en `notas` como
+sospecha y sigue**: «posible divergencia respecto de la base de cálculo legal — verificar en fase
+de anclaje». No escribas el artículo aunque te lo sepas. Es la misma regla de arriba, y es donde
+cuesta más cumplirla.
+
+---
+
 ## Cómo conseguir los PDF
 
 No hay que abrirlos a mano. El XML de la sindicación lleva la URL de descarga directa de cada
