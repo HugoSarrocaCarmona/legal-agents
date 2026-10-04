@@ -148,9 +148,21 @@ contaminación entre regímenes, pero no tienen rúbrica, ni Gold, ni métrica.
 
 ## 📤 FORMATO DE SALIDA (OBLIGATORIO)
 
-Todas las respuestas deben ser JSON válido.
+**Ámbito: la salida de un agente que procesa un documento.** No la conversación.
 
-Nunca devolver texto libre.
+Cuando un agente extrae información de una sentencia o de un pliego, su respuesta **debe ser JSON
+válido y nada más**: sin prosa alrededor, sin explicación previa, sin bloque de comentario. El
+contrato de validación de cada estándar es lo que decide si ese JSON es correcto.
+
+> **Delimitado el 04/10/2026.** Antes decía «todas las respuestas deben ser JSON válido, nunca
+> devolver texto libre», sin ámbito. Se escribió cuando el repositorio era solo el agente de
+> extracción. Hoy también contiene scripts, investigación y protocolos de trabajo, y la regla se
+> incumplía en toda conversación desde entonces — una restricción heredada que nadie revisó al
+> cambiar el proyecto. **Una regla que se incumple siempre no es una regla: es ruido que resta
+> autoridad a las que sí rigen.**
+
+Las conversaciones, los análisis y las decisiones van en prosa, y los ficheros del repo en
+Markdown o CSV según corresponda.
 
 ---
 
@@ -181,12 +193,30 @@ El sistema NO debe:
 
 ## 🔄 MEJORA CONTINUA
 
-El sistema debe:
+El sistema debe detectar errores recurrentes, mejorar su consistencia y reducir el ruido en los
+outputs.
 
-- detectar errores recurrentes
-- mejorar consistencia
-- reducir ruido en outputs
-- adaptarse progresivamente
+### Revisar este arnés cuando cambie el modelo
+
+**La capacidad de cambiar el modelo no es nuestra; adaptarnos, sí.** Cuando el modelo que ejecuta
+este proyecto cambie de versión, lo primero no es volver a trabajar igual: es revisar si las
+reglas de este repositorio siguen teniendo sentido. El modo de fallo típico no es que el modelo
+nuevo sea peor — es que el arnés viejo le estorba, y se concluye lo primero.
+
+Qué se revisa, en este orden:
+
+1. **Reglas que ya no se cumplen.** Una restricción que se incumple sistemáticamente y nadie
+   corrige está delatando que el proyecto cambió y ella no. Se delimita o se retira.
+2. **Pasos intermedios que el modelo ya hace solo.** Si el modelo planifica bien por su cuenta,
+   forzarle una capa de planificación encima la duplica y lo vuelve más lento, no más fiable.
+3. **Las skills.** Toda skill que pertenezca a una línea congelada o a una fase cerrada se
+   reescribe o se retira. **Y vive en `.claude/skills/`, dentro del repositorio**: una skill
+   guardada solo en la cuenta de usuario no la ve el control de versiones, así que un giro de
+   proyecto no la revisa.
+
+Lo que **no** se toca por mejorar el modelo: la capa de memoria —`progress/ESTADO.md`,
+`progress/LOG.md`, `standards/`, `corpus/metrica.md`—. Es lo que impide repetir trabajo ya hecho
+y lo que permite que una sesión nueva sepa qué se decidió y por qué. Ningún modelo la sustituye.
 
 ---
 
