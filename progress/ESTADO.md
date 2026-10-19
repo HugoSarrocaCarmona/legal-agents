@@ -91,6 +91,16 @@ Hugo**, y se toma después de leer los diez pliegos, no antes.
 
 ## Siguiente tarea: los diez pliegos, y son de Hugo
 
+> **Avance: 1 de 10.** Pliego 1 (ASEPEYO, CP00004/2025) anotado el 19/10/2026: **8 filas, 8
+> riesgos distintos**, en `corpus/anotaciones-pliegos.csv`. Siguiente: **pliego 6** (Llíria, 25
+> págs). Método y marcadores en `corpus/PROTOCOLO-LECTURA.md`.
+>
+> **Primera señal, con n = 1:** `momento` sale **6 de admisión, 2 de ejecución**, y 4 de las 6 de
+> admisión caen **entre la propuesta de adjudicación y la formalización** —acreditar la solvencia
+> declarada, la garantía por lote—, un tramo que el esquema de tres momentos no recoge. Si el
+> pliego 6 repite el patrón, se añade un cuarto momento (`adjudicacion`) y la pregunta de rumbo
+> —riesgo de ejecución o de admisión— empieza a tener respuesta con datos propios.
+
 **Paso 2 — la rúbrica, inducida.** `corpus/rubrica-riesgos-lcsp.md` es un catálogo **cerrado**
 —la métrica empareja por `id`— pero **se induce, no se deduce**: leer diez pliegos a mano,
 anotar todo riesgo que aparezca, y **solo entonces** anclar cada uno a su artículo de la LCSP
