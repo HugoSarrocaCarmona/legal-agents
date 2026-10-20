@@ -105,7 +105,7 @@ Hugo**, y se toma después de leer los diez pliegos, no antes.
 >
 > **Regla de severidad fijada el 20/10/2026**, y aplicada a los dos pliegos: pierdes el contrato o
 > te prohíben contratar = `alta`; pierdes dinero acotado = `media`; molestia = `baja`. Efecto
-> secundario ya visible: **13 de 17 filas son `alta`**, así que la columna apenas discrimina entre
+> secundario ya visible: **14 de 17 filas son `alta`**, así que la columna apenas discrimina entre
 > riesgos de admisión. Se revisa al inducir la rúbrica, no antes.
 
 **Paso 2 — la rúbrica, inducida.** `corpus/rubrica-riesgos-lcsp.md` es un catálogo **cerrado**
