@@ -91,15 +91,22 @@ Hugo**, y se toma después de leer los diez pliegos, no antes.
 
 ## Siguiente tarea: los diez pliegos, y son de Hugo
 
-> **Avance: 1 de 10.** Pliego 1 (ASEPEYO, CP00004/2025) anotado el 19/10/2026: **8 filas, 8
-> riesgos distintos**, en `corpus/anotaciones-pliegos.csv`. Siguiente: **pliego 6** (Llíria, 25
-> págs). Método y marcadores en `corpus/PROTOCOLO-LECTURA.md`.
+> **Avance: 2 de 10.** Pliego 1 (ASEPEYO, CP00004/2025) anotado el 19/10/2026, 8 filas. Pliego 6
+> (Llíria, 1401Q/2025) anotado el 20/10/2026, 9 filas. Las 17 están en
+> `corpus/anotaciones-pliegos.csv`. Siguiente: **pliego 9** (Briviesca, obras, PCAP de 29 págs).
+> Método y marcadores en `corpus/PROTOCOLO-LECTURA.md`.
 >
-> **Primera señal, con n = 1:** `momento` sale **6 de admisión, 2 de ejecución**, y 4 de las 6 de
-> admisión caen **entre la propuesta de adjudicación y la formalización** —acreditar la solvencia
-> declarada, la garantía por lote—, un tramo que el esquema de tres momentos no recoge. Si el
-> pliego 6 repite el patrón, se añade un cuarto momento (`adjudicacion`) y la pregunta de rumbo
-> —riesgo de ejecución o de admisión— empieza a tener respuesta con datos propios.
+> **La señal se repite, con n = 2:** `momento` sale **12 de admisión y 5 de ejecución**. De las de
+> admisión, el pliego 1 tenía 4 de 6 **entre la propuesta de adjudicación y la formalización**
+> (acreditar la solvencia declarada, la garantía por lote) y el pliego 6 tiene 3 de 6 (solvencia,
+> garantía definitiva, formalización con penalidad del 3 % y prohibición de contratar). Se anotan
+> como `admision` con la nota *«tramo propuesta→formalización»* para no alterar el recuento mientras
+> se decide. Si los pliegos 9 y 10 lo confirman, se añade un cuarto momento (`adjudicacion`).
+>
+> **Regla de severidad fijada el 20/10/2026**, y aplicada a los dos pliegos: pierdes el contrato o
+> te prohíben contratar = `alta`; pierdes dinero acotado = `media`; molestia = `baja`. Efecto
+> secundario ya visible: **13 de 17 filas son `alta`**, así que la columna apenas discrimina entre
+> riesgos de admisión. Se revisa al inducir la rúbrica, no antes.
 
 **Paso 2 — la rúbrica, inducida.** `corpus/rubrica-riesgos-lcsp.md` es un catálogo **cerrado**
 —la métrica empareja por `id`— pero **se induce, no se deduce**: leer diez pliegos a mano,
