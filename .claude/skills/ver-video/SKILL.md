@@ -122,13 +122,25 @@ interpretacion tuya y por eso va en un campo distinto: no las mezcles.
 
 En Claude Code **en la web** (IP de datacenter) YouTube rechaza muchos videos
 con "Sign in to confirm you're not a bot". El script reintenta con clientes
-alternativos; si aun asi no hay subtitulos ni audio, falla con un mensaje
-explicito y deja `metadata.json`.
+alternativos y, si tampoco hay audio, cae a los **storyboards**: las miniaturas
+de la barra de progreso, que YouTube sigue sirviendo. Quedan en `storyboard/`
+con su franja horaria aproximada.
 
-Cuando pase, **no lo disimules ni analices el video por el titulo y la
-descripcion**: di que no se ha podido acceder y ofrece las salidas reales —
-ejecutarlo en local, o `--cookies-from-browser chrome`. Detalle en
-`tools/video/README.md`.
+Los storyboards **no son una transcripcion**. Sirven cuando el video rotula
+frases y diagramas en pantalla, cosa habitual en divulgacion tecnica, y en ese
+caso permiten reconstruir la arquitectura y las ideas rotuladas. Lo que se
+pierde es todo el razonamiento hablado: los matices, las advertencias y las
+justificaciones que el ponente solo dijera en voz.
+
+Si analizas desde storyboards, **dilo en el informe y en `base`**, acota que
+cubres solo lo rotulado, y marca las conclusiones como provisionales. Lo que no
+puedes hacer es presentarlo como si hubieras oido el video, ni rellenar los
+huecos con la descripcion de YouTube.
+
+Si no hay ni storyboards, el script falla con un mensaje explicito y deja
+`metadata.json`. Ahi no hay analisis posible: di que no se ha podido acceder y
+ofrece las salidas reales — ejecutarlo en local, o
+`--cookies-from-browser chrome`. Detalle en `tools/video/README.md`.
 
 ## Otros limites
 

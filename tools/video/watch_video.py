@@ -360,6 +360,67 @@ def download_video(url: str, workdir: Path, max_height: int) -> Path:
 PTS_RE = re.compile(r"pts_time:([0-9]+(?:\.[0-9]+)?)")
 
 
+# --------------------------------------------------------------------------
+# storyboards: ultimo recurso cuando YouTube no deja bajar ni audio ni video
+# --------------------------------------------------------------------------
+
+def download_storyboard(url: str, workdir: Path, client: str | None) -> Path | None:
+    """Los storyboards son las miniaturas de la barra de progreso. YouTube los
+    sirve aun cuando bloquea todos los formatos reales, asi que son la unica
+    via que queda en un video bloqueado."""
+    log("descargando storyboards (miniaturas de la barra de progreso)")
+    run(["yt-dlp", *YTDLP_BASE, *YTDLP_AUTH, *client_args(client),
+         "-f", "sb0/sb1/sb2", "-o", str(workdir / "sb.%(ext)s"), url],
+        timeout=900, check=False)
+    found = sorted(workdir.glob("sb.*"))
+    return found[0] if found else None
+
+
+def storyboard_sheets(mhtml: Path, outdir: Path, duration: float,
+                      height: int) -> list[dict]:
+    """Extrae las hojas de contactos del mhtml y las reescala.
+
+    Los JPEG van embebidos en binario crudo, sin Content-Transfer-Encoding, de
+    modo que el parser de email de la libreria estandar los corrompe: hay que
+    recortarlos por marcadores SOI/EOI sobre los bytes.
+    """
+    raw = mhtml.read_bytes()
+    outdir.mkdir(parents=True, exist_ok=True)
+    offsets: list[bytes] = []
+    i = 0
+    while True:
+        start = raw.find(b"\xff\xd8\xff", i)
+        if start < 0:
+            break
+        end = raw.find(b"\xff\xd9", start)
+        if end < 0:
+            break
+        offsets.append(raw[start:end + 2])
+        i = end + 2
+    if not offsets:
+        return []
+
+    sheets: list[dict] = []
+    span = (duration / len(offsets)) if duration else 0
+    for n, blob in enumerate(offsets, start=1):
+        tmp = outdir / f".raw_{n:02d}.jpg"
+        tmp.write_bytes(blob)
+        dst = outdir / f"sheet_{n:02d}.jpg"
+        run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp),
+             "-vf", f"scale=-2:{height}:flags=lanczos", "-q:v", "2", str(dst)],
+            timeout=300, check=False)
+        tmp.unlink(missing_ok=True)
+        if dst.exists() and dst.stat().st_size > 0:
+            a, b = span * (n - 1), span * n
+            sheets.append({
+                "file": dst.name,
+                "desde": hhmmss(a), "hasta": hhmmss(b),
+                "aprox": True,
+            })
+    log(f"{len(sheets)} hojas de storyboard extraidas")
+    return sheets
+
+
 def scene_timestamps(video: Path, threshold: float) -> list[float]:
     """Detecta cambios de plano con select+showinfo sobre una copia reducida a
     320px: el resultado es el mismo que a resolucion completa y el escaneo va
@@ -548,13 +609,48 @@ def main() -> int:
     if not lines:
         if not is_local and client is not None:
             # Los clientes alternativos dan metadatos pero no formatos
-            # descargables, asi que no hay audio que transcribir.
-            raise RuntimeError(
-                "Este video no expone subtitulos y YouTube no permite descargar "
-                "su audio desde esta IP.\nPasa cookies del navegador "
-                "(--cookies-from-browser chrome) o ejecutalo desde tu ordenador.\n"
-                f"Los metadatos si se han guardado en {outdir}/metadata.json"
+            # descargables, asi que no hay audio que transcribir. Quedan los
+            # storyboards: en videos con rotulos en pantalla llevan contenido.
+            log("sin audio descargable: probando storyboards")
+            sb = download_storyboard(args.source, workdir, client)
+            sheets = storyboard_sheets(
+                sb, outdir / "storyboard", meta.get("duration_seconds") or 0,
+                args.frame_height * 2,
+            ) if sb else []
+            if not sheets:
+                raise RuntimeError(
+                    "Este video no expone subtitulos, ni audio descargable, ni "
+                    "storyboards desde esta IP.\nPasa cookies del navegador "
+                    "(--cookies-from-browser chrome) o ejecutalo desde tu ordenador.\n"
+                    f"Los metadatos si se han guardado en {outdir}/metadata.json"
+                )
+            (outdir / "storyboard" / "index.json").write_text(
+                json.dumps(sheets, ensure_ascii=False, indent=2), encoding="utf-8"
             )
+            index = {
+                "source": args.source,
+                "output_dir": str(outdir),
+                "metadata": "metadata.json",
+                "transcript": None,
+                "transcript_source": "no disponible (video bloqueado)",
+                "storyboard_dir": "storyboard",
+                "storyboard": sheets,
+                "title": meta.get("title"),
+                "duration_hms": meta.get("duration_hms"),
+                "aviso": (
+                    "Sin audio ni subtitulos. Las hojas de storyboard solo "
+                    "sirven si el video lleva rotulos o diagramas en pantalla; "
+                    "el razonamiento hablado se pierde. Marcas de tiempo "
+                    "aproximadas."
+                ),
+            }
+            (outdir / "index.json").write_text(
+                json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            if not args.keep_media:
+                shutil.rmtree(workdir, ignore_errors=True)
+            print(json.dumps(index, ensure_ascii=False, indent=2))
+            return 0
         media = local if is_local else download_audio(args.source, workdir)
         wav = to_wav16k(media, workdir)
         lang_hint = langs[0] if len(langs) == 1 else None

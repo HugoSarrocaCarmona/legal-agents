@@ -93,6 +93,10 @@ Tres cosas que costaron encontrar y conviene no deshacer:
   aparte que en este entorno no carga y descarta el audio entero *sin lanzar
   error* (0 segmentos en un audio de 213s). `--vad` lo activa y, si vuelve
   vacio, el script reintenta sin el.
+- **Los JPEG del storyboard van en binario crudo dentro del mhtml**, sin
+  `Content-Transfer-Encoding`. El parser `email` de la libreria estandar los
+  corrompe al tratarlos como texto; hay que recortarlos por marcadores
+  SOI/EOI (`ffd8ff` … `ffd9`) sobre los bytes.
 
 ## Coste aproximado
 
@@ -119,8 +123,18 @@ mas.
 El script no se rinde a la primera. Si el cliente por defecto es rechazado,
 reintenta con `web_safari`, `mweb`, `tv` y `web_embedded`. Esos clientes
 recuperan **metadatos**, pero normalmente no dan ni subtitulos ni formatos
-descargables, asi que la salida queda en `metadata.json` y el script lo dice
-claramente en vez de fingir que ha funcionado.
+descargables.
+
+Cuando eso pasa queda un ultimo recurso: los **storyboards**, las miniaturas de
+la barra de progreso. YouTube las sirve aunque bloquee todo lo demas. No son un
+sustituto de la transcripcion —el razonamiento hablado se pierde entero— pero
+en videos que rotulan frases y diagramas en pantalla, que es la norma en la
+divulgacion tecnica actual, llevan contenido real: unas 9 miniaturas por hoja,
+una cada ~10 s, legibles al reescalarlas.
+
+El script las extrae solo cuando no hay nada mejor, las guarda en
+`storyboard/` con su franja horaria aproximada, y marca en `index.json` que la
+transcripcion no esta disponible. Nunca las presenta como si fueran el video.
 
 Para desbloquearlo del todo, por orden de comodidad:
 
