@@ -91,22 +91,32 @@ Hugo**, y se toma después de leer los diez pliegos, no antes.
 
 ## Siguiente tarea: los diez pliegos, y son de Hugo
 
-> **Avance: 2 de 10.** Pliego 1 (ASEPEYO, CP00004/2025) anotado el 19/10/2026, 8 filas. Pliego 6
-> (Llíria, 1401Q/2025) anotado el 20/10/2026, 9 filas. Las 17 están en
-> `corpus/anotaciones-pliegos.csv`. Siguiente: **pliego 9** (Briviesca, obras, PCAP de 29 págs).
-> Método y marcadores en `corpus/PROTOCOLO-LECTURA.md`.
+> **Avance: 3 de 10.** Pliego 1 (ASEPEYO, CP00004/2025) anotado el 19/10/2026, 8 filas. Pliego 6
+> (Llíria, 1401Q/2025) anotado el 20/10/2026, 9 filas. Pliego 9 (Briviesca, 922/2025, el primero
+> de obras) anotado el 23/10/2026, 15 filas. Las 32 están en `corpus/anotaciones-pliegos.csv`.
+> Siguiente: **pliego 10** (Gijón, servicios, PCAP de 49 págs). Método y marcadores en
+> `corpus/PROTOCOLO-LECTURA.md`.
 >
-> **La señal se repite, con n = 2:** `momento` sale **12 de admisión y 5 de ejecución**. De las de
-> admisión, el pliego 1 tenía 4 de 6 **entre la propuesta de adjudicación y la formalización**
-> (acreditar la solvencia declarada, la garantía por lote) y el pliego 6 tiene 3 de 6 (solvencia,
-> garantía definitiva, formalización con penalidad del 3 % y prohibición de contratar). Se anotan
-> como `admision` con la nota *«tramo propuesta→formalización»* para no alterar el recuento mientras
-> se decide. Si los pliegos 9 y 10 lo confirman, se añade un cuarto momento (`adjudicacion`).
+> **La señal aguanta, con n = 3:** `momento` sale **23 de admisión, 9 de ejecución y 0 de
+> valoración**. De las 23 de admisión, **10 caen entre la propuesta de adjudicación y la
+> formalización**: 4 del pliego 1, 3 del 6 y 3 del 9 (solvencia, garantía definitiva y
+> formalización). El pliego 9 era la prueba más dura, porque pide la solvencia **ya en el sobre**,
+> y aun así la vuelve a pedir en el requerimiento, que es donde está la consecuencia (retirada más
+> 3 %). Se siguen anotando como `admision` con la nota *«tramo propuesta→formalización»*. Si el
+> pliego 10 lo confirma, se añade un cuarto momento (`adjudicacion`).
 >
-> **Regla de severidad fijada el 20/10/2026**, y aplicada a los dos pliegos: pierdes el contrato o
-> te prohíben contratar = `alta`; pierdes dinero acotado = `media`; molestia = `baja`. Efecto
-> secundario ya visible: **14 de 17 filas son `alta`**, así que la columna apenas discrimina entre
-> riesgos de admisión. Se revisa al inducir la rúbrica, no antes.
+> **Cautela de recuento:** 5 de las filas de admisión del pliego 9 salen de una sola lista
+> (cl. 14, «no se aceptarán…») y llevan una nota que lo dice. Si se cuentan como una sola, la
+> admisión baja a 19 de 28.
+>
+> **Cautela de método:** en el pliego 9, el criterio de 5 filas (garantía definitiva, formalización,
+> condición especial, recepción con defectos y la reescritura de demora) lo redactó Claude, no Hugo.
+> La rúbrica se induce de la lectura de Hugo, así que al agruparlas hay que tenerlo presente.
+>
+> **Regla de severidad fijada el 20/10/2026**, y aplicada a los tres pliegos: pierdes el contrato
+> o te prohíben contratar = `alta`; pierdes dinero acotado = `media`; molestia = `baja`. Efecto
+> secundario: **27 de 32 filas son `alta`**, así que la columna apenas discrimina entre riesgos de
+> admisión. Se revisa al inducir la rúbrica, no antes.
 
 **Paso 2 — la rúbrica, inducida.** `corpus/rubrica-riesgos-lcsp.md` es un catálogo **cerrado**
 —la métrica empareja por `id`— pero **se induce, no se deduce**: leer diez pliegos a mano,
