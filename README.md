@@ -41,7 +41,7 @@ eval_gold.ps1                   Evaluación de precisión contra los ficheros de
 Outputs/                        JSON generados, con sufijo .v2.json
 Gold/                           Ficheros de referencia anotados a mano, con sufijo .gold.json
 .claude/agents/sentencia_agent.md   Definición del agente.
-.claude/commands/               Recetas invocables como /RUN, /DEBUG, /IMPROVE, /run_once.
+(retirados el 23/11/2026)       Los comandos /RUN, /DEBUG, /IMPROVE y /run_once. Siguen en git.
 
 ── Transversal ────────────────────────────────────────────────────────────────
 progress/                       Bitácora, métricas históricas y hoja de ruta.
@@ -75,8 +75,7 @@ quiera reproducir el pipeline descarga las sentencias de la fuente oficial y las
 
 **Ninguna regla está escrita dos veces.** `CLAUDE.md` contiene los principios comunes a todos
 los tipos de documento y un índice; las reglas concretas de cada tipo viven en un único
-archivo bajo `standards/`, y tanto la definición del agente como las recetas de
-`.claude/commands/` remiten allí en lugar de copiarlas. Ante una discrepancia entre un
+archivo bajo `standards/`, y la definición del agente remite allí en lugar de copiarlas. Ante una discrepancia entre un
 estándar y `CLAUDE.md`, prevalece `CLAUDE.md`; ante una discrepancia entre este README y un
 estándar, prevalece el estándar.
 
@@ -181,9 +180,9 @@ Invoca el agente `sentencia_agent` indicando el archivo:
 Usa el agente sentencia_agent para analizar Inputs/dev/sentencia3.txt con el esquema v2
 ```
 
-El agente escribe `Outputs/sentencia3.v2.json`. `/RUN` **no sobrescribe outputs existentes**:
-procesa solo los que faltan. Para regenerar uno ya producido hay que borrarlo antes, o pedir
-la reescritura explícitamente al agente.
+El agente escribe `Outputs/sentencia3.v2.json`. **Ojo:** la regla de no sobrescribir outputs
+existentes estaba en el comando `/RUN`, retirado el 23/11/2026, y ya no la aplica nada. Si se
+reactiva la línea, hay que decidir dónde vive.
 
 ### Reprocesar el dataset completo
 

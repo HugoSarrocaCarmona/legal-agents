@@ -30,6 +30,11 @@ repo y ver qué viene después del anotador.
     `Inputs/pliegos` como argumento a un script siguen funcionando.
   - **Sin comprobar:** las reglas de PowerShell, porque aquí no hay PowerShell.
 - `scripts/placsp/__pycache__/` deja de versionarse
+- **Retirados los cuatro comandos de sentencias** (`RUN`, `DEBUG`, `IMPROVE`, `run_once`), a
+  petición de Hugo. Pertenecían a la línea aparcada y se cargaban en cada sesión, que es lo que
+  `CLAUDE.md` manda retirar. Siguen en git, recuperables con `git show f64a8ac:.claude/commands/RUN.md`.
+  Con `RUN` se va la regla de no sobrescribir outputs existentes: si la línea se reactiva, hay
+  que decidir dónde vive
 
 ### ❌ Problemas encontrados
 
@@ -57,8 +62,7 @@ repo y ver qué viene después del anotador.
 
 - **Pliego 7.** Al cerrarlo, pedir la skill `cerrar-pliego` a partir de esa misma sesión, y que
   incluya poner al día este LOG
-- Pendiente de arnés: retirar o reescribir los cuatro comandos de sentencias (`RUN`, `DEBUG`,
-  `IMPROVE`, `run_once`) y probar en local las reglas de PowerShell
+- Pendiente de arnés: probar en local las reglas de PowerShell
 
 ---
 
