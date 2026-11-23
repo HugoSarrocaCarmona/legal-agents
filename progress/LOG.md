@@ -1,5 +1,150 @@
 # 📜 Project Log
 
+## [23/11/2026] — 🧭 Alto en el camino: informe 5 y poda del arnés
+
+Hugo pidió parar para situarse: analizar el vídeo de Eric Risco «Antes de programar con IA en
+2027, cambia esto» —que comenta la charla de Lydia Hallie, de Anthropic—, decidir qué aplicar al
+repo y ver qué viene después del anotador.
+
+### ✅ Hecho
+
+- **`research/05-harness-2027-y-situacion.md`** — el vídeo capítulo a capítulo, con cada
+  afirmación contrastada con la documentación oficial; la situación del proyecto; los pasos
+  después del anotador, y otras vías posibles
+- **Ramas reunidas.** La rama de trabajo junta todo lo hecho desde el 25/08 y la herramienta de
+  vídeo (`tools/video/` y la skill `ver-video`), que vivía en otra rama. Se propone a `main` por PR
+- **`progress/ESTADO.md`, de 223 a 76 líneas.** Lo histórico ya estaba en este LOG (09/09, 15/09
+  y 17/09), salvo el avance de los pliegos, que pasa a la entrada de 19/10–10/11
+- **`CLAUDE.md`, de 247 a 195 líneas.**
+  - Resuelta una contradicción: decía «riesgo de ejecución» y «línea congelada», mientras
+    `ESTADO.md` decía encuadre abierto y línea aparcada.
+  - Fuera las mayúsculas de énfasis, la nota histórica del 04/10 (que pasa a este LOG) y las
+    secciones sin efecto («Organización», «Objetivo final»).
+  - Nuevo: el mapa de herramientas, `/doctor prompt-audit` y la distinción entre restricciones
+    de proceso y de verdad.
+- **`.claude/settings.json`** — reglas `deny` que impiden a Claude borrar, crear o sobrescribir
+  nada en `Inputs/`, y lanzar `git clean -x`, que borraría los ficheros ignorados. Mover dentro de
+  `Inputs/` pide confirmación.
+  - **Comprobado en el contenedor:** quedan bloqueados `rm`, `git clean -x`,
+    `touch`/`mkdir`/redirección y la herramienta de escritura. Leer `Inputs/` y pasar
+    `Inputs/pliegos` como argumento a un script siguen funcionando.
+  - **Sin comprobar:** las reglas de PowerShell, porque aquí no hay PowerShell.
+- `scripts/placsp/__pycache__/` deja de versionarse
+
+### ❌ Problemas encontrados
+
+- **`main` llevaba parado desde el 25/08.** Una sesión que arrancara desde ahí leía un
+  `ESTADO.md` sin el giro a pliegos, sin los datos de PLACSP y sin el anotador. Esta sesión
+  arrancó así
+- `ESTADO.md` había crecido a 223 líneas pese a declararse corto a propósito, y este LOG no se
+  tocaba desde el 17/09
+- **Hallazgo de fondo:** las 16 materias del vocabulario cerrado de `standards/contratos.md` son
+  todas de ejecución. Unas 32 de las 39 filas de admisión no caben en ninguna: si el recuento
+  confirma admisión, hace falta un esquema v3 antes que la rúbrica
+
+### 💡 Aprendizajes
+
+- **Para hacer cumplir una regla no hace falta un hook.** Las reglas `deny` de permisos lo hacen
+  sin depender de que haya un intérprete instalado, cosa que en Windows no está garantizada. Y un
+  hook que no arranca deja pasar la acción
+- **Las reglas `deny` protegen contra el error, no contra la intención.** Un script que borre por
+  su cuenta no lo detectan, y no está comprobado que cubran un `cd Inputs && rm x`
+- **Hay restricciones de proceso y restricciones de verdad.** Las primeras se pueden soltar
+  cuando el modelo mejora; las segundas son el producto, y lo que las hace cumplir es la
+  evaluación
+
+### 🔜 Siguiente paso
+
+- **Pliego 7.** Al cerrarlo, pedir la skill `cerrar-pliego` a partir de esa misma sesión, y que
+  incluya poner al día este LOG
+- Pendiente de arnés: retirar o reescribir los cuatro comandos de sentencias (`RUN`, `DEBUG`,
+  `IMPROVE`, `run_once`) y probar en local las reglas de PowerShell
+
+---
+
+## [19/10–10/11/2026] — 📖 Paso 5: cinco de los diez pliegos, leídos y anotados
+
+Hugo lee a mano los pliegos de la población «un solo licitador, y fue excluido» y anota cada
+riesgo con el protocolo de `corpus/PROTOCOLO-LECTURA.md`. Las filas se anotan en el anotador y se
+exportan a `corpus/anotaciones-pliegos.csv`.
+
+### ✅ Hecho
+
+| Pliego | Expediente | Cerrado | Filas | Lo propio del documento |
+|---|---|---|---|---|
+| 1 | ASEPEYO, CP00004/2025, suministros | 19/10 | 8 | Los umbrales de solvencia no están en el PCAP, sino en un fichero de anexos aparte |
+| 6 | Ayuntamiento de Llíria, 1401Q/2025, suministros | 20/10 | 9 | Plantilla municipal sin cuadro de características |
+| 9 | Ayuntamiento de Briviesca, 922/2025, obras | 25/10 | 15 | Primero de obras. La oferta se presenta en la plataforma de la Diputación de Burgos, no en la PLACSP |
+| 10 | Ayuntamiento de Gijón, 73234W/2024, servicios | 27/10 | 11 | Tres documentos —CCP, pliego modelo y PPT—; el CCP y el modelo divergen en penalidades y en la base de la garantía |
+| 2 | TRAGSA, TSA0079889, servicios | 10/11 | 18 | Primer contrato de régimen privado: Tragsa es medio propio, y efectos y extinción se rigen por el derecho privado (cl. 23) |
+
+### 🔍 La señal
+
+- **`momento`: 39 de admisión, 21 de ejecución y 1 de valoración.**
+- **17 de las 39 de admisión caen entre la propuesta de adjudicación y la formalización:** 4 del
+  pliego 1, 3 del 6, 3 del 9, 2 del 10 y 5 del 2. En el pliego 2 el requerimiento pide una póliza
+  que no aparece en la solvencia: el requisito solo se descubre al ganar
+- La única fila de `valoracion` (pliego 10, umbral mínimo de juicio de valor) tiene como
+  consecuencia la exclusión: funciona como un riesgo de admisión
+- Riesgo nuevo en el pliego 2: el contrato cae si la Administración retira el encargo a Tragsa
+  (`quien_controla` = `tercero`)
+
+### ⚖️ Decisiones
+
+- **Regla de severidad común, fijada el 20/10:** pierdes el contrato o te prohíben contratar =
+  `alta`; pierdes dinero acotado = `media`; molestia = `baja`.
+  - Con ella se reajustaron tres filas del pliego 1 (plan de igualdad, omisiones y errores, UTE)
+    de `media` a `alta`.
+  - Tras el repaso de Hugo cambiaron dos más: en el pliego 1, el 70 % de la anualidad media pasó
+    de `media` a `alta`; en el pliego 6, el precio fijo pasó de `organo` a `tercero` en
+    `quien_controla`.
+
+### ⚠️ Cautelas
+
+- **Recuento:** 5 filas de admisión del pliego 9 salen de una sola lista (cl. 14). Contadas como
+  una, la admisión baja a 35 de 57
+- **Método:** en el pliego 9 Claude redactó el criterio de 5 filas; en el 10 reescribió
+  `como_se_falla` en 8 de las 11 filas y rehízo la de la garantía; en el 2 añadió 5 filas de
+  ejecución y reescribió `como_se_falla` en 9 de las 13 de Hugo. La detección de las filas de
+  admisión es de Hugo; al agrupar hay que tenerlo presente
+- **`severidad_intuitiva` ya no discrimina:** 54 de 61 filas son `alta`, y las 18 del pliego 2 lo
+  son todas. Se revisa al inducir la rúbrica, no antes
+
+---
+
+## [04/10/2026] — 🔧 Protocolo con marcadores de riesgo, y primera revisión del arnés
+
+- **`corpus/PROTOCOLO-LECTURA.md`** — cuatro marcadores de riesgo, localizables por
+  vocabulario: verbos de consecuencia, plazos cortos, reenvíos y palabras de discrecionalidad. Y
+  un orden de barrido: cuadro, admisión, ejecución, anexos. El protocolo decía qué preguntar a una
+  cláusula pero no dónde mirar, y eso bloqueó el primer intento de lectura
+- **`CLAUDE.md` — la regla de salida JSON, delimitada.** Decía «todas las respuestas deben ser
+  JSON válido, nunca devolver texto libre», sin ámbito. Se escribió cuando el repo era solo el
+  extractor y se incumplía en toda conversación desde entonces. Queda limitada a la salida de un
+  agente que procesa un documento. **Una regla que se incumple siempre no es una regla: es ruido
+  que resta autoridad a las que sí rigen**
+- **`CLAUDE.md` — el ritual «Revisar este arnés cuando cambie el modelo»**, tomado del vídeo de
+  Eric Risco «Así trabajo ahora con inteligencia artificial: menos pasos, más criterio»
+  (28/09/2026)
+
+---
+
+## [18/09/2026] — 📥 Los diez pliegos, localizados y verificados
+
+- **`scripts/placsp/extrae_documentos.py` y `corpus/documentos-pliegos.csv`** — los 69
+  documentos de los 10 expedientes, con URL de descarga directa y las páginas de cada PCAP y PPT
+- **Los 20 PCAP y PPT llevan texto extraíble; ninguno está escaneado.** No hace falta OCR en esta
+  fase. Cierra lo que quedaba del paso 4
+- **Estimación corregida.** «35–45 minutos por pliego» se escribió antes de mirar los documentos.
+  Los diez PCAP suman 700 páginas, de 25 a 158: entre 12 y 15 horas, no siete. Orden de lectura:
+  primero los cuatro cortos
+- Dos trampas documentadas en el protocolo: la página índice «Documento de Pliegos» no es un
+  pliego, y en `GetDocumentByIdServlet` el parámetro que identifica el documento es
+  `DocumentIdParam`
+- `CLAUDE.md` — citar siempre los ficheros por su ruta del repo, a petición de Hugo
+
+---
+
 ## [17/09/2026] — 📊 Primer código del proyecto: se cierra el bloqueo nº 0 con datos
 
 Se ejecutó el paso 1 de la fase 2. Todo 2025 de la sindicación de la PLACSP —12 ficheros
