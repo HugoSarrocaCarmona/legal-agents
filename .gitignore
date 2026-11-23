@@ -17,9 +17,16 @@ $RECYCLE.BIN/
 # Configuracion local de Claude Code (especifica de cada maquina)
 .claude/settings.local.json
 
+# Salidas de tools/video (transcripciones, fotogramas y media descargada)
+video_out/
+
 # Trabajo temporal
 scratch/
 *.log
 Inputs/
 Archive/
 .git-backup/
+
+# Cache de Python
+__pycache__/
+*.pyc
