@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(Inputs/**)",
+      "Bash(rm *Inputs*)",
+      "Bash(rmdir *Inputs*)",
+      "Bash(unlink *Inputs*)",
+      "Bash(shred *Inputs*)",
+      "Bash(truncate *Inputs*)",
+      "Bash(find *Inputs*-delete*)",
+      "Bash(git clean *x*)",
+      "Bash(git clean *X*)",
+      "PowerShell(Remove-Item *Inputs*)",
+      "PowerShell(Clear-Content *Inputs*)",
+      "PowerShell(Set-Content *Inputs*)",
+      "PowerShell(Out-File *Inputs*)",
+      "PowerShell(git clean *x*)"
+    ],
+    "ask": [
+      "Bash(mv *Inputs*)",
+      "PowerShell(Move-Item *Inputs*)",
+      "PowerShell(Rename-Item *Inputs*)"
+    ]
+  }
+}
