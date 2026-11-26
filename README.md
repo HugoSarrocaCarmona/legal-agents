@@ -1,9 +1,22 @@
-# Legal Tech Agents (España) — extracción estructurada de sentencias
+# Legal Tech Agents (España) — extracción estructurada de documentos jurídicos
 
-Convierte sentencias judiciales españolas en JSON estructurado, validable y comparable
-entre documentos. Fase actual: resoluciones del orden civil publicadas por CENDOJ. Las 35
-resoluciones del corpus están procesadas y medidas, de 8 órganos distintos y con 5 autos
-entre ellas.
+Extracción estructurada de documentos jurídicos españoles a JSON validable y comparable entre
+documentos, con métrica declarada.
+
+El repositorio tiene **dos líneas**, y conviene no confundirlas al leerlo:
+
+| Línea | Estado | Qué hace |
+|---|---|---|
+| **Pliegos LCSP** | 🟢 **Activa** | Estima el riesgo de ejecución que asume un licitador que gana un contrato público |
+| **Sentencias** | 🔵 **Congelada** | Convierte resoluciones judiciales en JSON estructurado. Completa y medida |
+
+> **Este README documenta la línea de sentencias**, que es la que tiene pipeline ejecutable. La
+> línea activa está en fase de diseño: su estándar es
+> [`standards/contratos.md`](standards/contratos.md) y su métrica
+> [`corpus/metrica.md`](corpus/metrica.md), y aún no tiene agente ni validador.
+>
+> **Empieza por [`progress/ESTADO.md`](progress/ESTADO.md).** El giro a pliegos del 09/09/2026 y
+> lo que lo motivó están en [`progress/LOG.md`](progress/LOG.md).
 
 ---
 
@@ -11,18 +24,44 @@ entre ellas.
 
 ```
 CLAUDE.md                       Principios comunes e índice de estándares. Lo carga el harness.
-progress/ESTADO.md              Punto de entrada: en qué fase está cada pipeline. Leer primero.
-standards/sentencias.md         Estándar de sentencias (v2): esquema, reglas y contrato.
-standards/contratos.md          Estándar de contratos (v1). Escrito, sin ejercitar.
+progress/ESTADO.md              Punto de entrada: en qué fase está cada línea. Leer primero.
+
+── Línea activa: pliegos ──────────────────────────────────────────────────────
+standards/contratos.md          Estándar (v2), ámbito operativo en pliegos LCSP.
+corpus/metrica.md               Qué significa acertar en los campos sustantivos.
+corpus/alcance.md               Criterios de inclusión del corpus, por vía.
+corpus/inventario-contratos.csv Inventario con hashes.
+corpus/evaluaciones.md          Registro de ejecuciones, previo a mirar resultados.
+research/                       Análisis de mercado que motivó el giro, con fuentes.
+
+── Línea congelada: sentencias ────────────────────────────────────────────────
+standards/sentencias.md         Estándar (v2): esquema, reglas y contrato.
 validate_v2.ps1                 Validador mecánico del esquema v2.
 eval_gold.ps1                   Evaluación de precisión contra los ficheros de referencia.
 Outputs/                        JSON generados, con sufijo .v2.json
 Gold/                           Ficheros de referencia anotados a mano, con sufijo .gold.json
-corpus/                         Alcance, inventario con hashes y registro de evaluaciones.
-progress/                       Bitácora, métricas históricas y hoja de ruta.
 .claude/agents/sentencia_agent.md   Definición del agente.
-.claude/commands/               Recetas invocables como /RUN, /DEBUG, /IMPROVE, /run_once.
+(retirados el 23/11/2026)       Los comandos /RUN, /DEBUG, /IMPROVE y /run_once. Siguen en git.
+
+── Transversal ────────────────────────────────────────────────────────────────
+progress/                       Bitácora, métricas históricas y hoja de ruta.
 ```
+
+---
+
+## La línea de sentencias
+
+Convierte sentencias judiciales españolas en JSON estructurado, validable y comparable entre
+documentos. Alcance: resoluciones del orden civil publicadas por CENDOJ. Las 35 resoluciones del
+corpus están procesadas y medidas, de 8 órganos distintos y con 5 autos entre ellas.
+
+> 🔵 **Congelada el 09/09/2026, con un bloqueo abierto que se declara en vez de disimularse.** El
+> conjunto de test está gastado: el 315/315 confirma que las reglas funcionan, pero **no mide
+> generalización**, y medirla exigiría un corpus nuevo. No se va a corregir a corto plazo, porque
+> el aviso legal del CENDOJ prohíbe la descarga masiva y el uso comercial: ampliar ese corpus es
+> trabajo cuyo resultado no sería explotable. El pipeline conserva su valor como banco de pruebas
+> del método —esquema, validador, Gold, ciclo DEBUG/IMPROVE— y todo lo que sigue en este README
+> sigue siendo exacto.
 
 **Los directorios `Inputs/` y `Archive/` no se publican en el repositorio.** El corpus son 35
 resoluciones del orden civil, todas descargables desde el buscador de jurisprudencia del CENDOJ
@@ -36,8 +75,7 @@ quiera reproducir el pipeline descarga las sentencias de la fuente oficial y las
 
 **Ninguna regla está escrita dos veces.** `CLAUDE.md` contiene los principios comunes a todos
 los tipos de documento y un índice; las reglas concretas de cada tipo viven en un único
-archivo bajo `standards/`, y tanto la definición del agente como las recetas de
-`.claude/commands/` remiten allí en lugar de copiarlas. Ante una discrepancia entre un
+archivo bajo `standards/`, y la definición del agente remite allí en lugar de copiarlas. Ante una discrepancia entre un
 estándar y `CLAUDE.md`, prevalece `CLAUDE.md`; ante una discrepancia entre este README y un
 estándar, prevalece el estándar.
 
@@ -142,9 +180,9 @@ Invoca el agente `sentencia_agent` indicando el archivo:
 Usa el agente sentencia_agent para analizar Inputs/dev/sentencia3.txt con el esquema v2
 ```
 
-El agente escribe `Outputs/sentencia3.v2.json`. `/RUN` **no sobrescribe outputs existentes**:
-procesa solo los que faltan. Para regenerar uno ya producido hay que borrarlo antes, o pedir
-la reescritura explícitamente al agente.
+El agente escribe `Outputs/sentencia3.v2.json`. **Ojo:** la regla de no sobrescribir outputs
+existentes estaba en el comando `/RUN`, retirado el 23/11/2026, y ya no la aplica nada. Si se
+reactiva la línea, hay que decidir dónde vive.
 
 ### Reprocesar el dataset completo
 

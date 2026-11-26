@@ -50,7 +50,7 @@ que no traigan clausulado nuevo, y expedientes desiertos o desistidos.
 
 ---
 
-## Vía B — Mercantil negociada (secundaria, **diferida**)
+## Vía B — Mercantil negociada (**cerrada**)
 
 **Fuente:** CNMV, registros oficiales e información relevante con contrato anexo.
 **Función:** clausulado genuinamente negociado — covenants, reps & warranties, MAC, indemnidades.
@@ -61,14 +61,17 @@ que no traigan clausulado nuevo, y expedientes desiertos o desistidos.
 | Rango temporal | 2020 en adelante |
 | Volumen esperado | Decenas |
 
-> ⚠️ **Vía explícitamente diferida, no paralela.** Los contratos íntegros anexados a la CNMV
-> son raros —lo habitual es el resumen—, y los que hay son de M&A y financiación, con
-> clausulado muy alejado del resto del corpus. Declararla "en paralelo" con todo lo demás
-> pendiente equivale a que no ocurra. Se abre cuando A y C estén cerradas.
+> 🔒 **Cerrada el 09/09/2026, no diferida.** Con el giro a pliegos, el régimen mercantil sale
+> del alcance de esta iteración entero: no tendrá rúbrica, ni Gold, ni métrica. Mantenerla como
+> "diferida" era una forma educada de tenerla abierta sin trabajarla. Se reabrirá, si acaso,
+> como iteración propia y con su propio alcance escrito.
+>
+> *Redacción anterior, conservada por trazabilidad:* los contratos íntegros anexados a la CNMV
+> son raros —lo habitual es el resumen—, y los que hay son de M&A y financiación, con clausulado
+> muy alejado del resto del corpus.
 
-Mientras tanto, las 3 plantillas negociadas del corpus actual sirven como **vocabulario de
-cláusulas** para construir la rúbrica del régimen mercantil, no como corpus de evaluación: no
-traen ni un dato real.
+Las 3 plantillas negociadas (`plantilla-01` a `03`) permanecen en disco y en el inventario. No
+se anotan ni se depuran.
 
 ---
 
@@ -76,8 +79,25 @@ traen ni un dato real.
 
 **Fuente:** clausulado de adhesión publicado por empresas, y resoluciones de CENDOJ sobre
 cláusulas abusivas.
-**Función:** doble. El clausulado de adhesión es material **anotable**; las resoluciones son la
-**fuente de verdad** de la rúbrica de `risk_flags`.
+**Función:** *(revisada el 09/09/2026)* **fuente de criterios valorativos, y nada más.**
+
+> 🔻 **Degradada tras el giro a pliegos.** La función anterior era doble: clausulado de adhesión
+> como material **anotable**, y resoluciones como **fuente de verdad** de la rúbrica. Las dos
+> cambian.
+>
+> **La rúbrica ya no se extrae de aquí.** Para el régimen administrativo la fuente primaria es
+> la **LCSP**, que fija umbrales numéricos —10 % y 50 % en penalidades, 0,60 € por 1.000 € y
+> día, 5 % y 10 % en garantías, 20 % y 50 % en modificaciones, 30 + 30 días en pagos— donde el
+> control de abusividad del TRLGDCU solo ofrece un estándar valorativo. Extraer de consumo el
+> catálogo de un pliego habría importado un régimen que allí no rige, que es justamente lo que
+> `standards/contratos.md` prohíbe.
+>
+> **Lo que sí se conserva de las 9 resoluciones** son los cinco criterios valorativos
+> transferibles: desequilibrio, falta de reciprocidad, opacidad, desproporción de la penalización
+> y facultades unilaterales. Son transferibles **por ser criterios**, no calificaciones.
+>
+> **Los 8 documentos de adhesión dejan de ser material anotable.** Permanecen en disco y en el
+> inventario; salen del camino crítico.
 
 Es la única vía heterogénea por diseño, y por eso el inventario lleva dos columnas: `via`
 (procedencia) y `funcion` (para qué sirve). Un contrato de Orange y una STS sobre revolving
@@ -123,9 +143,13 @@ Ortogonal a las vías. Dentro de cada vía, el corpus anotado se parte en **cieg
 Esto es la corrección directa del error cometido con el corpus de sentencias, donde el test se
 gastó por reevaluación repetida. La regla sin registro se incumple sola: por eso el fichero.
 
-> ⚠️ **Tamaño mínimo por decidir.** El corpus *anotado* será de decenas aunque el *descargado*
-> llegue a cientos: el cuello de botella es la anotación. Partido en dos, quedan ~20 documentos
-> por partición, y para un campo multietiqueta como `risk_flags` eso da intervalos de confianza
-> tan anchos que casi cualquier diferencia entre versiones será indistinguible del ruido.
-> **Fijar el tamaño mínimo por partición antes de empezar a anotar**, o asumir por escrito que
-> la primera medición es orientativa.
+> ✅ **Tamaño mínimo decidido el 09/09/2026** en [`metrica.md`](metrica.md). Se resuelve por dos
+> vías a la vez: **se mide por cláusula anotada, no por documento** —lo que multiplica la N
+> efectiva— y **los intervalos de confianza se remuestrean por documento**, para no tratar como
+> independientes cláusulas que comparten órgano y plantilla.
+>
+> Mínimos: **40 flags por partición** para medir; **~100 flags valorativos por partición** para
+> comparar versiones, lo que equivale a **15–20 pliegos anotados por partición** (30–40 en
+> total). Hasta alcanzarlos, la clase valorativa se reporta como orientativa y **no decide entre
+> versiones**; la normativa sí, desde 40, porque es comprobable contra la ley y su corrección no
+> depende del tamaño muestral.
